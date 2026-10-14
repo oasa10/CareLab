@@ -1,0 +1,3226 @@
+[
+ {
+  "id": "lo-que-pesa",
+  "palabra": "Lo que pesa",
+  "resumen": "La carga tiene dos caras: lo que haces y cómo lo vives.",
+  "perfil": "casa",
+  "familia": 1,
+  "ficha": "carga-del-cuidado",
+  "riesgo": true,
+  "escena": "Begoña lleva tres años cuidando a su madre. Las tareas son las mismas cada día, pero hay semanas que pesan el doble. Lo nota al subir la compra: no es la bolsa, es todo lo demás.",
+  "choque": {
+   "frase": "«Si no lo hago yo, no lo hace nadie.»",
+   "pregunta": "¿Te suena?",
+   "opciones": [
+    {
+     "id": "mucho",
+     "e": "🙋",
+     "t": "Mucho"
+    },
+    {
+     "id": "aveces",
+     "e": "🤔",
+     "t": "A veces"
+    },
+    {
+     "id": "nada",
+     "e": "🙂",
+     "t": "Nada"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Domingo por la noche. Repasas la semana que viene: médico, farmacia, la ducha del martes, papeles. Te sientas un momento. ¿Qué te sale?",
+   "opciones": [
+    {
+     "id": "a",
+     "t": "«Me pongo con la lista: mejor tenerlo todo controlado.»"
+    },
+    {
+     "id": "b",
+     "t": "«Me pesa más pensar en la semana que hacerla.»"
+    },
+    {
+     "id": "c",
+     "t": "«Apunto qué es lo que más me cuesta y por qué.»"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "En 80 personas que cuidaban a un familiar mayor, la carga salió con dos caras: lo que el cuidado cambia en tu vida y cómo lo vives. Cada una dependía de cosas distintas.",
+   "fuente": "Montgomery et al. (1985)",
+   "url": "https://doi.org/10.2307/583753",
+   "busca": "Lo que buscábamos con la frase era no fallar. Al separar las dos caras, ves qué parte se reparte con tareas y servicios, y qué parte pide otra cosa: hablarlo, entenderlo, descansar.",
+   "saltos": [
+    {
+     "t": "Si pesa tanto, es que lo hago mal",
+     "p": "El peso no mide lo bien que cuidas. Dos personas con las mismas tareas pueden vivirlas de forma muy distinta, y eso depende de su situación, no de su valía."
+    },
+    {
+     "t": "Con menos tareas, se me pasaría",
+     "p": "A veces sí, y a veces no. En ese estudio, las tareas explicaban sobre todo la cara de lo que se hace; la de cómo se vive dependía más de la edad y los ingresos."
+    },
+    {
+     "t": "No salté: miré qué pesa",
+     "p": "Bien visto. Separar la tarea de lo que sientes al hacerla ayuda a elegir el paso: repartir una tarea, pedir un servicio o hablar de lo que se siente."
+    }
+   ],
+   "referencia": "Montgomery, R. J. V., Gonyea, J. G. y Hooyman, N. R. (1985). Caregiving and the experience of subjective and objective burden. Family Relations, 34(1), 19-26."
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Qué es la «carga objetiva» del cuidado?",
+     "o": [
+      "Lo que el cuidado cambia en tu vida: tareas, tiempo, dinero, salidas",
+      "Lo cansada que te sientes",
+      "La gravedad de la enfermedad"
+     ],
+     "ok": 0,
+     "por": "Es lo que cambia por fuera. La carga subjetiva es cómo lo vives por dentro. Las dos cuentan y no siempre van juntas."
+    },
+    {
+     "p": "En el estudio de 1985, ¿qué se relacionó más con la carga «por dentro»?",
+     "o": [
+      "El número de tareas",
+      "La hora del día",
+      "La edad y los ingresos de quien cuidaba"
+     ],
+     "ok": 2,
+     "por": "La carga de cómo se vive se relacionó más con la edad y los ingresos. Las tareas que atan en el tiempo, con la otra cara."
+    },
+    {
+     "p": "¿«Síndrome del cuidador» es un diagnóstico médico?",
+     "o": [
+      "Sí, desde hace años",
+      "No: es una expresión de la calle; la investigación habla de carga",
+      "Solo en España"
+     ],
+     "ok": 1,
+     "por": "No aparece en los manuales de diagnóstico. Nombra algo real, el desgaste de cuidar, pero no es una enfermedad. Si hay señales de depresión, la médica de familia puede ayudar."
+    }
+   ],
+   "sabias": "Para aliviar la carga de lo que se hace, los autores del estudio de 1985 proponían servicios concretos, como la ayuda personal y el respiro (Montgomery et al., 1985)."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Tres días, dos caras",
+     "t": "Durante tres días, apunta cada noche qué te pesó más: la tarea o lo que sentiste al hacerla. Una línea basta.",
+     "historia": "apuntar durante tres días qué me pesó más: la tarea o lo que sentí al hacerla"
+    },
+    {
+     "corta": "Una tarea fuera",
+     "t": "Elige la tarea que más te pesa esta semana y piensa quién, o qué servicio, podría hacerla una vez en tu lugar.",
+     "historia": "elegir la tarea que más me pesa y pensar quién o qué servicio podría hacerla una vez"
+    }
+   ],
+   "retorno": "¿Lo hiciste? ¿Qué pesó más, la tarea o lo que sentiste? ¿Qué te dice eso de lo que se puede repartir?"
+  },
+  "historia": {
+   "pensaba": {
+    "mucho": "Pensaba que, si no lo hacía yo, no lo haría nadie.",
+    "aveces": "A veces pensaba que todo dependía de mí.",
+    "nada": "Pensaba que eso de que todo depende de mí no iba conmigo."
+   },
+   "hice": {
+    "a": "Hice lo de siempre: tenerlo todo controlado.",
+    "b": "Hice una pausa y noté que pensar en lo que venía pesaba más que hacerlo.",
+    "c": "Hice algo nuevo: mirar qué es lo que más me cuesta."
+   },
+   "ahora": "Vi que la carga tiene dos caras, lo que hago y cómo lo vivo. Esta semana voy a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "nadie-lo-hace-como-yo"
+  },
+  "saber_mas": "**Carga del cuidado** (*caregiver burden*): el término técnico para lo que la calle llama «síndrome del cuidador», que no es un diagnóstico. Montgomery, Gonyea y Hooyman (1985) separaron la **carga objetiva** (tareas, tiempo, dinero, salidas) de la **carga subjetiva** (cómo se vive). El modelo del proceso de estrés (Pearlin et al., 1990) explica cómo las exigencias del cuidado arrastran tensiones al resto de la vida, y cómo el apoyo y la forma de afrontarlas pueden frenarlas. CareLab no usa escalas que puntúan: la carga se mira para repartirla, no para poner nota.",
+  "corto": {
+   "pregunta": "¿Qué te pesa más hoy: lo que tienes que hacer o cómo te sientes al hacerlo?",
+   "accion": "Esta noche, apunta una línea: la tarea que más te pesó hoy y lo que sentiste."
+  },
+  "rutas": {
+   "A": "Si cuidar tiene sentido para ti, protege lo que hoy hace que pese menos: una ayuda, un rato, una conversación. Apúntalo para no perderlo.",
+   "B": "Lo que pesa por fuera se puede repartir con servicios: ayuda a domicilio, centro de día o respiro. Pregunta en los servicios sociales de tu ayuntamiento; en Euskadi, te orientan también hacia los de tu diputación foral."
+  },
+  "variantes": {
+   "trabajo": {
+    "escena": "Rosa es auxiliar de ayuda a domicilio y hace seis casas al día. Hay semanas en que el trabajo es el mismo y pesa el doble: no son las duchas, es correr de una casa a otra sin tiempo.",
+    "reflejo": {
+     "situacion": "Domingo por la noche. Miras el cuadrante: seis casas al día, un usuario nuevo y poco tiempo entre una y otra. ¿Qué te sale?",
+     "opciones": [
+      {
+       "id": "a",
+       "t": "«Me organizo al minuto: mejor tenerlo todo controlado.»"
+      },
+      {
+       "id": "b",
+       "t": "«Me pesa más pensar en la semana que hacerla.»"
+      },
+      {
+       "id": "c",
+       "t": "«Apunto qué es lo que más me cuesta y por qué.»"
+      }
+     ]
+    }
+   }
+  }
+ },
+ {
+  "id": "nadie-lo-hace-como-yo",
+  "palabra": "Nadie lo hace como yo",
+  "resumen": "Dejar que otros ayuden también es cuidar.",
+  "perfil": "casa",
+  "familia": 3,
+  "ficha": "apoyo-social",
+  "riesgo": true,
+  "escena": "Mikel cuida a su padre desde el ictus. Su hermana se ofrece cada mes y él siempre le dice que no hace falta. Luego, de noche, piensa que nadie le echa una mano.",
+  "choque": {
+   "frase": "«Nadie lo cuida como yo.»",
+   "pregunta": "¿Te suena?",
+   "opciones": [
+    {
+     "id": "mucho",
+     "e": "🙋",
+     "t": "Mucho"
+    },
+    {
+     "id": "aveces",
+     "e": "🤔",
+     "t": "A veces"
+    },
+    {
+     "id": "nada",
+     "e": "🙂",
+     "t": "Nada"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Tu hermano se ofrece a quedarse el sábado por la tarde con la persona que cuidas. ¿Qué te sale?",
+   "opciones": [
+    {
+     "id": "a",
+     "t": "«Gracias, ya me apaño.»"
+    },
+    {
+     "id": "b",
+     "t": "«Vale, pero le dejo todo escrito.»"
+    },
+    {
+     "id": "c",
+     "t": "«Sí. Me voy.»"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "Un programa de Nueva York para cónyuges de personas con alzhéimer retrasó su ingreso en residencia. El 61 % de ese efecto se explicó por cambios en quien cuidaba; uno, estar más a gusto con el apoyo de su gente.",
+   "fuente": "Mittelman et al. (2006)",
+   "url": "https://doi.org/10.1212/01.wnl.0000242727.81172.91",
+   "busca": "Lo que buscábamos con «nadie lo cuida como yo» era que esté bien. Verlo así no te quita tu sitio: dejar que otros ayuden también protege a quien cuidas, porque te sostiene a ti.",
+   "saltos": [
+    {
+     "t": "Si otro lo hace distinto, lo hace mal",
+     "p": "Distinto no es peor. Puede que no lo haga como tú y que, aun así, esa tarde esté bien cuidado. Unas instrucciones cortas ayudan a que salga bien."
+    },
+    {
+     "t": "Si acepto ayuda, es que no puedo",
+     "p": "Aceptar ayuda no dice nada de lo que puedes. En el programa de Nueva York, sentirse apoyada formó parte de lo que funcionó, no de un fracaso."
+    },
+    {
+     "t": "No salté: dije que sí",
+     "p": "Bien visto. Decir que sí a una ayuda concreta reparte un poco lo que pesa y te deja un rato para ti."
+    }
+   ],
+   "referencia": "Mittelman, M. S., Haley, W. E., Clay, O. J. y Roth, D. L. (2006). Improving caregiver well-being delays nursing home placement of patients with Alzheimer disease. Neurology, 67(9), 1592-1599."
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Qué explicó buena parte del efecto del programa de Nueva York?",
+     "o": [
+      "Cambios en quien cuidaba, como sentirse mejor apoyada",
+      "Un medicamento nuevo",
+      "Más horas de cuidado"
+     ],
+     "ok": 0,
+     "por": "Mejoraron su satisfacción con el apoyo, su forma de responder a las conductas difíciles y su ánimo. Juntos explicaron el 61 % del efecto."
+    },
+    {
+     "p": "¿Qué es el «apoyo social» al cuidar?",
+     "o": [
+      "Una prestación económica",
+      "La ayuda práctica y emocional que llega de otras personas",
+      "Un tipo de residencia"
+     ],
+     "ok": 1,
+     "por": "Es la ayuda que llega de tu gente: alguien que se queda una tarde, que escucha, que hace un recado."
+    },
+    {
+     "p": "¿Cuántas personas participaron en el programa de Nueva York?",
+     "o": [
+      "Unas 40",
+      "Más de 4.000",
+      "406 cónyuges que cuidaban"
+     ],
+     "ok": 2,
+     "por": "Fueron 406 cónyuges de personas con alzhéimer, en Nueva York, seguidos durante años."
+    }
+   ],
+   "sabias": "El programa daba seis sesiones de orientación, individuales y con la familia, un grupo de apoyo y un teléfono disponible siempre que hiciera falta (Mittelman et al., 2006)."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Instrucciones de una línea",
+     "t": "Acepta una ayuda que te ofrezcan esta semana y deja instrucciones de una línea, no de una página.",
+     "historia": "aceptar una ayuda que me ofrezcan y dejar instrucciones de una línea, no de una página"
+    },
+    {
+     "corta": "Media hora concreta",
+     "t": "Pide a una persona algo concreto de media hora: un recado, una visita o una tarde de compañía.",
+     "historia": "pedir a una persona algo concreto de media hora"
+    }
+   ],
+   "retorno": "¿Se hizo? ¿Qué pasó con la persona que cuidas? ¿Qué hiciste tú con ese rato?"
+  },
+  "historia": {
+   "pensaba": {
+    "mucho": "Pensaba que nadie cuidaba como yo.",
+    "aveces": "A veces pensaba que nadie cuidaba como yo.",
+    "nada": "Pensaba que dejar que otros ayudaran no me costaba."
+   },
+   "hice": {
+    "a": "Hice lo de siempre: decir que ya me apañaba.",
+    "b": "Hice sitio a la ayuda, pero con todo atado.",
+    "c": "Hice algo nuevo: decir que sí y soltar."
+   },
+   "ahora": "Vi que dejar que otros ayuden también es cuidar. Esta semana voy a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "culpa"
+  },
+  "saber_mas": "**Apoyo social:** la ayuda práctica y emocional que llega de otras personas. En el modelo del proceso de estrés (Pearlin et al., 1990), el apoyo y la forma de afrontar pueden frenar lo que pesa en varios puntos. El ensayo de la Universidad de Nueva York (Mittelman et al., 2006) dio a 406 cónyuges de personas con alzhéimer orientación individual y familiar, un grupo de apoyo y ayuda telefónica. Sus familiares siguieron en casa una mediana de 557 días más, y el 61 % de ese efecto se explicó por cambios en quien cuidaba: más satisfacción con su apoyo, otra forma de responder a las conductas difíciles y menos síntomas de depresión.",
+  "corto": {
+   "pregunta": "¿Hay alguien que te ofrece ayuda y a quien siempre dices que no?",
+   "accion": "Mañana, dile a esa persona un sí pequeño: un recado o media hora."
+  },
+  "rutas": {
+   "A": "Si ya tienes a alguien que te releva, cuida ese hilo: dale las gracias y apunta en el calendario la próxima vez.",
+   "B": "Si no tienes a quién pedir, hay apoyo fuera de la familia: grupos de asociaciones de familiares y programas forales como Sendian (Gipuzkoa). Pregunta en los servicios sociales de tu ayuntamiento."
+  },
+  "variantes": {
+   "trabajo": {
+    "escena": "Iratxe es gerocultora. Conoce a cada residente de su planta: cómo le gusta el café a Josefa, qué calma a Andrés. Cuando libra, llama para preguntar si todo ha ido bien.",
+    "choque": {
+     "frase": "«Nadie los cuida como yo.»"
+    },
+    "reflejo": {
+     "situacion": "Una compañera nueva se ofrece a llevar sola a dos residentes de tu planta esta tarde. ¿Qué te sale?",
+     "opciones": [
+      {
+       "id": "a",
+       "t": "«Gracias, ya me apaño.»"
+      },
+      {
+       "id": "b",
+       "t": "«Vale, pero te lo dejo todo apuntado.»"
+      },
+      {
+       "id": "c",
+       "t": "«Sí. Me encargo de lo mío.»"
+      }
+     ]
+    }
+   }
+  }
+ },
+ {
+  "id": "culpa",
+  "palabra": "Culpa",
+  "resumen": "La culpa avisa de lo que te importa, pero no siempre dice la verdad.",
+  "perfil": "casa",
+  "familia": 2,
+  "ficha": "culpa",
+  "riesgo": true,
+  "escena": "Lucía tiene entradas para el cine con una amiga. Su madre se queda con la vecina. Ya dentro, Lucía mira el móvil diez veces y no se entera de la película.",
+  "choque": {
+   "frase": "«Si me voy una tarde, soy mala hija.»",
+   "pregunta": "¿Te suena?",
+   "opciones": [
+    {
+     "id": "mucho",
+     "e": "🙋",
+     "t": "Mucho"
+    },
+    {
+     "id": "aveces",
+     "e": "🤔",
+     "t": "A veces"
+    },
+    {
+     "id": "nada",
+     "e": "🙂",
+     "t": "Nada"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Te han invitado a una comida el sábado. Otra persona puede quedarse con quien cuidas. ¿Qué te sale?",
+   "opciones": [
+    {
+     "id": "a",
+     "t": "«Mejor no voy: no estaría tranquila.»"
+    },
+    {
+     "id": "b",
+     "t": "«Voy, pero llamo cada hora.»"
+    },
+    {
+     "id": "c",
+     "t": "«Voy y me permito disfrutarlo.»"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "Aprender a mirar de otra forma los pensamientos que pesan, como «no hago bastante», redujo la depresión y algo la ansiedad de familiares que cuidaban a alguien con demencia, según una revisión Cochrane.",
+   "fuente": "Vernooij-Dassen et al. (2011)",
+   "url": "https://doi.org/10.1002/14651858.CD005318.pub2",
+   "busca": "Lo que buscábamos con la culpa era no fallar a quien quieres. Verla como un pensamiento, no como una sentencia, te deja decidir a ti, y no solo a ella.",
+   "saltos": [
+    {
+     "t": "Si siento culpa, es que hago algo mal",
+     "p": "La culpa aparece a menudo cuando algo te importa, no cuando lo haces mal. Es un aviso, no una prueba."
+    },
+    {
+     "t": "Para no sentir culpa, mejor no salgo",
+     "p": "Quedarte calma la culpa un rato, pero la refuerza: la próxima vez costará más. Y tú sigues sin ese rato."
+    },
+    {
+     "t": "No salté: me di permiso",
+     "p": "Bien visto. Darte permiso no es dejar de querer. Puedes ir y notar la culpa sin obedecerla."
+    }
+   ],
+   "referencia": "Vernooij-Dassen, M., Draskovic, I., McCleery, J. y Downs, M. (2011). Cognitive reframing for carers of people with dementia. Cochrane Database of Systematic Reviews, 2011(11), CD005318."
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿En qué se centra «reencuadrar» los pensamientos al cuidar?",
+     "o": [
+      "En olvidar el problema",
+      "En pensar en positivo siempre",
+      "En los pensamientos que te hacen daño sobre ti o sobre la persona que cuidas"
+     ],
+     "ok": 2,
+     "por": "Se trabaja con pensamientos como «no hago bastante» para encontrar otros más justos. No es pensar en positivo a la fuerza."
+    },
+    {
+     "p": "Según la revisión Cochrane de 2011, ¿qué bajó más?",
+     "o": [
+      "La carga",
+      "La depresión",
+      "Las conductas de la persona cuidada"
+     ],
+     "ok": 1,
+     "por": "Bajó sobre todo la depresión, y algo la ansiedad y el estrés. La carga no cambió: para eso hacen falta otras ayudas."
+    },
+    {
+     "p": "¿Qué diferencia hay entre la culpa y la angustia moral?",
+     "o": [
+      "La culpa mira a una misma; la angustia moral, a lo que impide cuidar bien",
+      "Ninguna",
+      "La angustia moral solo la sienten las médicas"
+     ],
+     "ok": 0,
+     "por": "En el trabajo, mucha «culpa» es angustia moral: saber qué cuidado haría falta y no poder darlo por falta de tiempo o de plantilla."
+    }
+   ],
+   "sabias": "Reencuadrar los pensamientos es una parte de la terapia cognitivo-conductual, y los autores creen que puede funcionar mejor junto a otras ayudas, ajustado a los problemas de cada día (Vernooij-Dassen et al., 2011)."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Mi frase justa",
+     "t": "Escribe tu frase de culpa tal como suena. Al lado, escribe otra más justa contigo, como se la dirías a una amiga.",
+     "historia": "escribir mi frase de culpa y, al lado, otra más justa conmigo"
+    },
+    {
+     "corta": "Un rato con culpa",
+     "t": "Elige un rato corto fuera esta semana. Si aparece la culpa, nómbrala («ahí está») y quédate igual.",
+     "historia": "salir un rato corto y, si aparece la culpa, nombrarla y quedarme igual"
+    }
+   ],
+   "retorno": "¿Escribiste la frase o saliste? ¿Qué te dijo la culpa? ¿Qué pasó de verdad con la persona que cuidas?"
+  },
+  "historia": {
+   "pensaba": {
+    "mucho": "Pensaba que irme un rato era fallar a quien cuido.",
+    "aveces": "A veces pensaba que irme un rato era fallar.",
+    "nada": "Pensaba que la culpa no decidía por mí."
+   },
+   "hice": {
+    "a": "Hice caso a la culpa y me quedé.",
+    "b": "Hice un trato con la culpa: irme, pero sin soltar del todo.",
+    "c": "Hice algo nuevo: irme y permitirme estar en lo mío."
+   },
+   "ahora": "Vi que la culpa avisa de lo que me importa, pero no siempre dice la verdad. Esta semana voy a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "ambivalencia"
+  },
+  "saber_mas": "**Culpa:** la sensación de no hacer bastante o de hacerlo mal. Es de las emociones más frecuentes al cuidar. La revisión Cochrane de Vernooij-Dassen y colaboradoras (2011) encontró que el reencuadre cognitivo, una parte de la terapia cognitivo-conductual, redujo la depresión (diferencia media estandarizada de −0,66), la ansiedad (−0,21) y el estrés (−0,23) de familiares de personas con demencia, aunque no cambió cómo valoraban la carga. Las misiones beben también de la terapia de aceptación y compromiso: notar el pensamiento sin obedecerlo y hacer algo que importa. **En el trabajo**, mucha culpa es angustia moral.",
+  "corto": {
+   "pregunta": "¿Qué te diría una amiga que te quiere si oyera tu frase de culpa?",
+   "accion": "Hoy, escribe tu frase de culpa en un papel y, debajo, lo que te diría esa amiga."
+  },
+  "rutas": {
+   "A": "Si ya te permites ratos fuera, protégelos: también son parte de cuidar bien. Apunta cuándo es el próximo.",
+   "B": "Si la culpa no te deja salir, un grupo de apoyo ayuda a oír que a otras les pasa. Los hay en asociaciones de familiares y en programas forales como Sendian (Gipuzkoa) o Zainduz (Álava rural)."
+  },
+  "variantes": {
+   "trabajo": {
+    "escena": "Fatima es gerocultora en una residencia. Su turno acaba a las tres, pero si a las tres menos cinco alguien pide ayuda, se queda. Llega tarde a recoger a su hija casi cada día.",
+    "choque": {
+     "frase": "«Si me voy a mi hora, les dejo tirados.»"
+    },
+    "reflejo": {
+     "situacion": "Acaba tu turno. Una residente te pide que te quedes un rato más con ella. La compañera del turno siguiente ya ha llegado. ¿Qué te sale?",
+     "opciones": [
+      {
+       "id": "a",
+       "t": "«Me quedo: no estaría tranquila.»"
+      },
+      {
+       "id": "b",
+       "t": "«Me voy, pero llamo luego para preguntar.»"
+      },
+      {
+       "id": "c",
+       "t": "«Se la presento a mi compañera y me voy tranquila.»"
+      }
+     ]
+    }
+   }
+  }
+ },
+ {
+  "id": "ambivalencia",
+  "palabra": "Ambivalencia",
+  "resumen": "Querer y no aguantar caben en la misma persona.",
+  "perfil": "casa",
+  "familia": 2,
+  "ficha": "ambivalencia",
+  "riesgo": true,
+  "escena": "Karim cuida a su mujer, que tiene párkinson. La quiere como el primer día. Esta mañana, cuando le ha pedido el vaso por cuarta vez, ha cerrado los ojos y ha contado hasta diez.",
+  "choque": {
+   "frase": "«Le quiero y a veces no le aguanto.»",
+   "pregunta": "¿Te suena?",
+   "opciones": [
+    {
+     "id": "mucho",
+     "e": "🙋",
+     "t": "Mucho"
+    },
+    {
+     "id": "aveces",
+     "e": "🤔",
+     "t": "A veces"
+    },
+    {
+     "id": "nada",
+     "e": "🙂",
+     "t": "Nada"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Una amiga te pregunta qué tal llevas el cuidado. Hoy ha sido un día difícil, y también ha habido un momento bonito. ¿Qué te sale?",
+   "opciones": [
+    {
+     "id": "a",
+     "t": "«Bien, bien. Ahí vamos.»"
+    },
+    {
+     "id": "b",
+     "t": "«Le cuento solo lo difícil.»"
+    },
+    {
+     "id": "c",
+     "t": "«Le cuento las dos cosas.»"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "En 529 familiares de personas con alzhéimer, la satisfacción de cuidar y la carga salieron como dos medidas distintas, no como los dos extremos de una sola. Pueden darse a la vez.",
+   "fuente": "Lawton et al. (1991)",
+   "url": "https://doi.org/10.1093/geronj/46.4.P181",
+   "busca": "Lo que buscábamos al callar lo difícil era no traicionar el cariño. Verlo así quita peso: sentir rechazo a ratos no borra el amor, y decirlo no te hace peor persona.",
+   "saltos": [
+    {
+     "t": "Si a veces no le aguanto, es que no le quiero",
+     "p": "Una cosa no anula la otra. La satisfacción y la carga se miden por separado porque pueden estar las dos a la vez."
+    },
+    {
+     "t": "Si cuento lo difícil, me juzgarán",
+     "p": "Puede pasar, y por eso se elige a quién contarlo. Callarlo del todo suele hacer que pese más."
+    },
+    {
+     "t": "No salté: conté las dos cosas",
+     "p": "Bien visto. Nombrar lo bueno y lo difícil a la vez es más fiel a lo que vives."
+    }
+   ],
+   "referencia": "Lawton, M. P., Moss, M., Kleban, M. H., Glicksman, A. y Rovine, M. (1991). A two-factor model of caregiving appraisal and psychological well-being. Journal of Gerontology, 46(4), P181-P189."
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Qué es la ambivalencia al cuidar?",
+     "o": [
+      "No querer a la persona que cuidas",
+      "Un trastorno mental",
+      "Sentir a la vez cariño y rechazo, ganas de cuidar y ganas de huir"
+     ],
+     "ok": 2,
+     "por": "Es sentir dos cosas opuestas a la vez. Es frecuente y no hace a nadie mala persona."
+    },
+    {
+     "p": "En el estudio de 1991, en hijas e hijos que cuidaban mucho, ¿qué pasó?",
+     "o": [
+      "Crecieron la carga y también la satisfacción",
+      "Solo creció la carga",
+      "No cambió nada"
+     ],
+     "ok": 0,
+     "por": "Cuidar más se asoció a más carga y también a más satisfacción. Las dos cosas pueden crecer juntas."
+    },
+    {
+     "p": "En un estudio canadiense, ¿cuántas personas que cuidaban encontraron algo bueno en cuidar?",
+     "o": [
+      "Una de cada diez",
+      "Siete de cada diez",
+      "Ninguna"
+     ],
+     "ok": 1,
+     "por": "El 73 % de 289 personas que cuidaban encontró al menos una cosa buena (Cohen et al., 2002). Convive con lo difícil."
+    }
+   ],
+   "sabias": "En ese estudio, en los cónyuges, la satisfacción de cuidar se asoció a más emociones positivas, y la carga, a más depresión: cada una pesa en un lado distinto (Lawton et al., 1991)."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Contar las dos cosas",
+     "t": "Cuéntale a una persona de confianza las dos cosas de esta semana: una buena y una difícil.",
+     "historia": "contarle a una persona de confianza las dos cosas, la buena y la difícil"
+    },
+    {
+     "corta": "Dos columnas",
+     "t": "Esta noche, en un papel, haz dos columnas: lo que hoy te ha costado y lo que hoy te ha dado. Una línea en cada una.",
+     "historia": "escribir dos columnas: lo que hoy me costó y lo que hoy me dio"
+    }
+   ],
+   "retorno": "¿A quién se lo contaste o qué escribiste? ¿Cómo te sentiste al decir las dos cosas? ¿Cambió algo?"
+  },
+  "historia": {
+   "pensaba": {
+    "mucho": "Pensaba que querer y no aguantar no podían ir juntos.",
+    "aveces": "A veces me sentía mal por no aguantar a quien quiero.",
+    "nada": "Pensaba que eso de no aguantar no iba conmigo."
+   },
+   "hice": {
+    "a": "Hice lo de siempre: decir que todo iba bien.",
+    "b": "Hice sitio a lo difícil y me guardé lo bueno.",
+    "c": "Hice algo nuevo: contar las dos cosas."
+   },
+   "ahora": "Vi que el cariño y el cansancio pueden ir juntos. Esta semana voy a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "atrapada"
+  },
+  "saber_mas": "**Ambivalencia:** sentir a la vez cariño y rechazo. Lawton y colaboradores (1991) estudiaron a 285 cónyuges y 244 hijas e hijos que cuidaban a una persona con alzhéimer y propusieron un modelo de dos factores: la **satisfacción** de cuidar y la **carga** son dos valoraciones distintas, con efectos distintos. En 289 personas que cuidaban en Canadá, el 73 % encontró al menos algo positivo (Cohen et al., 2002). Nombrar las dos cosas sin elegir una ayuda a no vivir la ambivalencia como culpa.",
+  "corto": {
+   "pregunta": "¿Qué te ha costado hoy y qué te ha dado hoy?",
+   "accion": "Antes de dormir, di en voz alta, o escribe, una cosa de cada."
+  },
+  "rutas": {
+   "A": "Si hay momentos que te dan sentido, protégelos: guárdales sitio en el día, aunque sean cinco minutos.",
+   "B": "Si lo difícil ya pesa más que lo bueno, hay apoyo psicológico para quien cuida en programas forales como Sendian (Gipuzkoa) o Zainduz (Álava rural). En Bizkaia, pregunta en la diputación foral."
+  },
+  "variantes": {
+   "trabajo": {
+    "escena": "Wilson es auxiliar de ayuda a domicilio. Cada mañana va a casa de Pilar, que el mismo día le cuenta chistes y le insulta. Le tiene cariño. Algunos días sale del portal con un nudo en el estómago.",
+    "choque": {
+     "frase": "«Le tengo cariño y a veces no la soporto.»"
+    },
+    "reflejo": {
+     "situacion": "En el descanso, una compañera te pregunta qué tal con esa usuaria. Hoy ha sido difícil, y también ha habido un momento bonito. ¿Qué te sale?",
+     "opciones": [
+      {
+       "id": "a",
+       "t": "«Bien, bien. Ahí vamos.»"
+      },
+      {
+       "id": "b",
+       "t": "«Le cuento solo lo difícil.»"
+      },
+      {
+       "id": "c",
+       "t": "«Le cuento las dos cosas.»"
+      }
+     ]
+    }
+   }
+  }
+ },
+ {
+  "id": "atrapada",
+  "palabra": "Atrapada",
+  "resumen": "Sentirse atrapada no es un defecto tuyo: depende de la situación, y la situación se puede tocar.",
+  "perfil": "casa",
+  "familia": 2,
+  "ficha": "cautividad-del-rol",
+  "riesgo": true,
+  "escena": "Aitziber pensaba mudarse a otra ciudad cuando su padre empezó a olvidar cosas. Han pasado cuatro años. A veces, en el autobús, piensa en la vida que tenía planeada.",
+  "choque": {
+   "frase": "«Yo no elegí esto.»",
+   "pregunta": "¿Te suena?",
+   "opciones": [
+    {
+     "id": "mucho",
+     "e": "🙋",
+     "t": "Mucho"
+    },
+    {
+     "id": "aveces",
+     "e": "🤔",
+     "t": "A veces"
+    },
+    {
+     "id": "nada",
+     "e": "🙂",
+     "t": "Nada"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Una amiga te propone un plan para dentro de un mes. Tendrías que organizar quién se queda en casa. ¿Qué te sale?",
+   "opciones": [
+    {
+     "id": "a",
+     "t": "«No puedo, ya sabes cómo está todo.»"
+    },
+    {
+     "id": "b",
+     "t": "«Te digo algo más adelante.»"
+    },
+    {
+     "id": "c",
+     "t": "«Sí. Lo apunto y busco quién se queda.»"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "En 555 personas que cuidaban a un familiar con alzhéimer, seguidas tres años, sentirse atrapada en el papel no bajaba si todo seguía igual. Se alivió cuando la situación cambió, por ejemplo con un ingreso en residencia.",
+   "fuente": "Aneshensel et al. (1993)",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/8463635/",
+   "busca": "Lo que buscábamos con «yo no elegí esto» era que alguien lo viera. Verlo así quita culpa: estar atrapada no es un fallo tuyo, sino de la situación. Y la situación se puede tocar, aunque sea un poco.",
+   "saltos": [
+    {
+     "t": "Se me pasará con el tiempo",
+     "p": "En ese estudio, sentirse atrapada no se pasaba sola mientras la situación seguía igual. Esperar no basta: algo tiene que moverse."
+    },
+    {
+     "t": "La única salida es dejar de cuidar",
+     "p": "No es todo o nada. Entre seguir igual y dejarlo hay muchos cambios pequeños: una hora propia, un servicio, otra persona que te releva."
+    },
+    {
+     "t": "No salté: busqué un hueco",
+     "p": "Bien visto. Apuntar el plan y buscar quién se queda es una forma de tocar la situación, aunque sea un poco."
+    }
+   ],
+   "referencia": "Aneshensel, C. S., Pearlin, L. I. y Schuler, R. H. (1993). Stress, role captivity, and the cessation of caregiving. Journal of Health and Social Behavior, 34(1), 54-70."
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Qué es la «cautividad del rol»?",
+     "o": [
+      "Estar obligada por ley a quedarse en casa",
+      "Sentirse dentro del papel de cuidadora sin haberlo elegido",
+      "Cuidar a más de una persona"
+     ],
+     "ok": 1,
+     "por": "Es sentirse atrapada en el papel. No habla de cuánto quieres, sino de cuánto margen tienes."
+    },
+    {
+     "p": "En el estudio de 1993, ¿qué dos cosas pesaron más en el ingreso en residencia?",
+     "o": [
+      "La edad y el barrio",
+      "La gravedad del alzhéimer y el clima",
+      "Sentirse atrapada y la tensión económica"
+     ],
+     "ok": 2,
+     "por": "Pesaron más dos consecuencias del cuidado que no son tareas: sentirse atrapada y el dinero. Lo que más pesa no siempre es la tarea."
+    },
+    {
+     "p": "¿Cómo se llaman las tensiones que el cuidado arrastra fuera de las tareas, como el dinero o la identidad?",
+     "o": [
+      "Estresores secundarios",
+      "Estresores primarios",
+      "Carga objetiva"
+     ],
+     "ok": 0,
+     "por": "En el modelo del proceso de estrés, las tareas son estresores primarios; lo que arrastran al dinero, la familia o la identidad, secundarios."
+    }
+   ],
+   "sabias": "Según el modelo del proceso de estrés, el apoyo y la forma de afrontar las cosas pueden frenar lo que pesa en varios puntos de la cadena (Pearlin et al., 1990)."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Una hora protegida",
+     "t": "Elige una hora a la semana solo para ti y protégela como una cita médica: con día, hora y quién se queda.",
+     "historia": "elegir una hora a la semana solo para mí y protegerla como una cita médica"
+    },
+    {
+     "corta": "Algo que elijo",
+     "t": "Escribe una cosa de tu semana que sí eliges tú, por pequeña que sea, y hazla a propósito.",
+     "historia": "escribir una cosa de mi semana que sí elijo yo y hacerla a propósito"
+    }
+   ],
+   "retorno": "¿Pudiste guardar esa hora o hacer esa cosa? ¿Qué hiciste con ella? ¿Cómo te sentiste?"
+  },
+  "historia": {
+   "pensaba": {
+    "mucho": "Pensaba que no había elegido nada de esto y que no tenía salida.",
+    "aveces": "A veces pensaba que esto no lo había elegido yo.",
+    "nada": "Pensaba que sentirme atrapada no iba conmigo."
+   },
+   "hice": {
+    "a": "Hice lo de siempre: decir que no podía.",
+    "b": "Hice como otras veces: dejarlo para más adelante.",
+    "c": "Hice algo nuevo: decir que sí y buscar un hueco."
+   },
+   "ahora": "Vi que sentirme atrapada depende de la situación, y que la situación se puede tocar un poco. Esta semana voy a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "perderse"
+  },
+  "saber_mas": "**Cautividad del rol** (*role captivity*): sentirse dentro del papel de cuidadora sin haberlo elegido. Aneshensel, Pearlin y Schuler (1993) siguieron durante tres años a 555 personas que cuidaban a un familiar con alzhéimer. Sentirse atrapada y la tensión económica, dos **estresores secundarios** (consecuencias del cuidado que no son tareas), fueron lo que más pesó en el ingreso en residencia. Mientras el cuidado en casa seguía, la sensación se mantenía estable; con el ingreso, se alivió. Es una pieza del modelo del proceso de estrés (Pearlin et al., 1990).",
+  "corto": {
+   "pregunta": "¿Hay algo, aunque sea pequeño, que esta semana sí puedas elegir tú?",
+   "accion": "Mañana, haz esa cosa a propósito, aunque dure diez minutos."
+  },
+  "rutas": {
+   "A": "Si tienes un rato propio que te sostiene, protégelo como una cita médica. Que no sea lo primero que se cae cuando hay lío.",
+   "B": "Hay servicios que dan horas libres: centro de día, ayuda a domicilio y estancias de respiro. En Euskadi los gestionan las diputaciones forales; se piden a través de los servicios sociales de tu ayuntamiento."
+  },
+  "variantes": {
+   "trabajo": {
+    "escena": "Daniela vino de Colombia y trabaja como auxiliar de ayuda a domicilio. Necesita el sueldo, y sus papeles dependen de este contrato. Le gusta cuidar, pero hay días en que siente que no tiene otra opción.",
+    "choque": {
+     "frase": "«No puedo dejar este trabajo.»"
+    },
+    "reflejo": {
+     "situacion": "Te ofrecen un curso gratuito por la tarde, fuera de tu horario. Para ir, tendrías que cambiar algo de tu semana. ¿Qué te sale?",
+     "opciones": [
+      {
+       "id": "a",
+       "t": "«No puedo, ya sabes cómo está todo.»"
+      },
+      {
+       "id": "b",
+       "t": "«Lo miro más adelante.»"
+      },
+      {
+       "id": "c",
+       "t": "«Sí. Me apunto y busco cómo cuadrarlo.»"
+      }
+     ]
+    }
+   }
+  }
+ },
+ {
+  "id": "perderse",
+  "palabra": "Perderse",
+  "resumen": "Cuidar puede ocuparlo todo. Recuperar algo tuyo, aunque sea poco, cuenta.",
+  "perfil": "casa",
+  "familia": 2,
+  "ficha": "perdida-del-yo",
+  "riesgo": true,
+  "escena": "Marisol cantaba en un coro antes de que su marido enfermara. Hace dos años que no va. El otro día sonó una canción en la radio y no supo si le gustaba o no.",
+  "choque": {
+   "frase": "«Ya no sé ni lo que me gusta.»",
+   "pregunta": "¿Te suena?",
+   "opciones": [
+    {
+     "id": "mucho",
+     "e": "🙋",
+     "t": "Mucho"
+    },
+    {
+     "id": "aveces",
+     "e": "🤔",
+     "t": "A veces"
+    },
+    {
+     "id": "nada",
+     "e": "🙂",
+     "t": "Nada"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Por un cambio de horarios, tienes una hora libre sin nada que hacer. Estás en casa. ¿Qué te sale?",
+   "opciones": [
+    {
+     "id": "a",
+     "t": "«Adelanto la colada y la cena.»"
+    },
+    {
+     "id": "b",
+     "t": "«Me siento y no sé qué hacer.»"
+    },
+    {
+     "id": "c",
+     "t": "«Pongo música de la que me gustaba.»"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "Perderse a una misma por el cuidado se asoció a más síntomas de depresión en familiares de personas con alzhéimer. Quien tenía menos contactos y menos papeles fuera del cuidado se perdía más.",
+   "fuente": "Skaff y Pearlin (1992)",
+   "url": "https://doi.org/10.1093/geront/32.5.656",
+   "busca": "Lo que buscábamos al dejarlo todo era cuidar bien. Verlo así no pide dejar de cuidar: pide guardar un hilo con quien eras. Diez minutos tuyos también cuentan.",
+   "saltos": [
+    {
+     "t": "Lo mío ya volverá cuando esto acabe",
+     "p": "Puede tardar, y mientras tanto se va apagando. Mantener un hilo pequeño ahora es más fácil que recuperarlo todo después."
+    },
+    {
+     "t": "Si hago algo mío, le quito tiempo",
+     "p": "Diez minutos no cambian el cuidado, pero pueden cambiar cómo llegas a él. Tener otros papeles se asoció a perderse menos."
+    },
+    {
+     "t": "No salté: puse mi música",
+     "p": "Bien visto. Volver a algo tuyo, aunque sea una canción, es un primer hilo con quien eras."
+    }
+   ],
+   "referencia": "Skaff, M. M. y Pearlin, L. I. (1992). Caregiving: Role engulfment and the loss of self. The Gerontologist, 32(5), 656-664."
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Qué es la «absorción del rol»?",
+     "o": [
+      "Aprender a cuidar muy rápido",
+      "Cuando el papel de cuidadora lo ocupa todo y se pierden los demás",
+      "Cuidar sin cobrar"
+     ],
+     "ok": 1,
+     "por": "Es cuando cuidar se come los otros papeles: amiga, trabajadora, una misma. De ahí puede venir la pérdida del yo."
+    },
+    {
+     "p": "En el estudio de 1992, ¿en quién fue más frecuente perderse a una misma?",
+     "o": [
+      "En cónyuges, mujeres y personas más jóvenes que cuidaban",
+      "En hombres mayores",
+      "En quien llevaba poco tiempo cuidando"
+     ],
+     "ok": 0,
+     "por": "Fue más frecuente en cónyuges, mujeres y quienes cuidaban siendo más jóvenes. Nadie elige perderse: tiene que ver con la situación."
+    },
+    {
+     "p": "¿Con qué se asoció tener menos papeles fuera del cuidado?",
+     "o": [
+      "Con más autoestima",
+      "Con nada",
+      "Con perderse más a una misma"
+     ],
+     "ok": 2,
+     "por": "Menos contacto social y menos papeles fuera del cuidado se asociaron a perderse más; y perderse, a menos autoestima y más síntomas de depresión."
+    }
+   ],
+   "sabias": "Perderse a una misma también se asoció a una menor sensación de control sobre la propia vida, lo que se llama «sentido de dominio» (Skaff y Pearlin, 1992)."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Diez minutos de antes",
+     "t": "Recupera diez minutos de algo tuyo de antes: una canción, una llamada, un paseo. Elige el día.",
+     "historia": "recuperar diez minutos de algo mío de antes"
+    },
+    {
+     "corta": "Una lista corta",
+     "t": "Escribe tres cosas que te gustaban antes de cuidar. Marca la más fácil de recuperar un poco.",
+     "historia": "escribir tres cosas que me gustaban antes de cuidar y marcar la más fácil de recuperar"
+    }
+   ],
+   "retorno": "¿Qué recuperaste o qué apuntaste? ¿Cómo te sentiste durante esos minutos? ¿Lo repetirías?"
+  },
+  "historia": {
+   "pensaba": {
+    "mucho": "Pensaba que ya no sabía ni lo que me gustaba.",
+    "aveces": "A veces pensaba que me había perdido por el camino.",
+    "nada": "Pensaba que seguía sabiendo lo que me gusta."
+   },
+   "hice": {
+    "a": "Hice lo de siempre: llenar el hueco con más tareas.",
+    "b": "Hice una pausa y me encontré sin saber qué hacer.",
+    "c": "Hice algo nuevo: volver a algo mío."
+   },
+   "ahora": "Vi que perderse por cuidar no es un fallo y que un hilo pequeño con quien era también cuenta. Esta semana voy a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "esta-y-no-esta"
+  },
+  "saber_mas": "**Pérdida del yo** y **absorción del rol**: Skaff y Pearlin (1992) describieron cómo el papel de cuidadora puede «engullir» los demás. En cónyuges e hijas e hijos que cuidaban a alguien con alzhéimer, la pérdida del yo fue más frecuente en cónyuges, mujeres y personas más jóvenes, y se asoció a menos contacto social y menos papeles fuera del cuidado, a menor autoestima y sentido de dominio, y a más síntomas de depresión. Son asociaciones, no causas: el estudio no dice que una cosa provoque la otra.",
+  "corto": {
+   "pregunta": "¿Qué te gustaba hacer antes de cuidar?",
+   "accion": "Hoy o mañana, dedica diez minutos a una cosa de esa lista: una canción vale."
+  },
+  "rutas": {
+   "A": "Si aún conservas algo tuyo (un coro, una amiga, un paseo), protégelo. Te recuerda quién eres además de cuidar.",
+   "B": "Muchas asociaciones de familiares organizan grupos y actividades para quien cuida, no solo para la persona cuidada. Pregunta en los servicios sociales de tu ayuntamiento o en la asociación de la enfermedad de tu familiar."
+  },
+  "variantes": {
+   "trabajo": {
+    "escena": "Svetlana trabaja de noche en una residencia y duerme de día. Hace meses que no queda con nadie. Su vida es el turno y la cama. Antes pintaba.",
+    "reflejo": {
+     "situacion": "Por un cambio de cuadrante, libras un día entre semana. No tienes nada previsto. ¿Qué te sale?",
+     "opciones": [
+      {
+       "id": "a",
+       "t": "«Adelanto recados y limpieza.»"
+      },
+      {
+       "id": "b",
+       "t": "«Me quedo en casa sin saber qué hacer.»"
+      },
+      {
+       "id": "c",
+       "t": "«Hago algo que me gustaba antes.»"
+      }
+     ]
+    }
+   }
+  }
+ },
+ {
+  "id": "esta-y-no-esta",
+  "palabra": "Está y no está",
+  "resumen": "Perder a alguien que sigue aquí tiene nombre: pérdida ambigua.",
+  "perfil": "casa",
+  "familia": 2,
+  "ficha": "perdida-ambigua",
+  "riesgo": true,
+  "escena": "Nerea visita a su padre cada tarde. Él sonríe, le coge la mano y la llama por el nombre de su hermana. Nerea vuelve a casa sin saber si está de duelo o no.",
+  "choque": {
+   "frase": "«Está aquí, pero ya no es él.»",
+   "pregunta": "¿Te suena?",
+   "opciones": [
+    {
+     "id": "mucho",
+     "e": "🙋",
+     "t": "Mucho"
+    },
+    {
+     "id": "aveces",
+     "e": "🤔",
+     "t": "A veces"
+    },
+    {
+     "id": "nada",
+     "e": "🙂",
+     "t": "Nada"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Alguien te dice: «Por lo menos todavía lo tienes». Tú sientes que llevas tiempo perdiéndolo. ¿Qué te sale?",
+   "opciones": [
+    {
+     "id": "a",
+     "t": "«Asiento y cambio de tema.»"
+    },
+    {
+     "id": "b",
+     "t": "«Me callo, pero me duele.»"
+    },
+    {
+     "id": "c",
+     "t": "«Le digo que son las dos cosas: está y no está.»"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "Este dolor tiene nombre desde los años setenta: **pérdida ambigua**. Lo propuso la investigadora y terapeuta familiar Pauline Boss: perder a alguien que sigue presente, como pasa a menudo con la demencia.",
+   "fuente": "Boss (2016)",
+   "url": "https://doi.org/10.1111/jftr.12152",
+   "busca": "Lo que buscábamos con la frase era que se entendiera algo que no tiene ritual ni pésame. Ponerle nombre no lo resuelve, pero quita la sensación de estar haciéndolo mal.",
+   "saltos": [
+    {
+     "t": "Si me duele, es que ya le doy por perdido",
+     "p": "No. Puedes estar de duelo por lo que se va y querer a quien sigue. En la pérdida ambigua, las dos cosas son ciertas."
+    },
+    {
+     "t": "Cuando lo entienda del todo, dejará de doler",
+     "p": "Esta pérdida no tiene un final claro, como otras. A veces no se trata de resolverla, sino de poder sostener las dos cosas a la vez."
+    },
+    {
+     "t": "No salté: dije las dos cosas",
+     "p": "Bien visto. «Está y no está» describe lo que vives sin obligarte a elegir."
+    }
+   ],
+   "referencia": "Boss, P. (2016). The context and process of theory development: The story of ambiguous loss. Journal of Family Theory & Review, 8(3), 269-286."
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Qué es la pérdida ambigua?",
+     "o": [
+      "Perder a alguien que sigue presente, o que está ausente sin saberse si volverá",
+      "Un duelo que dura poco",
+      "Una pérdida que no duele"
+     ],
+     "ok": 0,
+     "por": "Puede ser física, alguien desaparecido, o psicológica, alguien presente que ya no es quien era, como pasa a menudo en la demencia."
+    },
+    {
+     "p": "En un estudio de 1990 con 70 personas que cuidaban, ¿qué se asoció más a la depresión?",
+     "o": [
+      "La gravedad de la demencia",
+      "La edad de quien cuidaba",
+      "Ver a la pareja como «psicológicamente ausente»"
+     ],
+     "ok": 2,
+     "por": "Cuanto más ausente se veía a la pareja, más depresión y menos sensación de control. La gravedad de la demencia, en cambio, no se asoció."
+    },
+    {
+     "p": "¿Con quién empezó a estudiar Pauline Boss la pérdida ambigua?",
+     "o": [
+      "Con residencias de mayores",
+      "Con familias de pilotos desaparecidos en la guerra de Vietnam",
+      "Con hospitales infantiles"
+     ],
+     "ok": 1,
+     "por": "Después vio lo mismo en la demencia: la persona está y no está. Lo contó al gran público en el libro *Ambiguous loss* (1999)."
+    }
+   ],
+   "sabias": "En 84 cónyuges cuyo familiar con alzhéimer había ingresado en una residencia, la duda sobre si seguía «dentro» de la familia se asoció mucho a los síntomas de depresión (Kaplan y Boss, 1999)."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Lo que queda",
+     "t": "Escribe una cosa que has perdido de esa persona y una que todavía tienes con ella.",
+     "historia": "escribir una cosa que he perdido de esa persona y una que todavía tengo"
+    },
+    {
+     "corta": "Decirlo con nombre",
+     "t": "Cuéntale a alguien de confianza que lo que sientes tiene nombre, pérdida ambigua, y qué es lo que más echas de menos.",
+     "historia": "contarle a alguien de confianza qué es lo que más echo de menos"
+    }
+   ],
+   "retorno": "¿Qué escribiste o qué contaste? ¿Qué sentiste al poner nombre a lo que queda? ¿Te sirvió?"
+  },
+  "historia": {
+   "pensaba": {
+    "mucho": "Pensaba que estaba aquí, pero ya no era la persona que conocía.",
+    "aveces": "A veces sentía que ya no era la persona que conocía.",
+    "nada": "Pensaba que seguía siendo la persona que conocía."
+   },
+   "hice": {
+    "a": "Hice lo de siempre: asentir y cambiar de tema.",
+    "b": "Hice como otras veces: callarme, aunque me doliera.",
+    "c": "Hice algo nuevo: decir que está y no está."
+   },
+   "ahora": "Vi que este dolor tiene nombre y que no hace falta resolverlo para vivir con él. Esta semana voy a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "descansar"
+  },
+  "saber_mas": "**Pérdida ambigua** (*ambiguous loss*): perder a alguien que sigue presente, como en la demencia, o que está ausente sin saberse si volverá. Pauline Boss acuñó el término a mediados de los años setenta, a partir de sus estudios con familias de pilotos desaparecidos en Vietnam (Boss, 2016), y lo divulgó en *Ambiguous loss* (1999). En 70 personas que cuidaban a alguien con demencia, ver a la pareja «psicológicamente ausente» se asoció a más depresión y menos sensación de control; la gravedad de la demencia, no (Boss et al., 1990). Se relaciona con el **duelo anticipado**.",
+  "corto": {
+   "pregunta": "¿Qué has perdido de esa persona y qué sigue ahí?",
+   "accion": "Hoy, escribe una cosa de cada en un papel y guárdalo."
+  },
+  "rutas": {
+   "A": "Si aún compartís momentos (una canción, una mano, una mirada), protégelos. Son lo que todavía tenéis.",
+   "B": "Los grupos de apoyo para familiares de personas con demencia hablan de este duelo. En Euskadi, pregunta en AFA Bizkaia, AFAGI (Gipuzkoa) o AFARABA (Álava), o en los servicios sociales de tu ayuntamiento."
+  },
+  "variantes": {
+   "trabajo": {
+    "escena": "Amaia es enfermera en una unidad de demencias. Lleva cinco años con Ignacio. Antes le hablaba de su pueblo; ahora ya no la reconoce. Amaia no sabe si tiene derecho a sentirse triste.",
+    "reflejo": {
+     "situacion": "Una compañera te dice: «Es solo un residente, no te lo lleves a casa». Tú sientes que lo estás perdiendo poco a poco. ¿Qué te sale?",
+     "opciones": [
+      {
+       "id": "a",
+       "t": "«Asiento y cambio de tema.»"
+      },
+      {
+       "id": "b",
+       "t": "«Me callo, pero me duele.»"
+      },
+      {
+       "id": "c",
+       "t": "«Le digo que son las dos cosas: está y no está.»"
+      }
+     ]
+    }
+   }
+  }
+ },
+ {
+  "id": "descansar",
+  "palabra": "Descansar",
+  "resumen": "Descansar no es abandonar: es parte de cuidar.",
+  "perfil": "casa",
+  "familia": 3,
+  "ficha": "respiro",
+  "riesgo": true,
+  "escena": "Pilar podría pedir unos días de respiro y no lo hace. Le parece que dejar a su madre unos días en una residencia es abandonarla. Lleva dos años sin dormir una noche seguida.",
+  "choque": {
+   "frase": "«Descansar es abandonarle.»",
+   "pregunta": "¿Te suena?",
+   "opciones": [
+    {
+     "id": "mucho",
+     "e": "🙋",
+     "t": "Mucho"
+    },
+    {
+     "id": "aveces",
+     "e": "🤔",
+     "t": "A veces"
+    },
+    {
+     "id": "nada",
+     "e": "🙂",
+     "t": "Nada"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "La trabajadora social te habla de unos días de estancia de respiro para la persona que cuidas. ¿Qué te sale?",
+   "opciones": [
+    {
+     "id": "a",
+     "t": "«No, gracias. No lo necesito.»"
+    },
+    {
+     "id": "b",
+     "t": "«Lo pienso, pero me da miedo cómo estará.»"
+    },
+    {
+     "id": "c",
+     "t": "«Pregunto cómo funciona y cuándo podría ser.»"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "La guía británica NICE sobre el apoyo a personas cuidadoras pide a los profesionales hablar con regularidad con quien cuida del valor de tomarse descansos, y que esos descansos se ajusten a lo que necesita.",
+   "fuente": "NICE (2020), guía NG150",
+   "url": "https://www.nice.org.uk/guidance/ng150",
+   "busca": "Lo que buscábamos con «descansar es abandonarle» era protegerle. Verlo así cambia el sentido: el descanso no es un premio ni una huida, es algo de lo que la guía pide hablar con quien cuida.",
+   "saltos": [
+    {
+     "t": "Si descanso, le estoy abandonando",
+     "p": "Descansar unas horas o unos días mientras otra persona cuida no es dejar de cuidar. Es organizar el cuidado para que dure."
+    },
+    {
+     "t": "Está demostrado que el respiro funciona",
+     "p": "Cuidado con este salto. Una revisión Cochrane no halló beneficios demostrados, por falta de buenos estudios. Por eso la guía lo recomienda igual, ajustado a cada persona."
+    },
+    {
+     "t": "No salté: pregunté cómo funciona",
+     "p": "Bien visto. Preguntar no te compromete a nada y te da datos para decidir."
+    }
+   ],
+   "referencia": "National Institute for Health and Care Excellence [NICE]. (2020). Supporting adult carers (NICE guideline NG150), recomendaciones 1.5.2 y 1.5.3."
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Qué es el «respiro»?",
+     "o": [
+      "Cualquier servicio que da descanso a quien cuida: centro de día, estancias cortas o alguien que te sustituye",
+      "Un medicamento",
+      "Una baja laboral"
+     ],
+     "ok": 0,
+     "por": "Respiro es todo lo que te da un descanso: unas horas, unos días, una persona que te releva."
+    },
+    {
+     "p": "¿Qué encontró la revisión Cochrane de 2014 sobre el respiro en demencia?",
+     "o": [
+      "Que hace daño",
+      "Que no hay beneficios demostrados, por falta de buenos estudios",
+      "Que lo resuelve todo"
+     ],
+     "ok": 1,
+     "por": "Eran cuatro ensayos con 753 personas, con evidencia de muy baja calidad. Los autores avisan: puede que falte investigación, no que no sirva."
+    },
+    {
+     "p": "Según la guía NICE, ¿cómo deben ser los descansos?",
+     "o": [
+      "Iguales para todas",
+      "Solo en verano",
+      "Ajustados a quien cuida: duración, momento, frecuencia y tipo"
+     ],
+     "ok": 2,
+     "por": "La guía pide que se adapten a cada persona y que sean fiables, sin cambios de última hora que añadan estrés."
+    }
+   ],
+   "sabias": "En Álava, el programa foral Zainduz ofrece a cuidadoras de zonas rurales estancias de respiro de hasta 45 días al año (Diputación Foral de Álava)."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Preguntar por el respiro",
+     "t": "Pregunta en los servicios sociales de tu ayuntamiento qué respiro hay en tu zona y cómo se pide.",
+     "historia": "preguntar en los servicios sociales de mi ayuntamiento qué respiro hay en mi zona"
+    },
+    {
+     "corta": "Un descanso de prueba",
+     "t": "Organiza un descanso corto de prueba, dos o tres horas, con alguien de confianza o un servicio. Luego apunta qué tal fue para los dos.",
+     "historia": "organizar un descanso corto de prueba y apuntar qué tal fue"
+    }
+   ],
+   "retorno": "¿Preguntaste o lo probaste? ¿Qué te dijeron o qué pasó? ¿Cómo estuvo la persona que cuidas y cómo estuviste tú?"
+  },
+  "historia": {
+   "pensaba": {
+    "mucho": "Pensaba que descansar era abandonar a quien cuido.",
+    "aveces": "A veces pensaba que descansar era fallar.",
+    "nada": "Pensaba que descansar no me costaba."
+   },
+   "hice": {
+    "a": "Hice lo de siempre: decir que no lo necesitaba.",
+    "b": "Hice sitio a la idea, aunque me diera miedo.",
+    "c": "Hice algo nuevo: preguntar cómo organizarlo."
+   },
+   "ahora": "Vi que descansar también es parte de cuidar. Esta semana voy a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "lo-que-te-corresponde"
+  },
+  "saber_mas": "**Respiro:** cualquier servicio que da descanso a quien cuida: centro de día, estancias temporales o una persona que la sustituye en casa. La guía NICE NG150 (2020) pide hablar con regularidad del valor de los descansos y ajustarlos a cada persona. La revisión Cochrane de Maayan y colaboradoras (2014), con cuatro ensayos y 753 participantes, no encontró beneficios ni daños demostrados, con evidencia de muy baja calidad: los autores advierten que puede reflejar falta de investigación, no falta de beneficio.",
+  "corto": {
+   "pregunta": "¿Cuándo fue la última vez que descansaste unas horas sin estar pendiente?",
+   "accion": "Mañana, pregunta a una persona o a tu ayuntamiento por una tarde de relevo."
+  },
+  "rutas": {
+   "A": "Si ya tienes un descanso que funciona, cuídalo: que sea fijo y fiable. Si lo cambian a última hora, dilo.",
+   "B": "En Euskadi hay respiro: en Gipuzkoa, Sendian (hasta cinco días al mes); en Bizkaia, una ayuda para hasta 30 días al año; en Álava rural, Zainduz. Infórmate en tu ayuntamiento o en tu diputación foral."
+  },
+  "variantes": {
+   "trabajo": {
+    "escena": "Josune es gerocultora. En su turno hay veinte minutos de descanso que casi nunca toma: siempre hay un timbre, una caída o una compañera de baja. Come de pie en el office.",
+    "choque": {
+     "frase": "«Si paro, la planta se queda sola.»"
+    },
+    "reflejo": {
+     "situacion": "Te toca el descanso. Suena un timbre y una compañera ya va hacia allí. ¿Qué te sale?",
+     "opciones": [
+      {
+       "id": "a",
+       "t": "«Me salto el descanso: no lo necesito.»"
+      },
+      {
+       "id": "b",
+       "t": "«Me siento, pero pendiente del timbre.»"
+      },
+      {
+       "id": "c",
+       "t": "«Paro y pregunto cómo organizar los descansos del equipo.»"
+      }
+     ]
+    }
+   }
+  }
+ },
+ {
+  "id": "lo-que-te-corresponde",
+  "palabra": "Lo que te corresponde",
+  "resumen": "La ley reconoce a la persona cuidadora principal. Saber qué dice ayuda a pedir.",
+  "perfil": "casa",
+  "familia": 5,
+  "ficha": "cuidadora-principal",
+  "riesgo": true,
+  "escena": "Rocío cuida a su tía desde hace seis años. Nunca ha pedido nada: creía que las ayudas eran para otras familias. Una vecina le cuenta que la ley acaba de reconocer a quien cuida.",
+  "choque": {
+   "frase": "«Esto me toca a mí y punto.»",
+   "pregunta": "¿Te suena?",
+   "opciones": [
+    {
+     "id": "mucho",
+     "e": "🙋",
+     "t": "Mucho"
+    },
+    {
+     "id": "aveces",
+     "e": "🤔",
+     "t": "A veces"
+    },
+    {
+     "id": "nada",
+     "e": "🙂",
+     "t": "Nada"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Una vecina te cuenta que pidió la valoración de dependencia para su padre y le asignaron servicios. ¿Qué te sale?",
+   "opciones": [
+    {
+     "id": "a",
+     "t": "«Eso no es para nosotras: nos apañamos.»"
+    },
+    {
+     "id": "b",
+     "t": "«Me interesa, pero no sé por dónde empezar.»"
+    },
+    {
+     "id": "c",
+     "t": "«Le pregunto dónde lo pidió.»"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "Con la reforma de octubre de 2026, la ley de dependencia define a la **persona cuidadora principal**: quien dedica más tiempo a los cuidados y figura como tal en el Plan Individual de Atención. Y le reconoce derechos propios.",
+   "fuente": "Ley 4/2026 (BOE, 3 de octubre de 2026)",
+   "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20528",
+   "busca": "Lo que buscábamos con «me toca a mí» era cumplir. Verlo así no te quita el papel: le pone nombre en la ley, y con nombre se puede preguntar qué información, acompañamiento y formación te corresponden.",
+   "saltos": [
+    {
+     "t": "Pedir es para otras familias",
+     "p": "La ley habla de quien cuida a una persona en situación de dependencia, sea de la familia o del entorno. Preguntar qué te corresponde es un derecho, no un favor."
+    },
+    {
+     "t": "Con la ley nueva, ya me lo darán todo",
+     "p": "La reforma se acaba de aprobar, y parte de su aplicación depende de acuerdos entre el Estado y las comunidades. Conviene preguntar qué hay ya en tu zona, sin dar nada por hecho."
+    },
+    {
+     "t": "No salté: pregunté dónde",
+     "p": "Bien visto. Saber dónde se pide es el primer paso, y suele empezar en los servicios sociales del ayuntamiento."
+    }
+   ],
+   "referencia": "Ley 4/2026, de 1 de octubre, por la que se modifican el Texto Refundido de la Ley General de derechos de las personas con discapacidad y de su inclusión social, aprobado por el Real Decreto Legislativo 1/2013, de 29 de noviembre, y la Ley 39/2006, de 14 de diciembre, de Promoción de la Autonomía Personal y Atención a las personas en situación de dependencia, para la extensión y refuerzo de los derechos de las personas con discapacidad a la inclusión, la autonomía y la accesibilidad universal conforme al artículo 49 de la Constitución Española. Boletín Oficial del Estado, núm. 246, de 3 de octubre de 2026 (BOE-A-2026-20528). Artículos 2 y 4 bis de la Ley 39/2006 en su nueva redacción."
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "Según la ley, ¿quién es la persona cuidadora principal?",
+     "o": [
+      "La hija mayor",
+      "Quien vive más cerca",
+      "Quien dedica más tiempo a los cuidados y figura como tal en el Plan Individual de Atención"
+     ],
+     "ok": 2,
+     "por": "Lo dice el artículo 2 de la ley de dependencia: no es un parentesco, sino quien más cuida y consta en el plan."
+    },
+    {
+     "p": "¿Qué derecho reconoce la ley a las personas cuidadoras no profesionales?",
+     "o": [
+      "Un sueldo fijo",
+      "Recibir acompañamiento y formación para el cuidado y el autocuidado",
+      "Elegir la residencia"
+     ],
+     "ok": 1,
+     "por": "El artículo 4 bis recoge información sobre las prestaciones y acompañamiento y formación para cuidar y cuidarse. Los mínimos comunes los fija el Consejo Territorial."
+    },
+    {
+     "p": "¿Qué pasa si la persona cuidadora principal enferma gravemente o la hospitalizan?",
+     "o": [
+      "Las administraciones deben garantizar que el cuidado continúe",
+      "Pierde sus derechos",
+      "Nada: debe seguir cuidando"
+     ],
+     "ok": 0,
+     "por": "La ley pide garantizar la continuidad de los cuidados mientras no pueda cuidar. Cómo se hace depende de cada administración: pregúntalo."
+    }
+   ],
+   "sabias": "La ley también prevé la incorporación de la persona cuidadora principal a la Seguridad Social, en los términos de su disposición adicional cuarta (Ley 39/2006, art. 4 bis, en la redacción de la Ley 4/2026)."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Tres preguntas, una cita",
+     "t": "Apunta tres preguntas para la trabajadora social de tu ayuntamiento y pide la cita.",
+     "historia": "apuntar tres preguntas para la trabajadora social y pedir la cita"
+    },
+    {
+     "corta": "Mirar el plan",
+     "t": "Busca los papeles de la dependencia de tu familiar y mira si figuras como persona cuidadora principal en el Plan Individual de Atención.",
+     "historia": "buscar los papeles de la dependencia y mirar si figuro como persona cuidadora principal"
+    }
+   ],
+   "retorno": "¿Pediste la cita o miraste los papeles? ¿Qué te respondieron o qué encontraste? ¿Cuál es el siguiente paso?"
+  },
+  "historia": {
+   "pensaba": {
+    "mucho": "Pensaba que esto me tocaba a mí y punto.",
+    "aveces": "A veces pensaba que pedir no era para mí.",
+    "nada": "Pensaba que ya sabía lo que me corresponde."
+   },
+   "hice": {
+    "a": "Hice lo de siempre: apañarme sin pedir.",
+    "b": "Hice sitio a la idea, aunque no sabía por dónde empezar.",
+    "c": "Hice algo nuevo: preguntar dónde se pide."
+   },
+   "ahora": "Vi que quien cuida tiene nombre en la ley y que preguntar es un derecho. Esta semana voy a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "rabia"
+  },
+  "saber_mas": "**Persona cuidadora principal:** la Ley 4/2026 reforma la ley de dependencia (Ley 39/2006) y entra en vigor el 23 de octubre de 2026. El artículo 2 la define como quien dedica más tiempo a los cuidados y figura en el Plan Individual de Atención (PIA). El nuevo artículo 4 bis reconoce a las cuidadoras no profesionales información, acompañamiento y formación para el cuidado y el autocuidado; y a la principal, prioridad en las políticas de empleo, medidas de conciliación, continuidad de los cuidados si enferma o la hospitalizan, y su incorporación a la Seguridad Social. CareLab no asesora casos: explica la ley y enlaza al BOE.",
+  "corto": {
+   "pregunta": "¿Sabes si tu familiar tiene reconocida la dependencia y si tú figuras en su plan?",
+   "accion": "Mañana, llama a los servicios sociales de tu ayuntamiento y pide cita para preguntarlo."
+  },
+  "rutas": {
+   "A": "Si ya tienes servicios que te funcionan, guarda los papeles juntos y apunta cuándo se revisan. Así lo que funciona no se pierde.",
+   "B": "La dependencia se pide a través de los servicios sociales de tu ayuntamiento. En Euskadi, la valoración y las prestaciones las gestiona tu diputación foral. Lleva tus preguntas apuntadas."
+  }
+ },
+ {
+  "id": "rabia",
+  "palabra": "Rabia",
+  "resumen": "La rabia avisa de que algo desborda. No te hace mala persona.",
+  "perfil": "casa",
+  "familia": 2,
+  "ficha": "rabia-e-irritabilidad",
+  "riesgo": true,
+  "escena": "Txema le ha gritado a su padre por tirar la sopa. Tres segundos después ya se arrepentía. Por la noche no puede dormir: se pregunta qué clase de hijo hace eso.",
+  "choque": {
+   "frase": "«Le he gritado y me siento fatal.»",
+   "pregunta": "¿Te suena?",
+   "opciones": [
+    {
+     "id": "mucho",
+     "e": "🙋",
+     "t": "Mucho"
+    },
+    {
+     "id": "aveces",
+     "e": "🤔",
+     "t": "A veces"
+    },
+    {
+     "id": "nada",
+     "e": "🙂",
+     "t": "Nada"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "La persona que cuidas se niega a ducharse por tercera vez esta semana. Vas con prisa y notas que te sube la rabia. ¿Qué te sale?",
+   "opciones": [
+    {
+     "id": "a",
+     "t": "«Insisto hasta que lo consigo.»"
+    },
+    {
+     "id": "b",
+     "t": "«Me aguanto y me lo trago.»"
+    },
+    {
+     "id": "c",
+     "t": "«Salgo un momento, respiro y vuelvo.»"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "En un ensayo con 642 familias de personas con demencia, tras un programa que trabajaba las conductas difíciles, la carga, el autocuidado y el apoyo, tenía depresión clínica el 12,6 % de quien cuidaba, frente al 22,7 % sin él.",
+   "fuente": "Belle et al. (2006)",
+   "url": "https://doi.org/10.7326/0003-4819-145-10-200611210-00005",
+   "busca": "Lo que buscábamos al aguantar era no hacer daño. Verlo así ayuda: la rabia no es un defecto, es una señal de que algo desborda. Y manejar los momentos difíciles se puede aprender.",
+   "saltos": [
+    {
+     "t": "Si me enfado, soy mala persona",
+     "p": "La rabia aparece cuando algo desborda, sobre todo con cansancio. Importa qué haces con ella, y eso se aprende."
+    },
+    {
+     "t": "Lo mejor es tragármelo",
+     "p": "Tragarse la rabia la deja dentro, y suele salir después, peor. Salir dos minutos antes de explotar es otra forma de no hacer daño."
+    },
+    {
+     "t": "No salté: salí y volví",
+     "p": "Bien visto. Una pausa corta antes de explotar protege a los dos. No es huir: es volver mejor."
+    }
+   ],
+   "referencia": "Belle, S. H., Burgio, L., Burns, R., Coon, D., Czaja, S. J., Gallagher-Thompson, D., et al. (2006). Enhancing the quality of life of dementia caregivers from different ethnic or racial groups: A randomized, controlled trial. Annals of Internal Medicine, 145(10), 727-738."
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "En el ensayo REACH II, ¿qué pasó con la depresión clínica a los seis meses?",
+     "o": [
+      "Subió en quien hizo el programa",
+      "No cambió",
+      "Fue menor en quien hizo el programa: 12,6 % frente a 22,7 %"
+     ],
+     "ok": 2,
+     "por": "Participaron 642 cuidadoras de personas con demencia, de tres grupos culturales, en cinco ciudades de Estados Unidos. El grupo de comparación recibió dos llamadas breves."
+    },
+    {
+     "p": "En familias con alzhéimer, ¿qué discusiones se asociaron más a la rabia de quien cuidaba?",
+     "o": [
+      "Las de cómo trataban otros familiares a la persona enferma",
+      "Las de dinero",
+      "Las de horarios"
+     ],
+     "ok": 0,
+     "por": "Las discusiones sobre cómo trataban otros a la persona enferma se asociaron más a la rabia; las de cómo trataban a quien cuidaba, a la depresión (Semple, 1992)."
+    },
+    {
+     "p": "¿Qué trabajaba REACH II, además del ánimo de quien cuidaba?",
+     "o": [
+      "Solo la medicación",
+      "La carga, el autocuidado, el apoyo y las conductas difíciles de la persona cuidada",
+      "Solo la dieta"
+     ],
+     "ok": 1,
+     "por": "Juntaba lo práctico y lo emocional en 12 sesiones en casa y por teléfono. Manejar las situaciones difíciles era parte del programa."
+    }
+   ],
+   "sabias": "El programa se ajustaba a los riesgos de cada familia y se probó a la vez con cuidadoras latinas, blancas y afroamericanas (Belle et al., 2006)."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Mi frase de salida",
+     "t": "Elige una frase o un gesto para salir dos minutos antes de explotar, como «vuelvo enseguida». Pruébalo una vez esta semana.",
+     "historia": "elegir una frase o un gesto para salir dos minutos antes de explotar"
+    },
+    {
+     "corta": "Qué la enciende",
+     "t": "Durante tres días, apunta cuándo te sube la rabia: la hora, qué pasó y cómo estabas tú (cansada, con prisa, con hambre).",
+     "historia": "apuntar durante tres días cuándo me sube la rabia y cómo estaba yo"
+    }
+   ],
+   "retorno": "¿Usaste tu frase o apuntaste los momentos? ¿Qué pasó después? ¿Ves algo que se repite?"
+  },
+  "historia": {
+   "pensaba": {
+    "mucho": "Pensaba que perder los nervios me hacía mala persona.",
+    "aveces": "A veces me sentía fatal después de perder los nervios.",
+    "nada": "Pensaba que la rabia no iba conmigo."
+   },
+   "hice": {
+    "a": "Hice lo de siempre: insistir hasta conseguirlo.",
+    "b": "Hice como otras veces: tragármelo.",
+    "c": "Hice algo nuevo: salir, respirar y volver."
+   },
+   "ahora": "Vi que la rabia avisa de que algo desborda y que se puede aprender a manejarla. Esta semana voy a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "saber-lo-justo"
+  },
+  "saber_mas": "**Rabia e irritabilidad:** frecuentes al cuidar, sobre todo con cansancio y conductas difíciles. El ensayo REACH II (Belle et al., 2006) dio a 642 cuidadoras de personas con demencia 12 sesiones en casa y por teléfono que trabajaban la depresión, la carga, el autocuidado, el apoyo social y las conductas difíciles; a los seis meses, la depresión clínica fue del 12,6 % con el programa y del 22,7 % sin él. En familias con alzhéimer, los conflictos sobre cómo otros tratan a la persona enferma se asociaron sobre todo a la rabia (Semple, 1992). Salir unos minutos antes de explotar es una forma sencilla de solución de problemas.",
+  "corto": {
+   "pregunta": "¿En qué momento del día te sube más la rabia?",
+   "accion": "Hoy, elige una frase para salir dos minutos cuando la notes, como «vuelvo enseguida»."
+  },
+  "rutas": {
+   "A": "Si ya tienes formas de bajar la tensión (una pausa, una llamada, un paseo), protégelas. Te sostienen en los días malos.",
+   "B": "Tu médica de familia y tu enfermera pueden ayudarte con las conductas difíciles y con tu cansancio. En Euskadi hay formación y apoyo psicológico en programas forales como Sendian, Zaintza Eskola o Zainduz."
+  },
+  "variantes": {
+   "trabajo": {
+    "escena": "Edurne es auxiliar en una residencia. Un residente la insulta cada mañana durante el aseo. Ella sabe que es la enfermedad. Aun así, algunos días le tiembla la voz y se va al baño a llorar.",
+    "choque": {
+     "frase": "«Le he contestado mal y me siento fatal.»"
+    },
+    "reflejo": {
+     "situacion": "Un residente se niega al aseo y te empuja. Vas tarde y quedan seis habitaciones. Notas que te sube la rabia. ¿Qué te sale?",
+     "opciones": [
+      {
+       "id": "a",
+       "t": "«Insisto hasta que lo consigo.»"
+      },
+      {
+       "id": "b",
+       "t": "«Me aguanto y me lo trago.»"
+      },
+      {
+       "id": "c",
+       "t": "«Salgo un momento, aviso a una compañera y vuelvo.»"
+      }
+     ]
+    }
+   }
+  },
+  "aviso": "Si alguna vez temes hacer daño o perder el control, no eres la única persona a la que le pasa: es una señal para pedir apoyo, no un fallo tuyo. Habla con tu médica de familia y, si es urgente, pide ayuda ahora:"
+ },
+ {
+  "id": "saber-lo-justo",
+  "palabra": "Saber lo justo",
+  "resumen": "Saber más no siempre alivia. Ayuda saber lo justo para hacer algo.",
+  "perfil": "casa",
+  "familia": 3,
+  "ficha": "sentido-de-dominio",
+  "riesgo": true,
+  "escena": "Ana María lo ha leído todo sobre el alzhéimer: foros, vídeos, libros. Sabe más que nadie en su barrio. Y aun así, cada noche se acuesta con la misma angustia.",
+  "choque": {
+   "frase": "«Me lo he leído todo y sigo igual.»",
+   "pregunta": "¿Te suena?",
+   "opciones": [
+    {
+     "id": "mucho",
+     "e": "🙋",
+     "t": "Mucho"
+    },
+    {
+     "id": "aveces",
+     "e": "🤔",
+     "t": "A veces"
+    },
+    {
+     "id": "nada",
+     "e": "🙂",
+     "t": "Nada"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Es medianoche. Te surge una duda sobre la medicación de la persona que cuidas. Tienes el móvil en la mano. ¿Qué te sale?",
+   "opciones": [
+    {
+     "id": "a",
+     "t": "«Busco en internet hasta encontrar la respuesta.»"
+    },
+    {
+     "id": "b",
+     "t": "«Me quedo con la duda dando vueltas.»"
+    },
+    {
+     "id": "c",
+     "t": "«La apunto para preguntarla mañana.»"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "En 78 estudios, los programas para personas que cuidaban mejoraron más lo que sabían y sabían hacer que la carga o la depresión. Los efectos más constantes fueron los de la psicoeducación y la psicoterapia.",
+   "fuente": "Sörensen et al. (2002)",
+   "url": "https://doi.org/10.1093/geront/42.3.356",
+   "busca": "Lo que buscábamos leyendo era control. Verlo así ayuda a elegir: saber más no siempre alivia; saber lo justo para hacer algo, y preguntar a quien conoce tu caso, puede darte algo de control.",
+   "saltos": [
+    {
+     "t": "Cuanto más lea, mejor estaré",
+     "p": "Saber más no baja por sí solo el malestar. En esos estudios, lo que se sabía mejoraba más que el ánimo."
+    },
+    {
+     "t": "Entonces informarse no sirve",
+     "p": "Sí sirve, si lleva a hacer algo concreto. Una sola pregunta bien hecha a quien conoce tu caso puede servir más que una noche de búsquedas."
+    },
+    {
+     "t": "No salté: la apunté para mañana",
+     "p": "Bien visto. Apuntar la duda la saca de la cabeza y la lleva a quien puede responderla con tu caso delante."
+    }
+   ],
+   "referencia": "Sörensen, S., Pinquart, M. y Duberstein, P. (2002). How effective are interventions with caregivers? An updated meta-analysis. The Gerontologist, 42(3), 356-372."
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Qué es el «sentido de dominio»?",
+     "o": [
+      "Saber mucho de una enfermedad",
+      "La sensación de tener cierto control sobre la propia vida",
+      "Mandar en casa"
+     ],
+     "ok": 1,
+     "por": "Es sentir que algo depende de ti. Perderse en el cuidado se asoció a tener menos sentido de dominio (Skaff y Pearlin, 1992)."
+    },
+    {
+     "p": "En el metaanálisis de 2002, ¿dónde fueron más grandes los efectos de los programas?",
+     "o": [
+      "En la carga",
+      "En la salud física",
+      "En lo que se sabe y se sabe hacer"
+     ],
+     "ok": 2,
+     "por": "Mejoró más el saber y el saber hacer que la carga y la depresión. Saber no basta: tiene que llevar a algo."
+    },
+    {
+     "p": "¿Con quién fueron más pequeños los efectos de los programas?",
+     "o": [
+      "Con quien cuidaba a personas con demencia",
+      "Con cuidadoras jóvenes",
+      "Con hijas"
+     ],
+     "ok": 0,
+     "por": "En demencia los efectos fueron menores: la situación es más dura y pide más que información."
+    }
+   ],
+   "sabias": "En ese análisis, el número de sesiones, el lugar y la carga de partida cambiaban cuánto ayudaban los programas (Sörensen et al., 2002)."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Una sola pregunta",
+     "t": "Elige una sola pregunta sobre el cuidado y llévala esta semana a tu enfermera o a tu médica.",
+     "historia": "elegir una sola pregunta y llevarla a mi enfermera o a mi médica"
+    },
+    {
+     "corta": "Pausa en las búsquedas",
+     "t": "Durante tres días, cuando te surja una duda, apúntala en un papel en lugar de buscarla. Al tercer día, mira cuáles siguen importando.",
+     "historia": "apuntar mis dudas en un papel durante tres días en lugar de buscarlas"
+    }
+   ],
+   "retorno": "¿Hiciste la pregunta o apuntaste las dudas? ¿Qué te respondieron o cuántas seguían importando? ¿Cómo dormiste?"
+  },
+  "historia": {
+   "pensaba": {
+    "mucho": "Pensaba que, si lo sabía todo, estaría más tranquila.",
+    "aveces": "A veces pensaba que me faltaba saber algo más.",
+    "nada": "Pensaba que no me hacía falta saberlo todo."
+   },
+   "hice": {
+    "a": "Hice lo de siempre: buscar hasta encontrar algo.",
+    "b": "Hice como otras veces: quedarme con la duda dando vueltas.",
+    "c": "Hice algo nuevo: apuntar la duda para preguntarla."
+   },
+   "ahora": "Vi que saber lo justo para hacer algo da más que saberlo todo. Esta semana voy a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "el-cuerpo-avisa"
+  },
+  "saber_mas": "**Sentido de dominio** (*mastery*): la sensación de tener cierto control sobre la propia vida. En 70 personas que cuidaban a alguien con demencia, ver a la pareja «ausente» se asoció a menos sensación de control (Boss et al., 1990), y perderse en el cuidado, a menos sentido de dominio (Skaff y Pearlin, 1992). El metaanálisis de Sörensen, Pinquart y Duberstein (2002), con 78 estudios, encontró mejoras medias de 0,14 a 0,41 desviaciones típicas, mayores en conocimientos y habilidades que en carga y depresión, y más pequeñas en demencia. La psicoeducación y la psicoterapia dieron los efectos más constantes.",
+  "corto": {
+   "pregunta": "¿Qué duda te ronda hoy que de verdad cambiaría algo si la resolvieras?",
+   "accion": "Apúntala en un papel y llévala mañana a tu centro de salud."
+  },
+  "rutas": {
+   "A": "Si ya tienes a quién preguntar (tu enfermera, tu médica, una asociación), protege ese canal: apunta las dudas y llévalas juntas.",
+   "B": "En Euskadi, el Consejo Sanitario de Osakidetza (900 20 30 50) responde dudas de salud las 24 horas. Para aprender a cuidar hay formación gratuita, como Zaintza Eskola en Bizkaia. Pregunta en tu ayuntamiento."
+  },
+  "variantes": {
+   "trabajo": {
+    "escena": "Itziar es enfermera de atención domiciliaria. Ha hecho todos los cursos de su empresa sobre demencia y se sabe los protocolos de memoria. Pero sigue sin saber qué hacer cuando Manuel no quiere abrir la puerta.",
+    "choque": {
+     "frase": "«Me he hecho todos los cursos y sigo igual.»"
+    },
+    "reflejo": {
+     "situacion": "Un usuario se niega a tomar la medicación y no sale en ningún protocolo que conozcas. ¿Qué te sale?",
+     "opciones": [
+      {
+       "id": "a",
+       "t": "«Busco en internet hasta encontrar algo.»"
+      },
+      {
+       "id": "b",
+       "t": "«Me quedo con la duda dando vueltas.»"
+      },
+      {
+       "id": "c",
+       "t": "«La apunto para consultarla con mi equipo.»"
+      }
+     ]
+    }
+   }
+  }
+ },
+ {
+  "id": "el-cuerpo-avisa",
+  "palabra": "El cuerpo avisa",
+  "resumen": "El estrés largo se nota en el cuerpo. Tu salud también cuenta.",
+  "perfil": "casa",
+  "familia": 1,
+  "ficha": "malestar",
+  "riesgo": true,
+  "escena": "Gloria cuida a su marido y trabaja por las mañanas. Lleva meses con dolor de espalda y durmiendo cuatro horas. Este año le ha acompañado a doce citas médicas. A ninguna para ella.",
+  "choque": {
+   "frase": "«Ya dormiré cuando esto acabe.»",
+   "pregunta": "¿Te suena?",
+   "opciones": [
+    {
+     "id": "mucho",
+     "e": "🙋",
+     "t": "Mucho"
+    },
+    {
+     "id": "aveces",
+     "e": "🤔",
+     "t": "A veces"
+    },
+    {
+     "id": "nada",
+     "e": "🙂",
+     "t": "Nada"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Llevas tres semanas con dolor de cabeza casi a diario. Tu agenda está llena de citas de la persona que cuidas. ¿Qué te sale?",
+   "opciones": [
+    {
+     "id": "a",
+     "t": "«Tiro de analgésicos y sigo.»"
+    },
+    {
+     "id": "b",
+     "t": "«Ya iré cuando tenga un hueco.»"
+    },
+    {
+     "id": "c",
+     "t": "«Pido cita para mí esta semana.»"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "En 119 personas que cuidaban a su pareja con demencia, durante seis años, un marcador de inflamación subió unas cuatro veces más deprisa que en quien no cuidaba. De media, la salud física de quien cuida es solo algo peor.",
+   "fuente": "Kiecolt-Glaser et al. (2003)",
+   "url": "https://doi.org/10.1073/pnas.1531903100",
+   "busca": "Lo que buscábamos aguantando era no fallar a quien cuidas. Verlo así no asusta: cuidar no enferma a todo el mundo, pero tu cuerpo avisa, y escucharlo es parte de seguir cuidando.",
+   "saltos": [
+    {
+     "t": "Cuidar enferma a todo el mundo",
+     "p": "No. De media, la diferencia en salud física es pequeña. Y en 3.503 personas que cuidaban a un familiar, la mortalidad fue menor que en personas parecidas que no cuidaban (Roth et al., 2013)."
+    },
+    {
+     "t": "Ya iré al médico cuando esto acabe",
+     "p": "El cuerpo no espera a que acabe. En ese estudio, el aumento de la inflamación siguió años después de terminar el cuidado. Mejor no dejarlo para luego."
+    },
+    {
+     "t": "No salté: pedí cita para mí",
+     "p": "Bien visto. Una cita para ti no le quita nada a quien cuidas. Lleva apuntado qué notas y desde cuándo."
+    }
+   ],
+   "referencia": "Kiecolt-Glaser, J. K., Preacher, K. J., MacCallum, R. C., Atkinson, C., Malarkey, W. B. y Glaser, R. (2003). Chronic stress and age-related increases in the proinflammatory cytokine IL-6. Proceedings of the National Academy of Sciences, 100(15), 9090-9095. Y Pinquart, M. y Sörensen, S. (2003). Differences between caregivers and noncaregivers in psychological health and physical health: A meta-analysis. Psychology and Aging, 18(2), 250-267, https://doi.org/10.1037/0882-7974.18.2.250."
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "Comparadas con quien no cuida, ¿cómo están de media las personas que cuidan?",
+     "o": [
+      "Igual en todo",
+      "Con algo más de depresión y estrés, y la salud física solo un poco peor",
+      "Mucho peor en todo"
+     ],
+     "ok": 1,
+     "por": "Las diferencias en depresión y estrés son moderadas; en salud física, pequeñas (Pinquart y Sörensen, 2003)."
+    },
+    {
+     "p": "¿Qué es el «malestar» en los estudios con cuidadoras?",
+     "o": [
+      "Síntomas emocionales generales, como tristeza, ansiedad o irritabilidad",
+      "Una enfermedad concreta",
+      "El dolor de espalda"
+     ],
+     "ok": 0,
+     "por": "Es lo que suelen medir los ensayos. No es un diagnóstico: es una forma de decir que algo pesa por dentro."
+    },
+    {
+     "p": "En el metaanálisis de 2003, ¿en quién eran mayores las diferencias?",
+     "o": [
+      "En quien cuidaba poco tiempo",
+      "En quien cuidaba a alguien sin problemas de memoria",
+      "En quien cuidaba a alguien con demencia"
+     ],
+     "ok": 2,
+     "por": "Las diferencias fueron mayores al cuidar a alguien con demencia. La ayuda tiene que llegar sobre todo ahí."
+    }
+   ],
+   "sabias": "En 84 estudios, la mayor diferencia entre quien cuida y quien no fue en depresión, más que en salud física (Pinquart y Sörensen, 2003)."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Una cita para mí",
+     "t": "Pide cita en tu centro de salud para ti, no para la persona que cuidas. Apunta qué notas y desde cuándo.",
+     "historia": "pedir cita en mi centro de salud para mí, no para la persona que cuido"
+    },
+    {
+     "corta": "Una noche de sueño",
+     "t": "Organiza una noche esta semana en la que otra persona esté pendiente y tú puedas dormir de un tirón.",
+     "historia": "organizar una noche en la que otra persona esté pendiente y yo pueda dormir"
+    }
+   ],
+   "retorno": "¿Pediste la cita o dormiste esa noche? ¿Qué te dijeron o cómo te levantaste? ¿Qué vas a hacer ahora?"
+  },
+  "historia": {
+   "pensaba": {
+    "mucho": "Pensaba que lo mío podía esperar a que esto acabara.",
+    "aveces": "A veces pensaba que mi salud podía esperar.",
+    "nada": "Pensaba que mi cuerpo no me estaba avisando de nada."
+   },
+   "hice": {
+    "a": "Hice lo de siempre: tirar de lo que tenía a mano y seguir.",
+    "b": "Hice como otras veces: dejarlo para cuando hubiera un hueco.",
+    "c": "Hice algo nuevo: pedir cita para mí."
+   },
+   "ahora": "Vi que mi cuerpo también cuenta y que escucharlo es parte de seguir cuidando. Esta semana voy a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "lo-que-cuidar-da"
+  },
+  "saber_mas": "**Malestar y salud física:** Pinquart y Sörensen (2003), con 84 estudios, hallaron diferencias moderadas entre quien cuida y quien no en depresión (g = 0,58) y estrés (g = 0,55), y pequeñas en salud física (g = 0,18), mayores en demencia. Kiecolt-Glaser y colaboradores (2003) siguieron seis años a 119 cónyuges cuidadores y 106 personas que no cuidaban: la interleucina 6, un marcador de inflamación, subió unas cuatro veces más deprisa en quienes cuidaban. La frase «cuidar mata» no se sostiene como regla: en 3.503 personas que cuidaban, la mortalidad fue un 18 % menor que en personas parecidas que no cuidaban (Roth et al., 2013).",
+  "corto": {
+   "pregunta": "¿Qué te está diciendo tu cuerpo estos días?",
+   "accion": "Mañana, llama a tu centro de salud y pide cita para ti."
+  },
+  "rutas": {
+   "A": "Si mantienes hábitos que te sostienen (dormir, caminar, comer a tus horas), protégelos: son lo primero que se pierde en las semanas malas.",
+   "B": "Tu médica de familia y tu enfermera también atienden lo que te pasa por cuidar. En Euskadi, el Consejo Sanitario de Osakidetza (900 20 30 50) responde dudas de salud las 24 horas."
+  },
+  "variantes": {
+   "trabajo": {
+    "escena": "Oksana es gerocultora desde hace doce años: movilizaciones, turnos de noche, prisas. Le duele la espalda cada día y lo tapa con pastillas. Nunca ha pedido que revisen si su puesto se puede cambiar.",
+    "choque": {
+     "frase": "«Ya descansaré cuando me jubile.»"
+    },
+    "reflejo": {
+     "situacion": "Llevas tres semanas con dolor de espalda casi a diario. En la planta faltan grúas y gente. ¿Qué te sale?",
+     "opciones": [
+      {
+       "id": "a",
+       "t": "«Tiro de analgésicos y sigo.»"
+      },
+      {
+       "id": "b",
+       "t": "«Ya iré cuando tenga un hueco.»"
+      },
+      {
+       "id": "c",
+       "t": "«Pido cita y aviso al servicio de prevención.»"
+      }
+     ]
+    }
+   }
+  },
+  "aviso": "Si llevas semanas sin dormir, sin comer o sin tomar tu propia medicación, no es un sacrificio: es una señal. Habla con tu médica de familia y, si es urgente, pide ayuda ahora:"
+ },
+ {
+  "id": "lo-que-cuidar-da",
+  "palabra": "Lo que cuidar da",
+  "resumen": "Cuidar quita cosas y también puede dar algunas. Verlas no niega lo difícil.",
+  "perfil": "casa",
+  "familia": 3,
+  "ficha": "aspectos-positivos",
+  "riesgo": true,
+  "escena": "Xabier cuida a su abuela desde los veinte años. Se ha perdido fiestas y algún trabajo. También ha aprendido a cocinar sus recetas y a escuchar sus historias de la mina.",
+  "choque": {
+   "frase": "«Esto solo me ha quitado cosas.»",
+   "pregunta": "¿Te suena?",
+   "opciones": [
+    {
+     "id": "mucho",
+     "e": "🙋",
+     "t": "Mucho"
+    },
+    {
+     "id": "aveces",
+     "e": "🤔",
+     "t": "A veces"
+    },
+    {
+     "id": "nada",
+     "e": "🙂",
+     "t": "Nada"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Al final del día, alguien te pregunta: «¿Hoy ha salido algo bien?». ¿Qué te sale?",
+   "opciones": [
+    {
+     "id": "a",
+     "t": "«Nada. Hoy ha sido como siempre.»"
+    },
+    {
+     "id": "b",
+     "t": "«No sé, no me había parado a pensarlo.»"
+    },
+    {
+     "id": "c",
+     "t": "«Sí: una cosa pequeña.»"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "En un estudio canadiense, siete de cada diez personas que cuidaban encontraron al menos algo bueno en cuidar. En un ensayo con 96 cuidadoras, aprender a buscar lo que se gana redujo la depresión más que la psicoeducación.",
+   "fuente": "Cohen et al. (2002)",
+   "url": "https://doi.org/10.1002/gps.561",
+   "busca": "Lo que buscábamos con «solo me ha quitado» era que se viera lo que cuesta. Verlo así no lo niega: lo difícil sigue ahí, y al lado puede haber algo que también es tuyo.",
+   "saltos": [
+    {
+     "t": "Si veo lo bueno, niego lo malo",
+     "p": "No. La satisfacción y la carga se miden por separado porque conviven. Ver una no borra la otra."
+    },
+    {
+     "t": "Tengo que ver el lado bueno",
+     "p": "No es una obligación ni pensar en positivo a la fuerza. Si hoy no hay nada, no hay nada. Se trata de mirar, no de inventar."
+    },
+    {
+     "t": "No salté: encontré una cosa pequeña",
+     "p": "Bien visto. Una cosa pequeña cuenta. Es lo que se practicaba en el ensayo de 2017."
+    }
+   ],
+   "referencia": "Cohen, C. A., Colantonio, A. y Vernich, L. (2002). Positive aspects of caregiving: Rounding out the caregiver experience. International Journal of Geriatric Psychiatry, 17(2), 184-188. Y Cheng, S.-T., Mak, E. P. M., Fung, H. H., Kwok, T., Lee, D. T. F. y Lam, L. C. W. (2017). Benefit-finding and effect on caregiver depression: A double-blind randomized controlled trial. Journal of Consulting and Clinical Psychology, 85(5), 521-529, https://doi.org/10.1037/ccp0000176."
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "En el estudio canadiense, ¿con qué se asoció sentir algo bueno al cuidar?",
+     "o": [
+      "Con menos depresión, menos carga y mejor salud percibida",
+      "Con más cansancio",
+      "Con nada"
+     ],
+     "ok": 0,
+     "por": "Sentir algo positivo al cuidar se asoció a menos depresión y carga, y a sentirse con mejor salud."
+    },
+    {
+     "p": "En el ensayo de 2017, ¿con qué se comparó buscar lo que se gana?",
+     "o": [
+      "Con no hacer nada",
+      "Con medicación",
+      "Con dos formas de psicoeducación"
+     ],
+     "ok": 2,
+     "por": "Se comparó con dos formas de psicoeducación. Buscar lo que se gana bajó más los síntomas de depresión."
+    },
+    {
+     "p": "¿Qué es el «hallazgo de beneficios»?",
+     "o": [
+      "Cobrar por cuidar",
+      "Encontrar algo bueno en una situación difícil",
+      "Una herencia"
+     ],
+     "ok": 1,
+     "por": "Se ha usado como intervención: no niega lo difícil, mira también lo que cuidar da, como cercanía, sentido u orgullo."
+    }
+   ],
+   "sabias": "El ensayo de 2017 eran cuatro sesiones de tres horas en casa, cada dos semanas, con cuidadoras de personas con alzhéimer en Hong Kong (Cheng et al., 2017)."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Algo que salió bien",
+     "t": "Antes de dormir, apunta una cosa que hoy salió bien, por pequeña que sea. Hazlo tres noches.",
+     "historia": "apuntar antes de dormir una cosa que hoy salió bien"
+    },
+    {
+     "corta": "Lo que he aprendido",
+     "t": "Escribe una cosa que has aprendido o ganado por cuidar: una habilidad, una conversación, algo de ti.",
+     "historia": "escribir una cosa que he aprendido o ganado por cuidar"
+    }
+   ],
+   "retorno": "¿Qué apuntaste? ¿Te costó encontrarlo? ¿Cambió algo en cómo te fuiste a dormir?"
+  },
+  "historia": {
+   "pensaba": {
+    "mucho": "Pensaba que cuidar solo me había quitado cosas.",
+    "aveces": "A veces pensaba que cuidar solo me quitaba.",
+    "nada": "Pensaba que cuidar también me había dado algo."
+   },
+   "hice": {
+    "a": "Hice lo de siempre: ver solo lo que cuesta.",
+    "b": "Hice una pausa: no me había parado a pensarlo.",
+    "c": "Hice algo nuevo: encontrar una cosa pequeña que salió bien."
+   },
+   "ahora": "Vi que lo difícil y lo que cuidar da pueden ir juntos. Esta semana voy a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "en-medio"
+  },
+  "saber_mas": "**Aspectos positivos del cuidado:** lo que cuidar da (sentido, cercanía, crecimiento, orgullo). En 289 personas que cuidaban en Canadá, el 73 % identificó al menos uno, y sentirlo se asoció a menos depresión y carga (Cohen et al., 2002). En un ensayo doble ciego con 96 cuidadoras de personas con alzhéimer, el **hallazgo de beneficios**, una forma de reevaluar lo que pasa, redujo más la depresión que la psicoeducación (Cheng et al., 2017). Carga y satisfacción conviven (Lawton et al., 1991). Nada de esto obliga a ver lo bueno: se trata de no perderlo de vista.",
+  "corto": {
+   "pregunta": "¿Ha habido hoy algún momento, aunque sea pequeño, que haya salido bien?",
+   "accion": "Esta noche, escríbelo en una línea."
+  },
+  "rutas": {
+   "A": "Si ya notas lo que cuidar te da, guárdalo por escrito. En los días malos, ayuda a recordar por qué sigues.",
+   "B": "Si hoy solo ves lo que cuesta, hablarlo con otras personas que cuidan ayuda a poner las dos cosas sobre la mesa. Pregunta por grupos de apoyo en tu ayuntamiento o en una asociación de familiares."
+  },
+  "variantes": {
+   "trabajo": {
+    "escena": "Kepa es auxiliar de ayuda a domicilio. El sueldo es bajo y los horarios, imposibles. Pero cuando Julia le espera en la ventana cada martes, piensa que su trabajo importa.",
+    "choque": {
+     "frase": "«Este trabajo solo me quita.»"
+    },
+    "reflejo": {
+     "situacion": "Al acabar la jornada, una compañera te pregunta: «¿Hoy ha salido algo bien?». ¿Qué te sale?",
+     "opciones": [
+      {
+       "id": "a",
+       "t": "«Nada. Hoy ha sido como siempre.»"
+      },
+      {
+       "id": "b",
+       "t": "«No sé, no me había parado a pensarlo.»"
+      },
+      {
+       "id": "c",
+       "t": "«Sí: una cosa pequeña.»"
+      }
+     ]
+    }
+   }
+  }
+ },
+ {
+  "id": "en-medio",
+  "palabra": "En medio",
+  "resumen": "Cuidar a la vez arriba y abajo es frecuente. No llegar no es un fallo tuyo.",
+  "perfil": "casa",
+  "familia": 5,
+  "ficha": "generacion-sandwich",
+  "riesgo": true,
+  "escena": "Yolanda tiene 52 años, dos hijos adolescentes y una madre que ya no puede vivir sola. Trabaja a media jornada. Su agenda tiene tres colores, y ninguno es suyo.",
+  "choque": {
+   "frase": "«Entre mis hijos y mi madre, no llego.»",
+   "pregunta": "¿Te suena?",
+   "opciones": [
+    {
+     "id": "mucho",
+     "e": "🙋",
+     "t": "Mucho"
+    },
+    {
+     "id": "aveces",
+     "e": "🤔",
+     "t": "A veces"
+    },
+    {
+     "id": "nada",
+     "e": "🙂",
+     "t": "Nada"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Martes a las siete: tu hija necesita que la lleves a entrenar y tu madre te ha llamado porque se encuentra mal. ¿Qué te sale?",
+   "opciones": [
+    {
+     "id": "a",
+     "t": "«Hago las dos cosas corriendo, como siempre.»"
+    },
+    {
+     "id": "b",
+     "t": "«Elijo una y me siento culpable por la otra.»"
+    },
+    {
+     "id": "c",
+     "t": "«Pido a alguien de casa que se encargue de una.»"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "En España, el 22 % de las mujeres de 55 a 64 años cuida al menos una vez por semana a una persona mayor o con una dolencia crónica. Entre los 45 y los 64 años es cuando más se cuida.",
+   "fuente": "Encuesta Europea de Salud en España 2020 (Ministerio de Sanidad e INE)",
+   "url": "https://www.sanidad.gob.es/estadEstudios/estadisticas/EncuestaEuropea/EESE2020_inf_evol_princip_result2.pdf",
+   "busca": "Lo que buscábamos con «no llego» era llegar a todo. Verlo así quita culpa: estar en medio es frecuente, y no llegar no es un fallo de organización tuyo. Es mucho para una sola persona.",
+   "saltos": [
+    {
+     "t": "Si me organizara mejor, llegaría",
+     "p": "Organizarse ayuda, pero no estira el día. Cuando no se llega, a menudo lo que falta es repartir, no organizarse."
+    },
+    {
+     "t": "Es cosa de mujeres, siempre ha sido así",
+     "p": "Ellas cuidan más (en esa encuesta, el 12,7 % frente al 8,3 % de los hombres), pero eso es un reparto, no una ley natural. Se puede repartir distinto."
+    },
+    {
+     "t": "No salté: pedí ayuda en casa",
+     "p": "Bien visto. Pedir a alguien de casa una tarea concreta reparte lo que pesa y enseña que cuidar es cosa de todos."
+    }
+   ],
+   "referencia": "Ministerio de Sanidad e Instituto Nacional de Estadística. Encuesta Europea de Salud en España 2020: informe de evolución de los principales resultados."
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Qué es la «generación sándwich»?",
+     "o": [
+      "Quien cuida a la vez de sus hijos y de sus padres",
+      "Quien come fuera de casa",
+      "Jóvenes que cuidan"
+     ],
+     "ok": 0,
+     "por": "Es quien está en medio: cuida arriba y abajo a la vez, muchas veces con un trabajo fuera."
+    },
+    {
+     "p": "En la Encuesta Europea de Salud 2020, ¿qué parte de la población de 15 años o más cuida al menos una vez por semana?",
+     "o": [
+      "El 1 %",
+      "Alrededor del 10,6 %",
+      "El 50 %"
+     ],
+     "ok": 1,
+     "por": "Una de cada diez personas. Entre las mujeres, el 12,7 %; entre los hombres, el 8,3 %."
+    },
+    {
+     "p": "¿Por qué las mujeres que cuidan tienen, de media, más depresión que los hombres que cuidan?",
+     "o": [
+      "Por su carácter",
+      "Por nada concreto",
+      "Porque asumen más horas, más tareas y más cuidado personal"
+     ],
+     "ok": 2,
+     "por": "Al tener en cuenta las horas y las tareas, la diferencia se reduce a la que hay entre mujeres y hombres que no cuidan (Pinquart y Sörensen, 2006). Es una cuestión de reparto."
+    }
+   ],
+   "sabias": "Entre los hombres de 55 a 64 años cuida el 14,9 %. También en ellos es la edad en que más se cuida, aunque menos que ellas (Encuesta Europea de Salud en España 2020)."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Pasar una tarea",
+     "t": "Nombra una tarea que otra persona de casa puede hacer esta semana y pídesela, con día y hora.",
+     "historia": "nombrar una tarea que otra persona de casa puede hacer y pedírsela"
+    },
+    {
+     "corta": "Mi media hora",
+     "t": "Busca en tu agenda media hora de esta semana que sea solo tuya y márcala con tu propio color.",
+     "historia": "buscar media hora solo mía y marcarla con mi color"
+    }
+   ],
+   "retorno": "¿Pediste la tarea o guardaste tu media hora? ¿Qué pasó? ¿Cómo lo vivió el resto de la casa?"
+  },
+  "historia": {
+   "pensaba": {
+    "mucho": "Pensaba que, entre unos y otros, no llegaba.",
+    "aveces": "A veces pensaba que no llegaba a todo.",
+    "nada": "Pensaba que llegaba a todo sin problema."
+   },
+   "hice": {
+    "a": "Hice lo de siempre: llegar a todo corriendo.",
+    "b": "Hice como otras veces: elegir y sentir culpa.",
+    "c": "Hice algo nuevo: pedir a alguien que se encargara de una parte."
+   },
+   "ahora": "Vi que estar en medio es frecuente y que no llegar no es un fallo mío. Esta semana voy a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "repartir"
+  },
+  "saber_mas": "**Generación sándwich:** quien cuida a la vez de sus hijos y de sus padres. En la Encuesta Europea de Salud en España 2020 (Ministerio de Sanidad e INE), el 10,6 % de la población de 15 años o más cuida al menos una vez por semana a personas mayores o con dolencias crónicas: el 12,7 % de las mujeres y el 8,3 % de los hombres, y el 22 % de las mujeres de 55 a 64 años. Pinquart y Sörensen (2006), con 229 estudios, vieron que las mujeres asumen más horas y tareas, y que eso explica buena parte de su mayor malestar.",
+  "corto": {
+   "pregunta": "¿Qué tarea de esta semana podría hacer otra persona de casa?",
+   "accion": "Mañana, pídesela con día y hora."
+  },
+  "rutas": {
+   "A": "Si en casa ya os repartís algo, protegedlo: ponedlo por escrito en la nevera para que no vuelva todo a ti en una mala semana.",
+   "B": "La reforma de la ley de dependencia de 2026 recoge medidas de conciliación para la persona cuidadora principal. Pregunta en tu empresa o a tu sindicato por adaptar tu jornada, y en tu ayuntamiento por servicios."
+  },
+  "variantes": {
+   "trabajo": {
+    "escena": "Samira es gerocultora de mañana. A las tres sale de la residencia y va a casa de su padre, que vive solo desde el ictus. A las seis recoge a sus hijos. Cuida todo el día.",
+    "choque": {
+     "frase": "«Cuido en el trabajo y cuido en casa: no llego.»"
+    },
+    "reflejo": {
+     "situacion": "Sales del turno. Tu padre te ha llamado porque se encuentra mal y tu hijo necesita que le recojas. ¿Qué te sale?",
+     "opciones": [
+      {
+       "id": "a",
+       "t": "«Hago las dos cosas corriendo, como siempre.»"
+      },
+      {
+       "id": "b",
+       "t": "«Elijo una y me siento culpable por la otra.»"
+      },
+      {
+       "id": "c",
+       "t": "«Pido a alguien de casa que se encargue de una.»"
+      }
+     ]
+    }
+   }
+  }
+ },
+ {
+  "id": "repartir",
+  "palabra": "Repartir",
+  "resumen": "Repartir no se consigue con reproches, sino con peticiones concretas.",
+  "perfil": "casa",
+  "familia": 3,
+  "ficha": "pedir-y-repartir-ayuda",
+  "riesgo": true,
+  "escena": "Carmen tiene tres hermanos. Ella vive a dos calles de su madre, así que todo le cae a ella. En el grupo de mensajes de la familia solo hay fotos de vacaciones y algún «ánimo, Carmen».",
+  "choque": {
+   "frase": "«Mis hermanos no hacen nada.»",
+   "pregunta": "¿Te suena?",
+   "opciones": [
+    {
+     "id": "mucho",
+     "e": "🙋",
+     "t": "Mucho"
+    },
+    {
+     "id": "aveces",
+     "e": "🤔",
+     "t": "A veces"
+    },
+    {
+     "id": "nada",
+     "e": "🙂",
+     "t": "Nada"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Tu hermano te escribe: «¿Necesitas algo?». Llevas semanas sin dar abasto. ¿Qué te sale?",
+   "opciones": [
+    {
+     "id": "a",
+     "t": "«No, tranquilo, ya me apaño.»"
+    },
+    {
+     "id": "b",
+     "t": "«Le contesto con todo lo que llevo acumulado.»"
+    },
+    {
+     "id": "c",
+     "t": "«Le pido una cosa concreta: el jueves, la farmacia.»"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "En un programa de Nueva York con sesiones familiares, creció el número de personas que apoyaban a quien cuidaba y su ayuda en el cuidado. Y estar más a gusto con ese apoyo explicó parte de la mejora del ánimo.",
+   "fuente": "Roth et al. (2005)",
+   "url": "https://doi.org/10.1037/0882-7974.20.4.634",
+   "busca": "Lo que buscábamos con «no hacen nada» era justicia. Verlo así da una salida: repartir no se consigue con reproches, sino haciendo sitio a los demás con peticiones concretas.",
+   "saltos": [
+    {
+     "t": "Si les hiciera falta, ya lo verían",
+     "p": "A menudo no lo ven, o no saben qué hacer. Una petición concreta («el jueves, la farmacia») es más fácil de cumplir que un «ayúdame»."
+    },
+    {
+     "t": "Si se lo digo todo, por fin lo entenderán",
+     "p": "Soltarlo todo de golpe alivia un rato, pero suele acabar en discusión, y las discusiones en la familia también pesan. Mejor una cosa cada vez."
+    },
+    {
+     "t": "No salté: pedí una cosa concreta",
+     "p": "Bien visto. Una petición pequeña y con fecha es el primer paso para repartir de verdad."
+    }
+   ],
+   "referencia": "Roth, D. L., Mittelman, M. S., Clay, O. J., Madan, A. y Haley, W. E. (2005). Changes in social support as mediators of the impact of a psychosocial intervention for spouse caregivers of persons with Alzheimer's disease. Psychology and Aging, 20(4), 634-644."
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Qué tenía el programa de Nueva York, además de sesiones individuales?",
+     "o": [
+      "Solo un libro",
+      "Una aplicación",
+      "Sesiones con la familia, un grupo de apoyo y orientación por teléfono"
+     ],
+     "ok": 2,
+     "por": "La familia formaba parte del programa. Con él aumentaron las personas que apoyaban y la ayuda que daban."
+    },
+    {
+     "p": "Según la revisión de Schulz y colaboradores (2020), ¿qué tienen en común los programas que funcionan?",
+     "o": [
+      "Son caros",
+      "Atienden lo práctico del cuidado y también el peso emocional",
+      "Duran años"
+     ],
+     "ok": 1,
+     "por": "Los que funcionan juntan las dos cosas: cómo cuidar y cómo te afecta."
+    },
+    {
+     "p": "¿Qué es la «cuidadora secundaria»?",
+     "o": [
+      "Quien ayuda a la cuidadora principal de forma complementaria o de vez en cuando",
+      "La que cobra menos",
+      "Una cuidadora profesional"
+     ],
+     "ok": 0,
+     "por": "Su papel también cuenta. Que un hermano pase a ser cuidador secundario, con tareas fijas, es una forma de repartir."
+    }
+   ],
+   "sabias": "La ley reconoce derechos a todas las personas cuidadoras no profesionales que figuran en el plan de atención, no solo a la principal (Ley 39/2006, art. 4 bis, en la redacción de la Ley 4/2026)."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Veinte minutos, una petición",
+     "t": "Propón a tu familia una reunión de veinte minutos con una sola petición concreta, con día y hora.",
+     "historia": "proponer una reunión de veinte minutos con una sola petición concreta"
+    },
+    {
+     "corta": "Un mensaje concreto",
+     "t": "Escribe a un familiar un mensaje con una sola petición: qué, qué día y a qué hora. Sin reproches.",
+     "historia": "escribir a un familiar un mensaje con una sola petición concreta, sin reproches"
+    }
+   ],
+   "retorno": "¿Hiciste la petición? ¿Qué te respondieron? ¿Se hizo? ¿Qué harías distinto la próxima vez?"
+  },
+  "historia": {
+   "pensaba": {
+    "mucho": "Pensaba que los demás no hacían nada.",
+    "aveces": "A veces pensaba que todo me caía a mí.",
+    "nada": "Pensaba que ya nos repartíamos bien."
+   },
+   "hice": {
+    "a": "Hice lo de siempre: decir que ya me apañaba.",
+    "b": "Hice como otras veces: soltarlo todo de golpe.",
+    "c": "Hice algo nuevo: pedir una cosa concreta."
+   },
+   "ahora": "Vi que repartir empieza con una petición pequeña y concreta. Esta semana voy a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "llegar-vacia"
+  },
+  "saber_mas": "**Pedir y repartir ayuda.** En el ensayo de la Universidad de Nueva York, con cónyuges de personas con alzhéimer, la intervención (sesiones individuales y familiares, grupo de apoyo y orientación telefónica) aumentó el número de personas que apoyaban, su ayuda en el cuidado y la satisfacción con ese apoyo, que explicó parte de la bajada de la depresión (Roth et al., 2005). Schulz y colaboradores (2020) concluyen que los programas que funcionan atienden lo práctico y lo emocional del cuidado. Los conflictos familiares sobre cómo se trata a quien cuida se asociaron a más depresión (Semple, 1992).",
+  "corto": {
+   "pregunta": "¿Qué cosa concreta podría hacer otra persona de tu familia esta semana?",
+   "accion": "Mañana, escríbele pidiéndole solo esa, con día y hora."
+  },
+  "rutas": {
+   "A": "Si en tu familia ya hay un reparto que funciona, ponedlo por escrito y revisadlo cada pocos meses. Lo que funciona también se desgasta.",
+   "B": "Si la familia no basta, o no la hay, la ayuda a domicilio y el centro de día también reparten. Pregunta qué hay en tu zona en los servicios sociales de tu ayuntamiento."
+  },
+  "variantes": {
+   "trabajo": {
+    "escena": "Mariam trabaja en una residencia. En su turno, las tareas más pesadas siempre les tocan a ella y a otra compañera. Las demás tienen sus razones. Ella acaba cada día con la espalda rota y en silencio.",
+    "choque": {
+     "frase": "«En mi equipo, lo peor siempre me toca a mí.»"
+    },
+    "reflejo": {
+     "situacion": "Una compañera te pregunta: «¿Te echo una mano?». Llevas semanas cargando con lo más pesado. ¿Qué te sale?",
+     "opciones": [
+      {
+       "id": "a",
+       "t": "«No, tranquila, ya me apaño.»"
+      },
+      {
+       "id": "b",
+       "t": "«Le suelto todo lo que llevo acumulado.»"
+      },
+      {
+       "id": "c",
+       "t": "«Le pido una cosa concreta: las dos movilizaciones de las doce.»"
+      }
+     ]
+    }
+   }
+  }
+ },
+ {
+  "id": "llegar-vacia",
+  "palabra": "Llegar vacía",
+  "resumen": "El *burnout* es un fenómeno del trabajo, y sus causas son sobre todo de la organización.",
+  "perfil": "trabajo",
+  "familia": 4,
+  "ficha": "burnout",
+  "riesgo": true,
+  "escena": "Luz Marina es auxiliar de ayuda a domicilio. Hace ocho casas al día con tiempos imposibles. Al llegar a su piso, sus hijas le cuentan cosas y ella solo asiente. No le queda nada.",
+  "choque": {
+   "frase": "«Llego a casa sin nada que dar.»",
+   "pregunta": "¿Te suena?",
+   "opciones": [
+    {
+     "id": "mucho",
+     "e": "🙋",
+     "t": "Mucho"
+    },
+    {
+     "id": "aveces",
+     "e": "🤔",
+     "t": "A veces"
+    },
+    {
+     "id": "nada",
+     "e": "🙂",
+     "t": "Nada"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "En una reunión, tu coordinadora te pregunta qué tal vas. Están delante tus compañeras. ¿Qué te sale?",
+   "opciones": [
+    {
+     "id": "a",
+     "t": "«Bien, bien, sin problema.»"
+    },
+    {
+     "id": "b",
+     "t": "«Cansada, pero será cosa mía.»"
+    },
+    {
+     "id": "c",
+     "t": "«Le digo una condición concreta que me pesa: los tiempos entre casas.»"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "Para la OMS, el *burnout* es un fenómeno del trabajo, no una enfermedad: nace del estrés laboral crónico mal gestionado. En residencias, se asoció a poca plantilla, poco apoyo y un liderazgo pobre.",
+   "fuente": "OMS (2019) y Costello et al. (2019)",
+   "url": "https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases",
+   "busca": "Lo que buscábamos con «será cosa mía» era no quejarse. Verlo así quita un peso: llegar vacía no es un fallo tuyo. Nombrar las condiciones es el primer paso para cambiarlas, y no te toca sola.",
+   "saltos": [
+    {
+     "t": "Si llego vacía, es que no valgo",
+     "p": "El *burnout* nace del estrés del trabajo mal gestionado, y en residencias se asoció a la plantilla, el apoyo y el liderazgo. No mide lo que vales."
+    },
+    {
+     "t": "Con un taller de resiliencia se arregla",
+     "p": "Ayuda poco si no cambian las causas. Las del desgaste en el trabajo son sobre todo de la organización: plantillas, cargas, normas y apoyo."
+    },
+    {
+     "t": "No salté: nombré una condición",
+     "p": "Bien visto. Decir una condición concreta («los tiempos entre casas») convierte el cansancio en algo que se puede trabajar en equipo."
+    }
+   ],
+   "referencia": "Organización Mundial de la Salud. (2019, 28 de mayo). Burn-out an «occupational phenomenon»: International Classification of Diseases. Y Costello, H., Walsh, S., Cooper, C. y Livingston, G. (2019). A systematic review and meta-analysis of the prevalence and associations of stress and burnout among staff in long-term care facilities for people with dementia. International Psychogeriatrics, 31(8), 1203-1216, https://doi.org/10.1017/S1041610218001606."
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Cuáles son las tres dimensiones del *burnout* según la OMS?",
+     "o": [
+      "Tristeza, miedo y rabia",
+      "Dolor, fiebre y cansancio",
+      "Agotamiento, distancia o cinismo con el trabajo y menos eficacia profesional"
+     ],
+     "ok": 2,
+     "por": "Agotamiento, distancia mental con el trabajo y sensación de ineficacia. La OMS dice que no debe aplicarse a otras áreas de la vida."
+    },
+    {
+     "p": "¿Se habla de *burnout* en una madre que cuida a su hijo en casa?",
+     "o": [
+      "No, según la OMS es solo del trabajo; en casa se habla de carga o sobrecarga",
+      "Sí, es lo mismo",
+      "Solo si lleva más de un año"
+     ],
+     "ok": 0,
+     "por": "La OMS lo reserva al trabajo. En casa se habla de carga del cuidado, aunque la metáfora ayude a entenderse."
+    },
+    {
+     "p": "En residencias para personas con demencia, ¿cómo era el *burnout* en la mayoría de los estudios?",
+     "o": [
+      "Muy alto siempre",
+      "Bajo o moderado",
+      "Inexistente"
+     ],
+     "ok": 1,
+     "por": "La mayoría encontró niveles bajos o moderados, y más altos donde faltaban plantilla, apoyo o buen liderazgo. Las condiciones cuentan."
+    }
+   ],
+   "sabias": "Una de cada nueve enfermeras (11 %) tiene síntomas de *burnout*, según 61 estudios en 49 países; la cifra más baja, en geriatría (Woo et al., 2020)."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Nombrar una condición",
+     "t": "Apunta una condición de tu trabajo que te pesa y a quién se la puedes decir: tu coordinadora, la delegada de prevención o el comité.",
+     "historia": "apuntar una condición de mi trabajo que me pesa y a quién se la puedo decir"
+    },
+    {
+     "corta": "Un rato de transición",
+     "t": "Al salir del trabajo, antes de entrar en casa, date cinco minutos para ti: un paseo, una canción o nada.",
+     "historia": "darme cinco minutos para mí entre el trabajo y casa"
+    }
+   ],
+   "retorno": "¿Apuntaste la condición o te diste esos minutos? ¿A quién se lo dijiste o cómo llegaste a casa? ¿Qué cambió?"
+  },
+  "historia": {
+   "pensaba": {
+    "mucho": "Pensaba que llegaba a casa sin nada que dar.",
+    "aveces": "A veces llegaba a casa vacía.",
+    "nada": "Pensaba que aún me quedaba algo al llegar a casa."
+   },
+   "hice": {
+    "a": "Hice lo de siempre: decir que todo iba bien.",
+    "b": "Hice como otras veces: pensar que era cosa mía.",
+    "c": "Hice algo nuevo: nombrar una condición concreta."
+   },
+   "ahora": "Vi que llegar vacía no es un fallo mío y que las condiciones se pueden nombrar. Esta semana voy a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "saber-y-no-poder"
+  },
+  "saber_mas": "**Desgaste profesional** (*burnout*): la CIE-11 de la OMS lo describe como un síndrome por estrés laboral crónico mal gestionado, con agotamiento, distancia o cinismo hacia el trabajo y menor eficacia, y dice que no debe aplicarse a otras áreas de la vida (OMS, 2019). La revisión de Costello y colaboradores (2019), con 17 estudios en residencias para personas con demencia, halló niveles sobre todo bajos o moderados, asociados a poca satisfacción laboral, plantilla insuficiente, mal ambiente, falta de apoyo, liderazgo pobre y residentes con agitación. Woo y colaboradores (2020) estimaron síntomas en el 11 % de las enfermeras.",
+  "corto": {
+   "pregunta": "¿Qué condición de tu trabajo te deja sin nada al llegar a casa?",
+   "accion": "Mañana, escríbela en una línea y piensa a quién se la podrías decir."
+  },
+  "rutas": {
+   "A": "Si en tu trabajo hay algo que te sostiene (una compañera, una supervisora que escucha, un turno estable), cuídalo y dilo en voz alta.",
+   "B": "Tu empresa debe tener un servicio de prevención de riesgos laborales, que también mira la carga y el estrés. Pregunta por la delegada de prevención; los sindicatos asesoran. Si lo notas en tu salud, ve a tu médica de familia."
+  }
+ },
+ {
+  "id": "saber-y-no-poder",
+  "palabra": "Saber y no poder",
+  "resumen": "Saber cómo cuidar y no poder hacerlo tiene nombre: angustia moral.",
+  "perfil": "trabajo",
+  "familia": 4,
+  "ficha": "angustia-moral",
+  "riesgo": true,
+  "escena": "Ainhoa sabe que Teresa necesita que alguien se siente con ella a comer despacio. Tiene doce minutos por residente. Le da la comida deprisa y luego, en el coche, no deja de pensar en ella.",
+  "choque": {
+   "frase": "«Sé cómo debería cuidarla y no me dejan tiempo.»",
+   "pregunta": "¿Te suena?",
+   "opciones": [
+    {
+     "id": "mucho",
+     "e": "🙋",
+     "t": "Mucho"
+    },
+    {
+     "id": "aveces",
+     "e": "🤔",
+     "t": "A veces"
+    },
+    {
+     "id": "nada",
+     "e": "🙂",
+     "t": "Nada"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "En el cambio de turno, la supervisora dice que hay que acelerar los aseos. Tú sabes que así se hacen mal. ¿Qué te sale?",
+   "opciones": [
+    {
+     "id": "a",
+     "t": "«Callo y lo hago como pueda.»"
+    },
+    {
+     "id": "b",
+     "t": "«Lo comento por lo bajo con una compañera.»"
+    },
+    {
+     "id": "c",
+     "t": "«Lo digo en voz alta, con un ejemplo concreto.»"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "Saber qué cuidado sería el correcto y no poder darlo tiene nombre: **angustia moral**. Una revisión de 49 estudios vio que sus causas dependen mucho del contexto: jerarquía, normas, carga de trabajo, recursos y apoyo.",
+   "fuente": "Beadle et al. (2024)",
+   "url": "https://doi.org/10.1371/journal.pone.0303013",
+   "busca": "Lo que buscábamos con la frase era cuidar bien. Verlo así cambia el peso de sitio: no es culpa tuya, es una tensión entre lo que sabes y lo que te deja hacer la organización.",
+   "saltos": [
+    {
+     "t": "Si no lo hago bien, es culpa mía",
+     "p": "Si faltan tiempo o manos, no es solo tuyo. En España, la culpa por la calidad del cuidado se asoció a más ansiedad en profesionales de residencias."
+    },
+    {
+     "t": "Así es este trabajo, no se puede cambiar",
+     "p": "Las causas son en gran parte de la organización, y la revisión pide que las respuestas también lo sean. Nombrarlas en equipo es un comienzo."
+    },
+    {
+     "t": "No salté: lo dije con un ejemplo",
+     "p": "Bien visto. Un ejemplo concreto («Teresa necesita veinte minutos para comer») se escucha mejor que una queja general."
+    }
+   ],
+   "referencia": "Beadle, E. S., Walecka, A., Sangam, A. V., Moorhouse, J., Winter, M., Munro Wild, H., Trivedi, D. y Casarin, A. (2024). Triggers and factors associated with moral distress and moral injury in health and social care workers: A systematic review of qualitative studies. PLoS ONE, 19(6), e0303013."
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Qué diferencia hay entre culpa y angustia moral?",
+     "o": [
+      "Son lo mismo",
+      "La culpa mira a una misma; la angustia moral, a lo que impide cuidar bien",
+      "La angustia moral es una enfermedad"
+     ],
+     "ok": 1,
+     "por": "La angustia moral nace de lo que impide cuidar bien: tiempo, normas, plantilla. Nombrarla así devuelve a la organización la parte que le toca."
+    },
+    {
+     "p": "En 101 profesionales de residencias en España, ¿qué se asoció a más ansiedad?",
+     "o": [
+      "Tener muchos años de experiencia",
+      "Trabajar de noche",
+      "La culpa por la calidad del cuidado y la mala relación con las familias"
+     ],
+     "ok": 2,
+     "por": "Junto a la carga y el desgaste, la culpa por el cuidado que se da y los problemas con las familias pesaban en la ansiedad (Gallego-Alberto et al., 2018)."
+    },
+    {
+     "p": "¿Qué es el «daño moral»?",
+     "o": [
+      "El efecto duradero de hacer, permitir o ver algo que va contra tus convicciones",
+      "Un insulto",
+      "Una multa"
+     ],
+     "ok": 0,
+     "por": "Es más profundo y duradero que la angustia moral. La revisión de 2024 estudió los dos en profesionales sanitarios y sociales."
+    }
+   ],
+   "sabias": "La revisión de 2024 pide a quienes deciden las políticas que tengan en cuenta cómo afectan al personal los cambios bruscos impuestos desde arriba (Beadle et al., 2024)."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Hablarlo con una compañera",
+     "t": "Habla con una compañera de lo que no os dejan hacer y apuntadlo juntas, con un ejemplo concreto.",
+     "historia": "hablar con una compañera de lo que no nos dejan hacer y apuntarlo juntas"
+    },
+    {
+     "corta": "Llevar un ejemplo",
+     "t": "Prepara un ejemplo concreto de algo que no puedes hacer bien por falta de tiempo y llévalo a la próxima reunión de equipo.",
+     "historia": "preparar un ejemplo concreto y llevarlo a la próxima reunión de equipo"
+    }
+   ],
+   "retorno": "¿Lo hablaste o lo llevaste a la reunión? ¿Qué te dijeron? ¿Cómo te sentiste al ponerle nombre?"
+  },
+  "historia": {
+   "pensaba": {
+    "mucho": "Pensaba que sabía cómo cuidar y no me dejaban.",
+    "aveces": "A veces sentía que no podía cuidar como sé.",
+    "nada": "Pensaba que podía cuidar como sé."
+   },
+   "hice": {
+    "a": "Hice lo de siempre: callar y hacerlo como pude.",
+    "b": "Hice como otras veces: comentarlo por lo bajo.",
+    "c": "Hice algo nuevo: decirlo en voz alta con un ejemplo."
+   },
+   "ahora": "Vi que lo que siento tiene nombre, angustia moral, y que no es solo mío. Esta semana voy a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "me-afecta-todo"
+  },
+  "saber_mas": "**Angustia moral** (*moral distress*): saber qué cuidado sería el correcto y no poder darlo por falta de tiempo, de personal o por las normas. **Daño moral** (*moral injury*): su efecto más hondo y duradero. La revisión de Beadle y colaboradoras (2024), con 49 estudios cualitativos, ordenó sus causas en tres niveles: individual, social y de la organización (jerarquía, normas, apoyo, carga, cultura y recursos). En España, en 101 profesionales de residencias, la culpa por la calidad del cuidado y la mala relación con las familias se asociaron a más ansiedad (Gallego-Alberto et al., 2018).",
+  "corto": {
+   "pregunta": "¿Qué cuidado sabes que haría falta y no te dejan dar?",
+   "accion": "Mañana, cuéntaselo a una compañera de confianza."
+  },
+  "rutas": {
+   "A": "Si en tu equipo ya se habla de estas cosas, protege ese espacio: una reunión, un cambio de turno, una supervisora que escucha.",
+   "B": "Las condiciones de trabajo se pueden plantear al servicio de prevención, a la delegada de prevención o al comité de empresa. Los sindicatos también asesoran."
+  }
+ },
+ {
+  "id": "me-afecta-todo",
+  "palabra": "Me afecta todo",
+  "resumen": "Lo que agota puede ser el malestar empático. La compasión se entrena, aunque falta probarlo en cuidadoras.",
+  "perfil": "trabajo",
+  "familia": 4,
+  "ficha": "malestar-empatico",
+  "riesgo": true,
+  "escena": "Dolores es enfermera de cuidados paliativos a domicilio. Cuando una familia llora, ella llora por dentro con ellos. Por la noche, en la cena, sigue en aquella casa.",
+  "choque": {
+   "frase": "«Me llevo a casa lo que sufren.»",
+   "pregunta": "¿Te suena?",
+   "opciones": [
+    {
+     "id": "mucho",
+     "e": "🙋",
+     "t": "Mucho"
+    },
+    {
+     "id": "aveces",
+     "e": "🤔",
+     "t": "A veces"
+    },
+    {
+     "id": "nada",
+     "e": "🙂",
+     "t": "Nada"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Sales de una casa donde la familia lo está pasando muy mal. Tienes diez minutos hasta la siguiente visita. ¿Qué te sale?",
+   "opciones": [
+    {
+     "id": "a",
+     "t": "«Sigo con la siguiente sin pensar.»"
+    },
+    {
+     "id": "b",
+     "t": "«Le doy vueltas a lo que he visto.»"
+    },
+    {
+     "id": "c",
+     "t": "«Paro dos minutos y les deseo algo bueno, a ellos y a mí.»"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "En el laboratorio, entrenar la empatía con el dolor ajeno aumentó el malestar. Entrenar después la compasión lo devolvió a su nivel y aumentó las emociones positivas. Se probó en voluntarios, no en cuidadoras.",
+   "fuente": "Klimecki et al. (2014)",
+   "url": "https://doi.org/10.1093/scan/nst060",
+   "busca": "Lo que buscábamos sintiendo con ellos era no ser fría. Verlo así ayuda: puede haber una forma de acompañar el dolor sin echártelo todo encima. Es una idea sugerente, aún no probada en cuidadoras.",
+   "saltos": [
+    {
+     "t": "Si me afecta, es que no valgo para esto",
+     "p": "Que te afecte habla de que te importa. Una idea sugerente, no probada en cuidadoras, es que agota más el malestar compartido que la compasión."
+    },
+    {
+     "t": "Lo que tengo es fatiga por compasión",
+     "p": "Es un término muy usado, pero criticado: sus escalas no miden compasión (Sinclair et al., 2017). Hablar de estrés del trabajo y de malestar empático describe mejor lo que pasa."
+    },
+    {
+     "t": "No salté: paré dos minutos",
+     "p": "Bien visto. Una pausa breve para desear algo bueno se parece a lo que se entrenó en el laboratorio. No sustituye a cambiar las condiciones."
+    }
+   ],
+   "referencia": "Klimecki, O. M., Leiberg, S., Ricard, M. y Singer, T. (2014). Differential pattern of functional brain plasticity after compassion and empathy training. Social Cognitive and Affective Neuroscience, 9(6), 873-879."
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "¿Qué es el «malestar empático»?",
+     "o": [
+      "No sentir nada",
+      "La experiencia desagradable de compartir el dolor de otro, que empuja a retirarse",
+      "Una alergia"
+     ],
+     "ok": 1,
+     "por": "Se distingue de la compasión, que es desear que el otro esté bien y empuja a ayudar."
+    },
+    {
+     "p": "¿Qué critica la revisión de Sinclair y colaboradores (2017) de la «fatiga por compasión»?",
+     "o": [
+      "Que sus escalas no miden compasión y el término es un eufemismo",
+      "Que el estrés laboral no existe",
+      "Que solo afecta a médicos"
+     ],
+     "ok": 0,
+     "por": "Revisaron 90 estudios: el desgaste es real, pero el nombre no describe bien la causa. Proponen hablar del estrés del trabajo."
+    },
+    {
+     "p": "¿En quién se probó el entrenamiento de la compasión de 2014?",
+     "o": [
+      "En cuidadoras familiares",
+      "En gerocultoras",
+      "En voluntarios sanos, en el laboratorio"
+     ],
+     "ok": 2,
+     "por": "Por eso es una pista, no una receta. Falta probarlo con quien cuida."
+    }
+   ],
+   "sabias": "No hay estudios que muestren que las profesionales más compasivas sean más propensas a la «fatiga por compasión» (Sinclair et al., 2017)."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Dos minutos al acabar",
+     "t": "Al acabar el turno, dedica dos minutos a desearle algo bueno a alguien que atendiste, y a ti.",
+     "historia": "dedicar dos minutos al acabar el turno a desearle algo bueno a alguien y a mí"
+    },
+    {
+     "corta": "Dejarlo en la puerta",
+     "t": "Elige un gesto para cerrar la jornada antes de entrar en casa: lavarte las manos despacio, una canción, una frase. Hazlo tres días.",
+     "historia": "hacer un gesto para cerrar la jornada antes de entrar en casa"
+    }
+   ],
+   "retorno": "¿Lo hiciste? ¿Qué notaste en el cuerpo y en la cabeza? ¿Te llevaste menos a casa?"
+  },
+  "historia": {
+   "pensaba": {
+    "mucho": "Pensaba que me llevaba a casa todo lo que sufren.",
+    "aveces": "A veces me llevaba a casa lo que sufren.",
+    "nada": "Pensaba que sabía dejar el trabajo en la puerta."
+   },
+   "hice": {
+    "a": "Hice lo de siempre: seguir sin pensar.",
+    "b": "Hice como otras veces: darle vueltas a lo que vi.",
+    "c": "Hice algo nuevo: parar y desear algo bueno."
+   },
+   "ahora": "Vi que puedo acompañar el dolor sin cargarlo todo. Esta semana voy a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "interna"
+  },
+  "saber_mas": "**Malestar empático** (*empathic distress*): la experiencia desagradable de compartir el dolor de otro. En el estudio de Klimecki, Leiberg, Ricard y Singer (2014), voluntarios sanos entrenados primero en empatía con el dolor ajeno mostraron más afecto negativo; el entrenamiento posterior en compasión lo revirtió y aumentó el positivo. La idea divulgable, «lo que agota no es la compasión, sino el malestar empático sostenido», es sugerente y **no está probada en cuidadoras**. La «fatiga por compasión» es un término criticado: sus escalas no miden compasión (Sinclair et al., 2017).",
+  "corto": {
+   "pregunta": "¿Qué te has traído hoy a casa del trabajo?",
+   "accion": "Esta noche, antes de cenar, dedica dos minutos a desearle algo bueno a esa persona y a ti."
+  },
+  "rutas": {
+   "A": "Si tienes un gesto que te ayuda a cerrar la jornada, protégelo. También cuenta tener con quién hablarlo en el equipo.",
+   "B": "Si lo que te llevas no se va, cuéntalo en tu servicio de prevención o a tu médica de familia. Algunas empresas y colegios profesionales ofrecen apoyo psicológico: pregunta qué hay en el tuyo."
+  },
+  "aviso": "Si lo que te llevas a casa no te deja dormir o vuelve una y otra vez, habla con tu médica de familia. Si te desborda ahora, pide ayuda:"
+ },
+ {
+  "id": "interna",
+  "palabra": "Interna",
+  "resumen": "Vivir donde trabajas no borra tus derechos: descanso, paro y protección frente al despido.",
+  "perfil": "trabajo",
+  "familia": 5,
+  "ficha": "internas",
+  "riesgo": true,
+  "escena": "Jacqueline vino de Honduras y es interna en casa de don Ramón. Duerme en la habitación de al lado por si la llama de noche. Su tarde libre es el domingo, cuando no surge nada.",
+  "choque": {
+   "frase": "«Vivo en una casa que no es la mía.»",
+   "pregunta": "¿Te suena?",
+   "opciones": [
+    {
+     "id": "mucho",
+     "e": "🙋",
+     "t": "Mucho"
+    },
+    {
+     "id": "aveces",
+     "e": "🤔",
+     "t": "A veces"
+    },
+    {
+     "id": "nada",
+     "e": "🙂",
+     "t": "Nada"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Es tu tarde libre. La hija de la persona que cuidas te pide que te quedes «solo un ratito más». ¿Qué te sale?",
+   "opciones": [
+    {
+     "id": "a",
+     "t": "«Me quedo: no quiero problemas.»"
+    },
+    {
+     "id": "b",
+     "t": "«Me quedo, pero me sienta mal.»"
+    },
+    {
+     "id": "c",
+     "t": "«Le recuerdo que es mi descanso y me voy.»"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "Desde 2022, las trabajadoras del hogar en España tienen protección por desempleo, y la familia ya no puede despedirlas por simple «desistimiento»: la ley pide una causa justificada.",
+   "fuente": "Real Decreto-ley 16/2022 (BOE, 8 de septiembre de 2022)",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-14680",
+   "busca": "Lo que buscábamos con «no es mi casa» era que se viera lo que cuesta vivir donde trabajas. Verlo así da suelo: aunque vivas allí, tu trabajo tiene horas, descansos y derechos.",
+   "saltos": [
+    {
+     "t": "Si vivo aquí, siempre estoy de servicio",
+     "p": "No. Aunque duermas en la casa, la norma marca descansos: doce horas entre jornadas (que pueden ser diez, compensándolas) y treinta y seis horas seguidas a la semana."
+    },
+    {
+     "t": "Si pido mis derechos, me echarán",
+     "p": "Es un miedo real. Desde 2022, el despido necesita una causa y existe el paro. Antes de plantearlo, puedes asesorarte en un sindicato o en una asociación de trabajadoras del hogar."
+    },
+    {
+     "t": "No salté: defendí mi descanso",
+     "p": "Bien visto. Tu descanso no es un favor: es parte de tu contrato."
+    }
+   ],
+   "referencia": "Real Decreto-ley 16/2022, de 6 de septiembre, para la mejora de las condiciones de trabajo y de Seguridad Social de las personas trabajadoras al servicio del hogar. Boletín Oficial del Estado, núm. 216, de 8 de septiembre de 2022 (BOE-A-2022-14680)."
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "Según la norma del empleo en el hogar, ¿cuánto descanso semanal te corresponde?",
+     "o": [
+      "Treinta y seis horas seguidas",
+      "Una tarde",
+      "Lo que acuerde la familia"
+     ],
+     "ok": 0,
+     "por": "Treinta y seis horas consecutivas. Si eres interna, además tienes al menos dos horas al día para las comidas principales, que no cuentan como trabajo."
+    },
+    {
+     "p": "¿Qué cambió el Real Decreto-ley 16/2022 en el despido?",
+     "o": [
+      "Nada",
+      "Prohibió despedir",
+      "Suprimió el «desistimiento»: el despido necesita una causa"
+     ],
+     "ok": 2,
+     "por": "La familia solo puede terminar el contrato por causas justificadas, por escrito, con preaviso e indemnización."
+    },
+    {
+     "p": "En un estudio de la UPV/EHU con 98 cuidadoras a domicilio, ¿qué tenían más las internas que las externas?",
+     "o": [
+      "Más tiempo libre",
+      "Más agotamiento emocional",
+      "Mejor forma física"
+     ],
+     "ok": 1,
+     "por": "Las internas mostraron más agotamiento emocional y peor forma cardiorrespiratoria (Rezola-Pardo et al., 2025). No habla de debilidad, sino de condiciones que piden atención."
+    }
+   ],
+   "sabias": "España ratificó en febrero de 2023 el Convenio 189 de la Organización Internacional del Trabajo, sobre las trabajadoras y los trabajadores domésticos (OIT, 2023)."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Mis horas de descanso",
+     "t": "Apunta tus horas de descanso de esta semana y comprueba si se respetan: entre jornadas, en las comidas y el descanso semanal.",
+     "historia": "apuntar mis horas de descanso y comprobar si se respetan"
+    },
+    {
+     "corta": "Una persona de fuera",
+     "t": "Queda en tu tarde libre con una persona de fuera de la casa: una amiga, tu familia por videollamada, una asociación.",
+     "historia": "quedar en mi tarde libre con una persona de fuera de la casa"
+    }
+   ],
+   "retorno": "¿Apuntaste tus horas o quedaste con alguien? ¿Se respetó tu descanso? ¿Qué vas a hacer con lo que viste?"
+  },
+  "historia": {
+   "pensaba": {
+    "mucho": "Pensaba que vivía en una casa que no era la mía.",
+    "aveces": "A veces sentía que no tenía un sitio propio.",
+    "nada": "Pensaba que tenía mi espacio, aunque viviera allí."
+   },
+   "hice": {
+    "a": "Hice lo de siempre: quedarme para no tener problemas.",
+    "b": "Hice como otras veces: ceder, aunque me sentara mal.",
+    "c": "Hice algo nuevo: defender mi descanso."
+   },
+   "ahora": "Vi que vivir donde trabajo no borra mis derechos. Esta semana voy a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "despues"
+  },
+  "saber_mas": "**Internas:** trabajadoras del hogar que viven en la casa donde cuidan; muchas son migrantes. El Real Decreto 1620/2011 (art. 9) fija doce horas de descanso entre jornadas (reducibles a diez para las internas, con compensación), al menos dos horas diarias para las comidas y treinta y seis horas seguidas de descanso semanal. El Real Decreto-ley 16/2022 incorporó la protección por desempleo, suprimió el despido por desistimiento y reconoció su derecho a la seguridad y la salud en el trabajo. En la UPV/EHU, las cuidadoras internas mostraron más agotamiento emocional que las externas (Rezola-Pardo et al., 2025).",
+  "corto": {
+   "pregunta": "¿Cuándo fue tu último descanso de verdad, fuera de la casa?",
+   "accion": "Mañana, apunta tus horas de descanso de hoy y de mañana."
+  },
+  "rutas": {
+   "A": "Si tienes un día libre que se respeta y alguien fuera de la casa, protégelos: son tu sitio propio.",
+   "B": "Si tus descansos no se respetan, puedes asesorarte en un sindicato o en una asociación de trabajadoras del hogar, y acudir a la Inspección de Trabajo. Muchas asociaciones orientan también sobre papeles."
+  }
+ },
+ {
+  "id": "despues",
+  "palabra": "Después",
+  "resumen": "Cuando el cuidado acaba, queda un hueco. Lo que te sostuvo al cuidar puede sostenerte después.",
+  "perfil": "dos",
+  "familia": 2,
+  "ficha": "despues-de-cuidar",
+  "riesgo": true,
+  "escena": "Maritza fue interna seis años en casa de doña Elvira. Cuando Elvira murió, perdió a la vez el trabajo, la casa y a la persona con quien hablaba cada día. Ahora no sabe qué hacer con las tardes.",
+  "choque": {
+   "frase": "«Ahora que ya no cuido, no sé quién soy.»",
+   "pregunta": "¿Te suena?",
+   "opciones": [
+    {
+     "id": "mucho",
+     "e": "🙋",
+     "t": "Mucho"
+    },
+    {
+     "id": "aveces",
+     "e": "🤔",
+     "t": "A veces"
+    },
+    {
+     "id": "nada",
+     "e": "🙂",
+     "t": "Nada"
+    }
+   ]
+  },
+  "reflejo": {
+   "situacion": "Una antigua amiga te escribe: «Me he enterado. ¿Tomamos un café?». Hace años que no os veis. ¿Qué te sale?",
+   "opciones": [
+    {
+     "id": "a",
+     "t": "«Ahora no tengo ánimo.»"
+    },
+    {
+     "id": "b",
+     "t": "«Le contesto, pero lo dejo en el aire.»"
+    },
+    {
+     "id": "c",
+     "t": "«Le digo que sí y ponemos día.»"
+    }
+   ]
+  },
+  "giro": {
+   "hecho": "En el programa de Nueva York para cónyuges que cuidaban, la mejora del ánimo duró años, y se mantuvo también después del ingreso en residencia o la muerte de su familiar.",
+   "fuente": "Mittelman et al. (2004)",
+   "url": "https://doi.org/10.1176/appi.ajp.161.5.850",
+   "busca": "Lo que buscábamos con «no sé quién soy» era entender el hueco. Verlo así abre algo: lo que te sostuvo mientras cuidabas, como el apoyo y la gente, también puede sostenerte después.",
+   "saltos": [
+    {
+     "t": "Ya no tengo derecho a pedir ayuda",
+     "p": "El cansancio y el duelo no se acaban el día que acaba el cuidado. Pedir ayuda después también es legítimo."
+    },
+    {
+     "t": "Tengo que llenar el hueco cuanto antes",
+     "p": "No hay prisa. Se trata de volver a algo tuyo a tu ritmo, no de cumplir otra obligación."
+    },
+    {
+     "t": "No salté: dije que sí al café",
+     "p": "Bien visto. Recuperar a alguien que perdiste mientras cuidabas es una forma de volver a ti."
+    }
+   ],
+   "referencia": "Mittelman, M. S., Roth, D. L., Coon, D. W. y Haley, W. E. (2004). Sustained benefit of supportive intervention for depressive symptoms in caregivers of patients with Alzheimer's disease. American Journal of Psychiatry, 161(5), 850-856."
+  },
+  "peldano": {
+   "preguntas": [
+    {
+     "p": "En el estudio de 2004, ¿cuánto duró la mejora del ánimo?",
+     "o": [
+      "Más de tres años desde el inicio",
+      "Una semana",
+      "Solo mientras duraban las sesiones"
+     ],
+     "ok": 0,
+     "por": "Se mantuvo 3,1 años desde el inicio del programa, en 406 cónyuges de personas con alzhéimer."
+    },
+    {
+     "p": "¿Qué pasó con la mejora cuando la persona cuidada ingresó en una residencia o murió?",
+     "o": [
+      "Desapareció",
+      "Se mantuvo",
+      "Empeoró siempre"
+     ],
+     "ok": 1,
+     "por": "Se mantuvo. Lo que se ganó con el programa no se perdió al cambiar la situación."
+    },
+    {
+     "p": "¿Cómo se llama el duelo que empieza antes de la muerte, mientras se ve perder a alguien poco a poco?",
+     "o": [
+      "Duelo complicado",
+      "Duelo tardío",
+      "Duelo anticipado"
+     ],
+     "ok": 2,
+     "por": "Muchas personas que cuidan ya han hecho parte del duelo antes. Por eso el después puede sentirse distinto de lo que se espera."
+    }
+   ],
+   "sabias": "El apoyo del programa no terminaba con las sesiones: quien cuidaba podía pedir orientación siempre que la necesitara (Mittelman et al., 2004)."
+  },
+  "mision": {
+   "opciones": [
+    {
+     "corta": "Una llamada pendiente",
+     "t": "Llama a alguien con quien perdiste el contacto mientras cuidabas. Solo para saludar.",
+     "historia": "llamar a alguien con quien perdí el contacto mientras cuidaba"
+    },
+    {
+     "corta": "Una cosa para mí",
+     "t": "Elige una cosa que dejaste por cuidar y dale una hora esta semana, a tu ritmo.",
+     "historia": "dar una hora a una cosa que dejé por cuidar"
+    }
+   ],
+   "retorno": "¿Llamaste o le diste esa hora? ¿Cómo fue? ¿Te apetece repetir?"
+  },
+  "historia": {
+   "pensaba": {
+    "mucho": "Pensaba que, sin cuidar, no sabía quién era.",
+    "aveces": "A veces no sabía qué hacer con el hueco.",
+    "nada": "Pensaba que sabía quién era también sin cuidar."
+   },
+   "hice": {
+    "a": "Hice lo de siempre: esperar a tener ánimo.",
+    "b": "Hice como otras veces: dejarlo en el aire.",
+    "c": "Hice algo nuevo: decir que sí y poner día."
+   },
+   "ahora": "Vi que el después también se cuida, a mi ritmo. Esta semana voy a {mision}."
+  },
+  "vuelta": {
+   "siguiente": "lo-que-pesa"
+  },
+  "saber_mas": "**Después de cuidar:** cuando el cuidado termina, por un ingreso, una muerte o el fin de un contrato, quedan el duelo, el cansancio acumulado y el hueco de un papel que lo ocupaba todo. En el ensayo de la Universidad de Nueva York, con 406 cónyuges de personas con alzhéimer, la orientación y el apoyo redujeron los síntomas de depresión durante 3,1 años, y el efecto se mantuvo tras el ingreso o la muerte del familiar (Mittelman et al., 2004). Se relaciona con el **duelo anticipado** y con la **pérdida del yo** (Skaff y Pearlin, 1992).",
+  "corto": {
+   "pregunta": "¿Quién era importante para ti antes de cuidar y ya no está cerca?",
+   "accion": "Mañana, mándale un mensaje corto: «Me he acordado de ti»."
+  },
+  "rutas": {
+   "A": "Si ya has vuelto a algo tuyo, protégelo. Es el hilo con la vida que sigue.",
+   "B": "Si cuidabas por trabajo y el contrato acabó, pregunta en el SEPE si te corresponde el paro; en Euskadi, inscríbete también en Lanbide. Si cuidabas en casa, tu médica de familia y los grupos de duelo de asociaciones pueden acompañarte."
+  }
+ }
+]

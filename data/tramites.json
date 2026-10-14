@@ -1,0 +1,289 @@
+[
+  {
+    "id": "dependencia",
+    "titulo": "La dependencia: qué es y cómo se pide",
+    "resumen": "Hay dependencia cuando una persona necesita ayuda de otra para lo básico del día, como comer, asearse o moverse. Si le reconocen un grado, puede recibir servicios y ayudas. Se empieza en los servicios sociales.",
+    "pasos": [
+      "Pide cita con la trabajadora social de tu ayuntamiento. En Álava, la solicitud se hace en el IFBS de la Diputación, con cita previa.",
+      "Presenta la solicitud con el DNI y un informe de salud.",
+      "Un equipo visita la casa y valora qué ayuda necesita la persona.",
+      "Llega una resolución con el grado: I, II o III.",
+      "Se fija el Programa Individual de Atención (PIA): los servicios o ayudas que le corresponden."
+    ],
+    "donde": "En Bizkaia y Gipuzkoa, en el servicio social de base de tu ayuntamiento; valora la diputación foral. En Álava, en el Instituto Foral de Bienestar Social (IFBS). Fuera de Euskadi, en el organismo de servicios sociales de tu comunidad autónoma.",
+    "enlaces": [
+      {
+        "t": "Valoración de la dependencia · Diputación Foral de Bizkaia",
+        "url": "https://www.bizkaia.eus/es/valoracion-de-dependencia"
+      },
+      {
+        "t": "Valoración de la dependencia · Diputación Foral de Gipuzkoa",
+        "url": "https://egoitza.gipuzkoa.eus/es/listado-tramites/-/tramiteak/xehetasuna/843"
+      },
+      {
+        "t": "Dependencia · Diputación Foral de Álava",
+        "url": "https://web.araba.eus/es/servicios-sociales/dependencia"
+      },
+      {
+        "t": "Cómo se tramita en España · IMSERSO",
+        "url": "https://imserso.es/en/autonomia-personal-dependencia/sistema-autonomia-atencion-dependencia-saad/preguntas-frecuentes/tramitacion-reconocimiento-situacion-dependencia-derecho-prestaciones-sistema"
+      },
+      {
+        "t": "Ley 39/2006 de dependencia, texto consolidado · BOE",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-21990"
+      }
+    ],
+    "saber_mas": "La ley de dependencia es la Ley 39/2006. Hay tres grados: I (moderada), II (severa) y III (gran dependencia). La solicitud la puede presentar la propia persona, su representante o quien la cuida de hecho, y se puede pedir en cualquier momento. La resolución vale en toda España. En el PIA, la persona y su familia eligen entre los servicios y prestaciones que le corresponden. Si no estáis de acuerdo con la resolución, se puede recurrir. Desde el 23 de octubre de 2026 rige la reforma de la Ley 4/2026: mira la ficha sobre esa ley.",
+    "fuente": "https://www.bizkaia.eus/es/valoracion-de-dependencia",
+    "perfil": "casa"
+  },
+  {
+    "id": "servicios",
+    "titulo": "Respiro, centro de día, ayuda a domicilio y teleasistencia",
+    "resumen": "Hay servicios que alivian el día a día: alguien que va a casa a ayudar, un centro de día, estancias cortas para que descanses y un aparato para pedir ayuda a cualquier hora.",
+    "pasos": [
+      "Cuenta a la trabajadora social de tu ayuntamiento qué necesitáis.",
+      "La ayuda a domicilio se pide en los servicios sociales del ayuntamiento.",
+      "El centro de día y el respiro los da la diputación: pregunta cómo se piden en tu territorio.",
+      "La teleasistencia BetiON se pide en el ayuntamiento, en Zuzenean o en línea.",
+      "Pregunta si hay copago: depende de los ingresos."
+    ],
+    "donde": "Ayuda a domicilio: ayuntamiento. Centro de día y respiro: diputación foral (en Gipuzkoa, el respiro de Sendian se pide en el ayuntamiento). Teleasistencia: BetiON, del Gobierno Vasco; información en el 900 851 600. Fuera de Euskadi, en los servicios sociales de tu ayuntamiento o de tu comunidad autónoma.",
+    "enlaces": [
+      {
+        "t": "Qué son los servicios sociales y quién da cada uno · Gobierno Vasco",
+        "url": "https://www.euskadi.eus/que-son-los-servicios-sociales/web01-a2gizar/es/"
+      },
+      {
+        "t": "Teleasistencia BetiON · Gobierno Vasco",
+        "url": "https://www.euskadi.eus/teleasistencia-betion/web01-tramite/es/"
+      },
+      {
+        "t": "Personas cuidadoras: respiro y programas · Diputación Foral de Bizkaia",
+        "url": "https://www.bizkaia.eus/es/personas-cuidadoras"
+      },
+      {
+        "t": "Programas y servicios · Diputación Foral de Gipuzkoa",
+        "url": "https://www.gipuzkoa.eus/es/web/gizartepolitika/servicios/programas-y-servicios"
+      },
+      {
+        "t": "Servicios de dependencia · Diputación Foral de Álava",
+        "url": "https://web.araba.eus/es/servicios-sociales/servicios-dependencia"
+      }
+    ],
+    "saber_mas": "En Euskadi, los ayuntamientos dan la información, la ayuda a domicilio y el servicio de apoyo a personas cuidadoras, que es gratuito. Las diputaciones dan la valoración, los centros de día, el respiro y las prestaciones económicas. Respiro: en Bizkaia, una ayuda para pagar hasta 30 días al año en una residencia privada; en Gipuzkoa, con Sendian, estancias de hasta 5 días al mes en residencia y centro de día los fines de semana y festivos; en Álava, hasta 45 días al año en residencia, vivienda comunitaria o centro de día. BetiON es para mayores de 75 años que viven solas, personas con dependencia reconocida y otros casos; tiene un precio mensual, con exención según ingresos.",
+    "fuente": "https://www.euskadi.eus/que-son-los-servicios-sociales/web01-a2gizar/es/",
+    "perfil": "casa"
+  },
+  {
+    "id": "prestacion-familiar",
+    "titulo": "La prestación por cuidados en el entorno familiar",
+    "resumen": "Es una ayuda económica para que la persona con dependencia siga en su casa, cuidada por alguien de su familia o de su entorno. La cobra la persona cuidada y tiene que figurar en su plan de cuidados.",
+    "pasos": [
+      "Pídela al hacer la valoración de la dependencia o pide un cambio del PIA.",
+      "Quien cuida tiene que cumplir requisitos: tiempo y capacidad para cuidar y, en general, vivir con la persona.",
+      "La diputación la reconoce y fija la cantidad según el grado y los ingresos.",
+      "Si eres la cuidadora designada, puedes firmar el convenio especial con la Seguridad Social."
+    ],
+    "donde": "En Euskadi la reconoce la diputación foral. En Bizkaia, por la sede electrónica o en las oficinas de registro. En Gipuzkoa, en los servicios sociales del ayuntamiento, con cita. En Álava, por la sede electrónica de la Diputación. Fuera de Euskadi, en los servicios sociales de tu comunidad autónoma.",
+    "enlaces": [
+      {
+        "t": "Prestación para cuidados en el entorno familiar · Diputación Foral de Bizkaia",
+        "url": "https://www.bizkaia.eus/es/ayudas-y-prestaciones-para-personas-con-dependencia-discapacidad/pecef"
+      },
+      {
+        "t": "Prestación para cuidados en el entorno familiar · Diputación Foral de Gipuzkoa",
+        "url": "https://egoitza.gipuzkoa.eus/es/listado-tramites/-/tramiteak/xehetasuna/837"
+      },
+      {
+        "t": "Prestaciones económicas · Diputación Foral de Álava",
+        "url": "https://web.araba.eus/es/servicios-sociales/ayudas-economicas"
+      },
+      {
+        "t": "Ley 39/2006, artículo 18 · BOE",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-21990"
+      }
+    ],
+    "saber_mas": "Es la prestación más frecuente del sistema. Cada diputación pone sus requisitos. Bizkaia pide que quien cuida sea familiar o del entorno relacional, viva y esté empadronada con la persona (salvo algunos casos de grado I) y no cuide a más de dos personas. Gipuzkoa la abre a cónyuge o pareja, familia hasta tercer grado, tutor o persona que conviva desde hace al menos cinco años, y pide una formación básica de 16 horas a quien tiene menos de 75 años. La cantidad depende del territorio, del grado y de los ingresos: consúltala en tu diputación. Desde el 23 de octubre de 2026, la ley estatal incluye también a cuidadoras del entorno relacional: pregunta cómo se aplica en tu territorio.",
+    "fuente": "https://www.bizkaia.eus/es/ayudas-y-prestaciones-para-personas-con-dependencia-discapacidad/pecef",
+    "perfil": "casa"
+  },
+  {
+    "id": "cotizaciones",
+    "titulo": "Cotizar a la Seguridad Social mientras cuidas",
+    "resumen": "Si cuidas a alguien que cobra la prestación por cuidados en el entorno familiar, puedes cotizar para tu jubilación sin pagar tú las cuotas. Se llama convenio especial. La Ley 4/2026 reconoce este derecho a la cuidadora principal.",
+    "pasos": [
+      "Comprueba que figuras como cuidadora en la resolución de la prestación y en el PIA.",
+      "Pide el convenio en la Tesorería General de la Seguridad Social, en su sede electrónica o en una oficina.",
+      "Lleva la resolución de la prestación y el DNI de las dos personas.",
+      "Hazlo en los 90 días siguientes al inicio de la prestación: así cuenta desde ese día."
+    ],
+    "donde": "En toda España, también en Euskadi, en la Tesorería General de la Seguridad Social (sede electrónica u oficinas). La diputación o la comunidad autónoma reconoce la prestación; la Seguridad Social tramita el convenio.",
+    "enlaces": [
+      {
+        "t": "Convenio especial de cuidadores no profesionales · Seguridad Social",
+        "url": "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/Afiliacion/10547/51635/"
+      },
+      {
+        "t": "Quién paga las cuotas del convenio · IMSERSO",
+        "url": "https://imserso.es/en/autonomia-personal-dependencia/sistema-autonomia-atencion-dependencia-saad/recuperacion-financiacion-cuotas-convenio-cuidadores-no-profesionales"
+      },
+      {
+        "t": "Ley 4/2026 · BOE",
+        "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20528"
+      }
+    ],
+    "saber_mas": "Desde el 1 de abril de 2019, la Administración General del Estado paga las cuotas (Real Decreto-ley 6/2019). Si quieres mantener la base con la que cotizabas antes, en algunos casos puedes pagar tú un convenio complementario. En general no puedes firmarlo si ya estás de alta a tiempo completo o cobras el paro. Cubre, entre otras, la jubilación y la incapacidad permanente. La Ley 4/2026, en vigor desde el 23 de octubre de 2026, reconoce a la cuidadora principal el derecho a estar incorporada a la Seguridad Social en los términos que fija la propia ley. Cómo se aplica depende de su desarrollo: pregunta en la Seguridad Social.",
+    "fuente": "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/Afiliacion/10547/51635/",
+    "perfil": "casa"
+  },
+  {
+    "id": "ley-4-2026",
+    "titulo": "Qué cambia la Ley 4/2026",
+    "resumen": "Una ley de octubre de 2026 reforma la ley de dependencia. Reconoce a la persona cuidadora y algunos de sus derechos. Rige desde el 23 de octubre de 2026, pero mucho depende de normas que aún tienen que llegar.",
+    "pasos": [
+      "La ley entra en vigor el 23 de octubre de 2026.",
+      "Pregunta en los servicios sociales cómo se aplica en tu territorio.",
+      "Si cuidas a alguien de tu entorno que no es de tu familia, pregunta si puedes figurar como cuidadora.",
+      "Si eres la cuidadora principal, pregunta por tus derechos: formación, conciliación y Seguridad Social.",
+      "Guarda las resoluciones y apunta tus dudas para la trabajadora social."
+    ],
+    "donde": "La ley es estatal, pero la aplican las comunidades autónomas; en Euskadi, las diputaciones forales y los ayuntamientos. El Gobierno tiene que aprobar reglamentos y el Consejo Territorial de Servicios Sociales tiene que acordar criterios comunes.",
+    "enlaces": [
+      {
+        "t": "Ley 4/2026, de 1 de octubre · BOE",
+        "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20528"
+      },
+      {
+        "t": "Ley 39/2006 con los cambios de la Ley 4/2026 · BOE",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-21990"
+      },
+      {
+        "t": "El BOE publica la Ley 4/2026 · IMSERSO",
+        "url": "https://imserso.es/en/detalle-actualidad/-/asset_publisher/n1oS8lWfrx6m/content/el-boe-publica-la-ley-4-2026-que-reforma-las-leyes-de-discapacidad-y-dependencia/20123"
+      }
+    ],
+    "saber_mas": "La ley reconoce a la persona cuidadora principal y a las cuidadoras no profesionales, y permite que cuide alguien del entorno relacional, no solo de la familia. Quien cuida tiene derecho a información, acompañamiento y formación. La cuidadora principal tiene derecho a medidas de conciliación, a que el cuidado siga si enferma gravemente o la hospitalizan y a estar incorporada a la Seguridad Social. La teleasistencia pasa a ser un derecho. Se suprime el régimen estatal de incompatibilidades entre prestaciones, sin cambiar el que fija cada comunidad. A efectos de esta ley, el grado I equivale a un 33 % de discapacidad. Su desarrollo depende de reglamentos y de cada comunidad: no hay plazos ni cuantías que prometer.",
+    "fuente": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20528",
+    "perfil": "casa"
+  },
+  {
+    "id": "programas-euskadi",
+    "titulo": "Programas para quien cuida en Euskadi",
+    "resumen": "En Euskadi hay programas pensados para quien cuida: formación, grupos de apoyo, psicología, respiro, un teléfono y una app. Cada territorio tiene los suyos. Se empieza en los servicios sociales del ayuntamiento.",
+    "pasos": [
+      "Pide cita con la trabajadora social de tu ayuntamiento y pregunta por el apoyo a personas cuidadoras.",
+      "En Bizkaia, pregunta por Zaintza Eskola, etxeTIC, ZaintzAPP y el respiro.",
+      "En Gipuzkoa, pregunta por Sendian.",
+      "En Álava, si vives en una zona rural, pregunta por Zainduz.",
+      "En toda Euskadi puedes llamar a Zaintel, el 900 100 356, o pedir la app Zaindoo."
+    ],
+    "donde": "Para empezar, el servicio social de base de tu ayuntamiento. Diputación Foral de Bizkaia: 944 066 000. Diputación Foral de Gipuzkoa: 943 112 111. Diputación Foral de Álava (IFBS): 945 15 10 15. Gobierno Vasco: Zaintel (900 100 356) y Zaindoo (900 840 126).",
+    "enlaces": [
+      {
+        "t": "Personas cuidadoras · Diputación Foral de Bizkaia",
+        "url": "https://www.bizkaia.eus/es/personas-cuidadoras"
+      },
+      {
+        "t": "etxeTIC · Diputación Foral de Bizkaia",
+        "url": "https://www.bizkaia.eus/es/etxetic"
+      },
+      {
+        "t": "Programa Sendian · Diputación Foral de Gipuzkoa",
+        "url": "https://egoitza.gipuzkoa.eus/es/listado-tramites/-/tramiteak/xehetasuna/1670"
+      },
+      {
+        "t": "Servicios de dependencia y Zainduz · Diputación Foral de Álava",
+        "url": "https://web.araba.eus/es/servicios-sociales/servicios-dependencia"
+      },
+      {
+        "t": "Zaindoo: cómo se solicita · Gobierno Vasco",
+        "url": "https://www.euskadi.eus/zaindoo-como-se-solicita/web01-a2zaindu/es/"
+      },
+      {
+        "t": "Estrategia Sociosanitaria de Apoyo a las Familias Cuidadoras 2021-2030 · Gobierno Vasco",
+        "url": "https://www.euskadi.eus/contenidos/informacion/planes_ss/es_planes/adjuntos/ESAFC_210503.pdf"
+      }
+    ],
+    "saber_mas": "Sendian (Gipuzkoa): formación, grupos de apoyo, hasta 10 sesiones de psicología (12 en casos excepcionales), estancias de hasta 5 días al mes en residencia y centro de día los fines de semana; se pide en persona en el ayuntamiento. Bizkaia: formación gratuita, etxeTIC (gratuito, para quien cobra la prestación familiar), ZaintzAPP y ayuda para hasta 30 días al año de respiro. Álava: Zainduz y estancias de respiro de hasta 45 días al año. Zaindoo es gratuita si la persona cuidada tiene más de 60 años, grado reconocido y vive en casa. La Estrategia Sociosanitaria de Apoyo a las Familias Cuidadoras 2021-2030 propone que este apoyo sea un derecho.",
+    "fuente": "https://www.gipuzkoa.eus/es/web/gizartepolitika/servicios/programas-y-servicios",
+    "perfil": "casa"
+  },
+  {
+    "id": "trabajadoras-hogar",
+    "titulo": "Si trabajas en una casa: tus derechos",
+    "resumen": "Si trabajas cuidando o limpiando en una casa, también como interna, tienes derechos: alta en la Seguridad Social, paro, despido solo con causa y protección de tu salud, también frente al acoso.",
+    "pasos": [
+      "Comprueba que estás de alta en la Seguridad Social: le toca a quien te contrata.",
+      "Desde octubre de 2022 se cotiza por desempleo: puedes cobrar el paro si cumples los requisitos.",
+      "Si te despiden, tienen que darte la causa por escrito y avisarte con tiempo.",
+      "Quien te contrata tiene que evaluar los riesgos de tu trabajo e informarte.",
+      "Ante violencia o acoso puedes irte de la casa: no cuenta como dimisión.",
+      "Para denunciar, acude a la Inspección de Trabajo."
+    ],
+    "donde": "En Euskadi, la Inspección de Trabajo del Gobierno Vasco: Bizkaia 944 032 700, Gipuzkoa 943 023 550 y Álava 945 062 100. En el resto de España, la Inspección de Trabajo y Seguridad Social. El paro se pide al Servicio Público de Empleo Estatal (SEPE).",
+    "enlaces": [
+      {
+        "t": "Real Decreto-ley 16/2022, trabajadoras del hogar · BOE",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-14680"
+      },
+      {
+        "t": "Real Decreto 893/2024, salud y seguridad en el hogar · BOE",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2024-18182"
+      },
+      {
+        "t": "Novedades para empleadas de hogar · Seguridad Social",
+        "url": "https://revista.seg-social.es/-/20220930-guia-novedades-empleadas-de-hogar"
+      },
+      {
+        "t": "Protocolo frente a la violencia y el acoso en el hogar · INSST",
+        "url": "https://www.insst.es/documentacion/material-normativo/protocolo-de-actuacion-frente-a-situaciones-de-violencia-y-acoso-en-el-servicio-del-hogar-familiar-2025"
+      },
+      {
+        "t": "Inspección de Trabajo en Euskadi · Gobierno Vasco",
+        "url": "https://www.euskadi.eus/inspeccion-de-trabajo-contacto/web01-a2inspec/es/"
+      }
+    ],
+    "saber_mas": "El Real Decreto-ley 16/2022 acabó con el despido por «desistimiento»: ahora hace falta una causa, como menos ingresos o cambios en las necesidades de la familia, con indemnización de 12 días por año y preaviso de 20 días si llevas más de un año, o de 7 si no. Para cobrar el paro hacen falta al menos 360 días cotizados por desempleo. El Real Decreto 893/2024 obliga a evaluar los riesgos del puesto y da derecho a reconocimientos médicos voluntarios y a parar ante un riesgo grave e inminente. En 2026 el INSST publicó una guía técnica y un protocolo frente a la violencia y el acoso. España ratificó en 2023 el Convenio 189 de la OIT.",
+    "fuente": "https://www.boe.es/buscar/act.php?id=BOE-A-2024-18182",
+    "perfil": "trabajo"
+  },
+  {
+    "id": "riesgos-psicosociales",
+    "titulo": "Riesgos psicosociales en el trabajo: qué hacer",
+    "resumen": "Mucha carga, prisas, poco apoyo, violencia o tareas que te vacían por dentro son riesgos del trabajo. Vienen sobre todo de la organización, no de ti. Tu empresa tiene que evaluarlos y prevenirlos.",
+    "pasos": [
+      "Apunta qué pasa, cuándo y cómo te afecta.",
+      "Habla con el servicio de prevención de tu empresa o con la delegada de prevención.",
+      "Pide que esos riesgos se evalúen y que se tomen medidas.",
+      "Si tu salud se resiente, pide cita en tu centro de salud.",
+      "Si no se hace nada, puedes acudir a la Inspección de Trabajo."
+    ],
+    "donde": "En Euskadi, Osalan informa y asesora (944 032 190) y la Inspección de Trabajo del Gobierno Vasco recibe denuncias, también anónimas por su Buzón del fraude laboral. En el resto de España, el organismo de seguridad y salud laboral de tu comunidad y la Inspección de Trabajo y Seguridad Social.",
+    "enlaces": [
+      {
+        "t": "Riesgos psicosociales · INSST",
+        "url": "https://www.insst.es/materias/riesgos/riesgos-psicosociales"
+      },
+      {
+        "t": "Ley 31/1995 de Prevención de Riesgos Laborales · BOE",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292"
+      },
+      {
+        "t": "Osalan · Gobierno Vasco",
+        "url": "https://www.osalan.euskadi.eus/osalan/"
+      },
+      {
+        "t": "Denuncias ante la Inspección de Trabajo · Gobierno Vasco",
+        "url": "https://www.euskadi.eus/arbitraje_denuncia_reclamacion/inspeccion-de-trabajo/web01-tramite/es/"
+      },
+      {
+        "t": "Buzón del fraude laboral · Gobierno Vasco",
+        "url": "https://www.euskadi.eus/arbitraje_denuncia_reclamacion/buzon-del-fraude-laboral/web01-a2langiz/es/"
+      }
+    ],
+    "saber_mas": "La Ley 31/1995 de Prevención de Riesgos Laborales da derecho a una protección eficaz de la salud en el trabajo. La empresa tiene que evaluar los riesgos, también los psicosociales, adaptar el trabajo a la persona e informar y consultar a la plantilla. La vigilancia de la salud es voluntaria y confidencial. Según el INSST, los factores psicosociales son condiciones de la organización del trabajo: carga excesiva o insuficiente, ritmos altos, poco control, poco apoyo, conflictos o violencia y tareas con mucha exigencia emocional. Las medidas que van primero son las que cambian el origen, no las que solo piden más aguante a la persona.",
+    "fuente": "https://www.insst.es/materias/riesgos/riesgos-psicosociales",
+    "perfil": "trabajo"
+  }
+]

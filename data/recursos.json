@@ -1,0 +1,401 @@
+{
+  "comprobado": "2026-10-14",
+  "grupos": [
+    {
+      "id": "urgencia",
+      "titulo": "Si es urgente",
+      "intro": "Si hay peligro para ti o para otra persona, llama ya. Son gratuitos y atienden a cualquier hora.",
+      "items": [
+        {
+          "nombre": "Emergencias 112",
+          "para": "Una urgencia o un riesgo para la vida o la salud de alguien.",
+          "telefono": "112",
+          "tel": "112",
+          "otros": "En Euskadi lo atiende SOS Deiak: app 112 SOS Deiak y SVIsual para personas sordas",
+          "horario": "24 horas, todos los días",
+          "ambito": "espana",
+          "perfil": "dos",
+          "url": "https://www.euskadi.eus/web01-a2larri/es/contenidos/informacion/como_llamar_112/es_recom_ca/index.shtml",
+          "fuente": "https://www.euskadi.eus/web01-a2larri/es/contenidos/informacion/como_llamar_112/es_recom_ca/index.shtml",
+          "nota": "Gratuito."
+        },
+        {
+          "nombre": "024 · Línea de atención a la conducta suicida",
+          "para": "Si piensas en quitarte la vida o te preocupa alguien cercano.",
+          "telefono": "024",
+          "tel": "024",
+          "otros": "Chat y atención en lengua de signos en su web",
+          "horario": "24 horas, todos los días",
+          "ambito": "espana",
+          "perfil": "dos",
+          "url": "https://www.sanidad.gob.es/linea024/",
+          "fuente": "https://www.sanidad.gob.es/linea024/",
+          "nota": "Gratuito y confidencial. Si el riesgo es inmediato, llama al 112."
+        },
+        {
+          "nombre": "016 · Atención a víctimas de violencias contra las mujeres",
+          "para": "Si sufres cualquier forma de violencia por ser mujer.",
+          "telefono": "016",
+          "tel": "016",
+          "otros": "WhatsApp 600 000 016 · 016-online@igualdad.gob.es · chat en su web",
+          "horario": "24 horas. Asesoría jurídica, de 8 a 22 h, todos los días",
+          "ambito": "espana",
+          "perfil": "dos",
+          "url": "https://violenciagenero.igualdad.gob.es/informacion-3/recursos/telefono016/",
+          "fuente": "https://violenciagenero.igualdad.gob.es/informacion-3/recursos/telefono016/",
+          "nota": "Gratuito. Atiende también en euskera."
+        },
+        {
+          "nombre": "Fundación ANAR · Teléfono de ayuda a niños, niñas y adolescentes",
+          "para": "Para menores de edad con un problema, también si cuidan de alguien en casa.",
+          "telefono": "900 20 20 10",
+          "tel": "900202010",
+          "otros": "Chat: chatanar.es",
+          "horario": "24 horas",
+          "ambito": "espana",
+          "perfil": "casa",
+          "url": "https://www.anar.org/",
+          "fuente": "https://www.anar.org/",
+          "nota": "Gratuito y confidencial."
+        }
+      ]
+    },
+    {
+      "id": "hablar",
+      "titulo": "Alguien con quien hablar",
+      "intro": "Cuando pesa y necesitas contarlo, o no sabes por dónde empezar. Son líneas de escucha e información; no sustituyen a tu médica ni a la psicóloga.",
+      "items": [
+        {
+          "nombre": "Zaintel · Gobierno Vasco",
+          "para": "Familias que cuidan en Euskadi: escucha, apoyo psicológico e información sobre ayudas, trámites y cuidados.",
+          "telefono": "900 100 356",
+          "tel": "900100356",
+          "horario": "De lunes a viernes, de 10 a 14 h",
+          "ambito": "euskadi",
+          "perfil": "casa",
+          "url": "https://www.zaintel.eus",
+          "fuente": "https://www.vitoria-gasteiz.org/docs/wb021/contenidosEstaticos/adjuntos/es/31/25/83125.pdf",
+          "nota": "Gratuito y confidencial."
+        },
+        {
+          "nombre": "Teléfono de la Esperanza",
+          "para": "Escucha y apoyo emocional en una crisis o cuando todo pesa.",
+          "telefono": "717 003 717",
+          "tel": "717003717",
+          "horario": "24 horas",
+          "ambito": "espana",
+          "perfil": "dos",
+          "url": "https://telefonodelaesperanza.org/",
+          "fuente": "https://www.madrid.es/portales/munimadrid/es/AyuntamientodeMadrid/Telefono-de-la-Esperanza/?vgnextfmt=default&vgnextoid=ca6c9cd2554b2610VgnVCM2000001f4a900aRCRD&vgnextchannel=2af809f68134b010VgnVCM1000000b205a0aRCRD"
+        },
+        {
+          "nombre": "Cruz Roja Te Escucha",
+          "para": "Apoyo emocional si te sientes mal o con mucho malestar.",
+          "telefono": "900 107 917",
+          "tel": "900107917",
+          "horario": "De lunes a viernes, de 10 a 14 h; de lunes a jueves, también de 16 a 20 h",
+          "ambito": "espana",
+          "perfil": "dos",
+          "url": "https://www2.cruzroja.es/en/te-escucha",
+          "fuente": "https://www2.cruzroja.es/en/te-escucha",
+          "nota": "Gratuito y confidencial."
+        },
+        {
+          "nombre": "Cruz Roja · SerCuidadorA",
+          "para": "Información y apoyo para quien cuida sin ser su trabajo: guías, talleres, grupos y consejos.",
+          "telefono": "900 365 100",
+          "tel": "900365100",
+          "otros": "WhatsApp 678 48 09 51 (solo mensajes) · sercuidadora@cruzroja.es",
+          "horario": "De lunes a viernes, de 9 a 21 h",
+          "ambito": "espana",
+          "perfil": "casa",
+          "url": "https://www2.cruzroja.es/en/sercuidadora",
+          "fuente": "https://www2.cruzroja.es/sercuidadora/que-hacemos",
+          "nota": "La llamada es gratuita."
+        }
+      ]
+    },
+    {
+      "id": "salud",
+      "titulo": "Tu salud",
+      "intro": "Tu salud también cuenta. Puedes pedir cita para ti, no solo para la persona que cuidas.",
+      "items": [
+        {
+          "nombre": "Consejo Sanitario de Osakidetza",
+          "para": "Dudas de salud que no necesitan ir en persona. Te atiende personal de enfermería.",
+          "telefono": "900 20 30 50",
+          "tel": "900203050",
+          "otros": "Al llamar, elige la opción Consejo Sanitario",
+          "horario": "24 horas, todos los días",
+          "ambito": "euskadi",
+          "perfil": "dos",
+          "url": "https://www.osakidetza.euskadi.eus/consejo-sanitario/webosk00-sercon/es/",
+          "fuente": "https://www.osakidetza.euskadi.eus/consejo-sanitario/webosk00-sercon/es/"
+        },
+        {
+          "nombre": "Tu centro de salud · Osakidetza",
+          "para": "Pide cita para ti con tu médica de familia o tu enfermera.",
+          "telefono": "900 20 30 50",
+          "tel": "900203050",
+          "otros": "También por internet, en la web de Osakidetza, o en persona en tu centro",
+          "horario": "",
+          "ambito": "euskadi",
+          "perfil": "dos",
+          "url": "https://www.osakidetza.euskadi.eus/portada/",
+          "fuente": "https://www.osakidetza.euskadi.eus/centro-de-salud-de-algorta/webosk00-cercon/es/",
+          "nota": "El horario es el de tu centro de salud. Fuera de Euskadi, pide cita en el tuyo."
+        }
+      ]
+    },
+    {
+      "id": "servicios",
+      "titulo": "Servicios sociales y programas",
+      "intro": "En Euskadi se empieza por los servicios sociales de tu ayuntamiento. Las diputaciones dan la valoración, el respiro y la prestación económica.",
+      "items": [
+        {
+          "nombre": "Servicios sociales de tu ayuntamiento",
+          "para": "La puerta de entrada: valoración de la dependencia, ayuda a domicilio y apoyo a quien cuida.",
+          "telefono": "",
+          "tel": "",
+          "otros": "Llama a tu ayuntamiento y pide cita con la trabajadora social",
+          "horario": "",
+          "ambito": "euskadi",
+          "perfil": "casa",
+          "url": "https://www.euskadi.eus/que-son-los-servicios-sociales/web01-a2gizar/es/",
+          "fuente": "https://www.euskadi.eus/que-son-los-servicios-sociales/web01-a2gizar/es/",
+          "nota": "El servicio municipal de apoyo a personas cuidadoras es gratuito."
+        },
+        {
+          "nombre": "Diputación Foral de Bizkaia · Acción Social",
+          "para": "Valoración de la dependencia, prestaciones y programas para quien cuida: Zaintza Eskola, etxeTIC, ZaintzAPP y respiro.",
+          "telefono": "944 066 000",
+          "tel": "944066000",
+          "horario": "De lunes a viernes, de 8:30 a 19 h; en julio y agosto, de 8:30 a 14:30 h",
+          "ambito": "bizkaia",
+          "perfil": "casa",
+          "url": "https://www.bizkaia.eus/es/personas-cuidadoras",
+          "fuente": "https://www.bizkaia.eus/es/personas-cuidadoras",
+          "nota": "Zaintza Eskola es formación gratuita. El respiro es una ayuda para pagar hasta 30 días al año en una residencia privada."
+        },
+        {
+          "nombre": "Diputación Foral de Gipuzkoa · Sendian",
+          "para": "Sendian: formación, grupos de apoyo, psicología, respiro en residencia y centro de día los fines de semana.",
+          "telefono": "943 112 111",
+          "tel": "943112111",
+          "horario": "De lunes a viernes, de 8:30 a 14:30 h",
+          "ambito": "gipuzkoa",
+          "perfil": "casa",
+          "url": "https://www.gipuzkoa.eus/es/web/gizartepolitika/servicios/programas-y-servicios",
+          "fuente": "https://egoitza.gipuzkoa.eus/es/atencion/contacto",
+          "nota": "Sendian se pide en persona en los servicios sociales de tu ayuntamiento. Incluye hasta 10 sesiones de psicología (12 en casos excepcionales) y estancias de hasta 5 días al mes."
+        },
+        {
+          "nombre": "Diputación Foral de Álava · IFBS y Zainduz",
+          "para": "Valoración de la dependencia, respiro de hasta 45 días al año y Zainduz, para quien cuida en zonas rurales.",
+          "telefono": "945 15 10 15",
+          "tel": "945151015",
+          "otros": "ifbs@araba.eus",
+          "horario": "De lunes a viernes, de 9 a 14 h",
+          "ambito": "alava",
+          "perfil": "casa",
+          "url": "https://web.araba.eus/es/servicios-sociales/servicios-dependencia",
+          "fuente": "https://web.araba.eus/es/servicios-sociales",
+          "nota": "Atención en oficina con cita previa. Zainduz: formación, apoyo psicológico en casa, grupos de ayuda mutua y consejo para adaptar la vivienda."
+        },
+        {
+          "nombre": "Zaindoo · Gobierno Vasco",
+          "para": "App gratuita con sesiones con una especialista, formación y comunidad, para quien cuida en casa a un familiar mayor.",
+          "telefono": "900 840 126",
+          "tel": "900840126",
+          "otros": "zaindoo@euskadi.eus",
+          "horario": "",
+          "ambito": "euskadi",
+          "perfil": "casa",
+          "url": "https://www.euskadi.eus/zaindoo/es",
+          "fuente": "https://www.euskadi.eus/zaindoo-como-se-solicita/web01-a2zaindu/es/",
+          "nota": "La persona cuidada tiene más de 60 años, un grado de dependencia reconocido y vive en su casa, no en una residencia."
+        }
+      ]
+    },
+    {
+      "id": "asociaciones",
+      "titulo": "Asociaciones y fundaciones",
+      "intro": "Familias que han pasado por lo mismo y profesionales que orientan. Llama o escribe para saber qué ofrecen cerca de ti.",
+      "items": [
+        {
+          "nombre": "AFA Bizkaia",
+          "para": "Familias de personas con alzhéimer u otras demencias: información, grupos de apoyo psicológico, cursos y asesoría jurídica.",
+          "telefono": "94 416 76 17",
+          "tel": "944167617",
+          "otros": "info@afa-bizkaia.com",
+          "horario": "",
+          "ambito": "bizkaia",
+          "perfil": "casa",
+          "url": "https://www.afa-bizkaia.com/",
+          "fuente": "https://www.afa-bizkaia.com/"
+        },
+        {
+          "nombre": "AFAGI · Alzheimer Gipuzkoa",
+          "para": "Familias de personas con alzhéimer u otras demencias: atención psicológica y psicosocial, con cita previa.",
+          "telefono": "943 297 118",
+          "tel": "943297118",
+          "otros": "afagi@afagi.eus",
+          "horario": "",
+          "ambito": "gipuzkoa",
+          "perfil": "casa",
+          "url": "https://afagi.eus/orientacionafamiliares/",
+          "fuente": "https://afagi.eus/orientacionafamiliares/"
+        },
+        {
+          "nombre": "AFARABA",
+          "para": "Familias y amistades de personas con alzhéimer u otras demencias en Álava.",
+          "telefono": "945 24 60 04",
+          "tel": "945246004",
+          "horario": "",
+          "ambito": "alava",
+          "perfil": "casa",
+          "url": "https://www.afaraba.org",
+          "fuente": "https://www.vitoria-gasteiz.org/docs/wb021/contenidosEstaticos/adjuntos/es/31/25/83125.pdf"
+        },
+        {
+          "nombre": "CEAFA · Confederación Española de Alzheimer",
+          "para": "Información para familias y buscador de la asociación de alzhéimer de tu zona.",
+          "telefono": "948 17 45 17",
+          "tel": "948174517",
+          "otros": "ceafa@ceafa.es",
+          "horario": "",
+          "ambito": "espana",
+          "perfil": "casa",
+          "url": "https://www.ceafa.es/",
+          "fuente": "https://www.ceafa.es/"
+        },
+        {
+          "nombre": "AVIFES",
+          "para": "Familias y personas con enfermedad mental en Bizkaia: orientación, información y apoyo.",
+          "telefono": "94 445 62 56",
+          "tel": "944456256",
+          "horario": "",
+          "ambito": "bizkaia",
+          "perfil": "casa",
+          "url": "https://www.avifes.org/",
+          "fuente": "https://www.avifes.org/"
+        },
+        {
+          "nombre": "AGIFES",
+          "para": "Familias y personas con problemas de salud mental en Gipuzkoa: orientación gratuita y apoyo.",
+          "telefono": "943 47 43 37",
+          "tel": "943474337",
+          "otros": "agifes@agifes.org",
+          "horario": "",
+          "ambito": "gipuzkoa",
+          "perfil": "casa",
+          "url": "https://www.agifes.org/",
+          "fuente": "https://www.agifes.org/"
+        },
+        {
+          "nombre": "ASAFES",
+          "para": "Familias y personas con problemas de salud mental en Álava.",
+          "telefono": "945 288 648",
+          "tel": "945288648",
+          "otros": "asafes@asafes.org",
+          "horario": "",
+          "ambito": "alava",
+          "perfil": "casa",
+          "url": "https://www.asafes.org/",
+          "fuente": "https://www.asafes.org/"
+        },
+        {
+          "nombre": "Matia Orienta · Matia Fundazioa",
+          "para": "Orientación gratuita sobre situaciones de dependencia.",
+          "telefono": "943 317 123",
+          "tel": "943317123",
+          "otros": "info@matiafundazioa.eus",
+          "horario": "",
+          "ambito": "gipuzkoa",
+          "perfil": "casa",
+          "url": "https://www.matiafundazioa.eus/",
+          "fuente": "https://www.matiafundazioa.eus/"
+        }
+      ]
+    },
+    {
+      "id": "trabajo",
+      "titulo": "Si cuidas por trabajo",
+      "intro": "El desgaste en el trabajo no es un fallo tuyo: sus causas son sobre todo de la organización. Aquí puedes consultar o denunciar.",
+      "items": [
+        {
+          "nombre": "El servicio de prevención de tu empresa",
+          "para": "Para contar lo que te pesa en el trabajo: carga, ritmo, poco apoyo, violencia o acoso.",
+          "telefono": "",
+          "tel": "",
+          "horario": "",
+          "ambito": "espana",
+          "perfil": "trabajo",
+          "url": "https://www.insst.es/materias/riesgos/riesgos-psicosociales",
+          "fuente": "https://www.insst.es/materias/riesgos/riesgos-psicosociales",
+          "nota": "La empresa tiene que evaluar los riesgos psicosociales y prevenirlos. Si hay delegada de prevención, también puedes hablar con ella."
+        },
+        {
+          "nombre": "Osalan · Instituto Vasco de Seguridad y Salud Laborales",
+          "para": "Información y asesoramiento sobre prevención de riesgos laborales, también los psicosociales.",
+          "telefono": "944 032 190",
+          "tel": "944032190",
+          "otros": "Centros territoriales: Álava 945 016 800 · Gipuzkoa 943 023 250 · Bizkaia 944 032 179",
+          "horario": "De lunes a viernes, de 8:30 a 14 h",
+          "ambito": "euskadi",
+          "perfil": "trabajo",
+          "url": "https://www.osalan.euskadi.eus/osalan/",
+          "fuente": "https://www.osalan.euskadi.eus/donde-estamos/webosa00-contqso/es/"
+        },
+        {
+          "nombre": "Inspección de Trabajo · Bizkaia",
+          "para": "Para denunciar incumplimientos laborales, de Seguridad Social o de prevención de riesgos. La denuncia es confidencial.",
+          "telefono": "944 032 700",
+          "tel": "944032700",
+          "otros": "Denuncia en línea y Buzón del fraude laboral, anónimo, en euskadi.eus",
+          "horario": "",
+          "ambito": "bizkaia",
+          "perfil": "trabajo",
+          "url": "https://www.euskadi.eus/inspeccion-de-trabajo-contacto/web01-a2inspec/es/",
+          "fuente": "https://www.euskadi.eus/inspeccion-de-trabajo-contacto/web01-a2inspec/es/"
+        },
+        {
+          "nombre": "Inspección de Trabajo · Gipuzkoa",
+          "para": "Para denunciar incumplimientos laborales, de Seguridad Social o de prevención de riesgos. La denuncia es confidencial.",
+          "telefono": "943 023 550",
+          "tel": "943023550",
+          "otros": "Denuncia en línea y Buzón del fraude laboral, anónimo, en euskadi.eus",
+          "horario": "",
+          "ambito": "gipuzkoa",
+          "perfil": "trabajo",
+          "url": "https://www.euskadi.eus/inspeccion-de-trabajo-contacto/web01-a2inspec/es/",
+          "fuente": "https://www.euskadi.eus/inspeccion-de-trabajo-contacto/web01-a2inspec/es/"
+        },
+        {
+          "nombre": "Inspección de Trabajo · Álava",
+          "para": "Para denunciar incumplimientos laborales, de Seguridad Social o de prevención de riesgos. La denuncia es confidencial.",
+          "telefono": "945 062 100",
+          "tel": "945062100",
+          "otros": "Denuncia en línea y Buzón del fraude laboral, anónimo, en euskadi.eus",
+          "horario": "",
+          "ambito": "alava",
+          "perfil": "trabajo",
+          "url": "https://www.euskadi.eus/inspeccion-de-trabajo-contacto/web01-a2inspec/es/",
+          "fuente": "https://www.euskadi.eus/inspeccion-de-trabajo-contacto/web01-a2inspec/es/"
+        },
+        {
+          "nombre": "Si trabajas en una casa: empleo del hogar",
+          "para": "Trabajadoras del hogar, también internas: tienes derecho a protección de tu salud, también frente a la violencia y el acoso.",
+          "telefono": "",
+          "tel": "",
+          "horario": "",
+          "ambito": "espana",
+          "perfil": "trabajo",
+          "url": "https://www.insst.es/documentacion/material-normativo/protocolo-de-actuacion-frente-a-situaciones-de-violencia-y-acoso-en-el-servicio-del-hogar-familiar-2025",
+          "fuente": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-18182",
+          "nota": "Ante violencia o acoso puedes irte de la casa: no cuenta como dimisión ni es causa de despido (Real Decreto 893/2024). Para denunciar, la Inspección de Trabajo."
+        }
+      ]
+    }
+  ]
+}

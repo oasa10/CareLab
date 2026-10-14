@@ -1,0 +1,1955 @@
+[
+ {
+  "id": "sindrome-del-cuidador",
+  "palabra": "Síndrome del cuidador",
+  "tecnico": "Carga o sobrecarga del cuidador",
+  "familia": 1,
+  "para": "casa",
+  "escena": "Lourdes cuida a su padre desde hace cuatro años. A las dos de la madrugada escribe en el móvil «síndrome del cuidador». Duerme poco, llora en el coche y ya no queda con nadie.",
+  "basico": {
+   "que_es": "Es la forma de la calle de nombrar el desgaste de cuidar mucho tiempo a alguien que depende de ti. Junta cansancio, estrés, tristeza, soledad y roces en la familia.",
+   "como_se_nota": "Te levantas cansada y te acuestas igual. Te cuesta concentrarte. Saltas por poco. Dejas lo tuyo para después, y ese después no llega.",
+   "que_no_es": "No es un diagnóstico médico. Tampoco es un fallo tuyo. Y ojo: este nombre puede tapar una depresión, que sí es un diagnóstico y sí tiene tratamiento.",
+   "accion_minima": "Si la tristeza o la angustia duran semanas, pide cita con tu médica de familia. Te basta una frase: «Cuido a alguien y llevo tiempo mal»."
+  },
+  "saber_mas": "«Síndrome del cuidador» y «cuidador quemado» son expresiones muy extendidas en España y en Latinoamérica, pero no se sabe quién las acuñó. No están en el DSM-5-TR ni en la CIE-11. La investigación habla de **carga** o **sobrecarga** del cuidador desde el trabajo de Steven Zarit y su equipo (Zarit et al., 1980). La OMS reserva el *burnout* para el trabajo y dice que no debe usarse para otras áreas de la vida (OMS, 2019). La etiqueta tiene dos riesgos: hace pensar en un trastorno propio, que no existe, y puede esconder una depresión o una ansiedad que sí cumplen criterios. La guía NICE para personas cuidadoras pide tratarlas o derivarlas cuando se detectan (NICE, 2020). Aun así, sirve como puerta: quien la busca está diciendo «me pasa algo y no sé qué es».",
+  "fuentes": [
+   {
+    "cita": "Organización Mundial de la Salud (2019, 28 de mayo). Burn-out an «occupational phenomenon»: International Classification of Diseases.",
+    "url": "https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases"
+   },
+   {
+    "cita": "National Institute for Health and Care Excellence (2020). Supporting adult carers (guía NICE NG150).",
+    "url": "https://www.nice.org.uk/guidance/ng150"
+   },
+   {
+    "cita": "Zarit, S. H., Reever, K. E., y Bach-Peterson, J. (1980). Relatives of the impaired elderly: Correlates of feelings of burden. The Gerontologist, 20(6), 649-655.",
+    "url": "https://doi.org/10.1093/geront/20.6.649"
+   }
+  ],
+  "aviso": "ambar",
+  "relacionadas": [
+   "carga-del-cuidado",
+   "sobrecarga",
+   "depresion-y-ansiedad",
+   "malestar"
+  ],
+  "buscar": [
+   "estoy quemada",
+   "síndrome del cuidador",
+   "cuidador quemado",
+   "no puedo más",
+   "agotada de cuidar",
+   "estoy quemado",
+   "agotado de cuidar"
+  ]
+ },
+ {
+  "id": "carga-del-cuidado",
+  "palabra": "Lo que pesa cuidar",
+  "tecnico": "Carga del cuidador",
+  "familia": 1,
+  "para": "casa",
+  "escena": "Antonio ayuda a su mujer a vestirse, a comer y a ducharse. Lo hace con cariño y sin quejarse. Lo que más le pesa no es eso: es no poder salir ni una tarde.",
+  "basico": {
+   "que_es": "Es el peso que tiene cuidar en tu vida. Tiene dos caras: lo que haces y cómo lo vives. Pesa el cuidado, no la persona a la que cuidas.",
+   "como_se_nota": "Cuentas las horas y no salen las cuentas. Hay días con pocas tareas que pesan mucho. Y días largos que llevas mejor de lo que pensabas.",
+   "que_no_es": "No es que la persona cuidada sea una carga. Tampoco es una enfermedad. Es lo que pesa cuidar, y lo que pesa se puede repartir.",
+   "accion_minima": "Durante tres días, apunta por la noche qué te pesó más: la tarea o lo que sentiste al hacerla. Al final, mira si algo se repite."
+  },
+  "saber_mas": "El término técnico es **carga del cuidador** (*caregiver burden*). Lo popularizaron Steven Zarit y su equipo en 1980, en un estudio con familiares de personas mayores con deterioro, y de ahí salió la escala más usada en España (Zarit et al., 1980). En 1985, Rhonda Montgomery y su equipo separaron la **carga objetiva** (tareas, tiempo, dinero, salidas) de la **subjetiva** (cómo se vive), y vieron que no siempre van juntas (Montgomery et al., 1985). La palabra «carga» recibe críticas: es vaga y puede hacer pensar que la persona que depende de otra es un peso. Por eso CareLab habla de «la carga del cuidado» o de «lo que pesa cuidar». Las escalas de carga sirven para investigar o para que una profesional valore y acompañe; no son un diagnóstico.",
+  "fuentes": [
+   {
+    "cita": "Zarit, S. H., Reever, K. E., y Bach-Peterson, J. (1980). Relatives of the impaired elderly: Correlates of feelings of burden. The Gerontologist, 20(6), 649-655.",
+    "url": "https://doi.org/10.1093/geront/20.6.649"
+   },
+   {
+    "cita": "Montgomery, R. J. V., Gonyea, J. G., y Hooyman, N. R. (1985). Caregiving and the experience of subjective and objective burden. Family Relations, 34(1), 19-26.",
+    "url": "https://doi.org/10.2307/583753"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "carga-objetiva",
+   "carga-subjetiva",
+   "sobrecarga",
+   "sindrome-del-cuidador"
+  ],
+  "buscar": [
+   "me pesa cuidar",
+   "no puedo con todo",
+   "cuidar a mi madre me supera",
+   "carga del cuidador"
+  ]
+ },
+ {
+  "id": "carga-objetiva",
+  "palabra": "Lo que cuidar te cambia en la vida",
+  "tecnico": "Carga objetiva",
+  "familia": 1,
+  "para": "casa",
+  "escena": "Rosa dejó su media jornada para cuidar a su suegra. Ahora entra menos dinero, ya no va a la piscina y organiza la semana alrededor de las citas médicas.",
+  "basico": {
+   "que_es": "Es lo que el cuidado cambia en tu vida y se puede contar: horas, tareas, dinero, salidas que ya no haces, trabajo que dejas.",
+   "como_se_nota": "Tu agenda es la de otra persona. Pides días en el trabajo. Gastas en pañales o en taxis. No puedes salir de casa sin organizarlo antes.",
+   "que_no_es": "No dice cómo te sientes: dos personas con las mismas horas pueden vivirlo muy distinto. Y no se arregla con fuerza de voluntad: hacen falta manos y servicios.",
+   "accion_minima": "Haz una lista de las tareas de una semana. Marca una que otra persona o un servicio podría hacer. Solo una."
+  },
+  "saber_mas": "Montgomery, Gonyea y Hooyman (1985) separaron por primera vez la carga objetiva de la subjetiva, en 80 familiares que cuidaban. La objetiva dependía sobre todo de las tareas que encierran a quien cuida, en casa o en el tiempo, y los propios autores proponían aliviarla con ayuda personal, equipamiento y respiro. En España, la mitad de las personas que reciben cuidados (49,7 %) los recibe ocho horas o más al día (INE, Encuesta de Discapacidad, Autonomía personal y situaciones de Dependencia, EDAD 2020). Lo que se puede contar no siempre es lo que más pesa: en 555 familiares de personas con alzhéimer seguidos tres años, sentirse atrapada en el papel y la tensión económica fueron lo que más anunció el ingreso en una residencia (Aneshensel et al., 1993).",
+  "fuentes": [
+   {
+    "cita": "Montgomery, R. J. V., Gonyea, J. G., y Hooyman, N. R. (1985). Caregiving and the experience of subjective and objective burden. Family Relations, 34(1), 19-26.",
+    "url": "https://doi.org/10.2307/583753"
+   },
+   {
+    "cita": "Instituto Nacional de Estadística (2022). Encuesta de Discapacidad, Autonomía personal y situaciones de Dependencia (EDAD) 2020. Nota de prensa.",
+    "url": "https://www.ine.es/prensa/edad_2020_p.pdf"
+   },
+   {
+    "cita": "Aneshensel, C. S., Pearlin, L. I., y Schuler, R. H. (1993). Stress, role captivity, and the cessation of caregiving. Journal of Health and Social Behavior, 34(1), 54-70.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/8463635/"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "carga-subjetiva",
+   "carga-del-cuidado",
+   "respiro",
+   "pedir-y-repartir-ayuda"
+  ],
+  "buscar": [
+   "no tengo tiempo para nada",
+   "dejé el trabajo para cuidar",
+   "cuántas horas cuido",
+   "cuidar me cuesta dinero"
+  ]
+ },
+ {
+  "id": "carga-subjetiva",
+  "palabra": "Cómo vives el cuidado",
+  "tecnico": "Carga subjetiva",
+  "familia": 1,
+  "para": "casa",
+  "escena": "Marisol y su hermano cuidan a su padre por semanas. Hacen lo mismo. Él lo lleva bien. Ella vuelve a casa con un nudo en el estómago y no entiende por qué.",
+  "basico": {
+   "que_es": "Es cómo vives el cuidado: lo que sientes y lo que piensas mientras cuidas. Depende de la situación, de tu historia y de con qué cuentas para afrontarla.",
+   "como_se_nota": "Un baño que antes era fácil hoy te parece una montaña. Te pesa más pensar en la semana que hacerla. Sientes que todo depende de ti.",
+   "que_no_es": "No es exagerar ni ser débil. No quiere decir que cuides peor. Y no se mide en horas: nadie puede decirte cuánto debería pesarte.",
+   "accion_minima": "Elige un momento difícil de hoy. Escribe en una línea qué pasó y en otra qué te dijiste por dentro. Solo mirarlo, sin juzgarte."
+  },
+  "saber_mas": "Montgomery y su equipo (1985) vieron que la carga subjetiva dependía más de la edad y de los ingresos de quien cuidaba que de las tareas. La explicación más usada viene de Lazarus y Folkman (1984): el estrés no está solo en lo que pasa, sino en cómo se valora y en los recursos con que se cuenta. En quien cuida, la salud física se asoció más a sus síntomas de depresión que a la cantidad de cuidado (Pinquart y Sörensen, 2007, 176 estudios). Las escalas de carga, como la de Zarit, miden sobre todo esta cara. Aprender a mirar de otra forma los pensamientos que pesan reduce la depresión de quien cuida a alguien con demencia, aunque no cambia la carga medida (Vernooij-Dassen et al., 2011, revisión Cochrane).",
+  "fuentes": [
+   {
+    "cita": "Montgomery, R. J. V., Gonyea, J. G., y Hooyman, N. R. (1985). Caregiving and the experience of subjective and objective burden. Family Relations, 34(1), 19-26.",
+    "url": "https://doi.org/10.2307/583753"
+   },
+   {
+    "cita": "Pinquart, M., y Sörensen, S. (2007). Correlates of physical health of informal caregivers: A meta-analysis. The Journals of Gerontology: Series B, 62(2), P126-P137.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/17379673/"
+   },
+   {
+    "cita": "Vernooij-Dassen, M., Draskovic, I., McCleery, J., y Downs, M. (2011). Cognitive reframing for carers of people with dementia. Cochrane Database of Systematic Reviews, (11), CD005318.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22071821/"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "carga-objetiva",
+   "afrontamiento",
+   "culpa",
+   "proceso-de-estres"
+  ],
+  "buscar": [
+   "por qué me afecta tanto",
+   "mi hermano lo lleva mejor",
+   "me agobia cuidar"
+  ]
+ },
+ {
+  "id": "sobrecarga",
+  "palabra": "Cuando pesa demasiado",
+  "tecnico": "Sobrecarga",
+  "familia": 1,
+  "para": "casa",
+  "escena": "Ainhoa responde un cuestionario en el centro de salud. La enfermera le dice que su puntuación es alta. Ainhoa piensa: «Eso ya lo sabía. ¿Y ahora qué?».",
+  "basico": {
+   "que_es": "Es cuando lo que pesa cuidar es mucho. En la investigación, es pasar de un punto de corte en una escala que mide la carga, como la de Zarit.",
+   "como_se_nota": "Sientes que no llegas. Que no hay tiempo para ti. Que tu salud o tu vida social se resienten. Que no sabes cuánto más vas a poder.",
+   "que_no_es": "No es un diagnóstico. Una puntuación alta no dice qué te pasa ni qué necesitas. Es una señal para hablar con alguien y pedir ayuda concreta.",
+   "accion_minima": "Si alguien te pasa una escala, pregunta: «¿Qué ayuda me puede dar esto?». Lleva pensada una cosa que necesitas, aunque sea pequeña."
+  },
+  "saber_mas": "En quien cuida a una persona con demencia, alrededor de la mitad (49 %, con un margen entre el 37 % y el 61 %) pasa del punto de corte de sobrecarga de las escalas, según un metaanálisis de 43 estudios (Collins y Kishita, 2020). Eso es superar un corte, no tener un diagnóstico. Además, los cortes que se usan en España para la escala de Zarit no los propuso Zarit: salen de una muestra de 92 cuidadoras, y aquí se puntúa de 1 a 5 cuando el original va de 0 a 4, lo que infla las cifras si se mezclan (Álvarez et al., 2008). En enfermería sí existe un diagnóstico: NANDA-I lo llama hoy «Excesiva carga de cuidados» (Coutinho Borges et al., 2026). CareLab no puntúa a nadie.",
+  "fuentes": [
+   {
+    "cita": "Collins, R. N., y Kishita, N. (2020). Prevalence of depression and burden among informal care-givers of people with dementia: A meta-analysis. Ageing & Society, 40(11), 2355-2392.",
+    "url": "https://doi.org/10.1017/S0144686X19000527"
+   },
+   {
+    "cita": "Álvarez, L., González, A. M., y Muñoz, P. (2008). El cuestionario de sobrecarga del cuidador de Zarit: cómo administrarlo e interpretarlo. Gaceta Sanitaria, 22(6), 618-619.",
+    "url": "https://doi.org/10.1016/S0213-9111(08)75365-2"
+   },
+   {
+    "cita": "Coutinho Borges, B. E., Dantas, A. C., de Carvalho, L. M., et al. (2026). Middle range theory for the nursing diagnosis of Excessive Caregiving Burden. International Journal of Nursing Knowledge, 37(3), 398-410.",
+    "url": "https://doi.org/10.1177/20473087261443248"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "carga-del-cuidado",
+   "sindrome-del-cuidador",
+   "depresion-y-ansiedad",
+   "respiro"
+  ],
+  "buscar": [
+   "escala de Zarit",
+   "sobrecarga del cuidador",
+   "test del cuidador",
+   "no llego a todo"
+  ]
+ },
+ {
+  "id": "tension-del-rol",
+  "palabra": "La tensión de ser la que cuida",
+  "tecnico": "Tensión del rol",
+  "familia": 1,
+  "para": "casa",
+  "escena": "Fátima cuida a su madre y trabaja de cajera. Al salir del súper corre a casa. Cada vez que vibra el móvil se le encoge el estómago: ¿le habrá pasado algo?",
+  "basico": {
+   "que_es": "Es la tensión que sientes por ser la que cuida. Viene de lo que exige ese papel: estar siempre disponible, responder, no fallar.",
+   "como_se_nota": "Estás en alerta aunque no pase nada. Te cuesta dormir del tirón. Te molesta que te pidan más. Sientes tu vida en pausa.",
+   "que_no_es": "No es mal carácter. Tampoco quiere decir que no quieras a quien cuidas. Es lo que pasa cuando un papel exige más de lo que da el día.",
+   "accion_minima": "Elige un rato de quince minutos esta semana en que otra persona esté localizable en tu lugar. Avísalo y deja el móvil en otra habitación."
+  },
+  "saber_mas": "*Strain*, o tensión, es la palabra que usan muchos estudios para la presión que se siente por el papel de cuidadora. Barbara Robinson validó en 1983 el índice de esfuerzo del cuidador: trece preguntas de sí o no sobre el sueño, el trabajo, los planes o el dinero (Robinson, 1983). En España tiene una versión validada. En el modelo del proceso de estrés, las tensiones del papel se extienden al trabajo, a la familia y a la economía (Pearlin et al., 1990). «Carga», «tensión» y «malestar» se usan a menudo como si fueran lo mismo, y esa falta de precisión es una de las críticas a este campo. Para CareLab, lo útil es la idea: la tensión viene del papel y de cómo está repartido, no de un defecto de quien cuida.",
+  "fuentes": [
+   {
+    "cita": "Robinson, B. C. (1983). Validation of a Caregiver Strain Index. Journal of Gerontology, 38(3), 344-348.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/6841931/"
+   },
+   {
+    "cita": "Pearlin, L. I., Mullan, J. T., Semple, S. J., y Skaff, M. M. (1990). Caregiving and the stress process: An overview of concepts and their measures. The Gerontologist, 30(5), 583-594.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/2276631/"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "cautividad-del-rol",
+   "proceso-de-estres",
+   "carga-subjetiva",
+   "respiro"
+  ],
+  "buscar": [
+   "siempre en alerta",
+   "no desconecto nunca",
+   "me asusta el móvil",
+   "no puedo relajarme"
+  ]
+ },
+ {
+  "id": "malestar",
+  "palabra": "Estar mal sin saber por qué",
+  "tecnico": "Malestar psicológico",
+  "familia": 1,
+  "para": "dos",
+  "escena": "Gloria no sabe decir qué le pasa. Le duele la espalda, está irritable, llora con los anuncios y duerme a ratos. Su madre, a la que cuida, le dice que está rara.",
+  "basico": {
+   "que_es": "Son síntomas que se notan en el ánimo y en el cuerpo: tristeza, nervios, irritabilidad, cansancio. No tienen un nombre concreto, pero están.",
+   "como_se_nota": "Te duele algo y no sabes por qué. Saltas con facilidad. Comes de más o de menos. Duermes mal. Tu cuerpo avisa antes que tu cabeza.",
+   "que_no_es": "No es un trastorno por sí mismo. Pero si dura semanas, crece o no te deja vivir, ya no es solo malestar: es momento de que te vea tu médica.",
+   "accion_minima": "Pide cita en tu centro de salud para ti, no para la persona que cuidas. Lleva apuntadas tres cosas que notas."
+  },
+  "saber_mas": "En la investigación, malestar (*distress*) es el nombre de los síntomas emocionales generales, como tristeza, ansiedad o irritabilidad. Es lo que suelen medir los ensayos de ayuda a quien cuida. De media, quien cuida tiene más depresión y estrés que quien no cuida, con diferencias moderadas, y una salud física solo un poco peor (Pinquart y Sörensen, 2003, 84 estudios). El estrés largo e intenso también deja huella en el cuerpo: en 119 cónyuges que cuidaban a alguien con demencia, seguidos seis años, un marcador de inflamación subió unas cuatro veces más deprisa que en quienes no cuidaban (Kiecolt-Glaser et al., 2003). Ni alarma ni consuelo: no le pasa a todo el mundo, pero escucharlo a tiempo ayuda.",
+  "fuentes": [
+   {
+    "cita": "Pinquart, M., y Sörensen, S. (2003). Differences between caregivers and noncaregivers in psychological health and physical health: A meta-analysis. Psychology and Aging, 18(2), 250-267.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12825775/"
+   },
+   {
+    "cita": "Kiecolt-Glaser, J. K., Preacher, K. J., MacCallum, R. C., Atkinson, C., Malarkey, W. B., y Glaser, R. (2003). Chronic stress and age-related increases in the proinflammatory cytokine IL-6. Proceedings of the National Academy of Sciences, 100(15), 9090-9095.",
+    "url": "https://doi.org/10.1073/pnas.1531903100"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "depresion-y-ansiedad",
+   "autoabandono",
+   "sobrecarga",
+   "autocuidado"
+  ],
+  "buscar": [
+   "me duele todo",
+   "estoy de mal humor",
+   "lloro por todo",
+   "no duermo bien"
+  ]
+ },
+ {
+  "id": "proceso-de-estres",
+  "palabra": "Cómo se encadena lo que pesa",
+  "tecnico": "Modelo del proceso de estrés",
+  "familia": 1,
+  "para": "casa",
+  "escena": "Al principio, Juan solo acompañaba a su padre al médico. Después dejó las cenas con amigos, pidió reducción de jornada y discutió con su hermana. Nada pasó de golpe.",
+  "basico": {
+   "que_es": "Es una forma de entender cómo se encadena lo que pesa al cuidar. Las tareas arrastran problemas al dinero, al trabajo, a la familia y a cómo te ves.",
+   "como_se_nota": "Un problema trae otro. Faltas al trabajo y crece el miedo por el dinero. Discutes en casa y te quedas más sola. Todo parece venir junto.",
+   "que_no_es": "No es una cadena sin salida. Hay puntos donde se puede cortar: un apoyo, un servicio, otra forma de afrontarlo. Y no depende solo de ti.",
+   "accion_minima": "Dibuja tu cadena: una tarea que pesa y a qué otra parte de tu vida afecta. Elige un solo eslabón y piensa quién podría ayudarte ahí."
+  },
+  "saber_mas": "Leonard Pearlin y su equipo propusieron en 1990 el modelo del proceso de estrés, el más usado para entender a quien cuida. Tiene un contexto (edad, género, ingresos), unos **estresores primarios** ligados al cuidado (la dependencia, los problemas de conducta), unos **estresores secundarios** en el resto de la vida (trabajo, dinero, familia, identidad) y unos **mediadores**, como el apoyo social y el afrontamiento, que pueden frenar la cadena (Pearlin et al., 1990). Su valor práctico es que dice dónde ayudar: con servicios y respiro sobre las tareas, con apoyo y aprendizaje sobre los mediadores, y con conciliación y ayudas sobre el trabajo y el dinero. Lo que más pesa no suele ser la tarea, sino lo que se pierde con ella (Aneshensel et al., 1993).",
+  "fuentes": [
+   {
+    "cita": "Pearlin, L. I., Mullan, J. T., Semple, S. J., y Skaff, M. M. (1990). Caregiving and the stress process: An overview of concepts and their measures. The Gerontologist, 30(5), 583-594.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/2276631/"
+   },
+   {
+    "cita": "Aneshensel, C. S., Pearlin, L. I., y Schuler, R. H. (1993). Stress, role captivity, and the cessation of caregiving. Journal of Health and Social Behavior, 34(1), 54-70.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/8463635/"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "carga-objetiva",
+   "apoyo-social",
+   "afrontamiento",
+   "cautividad-del-rol"
+  ],
+  "buscar": [
+   "todo se junta",
+   "una cosa lleva a otra",
+   "por qué me pasa todo a la vez"
+  ]
+ },
+ {
+  "id": "cautividad-del-rol",
+  "palabra": "Sentirse atrapada",
+  "tecnico": "Cautividad del rol",
+  "familia": 2,
+  "para": "casa",
+  "escena": "Yolanda nunca dijo «sí, cuidaré yo». Simplemente era la hija que vivía más cerca. Cinco años después, mira por la ventana y piensa: «Yo no elegí esto».",
+  "basico": {
+   "que_es": "Es sentirte dentro del papel de cuidadora sin haberlo elegido. Como si la puerta se hubiera cerrado y no supieras cómo abrirla.",
+   "como_se_nota": "Piensas en lo que harías si no cuidaras. Te cuesta imaginar el futuro. Sientes que no hay salida, y a veces te da vergüenza pensarlo.",
+   "que_no_es": "No es egoísmo ni falta de cariño. Puedes querer mucho a quien cuidas y sentirte atrapada a la vez. Decirlo no te hace mala persona.",
+   "accion_minima": "Elige una hora a la semana solo para ti y protégela como una cita médica. Al acabar la semana, mira si la pudiste guardar."
+  },
+  "saber_mas": "La cautividad del rol (*role captivity*) es estar en el papel de cuidadora de forma involuntaria. En el modelo del proceso de estrés forma parte de las tensiones que dañan cómo se ve una misma (Pearlin et al., 1990). En un estudio que siguió tres años a 555 familiares que cuidaban a su padre, su madre o su pareja con alzhéimer, en California, la cautividad y la tensión económica fueron lo que más anunció el ingreso en una residencia. La cautividad se mantenía mientras seguía el cuidado en casa y se aliviaba tras el ingreso (Aneshensel et al., 1993). Es de lo que más pesa, y no depende de las horas, sino de sentir que no hay elección. Por eso ayuda todo lo que devuelve un poco de elección, aunque sea pequeña.",
+  "fuentes": [
+   {
+    "cita": "Aneshensel, C. S., Pearlin, L. I., y Schuler, R. H. (1993). Stress, role captivity, and the cessation of caregiving. Journal of Health and Social Behavior, 34(1), 54-70.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/8463635/"
+   },
+   {
+    "cita": "Pearlin, L. I., Mullan, J. T., Semple, S. J., y Skaff, M. M. (1990). Caregiving and the stress process: An overview of concepts and their measures. The Gerontologist, 30(5), 583-594.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/2276631/"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "absorcion-del-rol",
+   "ambivalencia",
+   "respiro",
+   "cuidadora-principal"
+  ],
+  "buscar": [
+   "me siento atrapada",
+   "yo no elegí esto",
+   "no tengo salida",
+   "estoy encerrada en casa",
+   "me siento atrapado"
+  ]
+ },
+ {
+  "id": "absorcion-del-rol",
+  "palabra": "Cuando cuidar lo ocupa todo",
+  "tecnico": "Absorción del rol",
+  "familia": 2,
+  "para": "casa",
+  "escena": "Cuando le preguntan a Carmen qué tal está, contesta cómo está su marido: la tensión, las pastillas, la noche. Hace tiempo que nadie le pregunta por ella, ni ella misma.",
+  "basico": {
+   "que_es": "Es cuando el papel de cuidadora lo ocupa todo. Los demás papeles se apagan: amiga, trabajadora, vecina, una misma.",
+   "como_se_nota": "Solo hablas del cuidado. Has dejado aficiones y amistades. Tu calendario es el de otra persona. Te cuesta pensar en algo que sea tuyo.",
+   "que_no_es": "No es amor de más ni una entrega perfecta. Tampoco es algo que hayas hecho mal. Pasa poco a poco, y poco a poco se puede deshacer.",
+   "accion_minima": "Esta semana, cuando alguien te pregunte qué tal, contesta primero cómo estás tú. Una frase. Luego, si quieres, habla de lo demás."
+  },
+  "saber_mas": "Marilyn Skaff y Leonard Pearlin describieron en 1992 la absorción en el papel de cuidadora (*role engulfment*): el cuidado se traga los demás papeles. La estudiaron en cónyuges e hijos que cuidaban a un familiar con alzhéimer. Era más frecuente en cónyuges, en mujeres y en cuidadoras jóvenes, y se relacionaba con poco contacto social y con no tener otros papeles fuera del cuidado. Se asociaba a menos autoestima, menos sensación de control y más síntomas de depresión (Skaff y Pearlin, 1992). El modelo del proceso de estrés la sitúa entre las tensiones que dañan la propia identidad (Pearlin et al., 1990). Cuidar puede tener sentido y, a la vez, ocupar demasiado: las dos cosas pueden ser verdad.",
+  "fuentes": [
+   {
+    "cita": "Skaff, M. M., y Pearlin, L. I. (1992). Caregiving: Role engulfment and the loss of self. The Gerontologist, 32(5), 656-664.",
+    "url": "https://doi.org/10.1093/geront/32.5.656"
+   },
+   {
+    "cita": "Pearlin, L. I., Mullan, J. T., Semple, S. J., y Skaff, M. M. (1990). Caregiving and the stress process: An overview of concepts and their measures. The Gerontologist, 30(5), 583-594.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/2276631/"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "perdida-del-yo",
+   "cautividad-del-rol",
+   "apoyo-social",
+   "discrepancia-de-identidad"
+  ],
+  "buscar": [
+   "solo vivo para cuidar",
+   "no tengo vida propia",
+   "ya no hago nada mío"
+  ]
+ },
+ {
+  "id": "perdida-del-yo",
+  "palabra": "Perderte a ti misma",
+  "tecnico": "Pérdida del yo",
+  "familia": 2,
+  "para": "casa",
+  "escena": "Svetlana encuentra sus pinceles en un cajón. Pintaba cada domingo antes de que su madre enfermara. Los mira un rato y piensa: «Ya no sé ni lo que me gusta».",
+  "basico": {
+   "que_es": "Es ver cómo se apaga lo que eras porque el cuidado lo ha llenado todo: tus gustos, tus planes, tu forma de estar en el mundo.",
+   "como_se_nota": "No recuerdas la última vez que hiciste algo por gusto. Te miras y no te reconoces. Te cuesta contestar a «¿y a ti qué te apetece?».",
+   "que_no_es": "No es que hayas dejado de existir. Lo tuyo sigue ahí, aunque esté dormido. Tampoco es un defecto: pasa a menudo cuando se cuida mucho tiempo.",
+   "accion_minima": "Recupera diez minutos de algo tuyo de antes: una canción, una llamada, un paseo. Después apunta cómo te sentiste."
+  },
+  "saber_mas": "La pérdida del yo (*loss of self*) es la otra cara de la absorción en el papel. Skaff y Pearlin (1992) la definieron como una pérdida de identidad que llega al quedar absorbida por el papel de cuidadora, y la midieron en cónyuges e hijos que cuidaban a un familiar con alzhéimer. Quienes sentían que habían perdido parte de sí tenían menos autoestima, menos sensación de control y más síntomas de depresión. Era más frecuente en cónyuges, mujeres y cuidadoras jóvenes, y en quien tenía poco contacto social y ningún otro papel. Por eso las acciones pequeñas que recuperan algo propio tienen sentido, aunque no quiten el trabajo de cuidar: devuelven un trozo de identidad.",
+  "fuentes": [
+   {
+    "cita": "Skaff, M. M., y Pearlin, L. I. (1992). Caregiving: Role engulfment and the loss of self. The Gerontologist, 32(5), 656-664.",
+    "url": "https://doi.org/10.1093/geront/32.5.656"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "absorcion-del-rol",
+   "discrepancia-de-identidad",
+   "despues-de-cuidar",
+   "autocuidado"
+  ],
+  "buscar": [
+   "ya no sé quién soy",
+   "me he perdido",
+   "no me reconozco",
+   "he dejado todo lo mío"
+  ]
+ },
+ {
+  "id": "discrepancia-de-identidad",
+  "palabra": "Esposa o enfermera",
+  "tecnico": "Discrepancia de identidad",
+  "familia": 2,
+  "para": "casa",
+  "escena": "Paco cambia el pañal a Manoli, su mujer desde hace cuarenta años. Lo hace bien. Pero por la noche, en la cama, siente que ya no es su marido: es su enfermero.",
+  "basico": {
+   "que_es": "Es cuando lo que haces al cuidar no encaja con quién eres para esa persona. Eres su hija o su pareja, pero te sientes su enfermera.",
+   "como_se_nota": "Echas de menos la relación de antes. Las tareas íntimas te incomodan. Te cuesta ser cariñosa cuando estás en modo cuidadora. Algo no encaja.",
+   "que_no_es": "No es que quieras menos. Es que el cuidado ha cambiado la relación. Darte cuenta es un buen punto de partida para pedir un apoyo a tu medida.",
+   "accion_minima": "Busca un momento a la semana para estar con esa persona como hija, pareja o amiga, no como cuidadora: una canción, unas fotos, un paseo."
+  },
+  "saber_mas": "Rhonda Montgomery y Karl Kosloski propusieron que cuidar es un proceso de cambio de identidad: la relación de antes (esposa, hijo) se va llenando de tareas de cuidado. El estrés aparece cuando hay **discrepancia** entre lo que se hace y quién se es para la otra persona. Con esta idea crearon TCARE, un protocolo que ajusta el apoyo al momento de cada cuidadora. En un ensayo con 266 familiares atendidos por 52 gestoras de casos en cuatro estados de Estados Unidos, el grupo con TCARE mejoró en discrepancia de identidad, en carga, en depresión y en intención de ingresar a su familiar, mientras el grupo de control empeoró (Montgomery et al., 2011). Por eso la etiqueta «cuidadora» no siempre ayuda: muchas personas se ven, ante todo, como hijas o parejas.",
+  "fuentes": [
+   {
+    "cita": "Montgomery, R. J. V., Kwak, J., Kosloski, K., y O'Connell Valuch, K. (2011). Effects of the TCARE intervention on caregiver burden and depressive symptoms: Preliminary findings from a randomized controlled study. The Journals of Gerontology: Series B, 66(5), 640-647.",
+    "url": "https://doi.org/10.1093/geronb/gbr088"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "perdida-del-yo",
+   "absorcion-del-rol",
+   "afrontamiento-diadico",
+   "duelo-anticipado"
+  ],
+  "buscar": [
+   "ya no soy su mujer, soy su enfermera",
+   "ha cambiado nuestra relación",
+   "no me siento su hija"
+  ]
+ },
+ {
+  "id": "duelo-anticipado",
+  "palabra": "Despedirse poco a poco",
+  "tecnico": "Duelo anticipado",
+  "familia": 2,
+  "para": "casa",
+  "escena": "Iker visita a su madre en la residencia. Ella ya no recuerda su nombre. Al salir, Iker llora como si la hubiera perdido, aunque acaba de darle un beso.",
+  "basico": {
+   "que_es": "Es el duelo que empieza antes de la muerte. Lo sientes mientras ves a alguien perder capacidades, recuerdos o su forma de ser, poco a poco.",
+   "como_se_nota": "Te entristecen cosas que antes eran normales. Lloras por lo que ya no volverá. Te despides muchas veces de la misma persona. A veces sientes rabia o culpa.",
+   "que_no_es": "No es desear su muerte ni rendirte. Es una reacción normal a pérdidas reales. Si la pena te hunde durante semanas, cuéntaselo a tu médica.",
+   "accion_minima": "Escribe una cosa que has perdido de esa persona y una que todavía compartís. Guárdalas juntas."
+  },
+  "saber_mas": "La idea de un duelo que empieza antes de la muerte se atribuye al psiquiatra Erich Lindemann, en su estudio de 1944 sobre el duelo agudo (Lindemann, 1944). En demencia se habla también de duelo previo a la muerte, un concepto que todavía se está definiendo (Lindauer y Harvath, 2014). Una revisión de 31 estudios encontró que es frecuente en quien cuida a alguien con demencia, sobre todo en fases moderadas o graves y en cónyuges, y que la rabia, la frustración y la culpa forman parte de él. Los estudios daban cifras del 47 % al 71 %, con poca calidad, y más duelo anticipado se asociaba a más depresión (Chan et al., 2013). Ponerle nombre ayuda a entender que no es debilidad.",
+  "fuentes": [
+   {
+    "cita": "Chan, D., Livingston, G., Jones, L., y Sampson, E. L. (2013). Grief reactions in dementia carers: A systematic review. International Journal of Geriatric Psychiatry, 28(1), 1-17.",
+    "url": "https://doi.org/10.1002/gps.3795"
+   },
+   {
+    "cita": "Lindauer, A., y Harvath, T. A. (2014). Pre-death grief in the context of dementia caregiving: A concept analysis. Journal of Advanced Nursing, 70(10), 2196-2207.",
+    "url": "https://doi.org/10.1111/jan.12411"
+   },
+   {
+    "cita": "Lindemann, E. (1944). Symptomatology and management of acute grief. American Journal of Psychiatry, 101(2), 141-148. Reeditado en American Journal of Psychiatry, 151(6, supl.), 155-160, en 1994.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/8192191/"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "perdida-ambigua",
+   "despues-de-cuidar",
+   "ambivalencia",
+   "depresion-y-ansiedad"
+  ],
+  "buscar": [
+   "la estoy perdiendo en vida",
+   "ya no me reconoce",
+   "lloro como si se hubiera muerto",
+   "duelo en vida"
+  ]
+ },
+ {
+  "id": "perdida-ambigua",
+  "palabra": "Está y no está",
+  "tecnico": "Pérdida ambigua",
+  "familia": 2,
+  "para": "casa",
+  "escena": "Wilson le pone a su padre la música de siempre. Su padre sonríe, pero le llama por el nombre de un primo. Wilson piensa: «Está aquí, pero ya no es él».",
+  "basico": {
+   "que_es": "Es perder a alguien que sigue presente. Su cuerpo está, pero su forma de ser, de recordar o de estar contigo se va. No hay una despedida clara.",
+   "como_se_nota": "No sabes si estar triste o agradecida. Te cuesta explicarlo a los demás. Esperas que vuelva «el de antes». Vives una espera sin final.",
+   "que_no_es": "No es un duelo mal hecho ni algo que tengas que cerrar. No tiene un final claro, y por eso cansa tanto. Se aprende a vivir con la duda.",
+   "accion_minima": "Escribe una cosa que has perdido de esa persona y una que todavía tienes. Si quieres, compártelas con alguien que la conozca."
+  },
+  "saber_mas": "Pauline Boss, terapeuta familiar de la Universidad de Minnesota, desarrolló el concepto de pérdida ambigua. Distingue dos tipos: la persona está ausente pero presente en la mente de los suyos, como alguien desaparecido, o está presente pero ausente en lo psicológico, como en la demencia (Boss, 1999). Como no hay un final claro, Boss sostiene que la meta no es «cerrar» el duelo, sino encontrar sentido a pesar de la incertidumbre y aprender a tolerar la ambigüedad. Quien vive una pérdida así no ha fallado en su duelo: la pérdida es abierta por naturaleza (Boss y Carnes, 2012). Es útil porque nombra el sufrimiento de quien cuida sin convertirlo en enfermedad y sin culpar a nadie.",
+  "fuentes": [
+   {
+    "cita": "Boss, P. (1999). Insights: Ambiguous loss: Living with frozen grief. The Harvard Mental Health Letter, 16(5), 4-6.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/10521908/"
+   },
+   {
+    "cita": "Boss, P., y Carnes, D. (2012). The myth of closure. Family Process, 51(4), 456-469.",
+    "url": "https://doi.org/10.1111/famp.12005"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "duelo-anticipado",
+   "ambivalencia",
+   "despues-de-cuidar"
+  ],
+  "buscar": [
+   "está pero no está",
+   "ya no es él",
+   "mi madre no me reconoce",
+   "lo pierdo en vida"
+  ]
+ },
+ {
+  "id": "culpa",
+  "palabra": "Culpa",
+  "tecnico": null,
+  "familia": 2,
+  "para": "dos",
+  "escena": "Begoña queda con una amiga por primera vez en meses. A mitad del café mira el reloj, se siente mala hija y vuelve a casa antes de tiempo.",
+  "basico": {
+   "que_es": "Es la sensación de no hacer bastante o de hacerlo mal. Aparece al descansar, al enfadarte, al delegar o al pensar en una residencia.",
+   "como_se_nota": "Te cuesta disfrutar si no estás cuidando. Te repites «debería». Te sientes mal por estar cansada. Nada parece suficiente.",
+   "que_no_es": "No es la prueba de que lo haces mal. Muchas veces es la prueba de que te importa. Y no siempre es justa: a veces te pide imposibles.",
+   "accion_minima": "Escribe tu frase de culpa. Al lado, escribe otra más justa contigo, como si se la dijeras a una amiga. Léela cuando aparezca."
+  },
+  "saber_mas": "Un equipo español creó un cuestionario sobre la culpa de quien cuida a un familiar con demencia. En 288 familiares encontró cinco tipos: por hacerlo mal con la persona cuidada, por no estar a la altura, por cuidarse una misma, por descuidar a otros familiares y por tener sentimientos negativos. Más culpa se asoció a más depresión y ansiedad, y era mayor en mujeres y en quien cuidaba a su padre o su madre (Losada et al., 2010). Aprender a mirar de otra forma los pensamientos que pesan reduce la depresión de quien cuida (Vernooij-Dassen et al., 2011, revisión Cochrane). En el trabajo, la culpa por la calidad del cuidado que se da se asoció con más ansiedad en profesionales de residencias españolas, y se parece mucho a la angustia moral (Gallego-Alberto et al., 2018).",
+  "fuentes": [
+   {
+    "cita": "Losada, A., Márquez-González, M., Peñacoba, C., y Romero-Moreno, R. (2010). Development and validation of the Caregiver Guilt Questionnaire. International Psychogeriatrics, 22(4), 650-660.",
+    "url": "https://doi.org/10.1017/S1041610210000074"
+   },
+   {
+    "cita": "Vernooij-Dassen, M., Draskovic, I., McCleery, J., y Downs, M. (2011). Cognitive reframing for carers of people with dementia. Cochrane Database of Systematic Reviews, (11), CD005318.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22071821/"
+   },
+   {
+    "cita": "Gallego-Alberto, L., Losada, A., Vara, C., Olazarán, J., Muñiz, R., y Pillemer, K. (2018). Psychosocial predictors of anxiety in nursing home staff. Clinical Gerontologist, 41(4), 282-292.",
+    "url": "https://doi.org/10.1080/07317115.2017.1370056"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "ambivalencia",
+   "angustia-moral",
+   "respiro",
+   "rabia-e-irritabilidad"
+  ],
+  "buscar": [
+   "me siento mala hija",
+   "culpa por descansar",
+   "culpa por llevarla a una residencia",
+   "no hago bastante"
+  ]
+ },
+ {
+  "id": "ambivalencia",
+  "palabra": "Quererle y no aguantarle",
+  "tecnico": "Ambivalencia",
+  "familia": 2,
+  "para": "casa",
+  "escena": "Amina quiere a su suegro. Él la hace reír y le cuenta historias de su pueblo. Algunas tardes, cuando repite lo mismo veinte veces, Amina se encierra en el baño para no gritar.",
+  "basico": {
+   "que_es": "Es sentir a la vez cosas opuestas: cariño y rechazo, ganas de cuidar y ganas de huir. Las dos son verdad al mismo tiempo.",
+   "como_se_nota": "Le cuidas con ternura y, un rato después, no le aguantas. Te alegras de estar y deseas estar lejos. Luego te sientes culpable por lo segundo.",
+   "que_no_es": "No es falsedad ni falta de amor. Es muy frecuente y no te hace mala persona. Lo que pesa es callarlo, no sentirlo.",
+   "accion_minima": "Cuéntale a una persona de confianza las dos cosas: la buena y la difícil. Solo contarlas, sin buscar solución."
+  },
+  "saber_mas": "La ambivalencia es vivir a la vez emociones positivas y negativas hacia la misma persona o situación. Un equipo español la midió en 401 familiares que cuidaban a alguien con demencia: los sentimientos ambivalentes se asociaron a más síntomas de depresión y de ansiedad, incluso teniendo en cuenta los problemas de conducta y otros factores (Losada et al., 2017). Que el cariño y la carga convivan es lo esperable: la satisfacción y la carga son dos valoraciones distintas, no los extremos de una sola (Lawton et al., 1991). Nombrar la ambivalencia ayuda a separar lo que se siente de lo que se hace: sentir rechazo no es hacer daño.",
+  "fuentes": [
+   {
+    "cita": "Losada, A., Pillemer, K., Márquez-González, M., Romero-Moreno, R., y Gallego-Alberto, L. (2017). Measuring ambivalent feelings in dementia family caregivers: The Caregiving Ambivalence Scale. The Gerontologist, 57(3), e37-e46.",
+    "url": "https://doi.org/10.1093/geront/gnw144"
+   },
+   {
+    "cita": "Lawton, M. P., Moss, M., Kleban, M. H., Glicksman, A., y Rovine, M. (1991). A two-factor model of caregiving appraisal and psychological well-being. Journal of Gerontology, 46(4), P181-P189.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/2071844/"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "culpa",
+   "rabia-e-irritabilidad",
+   "aspectos-positivos",
+   "pensamientos-que-asustan"
+  ],
+  "buscar": [
+   "le quiero y no le aguanto",
+   "a veces quiero huir",
+   "sentimientos contradictorios"
+  ]
+ },
+ {
+  "id": "rabia-e-irritabilidad",
+  "palabra": "Rabia",
+  "tecnico": "Ira e irritabilidad",
+  "familia": 2,
+  "para": "dos",
+  "escena": "Mamadou lleva tres noches sin dormir porque su madre se levanta a oscuras. Esta mañana le ha gritado por tirar el café. Ahora friega la taza y se siente fatal.",
+  "basico": {
+   "que_es": "Es el enfado que sale cuando estás agotada, sin descanso y ante situaciones que se repiten. A veces explota por algo pequeño.",
+   "como_se_nota": "Contestas mal. Das portazos. Te enfadas con quien cuidas, con tu familia o contigo. Luego llega la culpa, y con ella más cansancio.",
+   "que_no_es": "No es ser mala persona. Es una señal de que el cansancio va lleno. Pero si temes perder el control o hacer daño, pide ayuda hoy.",
+   "accion_minima": "Elige una frase o un gesto para salir dos minutos antes de explotar: «Vuelvo enseguida». Pruébalo una vez esta semana y mira qué pasa."
+  },
+  "saber_mas": "La rabia y la irritabilidad son frecuentes al cuidar, sobre todo con poco sueño, mucha exigencia y conductas difíciles de la persona cuidada. Suelen formar un ciclo: cansancio, irritabilidad, culpa por haberse enfadado y más exigencia con una misma. Se puede aprender a manejarla: en un ensayo con 169 mujeres de 50 años o más que cuidaban a un familiar con demencia, un programa en grupo para manejar el enfado redujo la rabia y el ánimo bajo frente a quienes esperaban su turno (Coon et al., 2003). Manejar las situaciones difíciles del día a día era también parte de REACH II: a los seis meses, la depresión clínica fue del 12,6 % con el programa frente al 22,7 % sin él (Belle et al., 2006). Sentir rabia no es maltratar; temer hacer daño es una señal para pedir apoyo, no un fallo tuyo.",
+  "fuentes": [
+   {
+    "cita": "Coon, D. W., Thompson, L., Steffen, A., Sorocco, K., y Gallagher-Thompson, D. (2003). Anger and depression management: Psychoeducational skill training interventions for women caregivers of a relative with dementia. The Gerontologist, 43(5), 678-689.",
+    "url": "https://doi.org/10.1093/geront/43.5.678"
+   },
+   {
+    "cita": "Belle, S. H., Burgio, L., Burns, R., et al. (2006). Enhancing the quality of life of dementia caregivers from different ethnic or racial groups: A randomized, controlled trial. Annals of Internal Medicine, 145(10), 727-738.",
+    "url": "https://doi.org/10.7326/0003-4819-145-10-200611210-00005"
+   }
+  ],
+  "aviso": "ambar",
+  "relacionadas": [
+   "culpa",
+   "ambivalencia",
+   "maltrato",
+   "respiro"
+  ],
+  "buscar": [
+   "le he gritado",
+   "tengo muy mal genio",
+   "exploto por todo",
+   "pierdo la paciencia"
+  ]
+ },
+ {
+  "id": "despues-de-cuidar",
+  "palabra": "Después de cuidar",
+  "tecnico": "Etapa poscuidado",
+  "familia": 2,
+  "para": "casa",
+  "escena": "Hace dos meses que murió la madre de Pilar. Ya no suena la alarma de las pastillas. Pilar se despierta a las siete igual, mira el pasillo vacío y no sabe qué hacer con el día.",
+  "basico": {
+   "que_es": "Es lo que pasa cuando el cuidado termina, porque la persona entra en una residencia o muere. Se mezclan alivio, pena, cansancio y un vacío nuevo.",
+   "como_se_nota": "Te sobra tiempo y no sabes qué hacer con él. Sientes alivio y luego culpa por sentirlo. Echas de menos la rutina. No sabes muy bien quién eres ahora.",
+   "que_no_es": "Sentir alivio no es ingratitud. Tampoco tienes que estar bien enseguida. Si la tristeza no se mueve en meses, habla con tu médica de familia.",
+   "accion_minima": "Llama a alguien con quien perdiste el contacto mientras cuidabas. Solo para saludar."
+  },
+  "saber_mas": "El cuidado tiene un después que se estudia poco. Mary Larkin estudió a antiguas cuidadoras y describió tres fases: el «vacío» del poscuidado, el cierre del tiempo de cuidar y la construcción de una vida nueva. El 70 % había cuidado más de una vez (Larkin, 2009). En 217 familiares de personas con demencia, los síntomas de depresión bajaron de forma clara en los tres meses siguientes a la muerte, y el 72 % dijo que la muerte había sido un alivio para sí (Schulz et al., 2003). En un programa de apoyo de la Universidad de Nueva York, la mejora del ánimo de quien cuidaba se mantuvo años, también después del ingreso o la muerte de su familiar (Mittelman et al., 2004). El alivio y la pena pueden convivir.",
+  "fuentes": [
+   {
+    "cita": "Larkin, M. (2009). Life after caring: The post-caring experiences of former carers. British Journal of Social Work, 39(6), 1026-1042.",
+    "url": "https://doi.org/10.1093/bjsw/bcn030"
+   },
+   {
+    "cita": "Schulz, R., Mendelsohn, A. B., Haley, W. E., Mahoney, D., Allen, R. S., Zhang, S., Thompson, L., y Belle, S. H. (2003). End-of-life care and the effects of bereavement on family caregivers of persons with dementia. New England Journal of Medicine, 349(20), 1936-1942.",
+    "url": "https://doi.org/10.1056/NEJMsa035373"
+   },
+   {
+    "cita": "Mittelman, M. S., Roth, D. L., Coon, D. W., y Haley, W. E. (2004). Sustained benefit of supportive intervention for depressive symptoms in caregivers of patients with Alzheimer's disease. American Journal of Psychiatry, 161(5), 850-856.",
+    "url": "https://doi.org/10.1176/appi.ajp.161.5.850"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "duelo-anticipado",
+   "perdida-del-yo",
+   "apoyo-social",
+   "depresion-y-ansiedad"
+  ],
+  "buscar": [
+   "ya no cuido y no sé qué hacer",
+   "murió mi madre después de cuidarla",
+   "siento alivio y culpa",
+   "la ingresamos en una residencia"
+  ]
+ },
+ {
+  "id": "aspectos-positivos",
+  "palabra": "Lo que cuidar da",
+  "tecnico": "Aspectos positivos del cuidado",
+  "familia": 3,
+  "para": "casa",
+  "escena": "Luz Marina cuida a su abuela desde hace un año. Está cansada, pero ha aprendido sus recetas y escucha historias que nadie le había contado. «Esto también me lo llevo», piensa.",
+  "basico": {
+   "que_es": "Es lo que cuidar te da: sentido, cercanía, orgullo, aprendizaje, sentir que devuelves algo. Convive con lo que pesa, no lo borra.",
+   "como_se_nota": "Un gesto de agradecimiento te dura todo el día. Te sorprendes de lo que sabes hacer. Sientes que estás donde quieres estar, aunque cueste.",
+   "que_no_es": "No es una obligación sentirlo. Tampoco quiere decir que no te pese. Puedes encontrar algo bueno y necesitar ayuda a la vez.",
+   "accion_minima": "Antes de dormir, apunta una cosa que hoy salió bien. Una sola. Dentro de una semana, lee la lista."
+  },
+  "saber_mas": "En una muestra nacional de Canadá, 211 de 289 personas que cuidaban (el 73 %) encontraron al menos un aspecto positivo en cuidar. Esos sentimientos se asociaron a menos depresión, menos carga y mejor salud percibida (Cohen et al., 2002). La satisfacción y la carga son dos valoraciones distintas, no los extremos de una misma escala: pueden estar altas a la vez (Lawton et al., 1991). Durante décadas, la investigación sobre el cuidado se ha fijado sobre todo en lo negativo. Mirar también lo que cuidar da no es ingenuidad ni una forma de quitar importancia a lo que pesa: completa el cuadro, y protege.",
+  "fuentes": [
+   {
+    "cita": "Cohen, C. A., Colantonio, A., y Vernich, L. (2002). Positive aspects of caregiving: Rounding out the caregiver experience. International Journal of Geriatric Psychiatry, 17(2), 184-188.",
+    "url": "https://doi.org/10.1002/gps.561"
+   },
+   {
+    "cita": "Lawton, M. P., Moss, M., Kleban, M. H., Glicksman, A., y Rovine, M. (1991). A two-factor model of caregiving appraisal and psychological well-being. Journal of Gerontology, 46(4), P181-P189.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/2071844/"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "hallazgo-de-beneficios",
+   "ambivalencia",
+   "satisfaccion-por-compasion",
+   "sentido-de-dominio"
+  ],
+  "buscar": [
+   "lo bueno de cuidar",
+   "cuidar también me da",
+   "orgullo de cuidar"
+  ]
+ },
+ {
+  "id": "hallazgo-de-beneficios",
+  "palabra": "Encontrar algo bueno",
+  "tecnico": "Hallazgo de beneficios",
+  "familia": 3,
+  "para": "casa",
+  "escena": "Desde el ictus de su padre, Kenia ha aprendido a pedir ayuda, a hablar con médicos y a reírse de los malos días. No lo eligió, pero algo ha crecido en ella.",
+  "basico": {
+   "que_es": "Es encontrar algo bueno dentro de una situación difícil, sin negar lo difícil: un aprendizaje, una relación más cercana, una fuerza nueva.",
+   "como_se_nota": "Te das cuenta de lo que has aprendido. Valoras más a algunas personas. A veces piensas: «Esto no lo quería, pero me ha enseñado algo».",
+   "que_no_es": "No es poner buena cara ni obligarte a ver el lado bueno. Si hoy no encuentras nada, también está bien. No es un deber.",
+   "accion_minima": "Esta semana, piensa en una cosa que ahora sabes hacer y antes no. Escríbela con tus palabras."
+  },
+  "saber_mas": "El hallazgo de beneficios (*benefit finding*) se ha usado como intervención. En un ensayo con 96 familiares que cuidaban a alguien con alzhéimer, un programa que enseñaba a encontrar ganancias revisando la forma de ver las cosas redujo los síntomas de depresión más que dos formas de psicoeducación (Cheng et al., 2017). Encaja con lo que se sabe de los aspectos positivos: la mayoría de quienes cuidan encuentra algo bueno en cuidar, y eso se asocia a menos depresión (Cohen et al., 2002). Tiene un riesgo: convertirse en una exigencia de positividad. Funciona como invitación, nunca como obligación, y nunca sustituye a la ayuda práctica que falta.",
+  "fuentes": [
+   {
+    "cita": "Cheng, S.-T., Mak, E. P. M., Fung, H. H., Kwok, T., Lee, D. T. F., y Lam, L. C. W. (2017). Benefit-finding and effect on caregiver depression: A double-blind randomized controlled trial. Journal of Consulting and Clinical Psychology, 85(5), 521-529.",
+    "url": "https://doi.org/10.1037/ccp0000176"
+   },
+   {
+    "cita": "Cohen, C. A., Colantonio, A., y Vernich, L. (2002). Positive aspects of caregiving: Rounding out the caregiver experience. International Journal of Geriatric Psychiatry, 17(2), 184-188.",
+    "url": "https://doi.org/10.1002/gps.561"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "aspectos-positivos",
+   "afrontamiento",
+   "sentido-de-dominio"
+  ],
+  "buscar": [
+   "qué he aprendido cuidando",
+   "ver el lado bueno",
+   "cuidar me ha cambiado"
+  ]
+ },
+ {
+  "id": "sentido-de-dominio",
+  "palabra": "Sentir que algo depende de ti",
+  "tecnico": "Sentido de dominio",
+  "familia": 3,
+  "para": "dos",
+  "escena": "Ioana pasaba las noches leyendo foros sobre párkinson. Un día apuntó tres preguntas, se las llevó a la enfermera y volvió con un plan. Por fin sintió que algo dependía de ella.",
+  "basico": {
+   "que_es": "Es sentir que tienes cierto control sobre tu vida y sobre lo que pasa. No todo, pero algo. Protege frente a lo que pesa.",
+   "como_se_nota": "Sabes qué hacer en un momento difícil. Sabes a quién llamar. Decides algo y sale. O, al revés, sientes que todo te arrastra.",
+   "que_no_es": "No es controlarlo todo ni saberlo todo. Leer sin parar no lo da: lo da aprender algo que puedes usar mañana.",
+   "accion_minima": "Elige una sola pregunta sobre el cuidado y llévala a tu enfermera o a tu médica. Apunta la respuesta."
+  },
+  "saber_mas": "El sentido de dominio (*mastery*) es la sensación de tener cierto control sobre la propia vida. Leonard Pearlin y Carmi Schooler lo estudiaron en 1978 entre los recursos personales que amortiguan el estrés de la vida diaria (Pearlin y Schooler, 1978). Al cuidar, la absorción en el papel de cuidadora se asocia a menos sensación de control (Skaff y Pearlin, 1992). Los programas para cuidadoras mejoran mucho más lo que se sabe que el malestar; la psicoeducación con efectos más consistentes es la activa, la que enseña practicando y no solo informa (Sörensen et al., 2002). Saber lo justo, lo que se puede usar, protege más que saberlo todo.",
+  "fuentes": [
+   {
+    "cita": "Pearlin, L. I., y Schooler, C. (1978). The structure of coping. Journal of Health and Social Behavior, 19(1), 2-21.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/649936/"
+   },
+   {
+    "cita": "Skaff, M. M., y Pearlin, L. I. (1992). Caregiving: Role engulfment and the loss of self. The Gerontologist, 32(5), 656-664.",
+    "url": "https://doi.org/10.1093/geront/32.5.656"
+   },
+   {
+    "cita": "Sörensen, S., Pinquart, M., y Duberstein, P. (2002). How effective are interventions with caregivers? An updated meta-analysis. The Gerontologist, 42(3), 356-372.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12040138/"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "afrontamiento",
+   "apoyo-social",
+   "absorcion-del-rol",
+   "pedir-y-repartir-ayuda"
+  ],
+  "buscar": [
+   "no sé qué hacer",
+   "me lo he leído todo y sigo igual",
+   "siento que no controlo nada"
+  ]
+ },
+ {
+  "id": "apoyo-social",
+  "palabra": "Tener a quién recurrir",
+  "tecnico": "Apoyo social",
+  "familia": 3,
+  "para": "dos",
+  "escena": "Nerea no pide nada a nadie. Una tarde, su vecina le deja una tortilla y le dice: «El jueves me quedo yo con tu tío». Nerea casi dice que no. Al final dice que sí.",
+  "basico": {
+   "que_es": "Es la ayuda que llega de otras personas: una mano práctica, una escucha, un consejo. Es uno de los grandes frenos de lo que pesa cuidar.",
+   "como_se_nota": "Tienes a quién llamar un mal día. Alguien te cubre una tarde. O, al revés, sientes que todo recae en ti y que nadie pregunta.",
+   "que_no_es": "No es tener mucha gente alrededor: cuenta más sentir que te apoyan. Y aceptar ayuda no es fallar. Es repartir.",
+   "accion_minima": "Acepta una ayuda que te ofrezcan esta semana. Deja instrucciones de una línea, no de una página."
+  },
+  "saber_mas": "En el modelo del proceso de estrés, el apoyo social es uno de los mediadores que pueden frenar la cadena del desgaste (Pearlin et al., 1990). Uno de los programas que más han ayudado a quien cuida, el de la Universidad de Nueva York, con 406 cónyuges de personas con alzhéimer, combinaba consejo individual y familiar, grupos de apoyo y ayuda por teléfono. Retrasó el ingreso en residencia una mediana de 557 días, y el 61 % de ese efecto se explicó por cambios en quien cuidaba, entre ellos que estaba más satisfecha con el apoyo de su gente (Mittelman et al., 2006). Lo que cuenta no es solo cuánta gente hay, sino si el apoyo llega y si se siente.",
+  "fuentes": [
+   {
+    "cita": "Pearlin, L. I., Mullan, J. T., Semple, S. J., y Skaff, M. M. (1990). Caregiving and the stress process: An overview of concepts and their measures. The Gerontologist, 30(5), 583-594.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/2276631/"
+   },
+   {
+    "cita": "Mittelman, M. S., Haley, W. E., Clay, O. J., y Roth, D. L. (2006). Improving caregiver well-being delays nursing home placement of patients with Alzheimer disease. Neurology, 67(9), 1592-1599.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/17101889/"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "pedir-y-repartir-ayuda",
+   "cuidadora-secundaria",
+   "respiro",
+   "proceso-de-estres"
+  ],
+  "buscar": [
+   "nadie me ayuda",
+   "estoy sola cuidando",
+   "nadie lo hace como yo",
+   "no sé pedir ayuda",
+   "estoy solo cuidando"
+  ]
+ },
+ {
+  "id": "afrontamiento",
+  "palabra": "Cómo te las arreglas",
+  "tecnico": "Afrontamiento",
+  "familia": 3,
+  "para": "dos",
+  "escena": "Cuando su madre se agita al atardecer, Rachid ya no discute. Baja la luz, pone la radio y le ofrece un vaso de leche. Lo aprendió en un taller de la asociación.",
+  "basico": {
+   "que_es": "Es lo que haces para manejar algo que te exige mucho. A veces cambias la situación. Otras, cambias cómo te afecta.",
+   "como_se_nota": "Buscas trucos para los momentos difíciles. Hablas con alguien. Sales a respirar. O, al revés, aguantas sin parar hasta que no puedes más.",
+   "que_no_es": "No es aguantar ni hacerte la fuerte. No hay una forma correcta para todas. Y no sustituye a la ayuda que falta.",
+   "accion_minima": "Elige el momento más difícil del día. Pregunta a tu enfermera o a una asociación un truco para ese momento y pruébalo una vez."
+  },
+  "saber_mas": "Lazarus y Folkman (1984) definieron el afrontamiento como lo que hace una persona para manejar una situación que le exige mucho; puede centrarse en el problema o en la emoción. Pearlin y Schooler (1978) lo estudiaron en la vida diaria como un recurso que amortigua el estrés. Al cuidar, el programa START enseñó estrategias de afrontamiento en ocho sesiones a 260 familiares de personas con demencia en Londres y Essex, con graduadas en psicología supervisadas. Redujo la ansiedad y la depresión (Livingston et al., 2013), y el efecto seguía a los seis años (Livingston et al., 2020). Es una de las ayudas con más apoyo, y funciona con una persona que enseña y acompaña.",
+  "fuentes": [
+   {
+    "cita": "Livingston, G., Barber, J., Rapaport, P., et al. (2013). Clinical effectiveness of a manual based coping strategy programme (START, STrAtegies for RelaTives) in promoting the mental health of carers of family members with dementia: Pragmatic randomised controlled trial. BMJ, 347, f6276.",
+    "url": "https://doi.org/10.1136/bmj.f6276"
+   },
+   {
+    "cita": "Livingston, G., Manela, M., O'Keeffe, A., et al. (2020). Clinical effectiveness of the START (STrAtegies for RelaTives) psychological intervention for family carers and the effects on the cost of care for people with dementia: 6-year follow-up of a randomised controlled trial. The British Journal of Psychiatry, 216(1), 35-42.",
+    "url": "https://doi.org/10.1192/bjp.2019.160"
+   },
+   {
+    "cita": "Pearlin, L. I., y Schooler, C. (1978). The structure of coping. Journal of Health and Social Behavior, 19(1), 2-21.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/649936/"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "sentido-de-dominio",
+   "carga-subjetiva",
+   "afrontamiento-diadico",
+   "rabia-e-irritabilidad"
+  ],
+  "buscar": [
+   "cómo lo llevo",
+   "trucos para cuidar",
+   "no sé cómo manejarlo"
+  ]
+ },
+ {
+  "id": "afrontamiento-diadico",
+  "palabra": "Afrontarlo en pareja",
+  "tecnico": "Afrontamiento diádico",
+  "familia": 3,
+  "para": "casa",
+  "escena": "Desde el diagnóstico de Luis, Mercedes y él hablan cada noche diez minutos de cómo ha ido el día. Él ya no puede hacer mucho, pero escucha. «Sigue siendo mi compañero», dice ella.",
+  "basico": {
+   "que_es": "Es cuando la pareja afronta junta el estrés de uno de los dos, o el de ambos. Importa mucho cuando quien cuida es la pareja.",
+   "como_se_nota": "Os contáis lo que os preocupa. Decidís juntos lo que se puede decidir. O, al revés, cada uno lo lleva en silencio para no preocupar al otro.",
+   "que_no_es": "No es que la persona enferma tenga que cuidarte. Es seguir siendo dos, en lo que se pueda. Cuando ya no se puede, no es un fracaso.",
+   "accion_minima": "Si se puede, buscad un rato a la semana para hablar de algo vuestro que no sea la enfermedad: un recuerdo, un plan pequeño."
+  },
+  "saber_mas": "Guy Bodenmann propuso en los años noventa que el estrés de una persona de la pareja es también un asunto de la pareja, que lo afronta con apoyo, repartiendo tareas o de forma conjunta. Un metaanálisis con 72 muestras y casi 18.000 participantes encontró que el afrontamiento en pareja se asocia con fuerza a la satisfacción con la relación, sobre todo cuando es conjunto o de apoyo. Callar para proteger al otro se asoció menos a esa satisfacción (Falconier et al., 2015). Estos estudios son de parejas en general, no solo de parejas que cuidan. Cuando cuida el cónyuge, la relación cambia, y mantener algo de lo compartido es también una forma de cuidarla.",
+  "fuentes": [
+   {
+    "cita": "Falconier, M. K., Jackson, J. B., Hilpert, P., y Bodenmann, G. (2015). Dyadic coping and relationship satisfaction: A meta-analysis. Clinical Psychology Review, 42, 28-46.",
+    "url": "https://doi.org/10.1016/j.cpr.2015.07.002"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "discrepancia-de-identidad",
+   "afrontamiento",
+   "apoyo-social"
+  ],
+  "buscar": [
+   "cuidar a mi marido",
+   "cuidar a mi pareja",
+   "ya no somos pareja"
+  ]
+ },
+ {
+  "id": "respiro",
+  "palabra": "Descansar de cuidar",
+  "tecnico": "Respiro",
+  "familia": 3,
+  "para": "casa",
+  "escena": "Daniela no duerme una noche entera desde hace un año. La trabajadora social le habla de una estancia temporal para su madre. Daniela piensa que eso sería abandonarla.",
+  "basico": {
+   "que_es": "Es cualquier ayuda que te da descanso del cuidado: centro de día, estancias cortas en una residencia o una persona que te sustituye en casa.",
+   "como_se_nota": "Necesitas parar y no ves cómo. O tienes un rato libre y no sabes descansar. A veces te cuesta dejar a tu familiar con otra persona.",
+   "que_no_es": "No es abandonar. No es un premio que tengas que ganarte. Y si no hay plazas cerca, no es un fallo tuyo: es un recurso que falta.",
+   "accion_minima": "Pregunta en los servicios sociales de tu ayuntamiento qué respiro hay en tu zona. Una pregunta, sin compromiso."
+  },
+  "saber_mas": "La revisión Cochrane define el respiro como cualquier intervención pensada para dar descanso o alivio a quien cuida. En sus cuatro ensayos no se demostró beneficio ni daño, con evidencia de muy baja calidad, y los autores advierten que eso puede reflejar falta de buena investigación, no que el respiro no sirva (Maayan et al., 2014). La guía NICE pide hablar con quien cuida del valor de tomarse descansos y ajustarlos a sus necesidades (NICE, 2020). En Euskadi, las diputaciones forales ofrecen estancias de respiro; se puede preguntar en los servicios sociales del ayuntamiento o de la diputación. Descansar no es dejar de cuidar: es poder seguir.",
+  "fuentes": [
+   {
+    "cita": "Maayan, N., Soares-Weiser, K., y Lee, H. (2014). Respite care for people with dementia and their carers. Cochrane Database of Systematic Reviews, (1), CD004396.",
+    "url": "https://doi.org/10.1002/14651858.CD004396.pub3"
+   },
+   {
+    "cita": "National Institute for Health and Care Excellence (2020). Supporting adult carers (guía NICE NG150).",
+    "url": "https://www.nice.org.uk/guidance/ng150"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "autocuidado",
+   "pedir-y-repartir-ayuda",
+   "culpa",
+   "cautividad-del-rol"
+  ],
+  "buscar": [
+   "necesito descansar",
+   "centro de día",
+   "residencia temporal",
+   "descansar es abandonarla"
+  ]
+ },
+ {
+  "id": "pedir-y-repartir-ayuda",
+  "palabra": "Pedir y repartir",
+  "tecnico": null,
+  "familia": 3,
+  "para": "casa",
+  "escena": "Andrés cuida a su madre y sus dos hermanas viven lejos. En el grupo de la familia escribe por primera vez algo concreto: «¿Quién llama al banco el lunes y quién viene en agosto?».",
+  "basico": {
+   "que_es": "Es pasar del «ya me apaño» a repartir lo que pesa: con la familia, con amistades, con servicios y con lo que te corresponde por ley.",
+   "como_se_nota": "Sientes que todo recae en ti. Te enfadas porque los demás no ayudan, pero tampoco pides. O pides en general y nadie se da por aludido.",
+   "que_no_es": "No es fallar ni molestar. No depende solo de saber pedir: también de que haya servicios. Si te dicen que no, no es culpa tuya.",
+   "accion_minima": "Propón a tu familia una reunión de veinte minutos con una sola petición concreta: qué, quién y cuándo."
+  },
+  "saber_mas": "Los programas que más ayudan a quien cuida implican a la familia, junto con habilidades prácticas, apoyo emocional y seguimiento (Schulz et al., 2020). En el programa de la Universidad de Nueva York, con sesiones de consejo individual y familiar, buena parte del beneficio llegó porque quien cuidaba se sentía mejor apoyada por su gente (Mittelman et al., 2006). En España, el cuidado lo sostienen sobre todo mujeres, y el debate de fondo es cómo repartirlo entre mujeres y hombres y entre familias y Estado (García-Calvente et al., 2004). Repartir es también pedir servicios: respiro, centro de día, ayuda a domicilio o la prestación por cuidados en el entorno familiar. Pedir no es solo cosa de carácter: también hace falta que alguien responda.",
+  "fuentes": [
+   {
+    "cita": "Schulz, R., Beach, S. R., Czaja, S. J., Martire, L. M., y Monin, J. K. (2020). Family caregiving for older adults. Annual Review of Psychology, 71, 635-659.",
+    "url": "https://doi.org/10.1146/annurev-psych-010419-050754"
+   },
+   {
+    "cita": "Mittelman, M. S., Haley, W. E., Clay, O. J., y Roth, D. L. (2006). Improving caregiver well-being delays nursing home placement of patients with Alzheimer disease. Neurology, 67(9), 1592-1599.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/17101889/"
+   },
+   {
+    "cita": "García-Calvente, M. M., Mateo-Rodríguez, I., y Eguiguren, A. P. (2004). El sistema informal de cuidados en clave de desigualdad. Gaceta Sanitaria, 18(supl. 1), 132-139.",
+    "url": "https://doi.org/10.1157/13062262"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "apoyo-social",
+   "cuidadora-secundaria",
+   "respiro",
+   "cuidadora-principal"
+  ],
+  "buscar": [
+   "mis hermanos no ayudan",
+   "cómo pedir ayuda a la familia",
+   "todo recae en mí",
+   "nadie me echa una mano"
+  ]
+ },
+ {
+  "id": "autocuidado",
+  "palabra": "Cuidarte tú",
+  "tecnico": "Autocuidado",
+  "familia": 3,
+  "para": "dos",
+  "escena": "A Josune se lo dicen en todas partes: «Tienes que cuidarte». Ella piensa: «¿Cuándo? ¿Con quién dejo a mi padre?». La frase, en vez de ayudarla, le pesa un poco más.",
+  "basico": {
+   "que_es": "Es lo que haces por ti para estar bien. Pero cuidarte no depende solo de ti: también de tener tiempo, relevo y servicios a tu alcance.",
+   "como_se_nota": "Sabes que necesitas parar y no puedes. Te dicen que te cuides como si fuera fácil. O encuentras un rato pequeño que te sostiene.",
+   "que_no_es": "No es otra obligación ni una tarea más de la lista. Si no puedes cuidarte, muchas veces no es falta de ganas: es falta de relevo.",
+   "accion_minima": "Elige una sola cosa pequeña para ti esta semana, aunque sean diez minutos. Si ni eso es posible, apunta qué ayuda te falta y pregunta por ella."
+  },
+  "saber_mas": "Decir «tienes que cuidarte más» traslada a quien cuida un problema que también es de reparto y de servicios. En España, el cuidado familiar lo asumen sobre todo mujeres, muchas con pocos recursos, que pagan un alto coste en salud, empleo, relaciones y tiempo propio (García-Calvente et al., 2004). Por eso el autocuidado tiene dos partes: lo que una puede hacer y lo que el entorno tiene que poner, como respiro, ayuda a domicilio o permisos en el trabajo. La guía NICE pide a los servicios hablar con quien cuida del valor de los descansos, ofrecerle apoyo y formación, y tratar o derivar sus problemas de salud mental (NICE, 2020). Cuidarse es más fácil cuando alguien te releva.",
+  "fuentes": [
+   {
+    "cita": "García-Calvente, M. M., Mateo-Rodríguez, I., y Eguiguren, A. P. (2004). El sistema informal de cuidados en clave de desigualdad. Gaceta Sanitaria, 18(supl. 1), 132-139.",
+    "url": "https://doi.org/10.1157/13062262"
+   },
+   {
+    "cita": "National Institute for Health and Care Excellence (2020). Supporting adult carers (guía NICE NG150).",
+    "url": "https://www.nice.org.uk/guidance/ng150"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "respiro",
+   "autoabandono",
+   "pedir-y-repartir-ayuda",
+   "etica-del-cuidado"
+  ],
+  "buscar": [
+   "tienes que cuidarte",
+   "no tengo tiempo para mí",
+   "cómo cuidarme si no puedo",
+   "cuidarse para cuidar"
+  ]
+ },
+ {
+  "id": "burnout",
+  "palabra": "Llegar vacía del trabajo",
+  "tecnico": "Burnout o desgaste profesional",
+  "familia": 4,
+  "para": "trabajo",
+  "escena": "Fernanda es gerocultora en una residencia. Dos compañeras están de baja y nadie las sustituye. Llega a casa, se sienta en el sofá con el abrigo puesto y no tiene ganas de hablar con nadie.",
+  "basico": {
+   "que_es": "Es el desgaste que deja el trabajo de cuidar cuando el estrés dura mucho y no se resuelve. Agota, aleja de las personas y hace sentir que lo que haces no sirve.",
+   "como_se_nota": "Llegas vacía a casa. Te notas fría o distante con las personas a las que atiendes. Dudas de que tu trabajo sirva. Te cuesta volver después del descanso.",
+   "que_no_es": "No es un fallo tuyo ni falta de vocación. Sus causas son sobre todo de la organización: plantillas, turnos, liderazgo. Y es solo del trabajo, no del cuidado en casa.",
+   "accion_minima": "Apunta una condición de trabajo que te pesa y a quién podrías decírsela: tu responsable, la delegada de prevención o el comité. Solo apuntarlo ya es un paso."
+  },
+  "saber_mas": "Herbert Freudenberger describió el *burnout* del personal en 1974, y Christina Maslach y Susan Jackson lo midieron en 1981 con tres partes: agotamiento emocional, distancia con las personas atendidas y baja realización. La OMS lo define como un síndrome causado por el estrés crónico en el trabajo que no se ha gestionado con éxito; lo considera un fenómeno laboral, no una enfermedad, y pide no usarlo fuera del trabajo (OMS, 2019). En 17 estudios con personal de residencias para personas con demencia, la mayoría tenía un desgaste bajo o moderado, y lo que más se asoció a él fue la falta de personal, el mal liderazgo, la falta de apoyo y un mal entorno (Costello et al., 2019). En 61 estudios con 45.539 enfermeras, el 11 % tenía síntomas, con cifras que cambian mucho según el cuestionario (Woo et al., 2020).",
+  "fuentes": [
+   {
+    "cita": "Organización Mundial de la Salud (2019, 28 de mayo). Burn-out an «occupational phenomenon»: International Classification of Diseases.",
+    "url": "https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases"
+   },
+   {
+    "cita": "Costello, H., Walsh, S., Cooper, C., y Livingston, G. (2019). A systematic review and meta-analysis of the prevalence and associations of stress and burnout among staff in long-term care facilities for people with dementia. International Psychogeriatrics, 31(8), 1203-1216.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30421691/"
+   },
+   {
+    "cita": "Woo, T., Ho, R., Tang, A., y Tam, W. (2020). Global prevalence of burnout symptoms among nurses: A systematic review and meta-analysis. Journal of Psychiatric Research, 123, 9-20.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32007680/"
+   }
+  ],
+  "aviso": "ambar",
+  "relacionadas": [
+   "angustia-moral",
+   "fatiga-por-compasion",
+   "cuidado-profesional",
+   "malestar-empatico"
+  ],
+  "buscar": [
+   "estoy quemada en el trabajo",
+   "burnout gerocultora",
+   "no puedo más con mi trabajo",
+   "agotada en la residencia",
+   "estoy quemado en el trabajo",
+   "agotado en la residencia"
+  ]
+ },
+ {
+  "id": "fatiga-por-compasion",
+  "palabra": "Cansarse de ver sufrir",
+  "tecnico": "Fatiga por compasión",
+  "familia": 4,
+  "para": "trabajo",
+  "escena": "Sonia trabaja en cuidados paliativos. Hoy ha muerto un paciente al que cuidó tres semanas. En el autobús nota que ya no siente nada, y eso la asusta más que la pena.",
+  "basico": {
+   "que_es": "Es el nombre popular del cansancio que deja acompañar, día tras día, a personas que sufren. Se usa mucho, aunque el término tiene críticas serias.",
+   "como_se_nota": "Te cuesta conectar con el dolor de los demás. Te notas entumecida o irritable. Piensas en los casos en casa. Sientes que ya no te queda nada que dar.",
+   "que_no_es": "No es que cuidar con cariño te gaste: eso no está probado. Tampoco es un fallo tuyo. Pesan mucho las condiciones de trabajo: tiempo, plantillas y apoyo.",
+   "accion_minima": "Al acabar el turno, prueba un gesto pequeño de cierre: lavarte las manos despacio, una respiración larga o nombrar por dentro a quien has cuidado."
+  },
+  "saber_mas": "Carla Joinson usó «fatiga por compasión» en 1992 en una revista de enfermería (Joinson, 1992). Charles Figley la desarrolló en 1995 como equivalente del estrés traumático secundario: un subproducto natural y disruptivo de trabajar con personas traumatizadas (Figley, 1995). **La crítica:** una revisión de 90 estudios concluye que se ha convertido en «un eufemismo contemporáneo e icónico». El cuestionario más usado para medirla, el ProQOL, no mide ningún elemento de la compasión, y ninguna investigación demuestra que las profesionales más compasivas sean más vulnerables a esa «fatiga». Los factores de riesgo descritos son sobre todo del trabajo (Sinclair et al., 2017). De ahí la idea de que «lo que agota es el malestar empático, no la compasión»: es sugerente y no está probada en cuidadoras. CareLab usa el término porque es el que la gente busca.",
+  "fuentes": [
+   {
+    "cita": "Sinclair, S., Raffin-Bouchal, S., Venturato, L., Mijovic-Kondejewski, J., y Smith-MacDonald, L. (2017). Compassion fatigue: A meta-narrative review of the healthcare literature. International Journal of Nursing Studies, 69, 9-24.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28119163/"
+   },
+   {
+    "cita": "Figley, C. R. (Ed.) (1995). Compassion fatigue: Coping with secondary traumatic stress disorder in those who treat the traumatized. Brunner/Mazel. Resumen en la biblioteca de la Office of Justice Programs (EE. UU.).",
+    "url": "https://www.ojp.gov/ncjrs/virtual-library/abstracts/compassion-fatigue-coping-secondary-traumatic-stress-disorder-those"
+   },
+   {
+    "cita": "Joinson, C. (1992). Coping with compassion fatigue. Nursing, 22(4), 116-120.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/1570090/"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "malestar-empatico",
+   "satisfaccion-por-compasion",
+   "estres-traumatico-secundario",
+   "burnout"
+  ],
+  "buscar": [
+   "fatiga por compasión",
+   "ya no siento nada en el trabajo",
+   "cansada de ver sufrir",
+   "me he vuelto fría",
+   "cansado de ver sufrir"
+  ]
+ },
+ {
+  "id": "satisfaccion-por-compasion",
+  "palabra": "El gusto de cuidar bien",
+  "tecnico": "Satisfacción por compasión",
+  "familia": 4,
+  "para": "trabajo",
+  "escena": "Teresa es auxiliar de ayuda a domicilio. Hoy Ángel, de 88 años, ha conseguido ducharse casi solo con su ayuda. Al despedirse, él le aprieta la mano. Teresa baja las escaleras sonriendo.",
+  "basico": {
+   "que_es": "Es el gusto de hacer bien el trabajo de cuidar: sentir que ayudas, que sirves, que tu trabajo tiene sentido. Convive con el cansancio, no lo borra.",
+   "como_se_nota": "Te vas a casa con la sensación de haber hecho algo que importa. Recuerdas un gesto o una frase. Sientes orgullo de tu oficio.",
+   "que_no_es": "No es el pago por el cansancio ni una razón para aguantar malas condiciones. Que te guste tu trabajo no quiere decir que no necesite mejoras.",
+   "accion_minima": "Al final de la semana, cuenta a una compañera un momento que salió bien. Solo uno."
+  },
+  "saber_mas": "La satisfacción por compasión es una de las tres partes del ProQOL (*Professional Quality of Life*), un cuestionario creado por Beth Hudnall Stamm que mide también el *burnout* y el estrés traumático secundario. Hoy lo custodia el Center for Victims of Torture y es de uso libre con condiciones (ProQOL). En 79 estudios con 28.509 enfermeras de 11 países, la satisfacción y el desgaste estaban en niveles moderados; el desgaste era mayor en cuidados intensivos y subió entre 2010 y 2019 (Xie et al., 2021). Lo importante: la satisfacción y el desgaste se miden por separado y pueden darse a la vez. El ProQOL también tiene críticas: no mide ningún elemento de la compasión (Sinclair et al., 2017). CareLab no pasa cuestionarios.",
+  "fuentes": [
+   {
+    "cita": "Center for Victims of Torture (s. f.). Professional Quality of Life Measure (ProQOL).",
+    "url": "https://proqol.org/"
+   },
+   {
+    "cita": "Xie, W., Chen, L., Feng, F., et al. (2021). The prevalence of compassion satisfaction and compassion fatigue among nurses: A systematic review and meta-analysis. International Journal of Nursing Studies, 120, 103973.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/34102372/"
+   },
+   {
+    "cita": "Sinclair, S., Raffin-Bouchal, S., Venturato, L., Mijovic-Kondejewski, J., y Smith-MacDonald, L. (2017). Compassion fatigue: A meta-narrative review of the healthcare literature. International Journal of Nursing Studies, 69, 9-24.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28119163/"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "fatiga-por-compasion",
+   "burnout",
+   "aspectos-positivos",
+   "malestar-empatico"
+  ],
+  "buscar": [
+   "me gusta mi trabajo de cuidar",
+   "orgullo de ser auxiliar",
+   "satisfacción por compasión"
+  ]
+ },
+ {
+  "id": "malestar-empatico",
+  "palabra": "Llevarte a casa lo que sufren",
+  "tecnico": "Malestar empático",
+  "familia": 4,
+  "para": "trabajo",
+  "escena": "Marta es enfermera en una planta de oncología. Cuando una paciente llora, a ella se le cierra el pecho. Por la noche sigue oyendo ese llanto y le cuesta dormir.",
+  "basico": {
+   "que_es": "Es cuando el dolor de la persona que atiendes se te queda dentro, como si fuera tuyo. Duele, y empuja a apartarte.",
+   "como_se_nota": "Te contagias de la angustia de los demás. Te llevas los casos a casa. A veces evitas entrar en una habitación o cortas una conversación difícil.",
+   "que_no_es": "No es ser demasiado sensible ni un fallo tuyo. Tampoco es lo mismo que la compasión: sentir el dolor del otro y querer ayudarle son cosas distintas.",
+   "accion_minima": "Cuando notes que te llevas el dolor de alguien, para dos minutos. Desea algo bueno a esa persona y después a ti. Mira cómo te quedas."
+  },
+  "saber_mas": "Tania Singer y Olga Klimecki distinguen la empatía, que es compartir lo que siente el otro sabiendo que es suyo, del contagio emocional, en el que esa distinción se pierde. El malestar empático es una respuesta de angustia que empuja a retirarse; la compasión es preocuparse por el otro con afecto cálido y ganas de ayudar (Singer y Klimecki, 2014). En un estudio de entrenamiento con voluntarios, practicar la empatía aumentó el afecto negativo, y practicar después la compasión aumentó el positivo y devolvió el negativo a su nivel inicial (Klimecki et al., 2014). De ahí la idea de que «lo que agota es el malestar empático, no la compasión». Es sugerente y no está probada en cuidadoras: son estudios de laboratorio. Tampoco sustituye a mejorar las condiciones de trabajo.",
+  "fuentes": [
+   {
+    "cita": "Singer, T., y Klimecki, O. M. (2014). Empathy and compassion. Current Biology, 24(18), R875-R878.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25247366/"
+   },
+   {
+    "cita": "Klimecki, O. M., Leiberg, S., Ricard, M., y Singer, T. (2014). Differential pattern of functional brain plasticity after compassion and empathy training. Social Cognitive and Affective Neuroscience, 9(6), 873-879.",
+    "url": "https://doi.org/10.1093/scan/nst060"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "fatiga-por-compasion",
+   "estres-traumatico-secundario",
+   "burnout",
+   "satisfaccion-por-compasion"
+  ],
+  "buscar": [
+   "me llevo los casos a casa",
+   "me afecta todo",
+   "soy demasiado sensible",
+   "no puedo desconectar del trabajo"
+  ]
+ },
+ {
+  "id": "angustia-moral",
+  "palabra": "Saber y no poder",
+  "tecnico": "Angustia moral (distrés moral)",
+  "familia": 4,
+  "para": "trabajo",
+  "escena": "Ousmane es gerocultor. Sabe que la señora Pura come mejor si la dejan ir despacio. Pero tiene siete minutos para darle la cena antes de pasar a la siguiente habitación.",
+  "basico": {
+   "que_es": "Es el malestar de saber qué sería lo correcto para la persona que cuidas y no poder hacerlo, porque el tiempo, las normas o la falta de personal te lo impiden.",
+   "como_se_nota": "Sales del turno con mal sabor de boca. Te repites «así no se cuida». Sientes rabia, culpa o impotencia. A veces dejas de pensarlo para poder seguir.",
+   "que_no_es": "No es un fallo tuyo ni que cuides mal. Al contrario: duele porque sabes cómo debería ser. Sus causas son sobre todo de la organización.",
+   "accion_minima": "Habla con una compañera de algo que no os dejan hacer bien. Apuntadlo juntas, con fecha. Lo escrito se puede llevar después a quien decide."
+  },
+  "saber_mas": "Andrew Jameton describió la angustia moral (*moral distress*) en 1984, en enfermería: saber lo que es correcto y no poder hacerlo por las limitaciones de la institución. Una revisión de 49 estudios cualitativos con trabajadoras sanitarias y sociales agrupó sus desencadenantes en tres niveles: el individual (decisiones de cuidado, creencias propias), el de las relaciones (defender a la persona atendida, el trato con las familias) y el de la organización (jerarquía, normas, carga de trabajo y falta de personal) (Beadle et al., 2024). En residencias españolas, la culpa por la calidad del cuidado que se da se asoció con más ansiedad del personal, y se parece mucho a la angustia moral (Gallego-Alberto et al., 2018). Por eso la respuesta también es de la organización: tiempo, plantillas y espacios para hablarlo.",
+  "fuentes": [
+   {
+    "cita": "Beadle, E. S., Walecka, A., Sangam, A. V., et al. (2024). Triggers and factors associated with moral distress and moral injury in health and social care workers: A systematic review of qualitative studies. PLoS ONE, 19(6), e0303013.",
+    "url": "https://doi.org/10.1371/journal.pone.0303013"
+   },
+   {
+    "cita": "Gallego-Alberto, L., Losada, A., Vara, C., Olazarán, J., Muñiz, R., y Pillemer, K. (2018). Psychosocial predictors of anxiety in nursing home staff. Clinical Gerontologist, 41(4), 282-292.",
+    "url": "https://doi.org/10.1080/07317115.2017.1370056"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "dano-moral",
+   "culpa",
+   "burnout",
+   "cuidado-profesional"
+  ],
+  "buscar": [
+   "no me dejan cuidar bien",
+   "no tengo tiempo para cuidar como debería",
+   "así no se cuida",
+   "distrés moral"
+  ]
+ },
+ {
+  "id": "dano-moral",
+  "palabra": "Una herida en lo que crees",
+  "tecnico": "Daño moral",
+  "familia": 4,
+  "para": "trabajo",
+  "escena": "Durante la pandemia, Lorena trabajaba en una residencia. Vio morir a residentes sin sus familias y tuvo que cumplir normas que le parecían crueles. Años después, aún se le encoge el estómago al recordarlo.",
+  "basico": {
+   "que_es": "Es la herida que queda al hacer, ver o no poder impedir algo que choca con lo que crees que está bien. Va más allá de un mal día.",
+   "como_se_nota": "Sientes culpa o vergüenza que no se van. Te cuesta confiar en la empresa o en ti. Le das vueltas a lo que pasó. A veces te alejas del oficio.",
+   "que_no_es": "No es una enfermedad mental ni una debilidad. Tampoco es un fallo tuyo: muchas veces nace de decisiones que no dependían de ti.",
+   "accion_minima": "Si algo de tu trabajo te sigue doliendo, cuéntaselo a una persona de confianza. Si no se mueve en meses, habla con tu médica de familia o con el servicio de prevención."
+  },
+  "saber_mas": "Brett Litz y su equipo definieron el daño moral (*moral injury*) en 2009, a partir de veteranos de guerra: el efecto duradero de cometer actos que van contra creencias morales profundas, de no impedirlos o de presenciarlos. Ese efecto es emocional, psicológico, de conducta, espiritual y social (Litz et al., 2009). Después se aplicó a la sanidad y a los servicios sociales, sobre todo con la pandemia. Una revisión de 49 estudios cualitativos encontró que la angustia moral y el daño moral nacen en lo individual, en las relaciones y en la organización: jerarquía, normas, carga de trabajo, falta de personal y cambios de política rápidos e impuestos (Beadle et al., 2024). Cuando la angustia moral se repite, o cuando se participa en algo que se considera inaceptable, puede convertirse en daño moral.",
+  "fuentes": [
+   {
+    "cita": "Litz, B. T., Stein, N., Delaney, E., Lebowitz, L., Nash, W. P., Silva, C., y Maguen, S. (2009). Moral injury and moral repair in war veterans: A preliminary model and intervention strategy. Clinical Psychology Review, 29(8), 695-706.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19683376/"
+   },
+   {
+    "cita": "Beadle, E. S., Walecka, A., Sangam, A. V., et al. (2024). Triggers and factors associated with moral distress and moral injury in health and social care workers: A systematic review of qualitative studies. PLoS ONE, 19(6), e0303013.",
+    "url": "https://doi.org/10.1371/journal.pone.0303013"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "angustia-moral",
+   "estres-traumatico-secundario",
+   "burnout"
+  ],
+  "buscar": [
+   "no me perdono lo que pasó en la pandemia",
+   "hice cosas que iban contra mí",
+   "daño moral"
+  ]
+ },
+ {
+  "id": "estres-traumatico-secundario",
+  "palabra": "Cuando el trauma de otros te alcanza",
+  "tecnico": "Estrés traumático secundario",
+  "familia": 4,
+  "para": "trabajo",
+  "escena": "Lidia es trabajadora social en un servicio de atención a personas mayores. Esta semana ha escuchado un caso de abandono muy duro. Desde entonces le vienen imágenes que no vio, pero que se imagina.",
+  "basico": {
+   "que_es": "Es el estrés que aparece al escuchar o acompañar de cerca el sufrimiento grave de otras personas. Puede parecerse al de quien vivió el trauma.",
+   "como_se_nota": "Te vienen imágenes de lo que te contaron. Duermes mal. Estás en alerta. Evitas ciertos casos o temas. Te sobresaltas con facilidad.",
+   "que_no_es": "No es debilidad ni falta de profesionalidad. Es un riesgo conocido de los trabajos de ayuda. Y no es un fallo tuyo: la organización tiene que prevenirlo.",
+   "accion_minima": "Si un caso se te queda dentro, pide hablarlo en supervisión o con una compañera de confianza. Si los síntomas duran semanas, consulta con tu médica."
+  },
+  "saber_mas": "Charles Figley presentó en 1995 la fatiga por compasión como equivalente del «trastorno de estrés traumático secundario»: lo que surge al ayudar, o querer ayudar, a una persona traumatizada (Figley, 1995). El ProQOL lo mide como una de sus tres partes; en 79 estudios con 28.509 enfermeras de 11 países, el nivel medio fue moderado y más alto en cuidados intensivos (Xie et al., 2021). Los términos se mezclan a menudo: fatiga por compasión, estrés traumático secundario y trauma vicario. Una revisión de 90 estudios critica que «fatiga por compasión» se haya vuelto un eufemismo y que se mida con un cuestionario que no mide la compasión (Sinclair et al., 2017). Lo práctico es parecido en todos: límites en los casos difíciles, supervisión y responsabilidad de la organización.",
+  "fuentes": [
+   {
+    "cita": "Figley, C. R. (Ed.) (1995). Compassion fatigue: Coping with secondary traumatic stress disorder in those who treat the traumatized. Brunner/Mazel. Resumen en la biblioteca de la Office of Justice Programs (EE. UU.).",
+    "url": "https://www.ojp.gov/ncjrs/virtual-library/abstracts/compassion-fatigue-coping-secondary-traumatic-stress-disorder-those"
+   },
+   {
+    "cita": "Xie, W., Chen, L., Feng, F., et al. (2021). The prevalence of compassion satisfaction and compassion fatigue among nurses: A systematic review and meta-analysis. International Journal of Nursing Studies, 120, 103973.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/34102372/"
+   },
+   {
+    "cita": "Sinclair, S., Raffin-Bouchal, S., Venturato, L., Mijovic-Kondejewski, J., y Smith-MacDonald, L. (2017). Compassion fatigue: A meta-narrative review of the healthcare literature. International Journal of Nursing Studies, 69, 9-24.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28119163/"
+   }
+  ],
+  "aviso": "ambar",
+  "relacionadas": [
+   "trauma-vicario",
+   "fatiga-por-compasion",
+   "malestar-empatico",
+   "dano-moral"
+  ],
+  "buscar": [
+   "no me quito de la cabeza un caso",
+   "imágenes de lo que me contaron",
+   "estrés traumático secundario"
+  ]
+ },
+ {
+  "id": "trauma-vicario",
+  "palabra": "Cuando cambia cómo ves el mundo",
+  "tecnico": "Trauma vicario",
+  "familia": 4,
+  "para": "trabajo",
+  "escena": "Rocío lleva diez años atendiendo a mujeres mayores que han sufrido violencia. Un día se da cuenta de que ya no deja a su madre sola con nadie. Desconfía de todo el mundo.",
+  "basico": {
+   "que_es": "Es el cambio lento en tu forma de ver el mundo, a los demás y a ti misma, por acompañar durante años el trauma de otras personas.",
+   "como_se_nota": "Confías menos en la gente. Te sientes menos segura. Ves peligro en todas partes. Te cuesta la intimidad. Ya no miras el mundo como antes.",
+   "que_no_es": "No es un fallo tuyo ni que no valgas para el trabajo. Le pasa a quien se implica de verdad. Prevenirlo es también tarea de la organización.",
+   "accion_minima": "Pregunta en tu trabajo si hay supervisión o un espacio para hablar de los casos difíciles. Si no lo hay, propón que exista."
+  },
+  "saber_mas": "Lisa McCann y Laurie Anne Pearlman propusieron en 1990 el trauma vicario (*vicarious traumatization*): un cambio en los esquemas con que la profesional entiende el mundo, por su implicación empática con personas que han sufrido un trauma (McCann y Pearlman, 1990). Afecta sobre todo a la confianza, la seguridad, el control y la intimidad. Se distingue del *burnout*, que viene del estrés del trabajo en general, y se parece al estrés traumático secundario, con el que a menudo se confunde. Para prevenirlo se propone limitar el número de casos traumáticos, tener supervisión y apoyo entre compañeras, y que la organización asuma su parte (Trippany et al., 2004). Nació en terapeutas; en otros oficios del cuidado se ha estudiado menos.",
+  "fuentes": [
+   {
+    "cita": "McCann, I. L., y Pearlman, L. A. (1990). Vicarious traumatization: A framework for understanding the psychological effects of working with victims. Journal of Traumatic Stress, 3(1), 131-149.",
+    "url": "https://doi.org/10.1002/jts.2490030110"
+   },
+   {
+    "cita": "Trippany, R. L., White Kress, V. E., y Wilcoxon, S. A. (2004). Preventing vicarious trauma: What counselors should know when working with trauma survivors. Journal of Counseling & Development, 82, 31-37. Copia en la web de la Office for Victims of Crime (EE. UU.).",
+    "url": "https://ovc.ojp.gov/sites/g/files/xyckuh226/files/media/document/vt_summary_and_a_new_theory-508.pdf"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "estres-traumatico-secundario",
+   "malestar-empatico",
+   "dano-moral"
+  ],
+  "buscar": [
+   "ya no confío en nadie",
+   "mi trabajo me ha cambiado",
+   "trauma vicario"
+  ]
+ },
+ {
+  "id": "cuidadora-principal",
+  "palabra": "La que más cuida",
+  "tecnico": "Persona cuidadora principal",
+  "familia": 5,
+  "para": "casa",
+  "escena": "Rosario lee el informe de dependencia de su madre. En una casilla pone «cuidadora principal» y, al lado, su nombre. Nadie se lo preguntó: simplemente era ella.",
+  "basico": {
+   "que_es": "Es la persona que más tiempo dedica a cuidar a alguien que depende de ella. Muchas veces lo es sin haberlo decidido.",
+   "como_se_nota": "Eres la que sabe las pastillas, las citas y los trucos. La que llaman cuando pasa algo. La que no puede ponerse enferma.",
+   "que_no_es": "No quiere decir que tengas que hacerlo todo sola, ni que no puedas pedir ayuda o cambiar el reparto. Ese papel también te da derechos.",
+   "accion_minima": "Lleva tres preguntas a la trabajadora social: qué ayudas hay, qué derechos tengo como cuidadora y qué servicios de respiro hay en mi zona."
+  },
+  "saber_mas": "La Ley 39/2006, de dependencia, llama cuidados no profesionales a la atención en el domicilio por personas de la familia o del entorno, no vinculadas a un servicio profesional. Su texto consolidado define también a la persona cuidadora principal: la que dedica más tiempo a los cuidados y apoyos y se identifica como tal en el Plan Individual de Atención (Ley 39/2006, artículo 2). La Ley 4/2026 indica en su preámbulo que, en la prestación económica para cuidados en el entorno familiar, quien cuida puede ser del ámbito familiar o relacional, e incorpora sus derechos. En la EDAD 2020 del INE, sobre personas con discapacidad que viven en hogares, el 63,7 % de las personas cuidadoras principales eran mujeres, y el perfil más frecuente era el de una mujer de 45 a 64 años (INE, 2022).",
+  "fuentes": [
+   {
+    "cita": "Ley 39/2006, de 14 de diciembre, de Promoción de la Autonomía Personal y Atención a las personas en situación de dependencia (texto consolidado). Boletín Oficial del Estado.",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-21990"
+   },
+   {
+    "cita": "Ley 4/2026, de 1 de octubre, por la que se modifican el texto refundido de la Ley General de derechos de las personas con discapacidad y de su inclusión social y la Ley 39/2006. Boletín Oficial del Estado, 246, de 3 de octubre de 2026.",
+    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20528"
+   },
+   {
+    "cita": "Instituto Nacional de Estadística (2022). Encuesta de Discapacidad, Autonomía personal y situaciones de Dependencia (EDAD) 2020. Nota de prensa.",
+    "url": "https://www.ine.es/prensa/edad_2020_p.pdf"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "cuidadora-secundaria",
+   "cuidado-no-profesional",
+   "pedir-y-repartir-ayuda",
+   "cautividad-del-rol"
+  ],
+  "buscar": [
+   "qué es la cuidadora principal",
+   "derechos de la cuidadora",
+   "ley de dependencia cuidadora",
+   "plan individual de atención"
+  ]
+ },
+ {
+  "id": "cuidadora-secundaria",
+  "palabra": "La que echa una mano",
+  "tecnico": "Cuidadora secundaria",
+  "familia": 5,
+  "para": "casa",
+  "escena": "Rubén vive a una hora de su padre. Su hermana lo cuida a diario. Él va los domingos, hace la compra grande y lleva las cuentas del banco. A veces siente que no hace bastante.",
+  "basico": {
+   "que_es": "Es quien ayuda en el cuidado sin llevar el peso principal: algunas tareas, algunos días, un relevo. Su papel sostiene a la cuidadora principal.",
+   "como_se_nota": "Ayudas cuando puedes. Te enteras de las cosas después. A veces no sabes qué hace falta. Otras te sientes culpable por no hacer más, o poco valorada.",
+   "que_no_es": "No es ayudar menos porque importe menos. Tampoco es un papel fijo: el reparto se puede hablar y cambiar con la familia.",
+   "accion_minima": "Pregunta a la cuidadora principal: «¿Qué tarea concreta te quito esta semana?». Y hazla sin que tenga que recordártela."
+  },
+  "saber_mas": "En los estudios sobre el cuidado familiar se distingue a la cuidadora principal, que lleva la mayor parte, de las secundarias, que ayudan de forma puntual o en tareas concretas. En España, el cuidado familiar lo asumen sobre todo mujeres, y su reparto entre mujeres y hombres, y entre familias y Estado, es desigual (García-Calvente et al., 2004). Las intervenciones que más ayudan a quien cuida implican a la familia, y no solo a una persona, junto con habilidades prácticas, apoyo emocional y seguimiento (Schulz et al., 2020). En la práctica, hablar del reparto de forma concreta (qué, quién y cuándo) ayuda a que no todo recaiga en una sola persona.",
+  "fuentes": [
+   {
+    "cita": "García-Calvente, M. M., Mateo-Rodríguez, I., y Eguiguren, A. P. (2004). El sistema informal de cuidados en clave de desigualdad. Gaceta Sanitaria, 18(supl. 1), 132-139.",
+    "url": "https://doi.org/10.1157/13062262"
+   },
+   {
+    "cita": "Schulz, R., Beach, S. R., Czaja, S. J., Martire, L. M., y Monin, J. K. (2020). Family caregiving for older adults. Annual Review of Psychology, 71, 635-659.",
+    "url": "https://doi.org/10.1146/annurev-psych-010419-050754"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "cuidadora-principal",
+   "pedir-y-repartir-ayuda",
+   "apoyo-social"
+  ],
+  "buscar": [
+   "cómo ayudar a mi hermana que cuida",
+   "ayudo poco a cuidar",
+   "repartir el cuidado de mi padre"
+  ]
+ },
+ {
+  "id": "cuidado-no-profesional",
+  "palabra": "Cuidar sin contrato",
+  "tecnico": "Cuidado no profesional o informal",
+  "familia": 5,
+  "para": "casa",
+  "escena": "Hassan cuida a su tío desde que se quedó viudo. Le lleva a diálisis tres veces por semana y le hace la comida. No cobra nada ni lo ve como un trabajo. Pero lo es.",
+  "basico": {
+   "que_es": "Es el cuidado que dan la familia, las amistades o las vecinas, sin contrato ni sueldo. Es la mayor parte del cuidado que se da en España.",
+   "como_se_nota": "Cuidas por cariño, por deber o porque no hay nadie más. Nadie te paga ni te da vacaciones. Tus horas no cuentan en ningún sitio.",
+   "que_no_es": "No es «ayudar un poco». Tiene un valor enorme, aunque no se pague. Y no quiere decir que no puedas pedir derechos y apoyos.",
+   "accion_minima": "Pregunta en servicios sociales si te corresponde cotizar a la Seguridad Social como cuidadora no profesional. Solo para saberlo."
+  },
+  "saber_mas": "La Ley 39/2006 llama cuidados no profesionales a la atención que se presta en el domicilio por personas de la familia o del entorno, no vinculadas a un servicio de atención profesionalizada (Ley 39/2006, artículo 2). En la investigación se le llama también cuidado informal. En 2021 se dieron en España unos 5.156 millones de horas de cuidado no profesional, un 25 % más que en 2008; según cómo se calcule, su valor iría del 1,42 % al 6,72 % del PIB (Oliva-Moreno et al., 2026). En la Encuesta Europea de Salud en España 2020, el 10,59 % de la población de 15 años o más cuidaba al menos una vez por semana a alguien con un problema de salud o de la edad (INE y Ministerio de Sanidad, 2020).",
+  "fuentes": [
+   {
+    "cita": "Ley 39/2006, de 14 de diciembre, de Promoción de la Autonomía Personal y Atención a las personas en situación de dependencia (texto consolidado). Boletín Oficial del Estado.",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-21990"
+   },
+   {
+    "cita": "Oliva-Moreno, J., Vilaplana-Prieto, C., y Peña-Longobardo, L. M. (2026). Economic value of non-professional care in Spain: An analysis of the last decade. The European Journal of Health Economics.",
+    "url": "https://doi.org/10.1007/s10198-026-01952-1"
+   },
+   {
+    "cita": "Instituto Nacional de Estadística y Ministerio de Sanidad (2020). Encuesta Europea de Salud en España 2020: informe de evolución de los principales resultados.",
+    "url": "https://www.sanidad.gob.es/estadEstudios/estadisticas/EncuestaEuropea/EESE2020_inf_evol_princip_result2.pdf"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "cuidado-profesional",
+   "cuidadora-principal",
+   "crisis-de-los-cuidados",
+   "cuidatoriado"
+  ],
+  "buscar": [
+   "cuidador informal",
+   "cuidar a un familiar sin cobrar",
+   "cotizar por cuidar a un familiar",
+   "cuidado no profesional"
+  ]
+ },
+ {
+  "id": "cuidado-profesional",
+  "palabra": "Cuidar como trabajo",
+  "tecnico": "Cuidado profesional o formal",
+  "familia": 5,
+  "para": "trabajo",
+  "escena": "Gabriela es auxiliar de ayuda a domicilio. Tiene seis casas al día y treinta minutos en cada una. Entre casa y casa come un bocadillo en el autobús.",
+  "basico": {
+   "que_es": "Es el cuidado que se da como trabajo: gerocultoras, auxiliares de ayuda a domicilio, enfermería, trabajadoras del hogar e internas.",
+   "como_se_nota": "Cuidas a varias personas, con prisas y horarios. Cargas peso. Te afectan las muertes y los duelos. Y a veces sientes que tu trabajo no se valora.",
+   "que_no_es": "No es cuidar «sin sentimientos» porque se cobre. Y su desgaste no es un fallo tuyo: depende sobre todo de plantillas, tiempos y condiciones.",
+   "accion_minima": "Busca quién es la delegada de prevención de tu empresa o tu servicio. Apunta su nombre. Te servirá cuando quieras plantear algo."
+  },
+  "saber_mas": "La Ley 39/2006 distingue los cuidados profesionales, que prestan instituciones, entidades o profesionales, de los no profesionales que da la familia o el entorno (Ley 39/2006, artículo 2). En el País Vasco, un estudio con 98 cuidadoras a domicilio de personas mayores encontró muchos dolores de músculos y articulaciones, *burnout*, depresión y ansiedad; las internas tenían más agotamiento emocional que las externas (Rezola-Pardo et al., 2025). En el personal de residencias para personas con demencia, lo que más se asoció al desgaste fue la falta de personal, el mal liderazgo, la falta de apoyo, un mal entorno y la poca satisfacción con el trabajo (Costello et al., 2019). Por eso las respuestas también son de la organización, no solo de cada trabajadora.",
+  "fuentes": [
+   {
+    "cita": "Ley 39/2006, de 14 de diciembre, de Promoción de la Autonomía Personal y Atención a las personas en situación de dependencia (texto consolidado). Boletín Oficial del Estado.",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-21990"
+   },
+   {
+    "cita": "Rezola-Pardo, C., García-Pena, F. M., Etxeberria, I., Aiestaran, M., Rodriguez-Larrad, A., e Irazusta, J. (2025). Live-in versus live-out home care workers in Spain: Physical and psychological health outcomes. Geriatric Nursing, 64, 103439.",
+    "url": "https://doi.org/10.1016/j.gerinurse.2025.103439"
+   },
+   {
+    "cita": "Costello, H., Walsh, S., Cooper, C., y Livingston, G. (2019). A systematic review and meta-analysis of the prevalence and associations of stress and burnout among staff in long-term care facilities for people with dementia. International Psychogeriatrics, 31(8), 1203-1216.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30421691/"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "burnout",
+   "angustia-moral",
+   "internas",
+   "cuidado-no-profesional"
+  ],
+  "buscar": [
+   "auxiliar de ayuda a domicilio",
+   "gerocultora",
+   "condiciones de trabajo cuidadoras",
+   "dolor de espalda trabajo cuidando"
+  ]
+ },
+ {
+  "id": "generacion-sandwich",
+  "palabra": "En medio",
+  "tecnico": "Generación sándwich",
+  "familia": 5,
+  "para": "casa",
+  "escena": "Maite tiene 52 años, dos hijos adolescentes y una madre con alzhéimer. Trabaja por las mañanas. Por la tarde reparte el tiempo entre deberes y pastillas. Siempre siente que le falla a alguien.",
+  "basico": {
+   "que_es": "Es estar en medio: cuidar a la vez de tus hijas o hijos y de tus mayores, a menudo mientras trabajas. El tiempo no da para todo.",
+   "como_se_nota": "Corres de un sitio a otro. Sientes que no llegas del todo a nadie. Tu tiempo propio desaparece. Te sientes culpable con unos cuando estás con otros.",
+   "que_no_es": "No es mala organización ni que no sepas repartirte. Es demasiado para una sola persona, y la falta de servicios no es un fallo tuyo.",
+   "accion_minima": "Haz una lista de lo que hace en casa cada persona mayor de 12 años. Elige una tarea para pasarla a otra persona esta semana."
+  },
+  "saber_mas": "La expresión «generación sándwich» se atribuye a Dorothy Miller, en 1981. Ese mismo año, Elaine Brody habló de las «mujeres en medio» (*women in the middle*): mujeres de mediana edad que cuidan a sus padres mayores mientras atienden a su propia familia y, cada vez más, trabajan fuera de casa (Brody, 1981). En España, según la Encuesta Europea de Salud de 2020, el 21,98 % de las mujeres de 55 a 64 años cuidaba al menos una vez por semana a alguien con un problema de salud o de la edad, frente al 10,59 % del conjunto de la población de 15 años o más (INE y Ministerio de Sanidad, 2020). El peso cae sobre todo en mujeres, y eso habla de cómo se reparte el cuidado, no de la capacidad de cada una.",
+  "fuentes": [
+   {
+    "cita": "Brody, E. M. (1981). «Women in the middle» and family help to older people. The Gerontologist, 21(5), 471-480.",
+    "url": "https://doi.org/10.1093/geront/21.5.471"
+   },
+   {
+    "cita": "Instituto Nacional de Estadística y Ministerio de Sanidad (2020). Encuesta Europea de Salud en España 2020: informe de evolución de los principales resultados.",
+    "url": "https://www.sanidad.gob.es/estadEstudios/estadisticas/EncuestaEuropea/EESE2020_inf_evol_princip_result2.pdf"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "cuidadora-principal",
+   "pedir-y-repartir-ayuda",
+   "crisis-de-los-cuidados",
+   "culpa"
+  ],
+  "buscar": [
+   "cuidar a mis hijos y a mi madre",
+   "generación sándwich",
+   "no llego con los niños y mi madre",
+   "entre los niños y los abuelos"
+  ]
+ },
+ {
+  "id": "jovenes-cuidadoras",
+  "palabra": "Cuidar siendo joven",
+  "tecnico": "Jóvenes cuidadoras (young carers)",
+  "familia": 5,
+  "para": "casa",
+  "escena": "Alba tiene 15 años. Su padre tiene esclerosis múltiple. Antes de ir al instituto le ayuda a vestirse y por la tarde hace la cena. En clase nadie lo sabe.",
+  "basico": {
+   "que_es": "Es cuidar a alguien de la familia siendo menor de edad o muy joven: ayudar en casa, acompañar, dar medicinas, escuchar o traducir.",
+   "como_se_nota": "Llegas cansada a clase. Faltas o no haces los deberes. Dejas planes con tus amistades. Te preocupas por casa cuando no estás. No lo cuentas.",
+   "que_no_es": "No es algo de lo que avergonzarte. Tampoco es justo que lo lleves sola. Pedir ayuda no traiciona a tu familia: también la ayuda a ella.",
+   "accion_minima": "Cuéntaselo a una persona adulta de confianza: una profesora, la orientadora o tu médica. Si no sabes a quién, llama a la Fundación ANAR: 900 20 20 10, gratis y a cualquier hora."
+  },
+  "saber_mas": "En inglés se habla de *young carers*: menores o jóvenes que cuidan, ayudan o apoyan a un familiar con una enfermedad, una discapacidad o una adicción. Según el proyecto europeo ME-WE, al menos el 8 % de las niñas y los niños de Europa tiene responsabilidades de cuidado (CORDIS, 2021). En España se ha estudiado poco: un estudio exploratorio con 8 jóvenes encontró más solidaridad familiar y aprendizaje, pero también malestar y necesidad de apoyo emocional (Cavallotti et al., 2025). Muchas no se reconocen como cuidadoras y no lo cuentan en el centro educativo. Hacerlas visibles en la escuela, en la sanidad y en los servicios sociales es el primer paso para que no carguen solas.",
+  "fuentes": [
+   {
+    "cita": "CORDIS, Comisión Europea (2021, 19 de noviembre). Apoyar a los cuidadores más jóvenes de Europa (proyecto ME-WE).",
+    "url": "https://www.cordis.europa.eu/article/id/435365-supporting-europe-s-youngest-caregivers/es"
+   },
+   {
+    "cita": "Cavallotti, R., Pi Ferrer, L., y Selvam, R. M. (2025). Precocidad en la solidaridad familiar intergeneracional: un estudio exploratorio sobre el fenómeno de los jóvenes cuidadores en España. Papers. Revista de Sociologia, 110(2), e3270.",
+    "url": "https://papers.uab.cat/article/view/3270"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "cuidadora-secundaria",
+   "apoyo-social",
+   "pedir-y-repartir-ayuda"
+  ],
+  "buscar": [
+   "cuido a mi padre y tengo 15 años",
+   "joven cuidadora",
+   "cuido a mi madre y estudio",
+   "young carers"
+  ]
+ },
+ {
+  "id": "internas",
+  "palabra": "Vivir donde trabajas",
+  "tecnico": "Trabajadora del hogar interna",
+  "familia": 5,
+  "para": "trabajo",
+  "escena": "Dilcia vino de Honduras hace dos años. Vive en casa de don Ernesto, que tiene párkinson. Le da la cena, le acuesta y se levanta cuando la llama. Su día libre es el domingo, si no hay imprevistos.",
+  "basico": {
+   "que_es": "Es la trabajadora del hogar que vive en la casa donde cuida. Su trabajo y su vida pasan bajo el mismo techo, a menudo lejos de su familia.",
+   "como_se_nota": "No sabes cuándo acaba tu jornada. Te llaman de noche. Te cuesta tener vida propia. A veces no tienes contrato o no se respetan tus descansos.",
+   "que_no_es": "No es «ser de la familia» ni estar disponible siempre. Es un trabajo con derechos: descansos, vacaciones, salario y un despido con causa.",
+   "accion_minima": "Apunta durante una semana tus horas de trabajo y de descanso. Ese registro te servirá si quieres consultar con un sindicato o una asociación de trabajadoras del hogar."
+  },
+  "saber_mas": "El Real Decreto-ley 16/2022 mejoró los derechos de las trabajadoras del hogar en España: suprimió el despido por desistimiento, de modo que ahora el despido necesita una causa justificada, y desde el 1 de octubre de 2022 se cotiza por desempleo (BOE de 8 de septiembre de 2022). En el País Vasco, en 98 cuidadoras a domicilio de personas mayores, las internas tenían más agotamiento emocional que las externas (Rezola-Pardo et al., 2025). En Alemania, en 429 cuidadoras internas migrantes, casi la mitad no tenía contrato formal y, frente a enfermeras geriátricas y al conjunto de trabajadores, tenían más conflicto entre trabajo y vida privada, más *burnout* y más intención de dejar el trabajo (Beike et al., 2026). Las causas están en las condiciones, no en la persona.",
+  "fuentes": [
+   {
+    "cita": "Real Decreto-ley 16/2022, de 6 de septiembre, para la mejora de las condiciones de trabajo y de Seguridad Social de las personas trabajadoras al servicio del hogar. Boletín Oficial del Estado, 216, de 8 de septiembre de 2022.",
+    "url": "https://www.boe.es/eli/es/rdl/2022/09/06/16"
+   },
+   {
+    "cita": "Rezola-Pardo, C., García-Pena, F. M., Etxeberria, I., Aiestaran, M., Rodriguez-Larrad, A., e Irazusta, J. (2025). Live-in versus live-out home care workers in Spain: Physical and psychological health outcomes. Geriatric Nursing, 64, 103439.",
+    "url": "https://doi.org/10.1016/j.gerinurse.2025.103439"
+   },
+   {
+    "cita": "Beike, J. E., Rösler, U., Skwarek, A., Wendsche, J., y Pfeffer-Hoffmann, C. (2026). Behind closed doors: A cross-sectional survey on the health and working conditions of migrant live-in care workers in Germany. European Journal of Public Health, 36(4).",
+    "url": "https://doi.org/10.1093/eurpub/ckag082"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "cadenas-globales-de-cuidado",
+   "cuidado-profesional",
+   "burnout",
+   "cuidatoriado"
+  ],
+  "buscar": [
+   "derechos de las internas",
+   "trabajo de interna cuidando a un mayor",
+   "despido trabajadora del hogar",
+   "descansos de una interna"
+  ]
+ },
+ {
+  "id": "cadenas-globales-de-cuidado",
+  "palabra": "Cuidar aquí, dejar a otros allí",
+  "tecnico": "Cadenas globales de cuidado",
+  "familia": 5,
+  "para": "trabajo",
+  "escena": "Cada noche, Marisela hace una videollamada a Guayaquil. Sus hijos viven allí con su madre. Ella cuida aquí a una señora de 90 años. «Cuido a la madre de otra mientras la mía cuida a mis hijos», piensa.",
+  "basico": {
+   "que_es": "Es la cadena de cuidados que une países: una mujer migra para cuidar aquí y, en su país, otra persona cuida a los suyos.",
+   "como_se_nota": "Echas de menos a tu familia mientras cuidas a otra. Mandas dinero a casa. Sientes culpa o tristeza por lo que te pierdes. Tu cansancio no lo ve nadie.",
+   "que_no_es": "No es solo una decisión personal ni un fallo de nadie. Detrás hay desigualdades entre países y un cuidado que aquí no se reparte.",
+   "accion_minima": "Busca una asociación de trabajadoras del hogar o de personas migrantes en tu ciudad. Guarda su contacto, aunque hoy no lo necesites."
+  },
+  "saber_mas": "Según Nicola Yeates, la expresión «cadenas globales de cuidado» la usó primero la socióloga Arlie Russell Hochschild, en 2000, para nombrar la serie de vínculos personales entre personas de todo el mundo basados en el trabajo de cuidado, pagado o no. Su ejemplo típico: una mujer de un país pobre cuida a los hijos de una familia de un país rico mientras otra mujer, a menudo de su familia, cuida a los suyos (Yeates, 2005). Una revisión de 38 artículos sobre la relación entre cuidadora migrante, persona mayor y familia empleadora encontró que las buenas relaciones benefician a todas las partes, pero que persisten el abuso, la explotación y las malas condiciones, sobre todo en las internas (Etxeberria et al., 2026).",
+  "fuentes": [
+   {
+    "cita": "Yeates, N. (2005). Global care chains: A critical introduction. Global Migration Perspectives, 44. Comisión Mundial sobre las Migraciones Internacionales. Copia en la web de la OIM.",
+    "url": "https://www.iom.int/sites/g/files/tmzbdl486/files/2018-07/gmp44.pdf"
+   },
+   {
+    "cita": "Etxeberria, I., García-Pena, F. M., Azabal, M., y Pillemer, K. (2026). Caregiving experiences and relationships among migrant care workers, older care recipients, and employer families: A scoping review. The Gerontologist, 66(3).",
+    "url": "https://doi.org/10.1093/geront/gnaf300"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "internas",
+   "crisis-de-los-cuidados",
+   "cuidatoriado",
+   "etica-del-cuidado"
+  ],
+  "buscar": [
+   "cuidar lejos de mis hijos",
+   "migrante cuidadora",
+   "cadenas globales de cuidado"
+  ]
+ },
+ {
+  "id": "crisis-de-los-cuidados",
+  "palabra": "No hay manos para cuidar",
+  "tecnico": "Crisis de los cuidados",
+  "familia": 5,
+  "para": "dos",
+  "escena": "En el pueblo de Koldo cada vez hay más personas mayores y menos gente joven. La residencia tiene lista de espera y la ayuda a domicilio no llega a todas las casas. Las vecinas se turnan.",
+  "basico": {
+   "que_es": "Es cuando la necesidad de cuidados crece y no hay manos suficientes para darlos. Ni la familia, ni el Estado, ni el mercado cubren lo que falta.",
+   "como_se_nota": "Hay listas de espera. Las ayudas tardan meses. Cuesta encontrar a alguien para cuidar. La familia, y sobre todo las mujeres, tapan los huecos como pueden.",
+   "que_no_es": "No es un problema de cada familia ni un fallo tuyo. Es un problema de cómo se organiza la sociedad. Por eso no se arregla solo con esfuerzo personal.",
+   "accion_minima": "Si llevas tiempo esperando una ayuda, pide en servicios sociales que te digan por escrito en qué punto está y el plazo previsto."
+  },
+  "saber_mas": "La economista Amaia Pérez Orozco analizó la crisis de los cuidados como una reorganización del sistema económico: cada vez hay más necesidad de cuidados y menos mujeres disponibles para darlos gratis, y ni el Estado ni el mercado cubren esa diferencia (Pérez Orozco, 2006). El cuidado no profesional sigue sosteniendo gran parte del sistema: en 2021 se dieron en España unos 5.156 millones de horas, un 25 % más que en 2008, con un valor que, según cómo se calcule, iría del 1,42 % al 6,72 % del PIB (Oliva-Moreno et al., 2026). Mirarlo así ayuda a no cargar a cada cuidadora con un problema que es de todos.",
+  "fuentes": [
+   {
+    "cita": "Pérez Orozco, A. (2006). Amenaza tormenta: la crisis de los cuidados y la reorganización del sistema económico. Revista de Economía Crítica, 5, 8-37.",
+    "url": "https://www.upo.es/revistas/index.php/rec/es/article/view/9333"
+   },
+   {
+    "cita": "Oliva-Moreno, J., Vilaplana-Prieto, C., y Peña-Longobardo, L. M. (2026). Economic value of non-professional care in Spain: An analysis of the last decade. The European Journal of Health Economics.",
+    "url": "https://doi.org/10.1007/s10198-026-01952-1"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "cuidatoriado",
+   "etica-del-cuidado",
+   "cadenas-globales-de-cuidado",
+   "cuidado-no-profesional"
+  ],
+  "buscar": [
+   "lista de espera dependencia",
+   "no hay plazas en residencias",
+   "no encuentro quien cuide",
+   "crisis de los cuidados"
+  ]
+ },
+ {
+  "id": "cuidatoriado",
+  "palabra": "Las que cuidan, como clase",
+  "tecnico": "Cuidatoriado",
+  "familia": 5,
+  "para": "dos",
+  "escena": "En un grupo de apoyo coinciden Pili, que cuida a su marido; Aurora, gerocultora; y Nadia, interna. Hablando, descubren que comparten lo mismo: cansancio, poco reconocimiento y nada de tiempo propio.",
+  "basico": {
+   "que_es": "Es una palabra para nombrar a todas las personas que cuidan, cobren o no, como un grupo social con intereses comunes.",
+   "como_se_nota": "Te reconoces en otras que cuidan, aunque sus vidas sean distintas. Ves que vuestros problemas se parecen. Y que no son solo personales.",
+   "que_no_es": "No es una etiqueta para nadie ni un diagnóstico. Es una forma de mirar: lo que te pasa al cuidar también es una cuestión social.",
+   "accion_minima": "Si puedes, comparte un rato con otras personas que cuidan, en un grupo, una asociación o un foro. Solo para escuchar y ver qué tenéis en común."
+  },
+  "saber_mas": "La socióloga María Ángeles Durán propuso el término «cuidatoriado» en *La riqueza invisible del cuidado* (2018), por analogía con «proletariado». Según una reseña del libro, nombra una clase social formada por quienes trabajan en el cuidado, con remuneración o sin ella, y que todavía está en formación (González Abad, 2020). El título del libro ya lo dice: gran parte del trabajo de cuidado no se ve ni se cuenta en la economía. Y ese valor es enorme: en España, el cuidado no profesional sumó unos 5.156 millones de horas en 2021 (Oliva-Moreno et al., 2026). La palabra ayuda a ver que cuidar, en casa o por trabajo, tiene un peso social y político, no solo personal.",
+  "fuentes": [
+   {
+    "cita": "González Abad, L. (2020). Reseña de Durán, M. Á. (2018), La riqueza invisible del cuidado, Universitat de València. Cuadernos de Trabajo Social, 33(1), 171-172.",
+    "url": "https://doi.org/10.5209/cuts.64570"
+   },
+   {
+    "cita": "Oliva-Moreno, J., Vilaplana-Prieto, C., y Peña-Longobardo, L. M. (2026). Economic value of non-professional care in Spain: An analysis of the last decade. The European Journal of Health Economics.",
+    "url": "https://doi.org/10.1007/s10198-026-01952-1"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "crisis-de-los-cuidados",
+   "cuidado-no-profesional",
+   "cuidado-profesional",
+   "etica-del-cuidado"
+  ],
+  "buscar": [
+   "cuidatoriado",
+   "María Ángeles Durán cuidado",
+   "las cuidadoras como clase social"
+  ]
+ },
+ {
+  "id": "etica-del-cuidado",
+  "palabra": "Cuidar es asunto de todos",
+  "tecnico": "Ética del cuidado",
+  "familia": 5,
+  "para": "dos",
+  "escena": "Aitor vive encima de la señora Felisa, de 84 años, que vive sola y se ha caído dos veces. Le sube el pan cada mañana. Se pregunta: «¿Quién tiene que cuidarla? ¿Su sobrina, los vecinos, el ayuntamiento?».",
+  "basico": {
+   "que_es": "Es una forma de pensar que pone el cuidado en el centro de la vida. Todas las personas necesitamos cuidados y todas cuidamos en algún momento.",
+   "como_se_nota": "Te preguntas por qué cuidar recae casi siempre en las mismas. Piensas que debería ser cosa de todos, no solo de las familias, y menos aún solo de las mujeres.",
+   "que_no_es": "No es pedir a quien cuida que cuide más o mejor. Es pedir que la sociedad reparta el cuidado y cuide también a quien cuida.",
+   "accion_minima": "La próxima vez que te pregunten qué tal, nombra algo concreto que necesitas de otros: «Necesito que alguien se quede los martes». Decirlo también es repartir."
+  },
+  "saber_mas": "La ética del cuidado suele situarse en la filosofía y la psicología de los años ochenta, como una mirada basada en las relaciones y las responsabilidades. Berenice Fisher y Joan Tronto definieron en 1990 el cuidado como una actividad de la especie que incluye todo lo que hacemos para mantener, continuar y reparar nuestro «mundo», para vivir en él lo mejor posible. Tronto llevó el cuidado al terreno político en *Moral Boundaries* (Tronto, 1993): quién cuida, quién recibe y quién decide son cuestiones de justicia. En España, el cuidado familiar lo asumen sobre todo mujeres, y el debate de fondo es cómo repartirlo entre mujeres y hombres y entre familias y Estado (García-Calvente et al., 2004). Por eso lo que pesa cuidar no es solo un asunto de cada cuidadora.",
+  "fuentes": [
+   {
+    "cita": "Tronto, J. C. (1993). Moral boundaries: A political argument for an ethic of care. Routledge. Ficha en la web de la Universidad de Minnesota.",
+    "url": "https://experts.umn.edu/en/publications/moral-boundaries-a-political-argument-for-an-ethic-of-care/"
+   },
+   {
+    "cita": "García-Calvente, M. M., Mateo-Rodríguez, I., y Eguiguren, A. P. (2004). El sistema informal de cuidados en clave de desigualdad. Gaceta Sanitaria, 18(supl. 1), 132-139.",
+    "url": "https://doi.org/10.1157/13062262"
+   }
+  ],
+  "aviso": null,
+  "relacionadas": [
+   "cuidatoriado",
+   "crisis-de-los-cuidados",
+   "autocuidado",
+   "pedir-y-repartir-ayuda"
+  ],
+  "buscar": [
+   "ética del cuidado",
+   "quién debe cuidar a los mayores",
+   "cuidar es cosa de todos"
+  ]
+ },
+ {
+  "id": "depresion-y-ansiedad",
+  "palabra": "Tristeza o angustia que no se van",
+  "tecnico": "Depresión y ansiedad",
+  "familia": 6,
+  "para": "dos",
+  "escena": "Charo cuida a su marido desde el ictus. Hace semanas que no tiene ganas de nada. Se despierta a las cuatro con el corazón acelerado y ya no se duerme. Le cuesta hasta ducharse.",
+  "basico": {
+   "que_es": "Son problemas de salud que pueden aparecer al cuidar mucho tiempo: una tristeza que no se va o una angustia que no te deja en paz. Tienen tratamiento.",
+   "como_se_nota": "Llevas semanas sin ganas de nada. Duermes muy mal. Te sientes inútil o culpable. Tienes nervios, palpitaciones o miedo constante. Lloras sin motivo, o ya no puedes llorar.",
+   "que_no_es": "No es debilidad ni «lo normal de cuidar». No se quita con fuerza de voluntad. Y pedir ayuda no te hace peor cuidadora: te ayuda a seguir.",
+   "accion_minima": "Pide cita con tu médica de familia y di: «Cuido a alguien y llevo semanas mal». Si un día sientes que no puedes más, pide ayuda ese mismo día."
+  },
+  "saber_mas": "A diferencia del «síndrome del cuidador», la depresión y la ansiedad sí son diagnósticos, y tienen tratamientos que funcionan. Entre quienes cuidan a una persona con demencia, alrededor de 3 de cada 10 tienen depresión, según un metaanálisis de 43 estudios (31 %; Collins y Kishita, 2020). En quienes cuidan a alguien con alzhéimer, una revisión de 17 estudios encontró depresión en el 34 % y ansiedad en el 44 %, con más riesgo de depresión en mujeres y en cónyuges (Sallim et al., 2015). Las cifras cambian mucho según cómo se mida. Lo importante: no es lo normal de cuidar, y se puede tratar. La guía NICE pide a los servicios que traten o deriven los problemas de salud mental de quien cuida (NICE, 2020).",
+  "fuentes": [
+   {
+    "cita": "Collins, R. N., y Kishita, N. (2020). Prevalence of depression and burden among informal care-givers of people with dementia: A meta-analysis. Ageing & Society, 40(11), 2355-2392.",
+    "url": "https://doi.org/10.1017/S0144686X19000527"
+   },
+   {
+    "cita": "Sallim, A. B., Sayampanathan, A. A., Cuttilan, A., y Ho, R. (2015). Prevalence of mental health disorders among caregivers of patients with Alzheimer disease. Journal of the American Medical Directors Association, 16(12), 1034-1041.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26593303/"
+   },
+   {
+    "cita": "National Institute for Health and Care Excellence (2020). Supporting adult carers (guía NICE NG150).",
+    "url": "https://www.nice.org.uk/guidance/ng150"
+   }
+  ],
+  "aviso": "rojo",
+  "relacionadas": [
+   "sindrome-del-cuidador",
+   "malestar",
+   "autoabandono",
+   "pensamientos-que-asustan"
+  ],
+  "buscar": [
+   "depresión por cuidar",
+   "ansiedad cuidando a mi madre",
+   "no tengo ganas de nada",
+   "tristeza que no se va"
+  ]
+ },
+ {
+  "id": "autoabandono",
+  "palabra": "Dejar de cuidarte",
+  "tecnico": "Autoabandono",
+  "familia": 6,
+  "para": "dos",
+  "escena": "Rafael cuida a su mujer, que tiene alzhéimer. Ha dejado de tomarse la pastilla de la tensión y come de pie lo que pilla. La última vez que fue al médico fue para acompañarla a ella.",
+  "basico": {
+   "que_es": "Es dejar de cuidarte mientras cuidas a otra persona: no comer bien, no dormir, saltarte tus medicinas o tus citas, aislarte. Es una señal de alarma.",
+   "como_se_nota": "Olvidas tus pastillas. Aplazas tus revisiones. Comes cualquier cosa, o nada. No descansas ni cuando estás enferma. Hace tiempo que no ves a nadie.",
+   "que_no_es": "No es descuido ni dejadez. Suele pasar cuando el cuidado lo llena todo y nadie te releva. No es un fallo tuyo, pero sí una señal para pedir ayuda.",
+   "accion_minima": "Pide cita en tu centro de salud para ti. Lleva una lista corta: qué pastillas tomas, cómo duermes y cómo comes. Con eso basta para empezar."
+  },
+  "saber_mas": "Un estudio en cuatro condados de Estados Unidos comparó a personas mayores que cuidaban a su cónyuge con otras de la misma edad y sexo que no cuidaban. Quienes cuidaban a un cónyuge que necesitaba ayuda para las actividades básicas (212 personas) tenían más probabilidad de no descansar lo suficiente, no tener tiempo para hacer ejercicio ni para reponerse cuando enfermaban, y olvidar sus medicinas. Quienes sentían más control sobre su vida se cuidaban mejor (Burton et al., 1997). La guía NICE pide a los servicios identificar a quien cuida y valorar sus necesidades (NICE, 2020). El autoabandono no se arregla con reproches: hace falta relevo y alguien que pregunte por ti.",
+  "fuentes": [
+   {
+    "cita": "Burton, L. C., Newsom, J. T., Schulz, R., Hirsch, C. H., y German, P. S. (1997). Preventive health behaviors among spousal caregivers. Preventive Medicine, 26(2), 162-169.",
+    "url": "https://doi.org/10.1006/pmed.1996.0129"
+   },
+   {
+    "cita": "National Institute for Health and Care Excellence (2020). Supporting adult carers (guía NICE NG150).",
+    "url": "https://www.nice.org.uk/guidance/ng150"
+   }
+  ],
+  "aviso": "rojo",
+  "relacionadas": [
+   "autocuidado",
+   "depresion-y-ansiedad",
+   "malestar",
+   "respiro"
+  ],
+  "buscar": [
+   "no tengo tiempo de ir al médico",
+   "me olvido de mis pastillas",
+   "no como bien por cuidar",
+   "me he abandonado"
+  ]
+ },
+ {
+  "id": "maltrato",
+  "palabra": "Cuando hay daño",
+  "tecnico": "Maltrato",
+  "familia": 6,
+  "para": "dos",
+  "escena": "Lucía cuida a su padre, que tiene demencia. Cuando le cambia, a veces él la araña o le pega. Una noche, ella le agarró del brazo más fuerte de lo que quería. Desde entonces tiene miedo.",
+  "basico": {
+   "que_es": "Es cuando hay daño en una relación de cuidado: hacia la persona cuidada (golpes, gritos, abandono, quitarle dinero) o hacia quien cuida (agresiones, insultos, abusos).",
+   "como_se_nota": "Hay golpes, empujones o gritos que asustan. Alguien tiene miedo de otra persona. Se niega comida, higiene o medicinas. O sientes que estás a punto de perder el control.",
+   "que_no_es": "No es una etiqueta para nadie. Si alguna vez has sentido que perdías el control, no eres la única persona a la que le pasa. Es una señal para pedir apoyo, no un fallo tuyo.",
+   "accion_minima": "Si hay peligro ahora, usa los teléfonos de la caja de ayuda. Si no, habla cuanto antes con tu médica de familia o con servicios sociales. Si te agreden en el trabajo, díselo a tu responsable."
+  },
+  "saber_mas": "Según la OMS, cerca de 1 de cada 6 personas de 60 años o más sufrió algún tipo de maltrato en el último año en su entorno (OMS, 2024). Un metaanálisis de 52 estudios en 28 países dio un 15,7 %, y el maltrato psicológico fue el más frecuente, con un 11,6 % (Yon et al., 2017). Entre los factores de riesgo, la OMS recoge la dependencia y el deterioro de la persona mayor y, en quien maltrata, problemas de salud mental, consumo de sustancias o dependencia económica. El estrés de quien cuida no figura entre ellos. El daño también va en la otra dirección: en Israel, el 7,4 % de 338 cuidadoras internas migrantes refirió abusos en el trabajo (Green y Ayalon, 2018). En los dos casos, lo primero es la seguridad y pedir ayuda.",
+  "fuentes": [
+   {
+    "cita": "Organización Mundial de la Salud (2024, 15 de junio). Abuse of older people (nota descriptiva).",
+    "url": "https://www.who.int/en/news-room/fact-sheets/detail/elder-abuse"
+   },
+   {
+    "cita": "Yon, Y., Mikton, C. R., Gassoumis, Z. D., y Wilber, K. H. (2017). Elder abuse prevalence in community settings: A systematic review and meta-analysis. The Lancet Global Health, 5(2), e147-e156.",
+    "url": "https://doi.org/10.1016/S2214-109X(17)30006-2"
+   },
+   {
+    "cita": "Green, O., y Ayalon, L. (2018). Violations of workers' rights and exposure to work-related abuse of live-in migrant and live-out local home care workers: A preliminary study. Implications for health policy and practice. Israel Journal of Health Policy Research, 7(1), 32.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29929555/"
+   }
+  ],
+  "aviso": "stop",
+  "relacionadas": [
+   "rabia-e-irritabilidad",
+   "pensamientos-que-asustan",
+   "internas",
+   "depresion-y-ansiedad"
+  ],
+  "buscar": [
+   "le he pegado",
+   "miedo de hacerle daño",
+   "me pega cuando le cambio",
+   "pierdo el control con mi madre",
+   "maltrato a mayores"
+  ]
+ },
+ {
+  "id": "pensamientos-que-asustan",
+  "palabra": "Pensamientos que asustan",
+  "tecnico": "Deseo de que la vida del familiar acabe; ideas de suicidio",
+  "familia": 6,
+  "para": "dos",
+  "escena": "Esperanza cuida a su madre, que ya no habla ni se levanta de la cama. Una tarde, mirándola, piensa: «Ojalá se acabe ya». Se asusta de sí misma y no se lo cuenta a nadie.",
+  "basico": {
+   "que_es": "Son pensamientos que dan miedo: desear que todo acabe o que la persona que cuidas deje de sufrir, aunque sea muriendo. O pensar en hacerte daño o en desaparecer.",
+   "como_se_nota": "Te viene un «ojalá termine ya» y luego te sientes fatal. Te asusta lo que piensas. Lo guardas en secreto. O piensas que los demás estarían mejor sin ti.",
+   "que_no_es": "Desear que el sufrimiento acabe es frecuente y no te hace mala persona. Pensar en hacerte daño, o temer hacer daño a otra persona, es distinto: pide ayuda hoy.",
+   "accion_minima": "Si piensas en hacerte daño, llama ahora a la línea de atención a la conducta suicida: está en la caja de ayuda. Si no, cuéntaselo a tu médica de familia. No tienes que llevarlo a solas."
+  },
+  "saber_mas": "Desear que la vida de un familiar acabe es más frecuente de lo que se dice. En un estudio, 215 cuidadoras de personas con demencia avanzada respondieron cada cuatro meses durante dos años: el 27 % expresó ese deseo al principio y el 43 % al menos una vez, sobre todo cuando veían sufrir a su familiar. Se asoció a más sufrimiento y peor calidad de vida en quien cuidaba, y era menos frecuente cuando la relación era más cercana (Balasubramanian et al., 2024). Ese deseo no es lo mismo que las ideas de hacerse daño. En 566 familiares de personas con demencia, lo que más se asoció a pensar en el suicidio fue la depresión, que tiene tratamiento (O'Dwyer et al., 2016). Hablarlo ayuda: nadie tiene que callarlo.",
+  "fuentes": [
+   {
+    "cita": "Balasubramanian, I., Chaudhry, I., Poco, L. C., y Malhotra, C. (2024). «I secretly wish...»: Caregivers' expression of wish for death of persons with severe dementia. Age and Ageing, 53(5), afae103.",
+    "url": "https://doi.org/10.1093/ageing/afae103"
+   },
+   {
+    "cita": "O'Dwyer, S. T., Moyle, W., Zimmer-Gembeck, M., y De Leo, D. (2016). Suicidal ideation in family carers of people with dementia. Aging & Mental Health, 20(2), 222-230.",
+    "url": "https://doi.org/10.1080/13607863.2015.1063109"
+   }
+  ],
+  "aviso": "stop",
+  "relacionadas": [
+   "depresion-y-ansiedad",
+   "ambivalencia",
+   "maltrato",
+   "duelo-anticipado"
+  ],
+  "buscar": [
+   "ojalá se muera ya",
+   "quiero que todo acabe",
+   "pienso en desaparecer",
+   "no quiero seguir",
+   "deseo que termine su sufrimiento"
+  ]
+ }
+]
