@@ -58,8 +58,8 @@
 
   // ------------------------------------------------------------------ utilidades
   const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-  // Una opción que ya trae sus comillas no se cita dos veces
-  const cita = t => String(t).replace(/^\s*«/, '').replace(/»\s*$/, '');
+  // Una opción que ya trae sus comillas (o su punto final) no se cita dos veces
+  const cita = t => String(t).replace(/^\s*«/, '').replace(/»\s*$/, '').replace(/([^.])\.$/, '$1');
   const fmt = s => esc(s).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/\*(.+?)\*/g, '<em>$1</em>');
   const hoy = () => iso(new Date());
   function iso(d) { return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }

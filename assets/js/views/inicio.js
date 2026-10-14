@@ -18,7 +18,7 @@ export function render(root, ctx) {
   const pintaQuien = () => {
     const k = perfil();
     quien.replaceChildren(k ? `Cuidas ${PERFILES[k].corto.toLowerCase()}. ` : '¿A quién cuidas? Te lo preguntamos al empezar. ',
-      ...Object.entries(PERFILES).filter(([id]) => id !== k).map(([id, x], i) => [i ? ' · ' : '', h('button', { class: 'linkbtn', type: 'button', onclick: () => { ponerPerfil(id); E.portada(puerta, { boton: 'Empieza', alAbrir: j => { location.hash = `#/episodio/${encodeURIComponent(j)}`; }, alVolver: j => { location.hash = `#/vuelta/${encodeURIComponent(j)}`; } }); } }, k ? `Cambiar a «${x.corto.toLowerCase()}»` : x.corto)]));
+      ...Object.entries(PERFILES).filter(([id]) => id !== k).flatMap(([id, x], i) => [i ? ' · ' : '', h('button', { class: 'linkbtn', type: 'button', onclick: () => { ponerPerfil(id); E.portada(puerta, { boton: 'Empieza', alAbrir: j => { location.hash = `#/episodio/${encodeURIComponent(j)}`; }, alVolver: j => { location.hash = `#/vuelta/${encodeURIComponent(j)}`; } }); } }, k ? `Cambiar a «${x.corto.toLowerCase()}»` : x.corto)]));
   };
   pintaQuien();
   const quitar = alCambiarPerfil(pintaQuien);
