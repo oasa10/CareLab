@@ -1,0 +1,242 @@
+[
+  {
+    "id": "pedir-ayuda",
+    "frase": "«Si pides ayuda, es que no puedes»",
+    "veredicto": "mito",
+    "respuesta": "Pedir ayuda es repartir lo que pesa, no fallar. En un programa de Nueva York para 406 personas que cuidaban a su pareja con alzhéimer, sentirse mejor apoyadas por su gente explicó parte del beneficio del programa.",
+    "fuente": "Mittelman et al., 2006 (Neurology)",
+    "url": "https://doi.org/10.1212/01.wnl.0000242727.81172.91",
+    "ficha": "pedir-y-repartir-ayuda",
+    "perfil": "casa"
+  },
+  {
+    "id": "algo-bueno",
+    "frase": "«Siete de cada diez personas que cuidan encuentran algo bueno en cuidar»",
+    "veredicto": "dato",
+    "respuesta": "En 289 personas que cuidaban a una persona mayor en Canadá, el 73 % nombró al menos una cosa buena de cuidar. Y vivir cosas buenas al cuidar iba unido a menos depresión y menos sobrecarga.",
+    "fuente": "Cohen, Colantonio y Vernich, 2002 (International Journal of Geriatric Psychiatry)",
+    "url": "https://doi.org/10.1002/gps.561",
+    "ficha": "aspectos-positivos",
+    "perfil": "casa"
+  },
+  {
+    "id": "mitad-sindrome",
+    "frase": "«La mitad de las cuidadoras tiene el síndrome del cuidador»",
+    "veredicto": "depende",
+    "respuesta": "En 43 estudios con familiares de personas con demencia, la mitad (49 %) superaba el corte de una escala de sobrecarga, con un margen del 37 % al 61 %. Es una puntuación, no un diagnóstico.",
+    "fuente": "Collins y Kishita, 2020 (Ageing & Society)",
+    "url": "https://doi.org/10.1017/S0144686X19000527",
+    "ficha": "sindrome-del-cuidador",
+    "perfil": "casa"
+  },
+  {
+    "id": "burnout-resiliencia",
+    "frase": "«El *burnout* es falta de resiliencia»",
+    "veredicto": "mito",
+    "respuesta": "En 17 estudios con personal de residencias para personas con demencia, el desgaste se asoció a falta de plantilla, sentirse sin apoyo y una mala dirección. Tiene que ver con la organización, no con un fallo tuyo.",
+    "fuente": "Costello et al., 2019 (International Psychogeriatrics)",
+    "url": "https://doi.org/10.1017/S1041610218001606",
+    "ficha": "burnout",
+    "perfil": "trabajo"
+  },
+  {
+    "id": "edad-en-que-mas-se-cuida",
+    "frase": "«Entre los 55 y los 64 años, una de cada cinco mujeres cuida a alguien»",
+    "veredicto": "dato",
+    "respuesta": "Según la Encuesta Europea de Salud 2020, el 22 % de las mujeres españolas de 55 a 64 años cuida a alguien cada semana, fuera de su trabajo. Entre los 45 y los 64 es cuando más se cuida.",
+    "fuente": "Ministerio de Sanidad e INE, Encuesta Europea de Salud en España 2020",
+    "url": "https://www.sanidad.gob.es/estadEstudios/estadisticas/EncuestaEuropea/EESE2020_inf_evol_princip_result2.pdf",
+    "ficha": "generacion-sandwich",
+    "perfil": "casa"
+  },
+  {
+    "id": "cuidar-mata",
+    "frase": "«Cuidar mata»",
+    "veredicto": "mito",
+    "respuesta": "En EE. UU., 3.503 personas que cuidaban a un familiar murieron un 18 % menos que otras parecidas que no cuidaban. Cuidar puede pesar mucho y merece ayuda, pero en general no acorta la vida.",
+    "fuente": "Roth et al., 2013 (American Journal of Epidemiology)",
+    "url": "https://doi.org/10.1093/aje/kwt225",
+    "ficha": "carga-del-cuidado",
+    "perfil": "casa"
+  },
+  {
+    "id": "malestar-empatico",
+    "frase": "«Lo que agota no es la compasión, sino el malestar empático»",
+    "veredicto": "depende",
+    "respuesta": "Es una idea sugerente, pero no está probada en cuidadoras. En un laboratorio, con personas voluntarias, entrenar la empatía con el dolor ajeno aumentó las emociones negativas, y entrenar después la compasión las redujo y trajo más emociones positivas.",
+    "fuente": "Klimecki, Leiberg, Ricard y Singer, 2014 (Social Cognitive and Affective Neuroscience)",
+    "url": "https://doi.org/10.1093/scan/nst060",
+    "ficha": "malestar-empatico",
+    "perfil": "trabajo"
+  },
+  {
+    "id": "residencia-buena-hija",
+    "frase": "«Una buena hija no lleva a su madre a una residencia»",
+    "veredicto": "mito",
+    "respuesta": "Elegir una residencia no mide el cariño. Es otra forma de cuidar: en un estudio de EE. UU. con familias de personas con demencia, casi la mitad de los cónyuges visitaba a diario y seguía ayudando.",
+    "fuente": "Schulz et al., 2004 (JAMA)",
+    "url": "https://doi.org/10.1001/jama.292.8.961",
+    "ficha": "culpa",
+    "perfil": "casa"
+  },
+  {
+    "id": "carga-y-satisfaccion",
+    "frase": "«Cuidar puede pesar mucho y dar satisfacción a la vez»",
+    "veredicto": "dato",
+    "respuesta": "Son dos cosas distintas que conviven. En 244 hijas e hijos que cuidaban a su padre o su madre con alzhéimer, cuidar más trajo más carga y también más satisfacción. Sentir las dos cosas es normal.",
+    "fuente": "Lawton et al., 1991 (Journal of Gerontology)",
+    "url": "https://doi.org/10.1093/geronj/46.4.P181",
+    "ficha": "ambivalencia",
+    "perfil": "casa"
+  },
+  {
+    "id": "cuarenta-por-ciento-depresion",
+    "frase": "«El 40 % de quien cuida tiene depresión»",
+    "veredicto": "depende",
+    "respuesta": "Ese 40 % son síntomas de depresión en quien cuida a alguien tras un ictus, en 12 estudios con 1.756 personas. No vale para todo el mundo que cuida: cada cifra es de su grupo.",
+    "fuente": "Loh et al., 2017 (Journal of the American Medical Directors Association)",
+    "url": "https://doi.org/10.1016/j.jamda.2016.08.014",
+    "ficha": "depresion-y-ansiedad",
+    "perfil": "casa"
+  },
+  {
+    "id": "compasivas-se-queman",
+    "frase": "«Las profesionales más compasivas son las que más se queman»",
+    "veredicto": "mito",
+    "respuesta": "No hay estudios que lo demuestren. Una revisión de 90 estudios concluye que «fatiga por compasión» es un nombre que confunde: la escala más usada no mide nada de compasión. Lo que desgasta es el estrés acumulado del trabajo.",
+    "fuente": "Sinclair et al., 2017 (International Journal of Nursing Studies)",
+    "url": "https://doi.org/10.1016/j.ijnurstu.2017.01.003",
+    "ficha": "fatiga-por-compasion",
+    "perfil": "trabajo"
+  },
+  {
+    "id": "burnout-solo-trabajo",
+    "frase": "«Para la OMS, el *burnout* es solo cosa del trabajo»",
+    "veredicto": "dato",
+    "respuesta": "La OMS lo define como un fenómeno del trabajo y pide no usarlo para otras áreas de la vida. Si cuidas a un familiar, lo que pesa tiene otros nombres, como sobrecarga, y es igual de real.",
+    "fuente": "Organización Mundial de la Salud, 2019",
+    "url": "https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases",
+    "ficha": "sobrecarga",
+    "perfil": "dos"
+  },
+  {
+    "id": "cuidarte-descuidar",
+    "frase": "«Si te cuidas a ti, descuidas a quien cuidas»",
+    "veredicto": "mito",
+    "respuesta": "Lo que te ayuda a ti puede llegar también a la otra persona. En 78 estudios, los programas para quien cuida a una persona mayor mejoraron un poco su ánimo y también algunos síntomas de la persona cuidada.",
+    "fuente": "Sörensen, Pinquart y Duberstein, 2002 (The Gerontologist)",
+    "url": "https://doi.org/10.1093/geront/42.3.356",
+    "ficha": "autocuidado",
+    "perfil": "casa"
+  },
+  {
+    "id": "envejece-diez-anos",
+    "frase": "«Cuidar envejece diez años»",
+    "veredicto": "depende",
+    "respuesta": "La frase viene de un estudio con 58 madres de 20 a 50 años. Comparó a las más estresadas con las menos, no a quien cuida con quien no. El estrés largo e intenso deja huella; la frase exagera.",
+    "fuente": "Epel et al., 2004 (PNAS)",
+    "url": "https://doi.org/10.1073/pnas.0407162101",
+    "ficha": "proceso-de-estres",
+    "perfil": "casa"
+  },
+  {
+    "id": "internas-desgaste",
+    "frase": "«Vivir en la casa donde trabajas cuidando desgasta más»",
+    "veredicto": "dato",
+    "respuesta": "En un estudio de la Universidad del País Vasco con 98 cuidadoras a domicilio, las internas tenían más agotamiento emocional que las externas. Si vives donde trabajas, cuesta separar trabajo y descanso. Son las condiciones, no debilidad tuya.",
+    "fuente": "Rezola-Pardo et al., 2025 (Geriatric Nursing)",
+    "url": "https://doi.org/10.1016/j.gerinurse.2025.103439",
+    "ficha": "internas",
+    "perfil": "trabajo"
+  },
+  {
+    "id": "mujeres-mas-sensibles",
+    "frase": "«Las mujeres lo pasan peor al cuidar porque son más sensibles»",
+    "veredicto": "mito",
+    "respuesta": "En 229 estudios, las cuidadoras asumían más horas, más tareas y más cuidado personal que los cuidadores. Con la misma carga, la diferencia en depresión y salud casi desaparecía. Pesa el reparto, no el carácter.",
+    "fuente": "Pinquart y Sörensen, 2006 (The Journals of Gerontology, Series B)",
+    "url": "https://doi.org/10.1093/geronb/61.1.P33",
+    "ficha": "carga-objetiva",
+    "perfil": "casa"
+  },
+  {
+    "id": "seis-anos-despues",
+    "frase": "«Ocho sesiones para quien cuida pueden notarse seis años después»",
+    "veredicto": "dato",
+    "respuesta": "En un ensayo en Londres y Essex con 260 familiares de personas con demencia, un programa de ocho sesiones para afrontar lo difícil del día a día redujo la ansiedad y la depresión, y seis años después seguía notándose.",
+    "fuente": "Livingston et al., 2020 (The British Journal of Psychiatry)",
+    "url": "https://doi.org/10.1192/bjp.2019.160",
+    "ficha": "afrontamiento",
+    "perfil": "casa"
+  },
+  {
+    "id": "horas-y-peso",
+    "frase": "«Cuantas más horas cuidas, más te pesa»",
+    "veredicto": "depende",
+    "respuesta": "Las horas importan, pero no lo son todo. En 80 personas que cuidaban a un familiar mayor, lo que cuidar cambiaba en su vida y cómo lo vivían dependían de cosas distintas. No pesa igual a todo el mundo.",
+    "fuente": "Montgomery, Gonyea y Hooyman, 1985 (Family Relations)",
+    "url": "https://doi.org/10.2307/583753",
+    "ficha": "carga-subjetiva",
+    "perfil": "casa"
+  },
+  {
+    "id": "no-llegar-fallo-tuyo",
+    "frase": "«Si no puedes cuidar como sabes, el fallo es tuyo»",
+    "veredicto": "mito",
+    "respuesta": "Saber qué cuidado sería el correcto y no poder darlo tiene nombre: angustia moral. Una revisión de 49 estudios con trabajadoras sanitarias y sociales vio que depende sobre todo del contexto: plantilla, carga de trabajo, normas y apoyo.",
+    "fuente": "Beadle et al., 2024 (PLoS ONE)",
+    "url": "https://doi.org/10.1371/journal.pone.0303013",
+    "ficha": "angustia-moral",
+    "perfil": "trabajo"
+  },
+  {
+    "id": "menos-manos",
+    "frase": "«Cada vez hay menos manos para cuidar»",
+    "veredicto": "dato",
+    "respuesta": "En Euskadi había 68,7 personas cuidadoras por cada 100 personas con dependencia en 2006, y 48,8 en 2022, según la Encuesta de Necesidades Sociales. Es un reto de toda la sociedad, no un fallo de quien cuida.",
+    "fuente": "Sanzo, 2024 (Gobierno Vasco, Encuesta de Necesidades Sociales 2022)",
+    "url": "https://euskadi.eus/contenidos/noticia/ens2022_sanzo/es_def/evolucion-de-los-problemas-y-necesidades-sociales-en-euskadi.pdf",
+    "ficha": "crisis-de-los-cuidados",
+    "perfil": "casa"
+  },
+  {
+    "id": "destroza-la-salud",
+    "frase": "«Cuidar te destroza la salud»",
+    "veredicto": "depende",
+    "respuesta": "En 84 estudios, quien cuidaba a una persona mayor tenía más estrés y depresión que quien no cuidaba, con diferencias moderadas; en salud física, la diferencia era pequeña. Las diferencias eran mayores al cuidar a alguien con demencia.",
+    "fuente": "Pinquart y Sörensen, 2003 (Psychology and Aging)",
+    "url": "https://doi.org/10.1037/0882-7974.18.2.250",
+    "ficha": "malestar",
+    "perfil": "casa"
+  },
+  {
+    "id": "descansar-abandonar",
+    "frase": "«Descansar es abandonarle»",
+    "veredicto": "mito",
+    "respuesta": "Descansar no es abandonar: es parte de cuidar. La guía británica de referencia pide a los servicios hablar con quien cuida del valor de tomarse descansos, ajustados a lo que necesita: cuánto, cuándo y cómo.",
+    "fuente": "NICE, 2020 (guía NG150, Supporting adult carers)",
+    "url": "https://www.nice.org.uk/guidance/ng150",
+    "ficha": "respiro",
+    "perfil": "casa"
+  },
+  {
+    "id": "paro-trabajadoras-hogar",
+    "frase": "«Las trabajadoras del hogar ya tienen derecho al paro»",
+    "veredicto": "dato",
+    "respuesta": "Desde 2022, quien trabaja en el servicio del hogar cotiza por desempleo y tiene derecho al paro. Y ya no se la puede despedir sin una causa justificada. Vale también si trabajas como interna.",
+    "fuente": "Real Decreto-ley 16/2022, de 6 de septiembre (BOE, 2022)",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-14680",
+    "ficha": "cuidado-profesional",
+    "perfil": "trabajo"
+  },
+  {
+    "id": "enfermeras-quemadas",
+    "frase": "«Una de cada dos enfermeras está quemada»",
+    "veredicto": "depende",
+    "respuesta": "En 61 estudios con 45.539 enfermeras de 49 países, una de cada nueve tenía síntomas de *burnout*. Cambia mucho según el país, el servicio y la escala: más en pediatría, menos en geriatría.",
+    "fuente": "Woo et al., 2020 (Journal of Psychiatric Research)",
+    "url": "https://doi.org/10.1016/j.jpsychires.2019.12.015",
+    "ficha": "burnout",
+    "perfil": "trabajo"
+  }
+]

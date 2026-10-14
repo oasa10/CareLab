@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CareLab · Cuidar sin desaparecer</title>
+  <meta name="description" content="Cuidas de alguien. CareLab te ayuda a que cuidar no te borre. Una web gratuita, sin registro y sin datos para quien cuida en casa o por trabajo: episodios de siete minutos, las palabras del cuidar, dónde pedir ayuda en Euskadi y en España, trámites básicos y un modo para grupos.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#FBFAF6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#11171C" media="(prefers-color-scheme: dark)">
+  <meta property="og:title" content="CareLab · Cuidar sin desaparecer">
+  <meta property="og:description" content="Cuidas de alguien. CareLab te ayuda a que cuidar no te borre.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/icono.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/icono-180.png">
+  <meta property="og:image" content="https://oasa10.github.io/CareLab/assets/img/carelab-tarjeta.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="CareLab: una figura entera y cuatro puntos de colores. Cuidar sin desaparecer.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="assets/fonts/inter-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/fraunces-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/vendor/episodio/episodio.css">
+  <link rel="stylesheet" href="assets/css/carelab.css">
+  <script>
+    // Tema y letra elegidos por quien visita (solo en su navegador)
+    try {
+      var t = localStorage.getItem('carelab:tema'); if (t === '"light"' || t === '"dark"') document.documentElement.dataset.theme = JSON.parse(t);
+      if (localStorage.getItem('carelab:grande') === 'true') document.documentElement.classList.add('grande');
+    } catch (e) {}
+  </script>
+  <script src="assets/vendor/episodio/episodio.js" defer></script>
+  <script type="module" src="assets/js/main.js"></script>
+</head>
+<body>
+  <a class="skip" href="#app">Saltar al contenido</a>
+  <header class="top">
+    <div class="wrap top-fila">
+      <a class="brand" href="#/" aria-label="CareLab, inicio"><svg class="logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><circle class="lleno" cx="32" cy="21" r="8.5"/><path class="lleno" d="M32 33C22 33 14.5 40 14.5 52H32Z"/><circle cx="38.6" cy="34.6" r="2.9" style="fill:var(--l1)"/><circle cx="44.2" cy="38.4" r="2.9" style="fill:var(--l2)"/><circle cx="47.9" cy="44.2" r="2.9" style="fill:var(--l3)"/><circle cx="49.6" cy="50.6" r="2.9" style="fill:var(--l4)"/></svg><span>Care<b>Lab</b></span></a>
+      <div class="herr">
+        <button class="icobtn" id="letra" type="button" aria-pressed="false" title="Letra grande" aria-label="Letra grande">Aa</button>
+        <button class="icobtn" id="tema" type="button" aria-label="Cambiar entre modo claro y oscuro" title="Modo claro u oscuro">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+        </button>
+        <a class="btn ayuda-btn" href="#/ayuda/ahora">Necesito ayuda ahora</a>
+      </div>
+    </div>
+    <nav class="nav wrap" aria-label="Secciones">
+      <a href="#/palabras">Palabras</a>
+      <a href="#/ayuda">Ayuda</a>
+      <a href="#/tramites">Trámites</a>
+      <a href="#/grupo">Grupos</a>
+      <a href="#/reto">¿Mito o dato?</a>
+      <a href="#/cuaderno">Tu cuaderno</a>
+      <a href="#/conocer">Conocer</a>
+    </nav>
+  </header>
+  <main id="app" tabindex="-1">
+    <div class="wrap"><p class="cargando">Cargando CareLab…</p></div>
+  </main>
+  <footer class="pie">
+    <div class="wrap">
+      <p class="pie-promesa">Cuidas de alguien. CareLab te ayuda a que cuidar no te borre.</p>
+      <p class="small">CareLab no es un servicio de emergencias ni una terapia. Ante una urgencia, <a href="tel:112">112</a>. Ante ideas de suicidio, <a href="tel:024">024</a>, gratuito y a cualquier hora. <a href="#/ayuda/ahora">Necesito ayuda ahora</a>.</p>
+      <p class="small muted">CareLab 1.0 (beta) · Sin registro, sin cookies y sin analítica · <a href="#/conocer">Conocer CareLab</a> · Contenidos CC BY 4.0 · <span id="perfil-pie"></span></p>
+    </div>
+  </footer>
+</body>
+</html>
