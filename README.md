@@ -1,2 +1,2 @@
 # CareLab
-Para cuidar al cuidador
+Cuidar sin desaparecer
