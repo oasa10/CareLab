@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Build CareLab's embedded library from the approved, local MEPRE corpus.
 
-Usage: python3 tools/build_biblioteca.py [CORPUS_ROOT]
+Usage: python3 tools/build_biblioteca.py [CORPUS_ROOT] [--output FILE]
+       python3 tools/build_biblioteca.py --locations REGISTRY [--output FILE]
 No network calls, absolute source paths, clinical scoring or copied third-party
 works are added. Source wording and its evidence/access limits are preserved.
 The web renderer must escape every string and retain newlines in body text.
@@ -11,6 +12,7 @@ from __future__ import annotations
 
 import argparse
 from collections import Counter
+from corpus_locations import CorpusLocations
 import hashlib
 import json
 from pathlib import Path
@@ -183,13 +185,14 @@ def reference_text(ref: dict) -> str:
 
 
 class Library:
-    def __init__(self, root: Path):
-        self.root = root.resolve()
+    def __init__(self, root: Path | CorpusLocations):
+        self.locations = root if isinstance(root, CorpusLocations) else CorpusLocations.discover(corpus_root=root)
+        self.root = self.locations.root
         self.items = []
         self.sources = {}
 
     def read(self, path: str):
-        content = (self.root / path).read_bytes()
+        content = self.locations.read_bytes(path)
         self.sources[path] = {"path": path, "sha256": hashlib.sha256(content).hexdigest()}
         return json.loads(content)
 
@@ -386,13 +389,16 @@ class Library:
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("corpus_root", nargs="?", type=Path, default=Path(__file__).resolve().parents[3])
+    parser.add_argument("corpus_root", nargs="?", type=Path)
+    parser.add_argument("--locations", type=Path, help="Private MEPRE location registry")
+    parser.add_argument("--output", type=Path, default=Path(__file__).resolve().parents[1] / "data" / "biblioteca.json")
     args = parser.parse_args()
-    data = Library(args.corpus_root).build()
-    output = Path(__file__).resolve().parents[1] / "data" / "biblioteca.json"
+    locations = CorpusLocations.discover(corpus_root=args.corpus_root, registry=args.locations)
+    data = Library(locations).build()
+    output = args.output
     output.parent.mkdir(parents=True, exist_ok=True)
     payload = json.dumps(data, ensure_ascii=False, indent=2) + "\n"
-    assert str(args.corpus_root.resolve()) not in payload, "Absolute corpus path leaked"
+    assert str(locations.root) not in payload, "Absolute corpus path leaked"
     assert "/Users/" not in payload and "file://" not in payload, "Private path leaked"
     output.write_text(payload, encoding="utf-8")
     print(json.dumps({"output": "data/biblioteca.json", "counts": data["counts"], "source_files": len(data["sources"]),

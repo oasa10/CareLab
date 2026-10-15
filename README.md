@@ -1,4 +1,4 @@
-# CareLab 3.0 · Cuidar sin desaparecer
+# CareLab 3.0.1 · Cuidar sin desaparecer
 
 Un espacio para hacer visible, organizar y compartir la carga total de cuidar, con el Método BrainBox 1.2 y el proyecto MEPRE.
 
@@ -38,7 +38,17 @@ node --test tests/*.test.mjs
 
 Los módulos activos están en `assets/v2/` y `assets/v3/`, el corpus en `data/biblioteca.json` y el programa en `data/programa.json`. `sw.js` sólo conserva archivos públicos; nunca guarda el espacio personal. Instala una versión completa antes de sustituir el núcleo anterior.
 
-`tools/build_biblioteca.py` y `tools/build_programa.py` materializan las fuentes locales autorizadas. Necesitan el corpus original del proyecto, que no se duplica íntegramente en este repositorio. La comprobación continua de GitHub valida sintaxis, integridad del catálogo, referencias y pruebas de restauración.
+`tools/build_biblioteca.py` y `tools/build_programa.py` materializan las fuentes locales autorizadas. Necesitan el corpus original del proyecto, que no se duplica íntegramente en este repositorio. En la Metaestructura Maestra buscan `mepre-ubicaciones.json` en los directorios superiores. También admiten `--locations REGISTRO`, la variable `MEPRE_LOCATIONS` o una raíz de corpus explícita. Las rutas físicas se resuelven únicamente durante la construcción; no se incorporan al navegador. Los localizadores de fuentes como `caretools/registros/datos_integrados.json` son identidades lógicas estables, no enlaces a carpetas privadas. El registro maestro mantiene su correspondencia con la ubicación física actual. El mapa exacto de migración tiene prioridad; después se aplica el prefijo coincidente más largo. Los alias absolutos de originales externos pertenecen al registro privado y no se admiten como entradas del constructor público.
+
+```sh
+python3 tools/build_biblioteca.py --locations /ruta/al/mepre-ubicaciones.json
+python3 tools/build_programa.py --locations /ruta/al/mepre-ubicaciones.json
+python3 tests/corpus_locations_test.py
+```
+
+Ambos generadores admiten `--output ARCHIVO` para reconstruir en una carpeta de comprobación y comparar antes de sustituir los datos. Requieren Python 3.10 o posterior. La comprobación continua de GitHub valida sintaxis, integridad del catálogo, referencias, restauración y resolución portable con un corpus ficticio; nunca necesita las fuentes privadas.
+
+El directorio `app` es la única raíz publicable de este producto. La operación del buzón, documentos fuente, registros maestros, copias de seguridad y resultados de pruebas permanecen fuera de él. Mover esta carpeta no altera la web ya publicada. Actualizar contenido sí exige reconstruir, comprobar y preparar la versión completa antes de publicar.
 
 Los archivos anteriores de `assets/js/` y datos 1.x se conservan para trazabilidad y no se cargan desde el nuevo `index.html`. `tools/build_html.py` pertenece a 1.x: su archivo único no representa CareLab 3.0. Las copias de 1.x no se importan como si fueran del nuevo esquema.
 
@@ -51,3 +61,7 @@ Música incorporada: **Meditation Impromptu 02** y **Luminous Rain**, de Kevin M
 La ventana de naturaleza es una imagen original generada para CareLab. No es una fotografía de un lugar identificado. Procedencia, prompt y huella en `assets/v3/images/manifest.json`. Las referencias estéticas Portal, WindowSwap y A Soft Murmur se usaron como orientación de amplitud, naturaleza y control voluntario; no se copiaron sus imágenes, grabaciones ni código.
 
 Salazar, Osman (2026). _CareLab. Cuidar sin desaparecer_. Versión 3.0, prueba de concepto. Con el Método BrainBox 1.2. https://oasa10.github.io/CareLab/
+
+## Actualización de compatibilidad 3.0.1
+
+Conecta los generadores con el registro de ubicaciones de la Metaestructura Maestra y actualiza las fichas CareLab de Cuidopedia (D099) y CareTools (D049) a su edición publicada 3.0. Conserva los 1.087 identificadores de la biblioteca, las 36 unidades, los recorridos y los datos personales. La caché recibe una nueva edición para incorporar la biblioteca completa de forma atómica. Esta revisión documental y técnica no añade evidencia de eficacia.

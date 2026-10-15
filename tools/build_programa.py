@@ -7,11 +7,12 @@ El script se ejecuta desde cualquier carpeta. No modifica los documentos fuente.
 """
 from __future__ import annotations
 
+import argparse
 import json
+from corpus_locations import CorpusLocations
 from pathlib import Path
 
 APP = Path(__file__).resolve().parents[1]
-CORPUS = APP.parents[1]
 TOOLS = {"mapa", "plan", "reparto", "limites", "descanso", "consulta", "economia", "contingencia", "revision"}
 DIMENSIONS = {"tiempo", "cuerpo", "mente", "emociones", "relaciones", "dinero", "organizacion", "apoyos"}
 
@@ -499,11 +500,12 @@ unit(36, "Tu programa, sin otra obligación encima",
      "mente tiempo organizacion apoyos", 5)
 
 
-def build():
+def build(locations=None, destination=None):
+    locations = locations or CorpusLocations.discover()
     sources = []
     for name in ("AC_autocuidado", "CC_cuidar_cuidadores", "MC_meta_cuidado"):
         relative = f"guias_transversales/partes/{name}.json"
-        guide = json.loads((CORPUS / relative).read_text(encoding="utf-8"))
+        guide = locations.read_json(relative)
         for index, chapter in enumerate(guide["chapters"]):
             sources.append({
                 "id": chapter["id"],
@@ -529,11 +531,16 @@ def build():
     ]
     assert all(len(m["unitIds"]) == 3 for m in modules)
     output = {"version": "2.0", "modules": modules, "units": UNITS, "sources": sources}
-    destination = APP / "data" / "programa.json"
-    destination.parent.mkdir(exist_ok=True)
+    destination = destination or APP / "data" / "programa.json"
+    destination.parent.mkdir(parents=True, exist_ok=True)
     destination.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"CareLab: {len(modules)} módulos, {len(UNITS)} unidades, {len(coverage)} capítulos fuente; {destination}")
 
 
 if __name__ == "__main__":
-    build()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("corpus_root", nargs="?", type=Path)
+    parser.add_argument("--locations", type=Path, help="Private MEPRE location registry")
+    parser.add_argument("--output", type=Path)
+    args = parser.parse_args()
+    build(CorpusLocations.discover(corpus_root=args.corpus_root, registry=args.locations), args.output)

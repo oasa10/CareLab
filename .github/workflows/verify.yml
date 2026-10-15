@@ -12,3 +12,4 @@ jobs:
           node-version: "22"
       - run: node tools/verify.mjs
       - run: node --test tests/*.test.mjs
+      - run: python3 tests/corpus_locations_test.py
