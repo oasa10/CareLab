@@ -37,6 +37,7 @@ Hecha con el Método BrainBox.
 
 ## Versiones
 
+- **1.0.1 (beta)** (15 de octubre de 2026): «Escuchar» nuevo, con el Lector común: lee párrafo a párrafo, con pausas y marcando lo que suena; eliges la voz (las más naturales primero) y la velocidad, y puedes ir al párrafo anterior o al siguiente, pausar y parar.
 - **1.0 (beta)** (octubre de 2026): la primera. Veinte episodios, cincuenta palabras, el reto, los recursos de Euskadi y de España, los trámites básicos, el modo grupo y el HTML de doble clic.
 
 ## Cómo citar

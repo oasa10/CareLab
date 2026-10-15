@@ -2,7 +2,7 @@
 
 export const URL_BASE = 'https://oasa10.github.io/CareLab/';
 export const REPO = 'https://github.com/oasa10/CareLab';
-export const VERSION = '1.0 (beta)';
+export const VERSION = '1.0.1 (beta)';
 export const AUTORIA = 'Salazar, Osman (2026)';
 
 export const PROMESA = 'Cuidas de alguien. CareLab te ayuda a que cuidar no te borre.';
@@ -77,41 +77,18 @@ export function primeroLoTuyo(lista, campo = 'perfil') {
   return lista.map((x, i) => [x, i]).sort((a, b) => peso(a[0]) - peso(b[0]) || a[1] - b[1]).map(([x]) => x);
 }
 
-// ---------- voz: «Escuchar» en todas las pantallas (CL11)
-export const HAY_VOZ = typeof window !== 'undefined' && 'speechSynthesis' in window && typeof SpeechSynthesisUtterance !== 'undefined';
-let alParar = null;
-export function pararVoz() {
-  if (HAY_VOZ) { try { speechSynthesis.cancel(); } catch (e) { /* nada */ } }
-  const f = alParar; alParar = null; if (f) f();
-}
-export function leerEnVoz(texto, alFin) {
-  if (!HAY_VOZ) return;
-  pararVoz();
-  const limpio = String(texto).replace(/\*\*?|_/g, '').replace(/\s+/g, ' ').trim();
-  const trozos = limpio.match(/[^.!?¿¡…]{1,220}[.!?…»]*|.{1,220}/g) || [];
-  const voces = speechSynthesis.getVoices().filter(v => /^es(-|_)ES/i.test(v.lang));
-  alParar = alFin || null;
-  trozos.forEach((t, i) => {
-    const u = new SpeechSynthesisUtterance(t.trim());
-    u.lang = 'es-ES'; u.rate = 0.95; if (voces.length) u.voice = voces[0];
-    if (i === trozos.length - 1) u.onend = () => { const f = alParar; alParar = null; if (f) f(); };
-    speechSynthesis.speak(u);
-  });
-}
-export function botonEscuchar(texto, etiqueta = 'Escuchar') {
-  if (!HAY_VOZ) return null;
-  const b = h('button', { class: 'btn small escuchar', type: 'button', 'aria-pressed': 'false' });
-  const pon = on => { b.setAttribute('aria-pressed', String(on)); b.replaceChildren(h('span', { 'aria-hidden': 'true' }, on ? '■ ' : '🔊 '), on ? 'Parar' : etiqueta); };
-  pon(false);
-  b.addEventListener('click', () => {
-    if (b.getAttribute('aria-pressed') === 'true') { pararVoz(); return; }
-    pon(true);
-    leerEnVoz(texto(), () => pon(false));
-  });
-  return b;
+// Escuchar con el Lector común (assets/vendor/lector): lee por párrafos, con pausas, la voz elegida y un reproductor
+const LECTOR = typeof window !== 'undefined' ? window.Lector : null;
+export const HAY_VOZ = !!(LECTOR && LECTOR.ok);
+if (HAY_VOZ) LECTOR.configurar({ sitio: 'carelab', subir: '.toasts', color: '#7CC7AE' });
+export function pararVoz() { if (HAY_VOZ) LECTOR.parar(); }
+export function leerEnVoz(fuente, alFin) { if (HAY_VOZ) LECTOR.leer(fuente, { alCambiar: on => { if (!on && alFin) alFin(); } }); }
+// Botón «Escuchar»: fuente() devuelve los nodos que se leen, de arriba abajo; vuelve a pulsarse para parar
+export function botonEscuchar(fuente, etiqueta = 'Escuchar', titulo) {
+  return HAY_VOZ ? LECTOR.boton(fuente, { etiqueta, titulo, clase: 'btn small escuchar' }) : null;
 }
 // lee lo marcado con .leer dentro de la página
-export const textoDe = raiz => () => Array.from(raiz.querySelectorAll('.leer')).map(n => n.innerText.trim()).filter(Boolean).join('. ');
+export const textoDe = raiz => () => raiz.querySelectorAll('.leer');
 
 // ---------- piezas
 export function cabeza(raiz, titulo, lead, ...extra) {

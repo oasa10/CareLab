@@ -25,7 +25,7 @@ export function render(root, ctx, parts, q) {
     h('header', { class: 'ficha-cab' }, imgFamilia(x.familia, true),
       h('div', null, h('h1', { class: 'leer' }, x.palabra), x.tecnico ? h('p', { class: 'tecnico' }, `En los estudios: ${x.tecnico}`) : null,
         h('p', { class: 'meta' }, PARA[x.para] || ''))),
-    h('div', { class: 'ficha-acc' }, botonEscuchar(textoDe(art), 'Escuchar la ficha')),
+    h('div', { class: 'ficha-acc' }, botonEscuchar(textoDe(art), 'Escuchar la ficha', x.palabra)),
     cajaAviso(x.aviso),
     h('section', { class: 'basico', 'aria-label': 'Lo básico' },
       bloque('Qué es', B.que_es), bloque('Cómo se nota en tu día', B.como_se_nota), bloque('Qué no es', B.que_no_es)),

@@ -21,6 +21,7 @@
   <link rel="preload" href="assets/fonts/inter-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/fraunces-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/vendor/episodio/episodio.css">
+  <link rel="stylesheet" href="assets/vendor/lector/lector.css">
   <link rel="stylesheet" href="assets/css/carelab.css">
   <script>
     // Tema y letra elegidos por quien visita (solo en su navegador)
@@ -29,6 +30,7 @@
       if (localStorage.getItem('carelab:grande') === 'true') document.documentElement.classList.add('grande');
     } catch (e) {}
   </script>
+  <script src="assets/vendor/lector/lector.js" defer></script>
   <script src="assets/vendor/episodio/episodio.js" defer></script>
   <script type="module" src="assets/js/main.js"></script>
 </head>
@@ -62,7 +64,7 @@
     <div class="wrap">
       <p class="pie-promesa">Cuidas de alguien. CareLab te ayuda a que cuidar no te borre.</p>
       <p class="small">CareLab no es un servicio de emergencias ni una terapia. Ante una urgencia, <a href="tel:112">112</a>. Ante ideas de suicidio, <a href="tel:024">024</a>, gratuito y a cualquier hora. <a href="#/ayuda/ahora">Necesito ayuda ahora</a>.</p>
-      <p class="small muted">CareLab 1.0 (beta) · Sin registro, sin cookies y sin analítica · <a href="#/conocer">Conocer CareLab</a> · Contenidos CC BY 4.0 · <span id="perfil-pie"></span></p>
+      <p class="small muted">CareLab 1.0.1 (beta) · Sin registro, sin cookies y sin analítica · <a href="#/conocer">Conocer CareLab</a> · Contenidos CC BY 4.0 · <span id="perfil-pie"></span></p>
     </div>
   </footer>
 </body>

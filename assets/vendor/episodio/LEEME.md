@@ -49,3 +49,5 @@ En modo grupo quien guía puede abrir cualquier episodio, aunque no sea el del d
 | `variantes` | 1.1, opcional: `{ <perfil>: { campo: valor } }`, ver el perfil |
 
 Los textos admiten `**negrita**` y `*cursiva*`. Cada web puede añadir sus propios campos (PostLab: `valor`, `termino` e `historia_humana`; CareLab: `perfil`, `familia` y `ficha`). Si una opción del Reflejo ya trae sus comillas «», no se citan dos veces.
+
+**Escuchar (15-oct-2026).** Si la página carga el Lector común (`assets/vendor/lector`), el botón «Escuchar» de cada tiempo lo usa: lee la pantalla párrafo a párrafo, con la voz elegida y el reproductor. Sin el Lector, funciona como antes.

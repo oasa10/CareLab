@@ -91,5 +91,5 @@ export function render(root, ctx) {
       P('Los contenidos se publican con licencia **CC BY 4.0**: puedes usarlos y adaptarlos citando la fuente. El código, con licencia **MIT**.'),
       h('p', { class: 'small' }, h('a', { href: REPO, target: '_blank', rel: 'noopener' }, 'El repositorio de CareLab en GitHub')),
       h('h3', null, 'Versiones'),
-      h('ul', null, h('li', { html: fmt(`**${VERSION}**, octubre de 2026. La primera: 20 episodios, ${ctx.palabras.length} palabras, ${ctx.mitos.length} frases del reto, los recursos de Euskadi y de España, los trámites básicos y el modo grupo.`) }))));
+      h('ul', null, h('li', { html: fmt(`**${VERSION}**, 15 de octubre de 2026. «Escuchar» nuevo: lee párrafo a párrafo, con pausas y marcando lo que suena; eliges la voz (las más naturales primero) y la velocidad, y puedes ir al párrafo anterior o al siguiente, pausar y parar.`) }), h('li', { html: fmt(`**1.0 (beta)**, octubre de 2026. La primera: 20 episodios, ${ctx.palabras.length} palabras, ${ctx.mitos.length} frases del reto, los recursos de Euskadi y de España, los trámites básicos y el modo grupo.`) }))));
 }
