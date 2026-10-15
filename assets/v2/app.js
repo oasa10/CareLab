@@ -1,3 +1,18 @@
+import { mountGuidedPractice } from "../v3/practice.js";
+import {
+  mountWelcome,
+  mountNow,
+  mountExplore,
+  mountPath,
+  mountPause,
+} from "../v3/sanctuary.js";
+import {
+  mountLivingJourney,
+  mountLivingReturn,
+  getLivingSummary,
+} from "../v3/journey.js";
+import { installSafetySignpost } from "../v3/safety.js";
+import { installFormDrafts, clearFormDraft } from "../v3/form-drafts.js";
 import {
   mountFeedback,
   hasFeedbackDraft,
@@ -6,7 +21,6 @@ import {
 import {
   mountBrainBox,
   brainboxFieldLabels,
-  hasBrainBoxDraft,
   clearBrainBoxDrafts,
 } from "./brainbox.js";
 import { applyTheme } from "./theme.js";
@@ -55,14 +69,9 @@ const date = (x) =>
       })
     : "Sin fecha";
 const nav = [
-  ["hoy", "Hoy", "home"],
-  ["brainbox", "Mi BrainBox", "flower"],
-  ["mapa", "Mi carga", "map"],
-  ["plan", "Mi plan", "plan"],
-  ["programa", "Mi programa", "program"],
-  ["biblioteca", "Biblioteca", "library"],
-  ["herramientas", "Herramientas", "spark"],
-  ["media", "Escuchar y ver", "audio"],
+  ["hoy", "Ahora", "home"],
+  ["micamino", "Mi camino", "flower"],
+  ["explorar", "Explorar", "library"],
 ];
 const view = $("#contenido");
 let program = null,
@@ -71,8 +80,8 @@ let program = null,
   route = "",
   cleanup = null,
   toastTimer = 0;
-const drafts = {},
-  filter = { q: "", collection: "", dimension: "", page: 0 };
+let drafts = Store.get().drafts.tools;
+const filter = { q: "", collection: "", dimension: "", page: 0 };
 const link = (to, text, cls = "btn", ico = "arrow") =>
   `<a href="#/${to}" class="${cls}">${text}${ico ? icon(ico, 17) : ""}</a>`;
 const header = (eyebrow, title, intro, extra = "") =>
@@ -106,9 +115,13 @@ function applySettings() {
   document.documentElement.classList.toggle("large-text", s.largeText);
   document.documentElement.classList.toggle("no-motion", !s.motion);
   $("#font-toggle").setAttribute("aria-pressed", String(s.largeText));
-  $("#storage-indicator").textContent = Store.isPersistent()
-    ? "Guardado en este dispositivo"
-    : "Sesión temporal";
+  const storage = Store.getStorageStatus();
+  $("#storage-indicator").textContent =
+    storage.mode === "device"
+      ? "Guardado en este dispositivo"
+      : storage.mode === "session"
+        ? "Sesión recuperable"
+        : "Sin guardar";
 }
 function modal(title, html, onReady) {
   const d = $("#dialog"),
@@ -141,12 +154,30 @@ function confirmAction(title, text, yes, label = "Confirmar") {
 function empty(title, text, to, button) {
   return `<div class="empty"><div class="empty-icon">${icon("leaf", 28)}</div><h3 style="margin-top:18px">${title}</h3><p>${text}</p>${to ? link(to, button) : ""}</div>`;
 }
+function storageCopy() {
+  const status = Store.getStorageStatus();
+  if (status.error || status.hasUnstoredChanges)
+    return (
+      status.error ||
+      "Hay cambios que el navegador no ha podido guardar. Exporta una copia antes de salir."
+    );
+  return status.mode === "device"
+    ? "Guardado activado en este navegador y dispositivo."
+    : "Guardado de sesión: los cambios se conservan al recargar esta pestaña si el navegador dispone de espacio. Para volver después de cerrarla, activa el guardado en este dispositivo.";
+}
 function saveNotice() {
-  return `<p class="small muted">${Store.isPersistent() ? "Se guardará en este navegador." : "Se conservará en esta pestaña. Si la cierras o recargas, se perderá."} <a class="text-link" href="#/ajustes">Elegir cómo guardar</a>. Usa iniciales o roles; evita datos identificativos de otras personas.</p>`;
+  return `<p class="small muted">${esc(storageCopy())} <a class="text-link" href="#/ajustes">Elegir cómo guardar</a>. Usa iniciales o roles; evita datos identificativos de otras personas.</p>`;
 }
 function titleFor(path) {
   return (
     {
+      bienvenida: "Un paso posible, también para ti",
+      vivir: "Una situación, un paso posible",
+      volver: "Volver con lo que ocurrió",
+      explorar: "Lo que necesitas, cuando lo necesitas",
+      micamino: "Lo que vas haciendo tuyo",
+      pausa: "Un momento sin exigencias",
+      profundizar: "BrainBox en profundidad",
       feedback: "Tu experiencia nos ayuda a mejorar",
       brainbox: "Del comprender al hacer, con retorno",
       hoy: "Un espacio para quien cuida",
@@ -165,15 +196,17 @@ function titleFor(path) {
   );
 }
 function drawNav(path) {
+  path = ["hoy", "bienvenida", "vivir", "brainbox", "pausa"].includes(path)
+    ? "hoy"
+    : ["micamino", "volver", "plan", "revision", "logros"].includes(path)
+      ? "micamino"
+      : "explorar";
   $("#navigation").innerHTML = nav
     .map(([id, label, i]) =>
       link(id, label, `nav-link ${path === id ? "active" : ""}`, i),
     )
     .join("");
   $(".mobile-nav").innerHTML = nav
-    .filter(([id]) =>
-      ["hoy", "brainbox", "plan", "programa", "biblioteca"].includes(id),
-    )
     .map(
       ([id, label, i]) =>
         `<a href="#/${id}" class="${path === id ? "active" : ""}" ${path === id ? 'aria-current="page"' : ""}>${icon(i)}<span>${label}</span></a>`,
@@ -309,7 +342,10 @@ function chooseProfile() {
             sync();
             d.close();
             render();
-            toast("Contexto elegido. Puedes cambiarlo cuando quieras.");
+            toast(
+              Store.getStorageStatus().error ||
+                "Contexto elegido. Puedes cambiarlo cuando quieras.",
+            );
           }),
       ),
   );
@@ -432,6 +468,15 @@ function wireTasks() {
     (b) =>
       (b.onclick = () => {
         const a = Store.get().actions.find((a) => a.id === b.dataset.edit);
+        const living = Store.get().journey.sessions.find(
+          (s) => s.actionId === a.id,
+        );
+        if (living) {
+          if (living.status !== "reviewed") living.step = 8;
+          sync();
+          location.hash = `#/${living.status === "reviewed" ? "volver" : "vivir"}/${living.id}`;
+          return;
+        }
         location.hash = a.fields?.bb_version
           ? `#/brainbox/${a.id}`
           : `#/tool/${a.tool}/${a.id}`;
@@ -445,7 +490,14 @@ function wireTasks() {
         )),
   );
   $$("[data-review]").forEach(
-    (b) => (b.onclick = () => reviewModal(b.dataset.review)),
+    (b) =>
+      (b.onclick = () => {
+        const living = Store.get().journey.sessions.find(
+          (s) => s.actionId === b.dataset.review,
+        );
+        if (living) location.hash = `#/volver/${living.id}`;
+        else reviewModal(b.dataset.review);
+      }),
   );
 }
 function planPage() {
@@ -471,10 +523,10 @@ function planPage() {
                     ? `<details><summary>Ver las preguntas y la procedencia</summary>${Object.entries(
                         r.fields,
                       )
-                        .filter(([k, v]) => v)
+                        .filter(([k, v]) => v && k !== "bb_fuente_codigo")
                         .map(
                           ([k, v]) =>
-                            `<p><strong>${esc(reviewLabels[k] || k)}:</strong> ${esc(v)}</p>`,
+                            `<p><strong>${esc(reviewLabels[k] || brainboxFieldLabels[k] || k)}:</strong> ${esc(reviewValue(k, v))}</p>`,
                         )
                         .join(
                           "",
@@ -591,6 +643,7 @@ function toolPage(id, editId, prepared = false) {
       status: all.status,
       fields: all,
     };
+    sync();
   });
   form.onsubmit = (e) => {
     e.preventDefault();
@@ -630,7 +683,8 @@ function toolPage(id, editId, prepared = false) {
     sync();
     location.hash = "#/plan";
     toast(
-      "Paso añadido a tu plan. Puedes editarlo o compartir solo lo que elijas.",
+      Store.getStorageStatus().error ||
+        "Paso añadido a tu plan. Puedes editarlo o compartir solo lo que elijas.",
     );
   };
   $("#delete-action")?.addEventListener("click", () =>
@@ -658,7 +712,58 @@ const reviewLabels = {
   integration: "Ser y hacer (opcional)",
   metabrainbox: "La herramienta y su carga",
   decision: "Decisión",
+  bb_antes: "Observación de partida",
+  bb_hizo: "Qué se hizo, según mi registro",
+  bb_paso: "Qué ocurrió",
+  bb_valor: "Valor para mí",
+  bb_coste: "Costes y condiciones",
+  bb_atribucion: "Qué puedo atribuir a la acción",
+  bb_procedencia: "Procedencia del registro",
+  bb_fuente: "De dónde sale lo que cuento",
+  bb_criterio_previsto: "Criterio preparado antes de actuar",
+  bb_procedimiento_previsto: "Cómo iba a comprobarlo",
+  bb_decision: "Decisión después del retorno",
+  bb_siguiente: "Condición que cambiaré",
+  bb_alineacion: "Relación entre sentir y hacer",
+  bb_vueltas: "Dirección de las ocasiones observadas",
+  bb_metacarga: "Carga que añadió la prueba",
+  bb_disponibilidad: "Información disponible",
 };
+function reviewValue(key, value) {
+  const choices = {
+    done: {
+      si: "Sí, según mi registro",
+      "no-sabemos": "Todavía no lo sé",
+      "no-ocurrio": "No ocurrió",
+      "no-observado": "No lo vimos",
+      "no-compartido": "La persona prefirió no contarlo",
+    },
+    bb_valor: {
+      ayudo: "Me ha ayudado en esta situación",
+      igual: "No noté un cambio",
+      carga: "Ha añadido carga",
+      incierto: "Todavía no puedo valorarlo",
+      reservado: "Prefiero no valorarlo",
+    },
+    bb_decision: {
+      mantener: "Mantener",
+      ajustar: "Ajustar",
+      indagar: "Buscar un dato que falta",
+      pausar: "Pausar",
+      sustituir: "Probar otra opción",
+      dejar: "Dejar esta prueba",
+    },
+    bb_alineacion: {
+      juntos: "En esa ocasión iban juntos",
+      separados: "En esa ocasión iban separados",
+      mixto: "Hubo de las dos cosas",
+      reservado: "Prefiero no compararlo",
+    },
+  };
+  return choices[key] && Object.hasOwn(choices[key], value)
+    ? choices[key][value]
+    : value;
+}
 function reviewModal(actionId = "") {
   if (Store.get().reviews.length >= Store.LIMITS.reviews) {
     toast(
@@ -670,7 +775,7 @@ function reviewModal(actionId = "") {
     f = a?.fields || {};
   modal(
     "BrainBox · revisar y decidir",
-    `<p class="muted small">${esc(a?.title || "Una situación que quieras revisar")}. Las cuatro preguntas se consideran por separado. Un retorno no tiene que ser favorable para ayudar a decidir.</p>${a ? `<details><summary>Recordar el retorno que preparaste</summary><p>${esc(f.bb_rev_que || f.review || "No consta un criterio previo; puedes reconocer esa limitación al revisar.")}</p><p class="small">Quién: ${esc(f.bb_rev_quien || "sin concretar")} · Cuándo: ${esc(f.bb_rev_cuando || f.reviewDate || "sin concretar")}</p><p class="small">Criterio: ${esc(f.bb_rev_criterio || "sin concretar")}</p><p class="small">Procedimiento: ${esc(f.bb_rev_como || "sin concretar")}</p></details>` : ""}<form id="review-form"><div class="field"><label for="done">1. ¿Se hizo?</label><select name="done" id="done"><option value="no-sabemos">Todavía no lo sé</option><option value="si">Sí, según la información disponible</option><option value="no-ocurrio">No ocurrió / no se hizo</option><option value="no-observado">No lo vimos</option><option value="no-compartido">La persona prefirió no contarlo</option></select></div>${field("note", "2. ¿Qué pasó, cuándo y quién lo vio?", "", "Describe lo ocurrido y su procedencia. Lo no observado no equivale a lo no ocurrido.", "textarea", true)}${field("worth", "3. ¿Mereció la pena y para quién?", "", "Beneficios, costes, carga y conflictos. Puede que todavía no lo sepas.")}${field("attribution", "4. ¿Qué se puede atribuir a lo hecho?", "", "Que ocurra después no demuestra que lo haya causado. ¿Qué otras condiciones influyeron?")}<div class="field"><label for="result">Cómo describes el resultado, sin puntuarlo</label><select id="result" name="result">${Store.REVIEW_RESULTS.map((x) => `<option ${x === "Todavía no lo sé" ? "selected" : ""}>${esc(x)}</option>`).join("")}</select></div><details><summary>Procedencia y contraste del retorno</summary><div class="field"><label for="origin">Procedencia que declaras</label><select id="origin" name="origin"><option value="declarado">Declarado: lo cuento yo o me lo han contado</option><option value="simulado">Simulado: es un ejemplo o ensayo ficticio</option><option value="verificado">Verificación independiente descrita por mí</option></select></div>${field("verification", "Quién lo comprobó, cómo y cuándo", "", "Para describirlo como verificado: persona o rol independiente, procedimiento y ocasión. No escribas datos identificativos.")}<p class="small muted">CareLab conserva tu declaración; no comprueba ni certifica por sí mismo una verificación externa. Un ejemplo simulado no prueba un resultado real.</p></details><details><summary>Ser y hacer, y el uso de CareLab (opcional)</summary>${field("integration", "Mientras lo hacías, ¿lo que sentías y hacías iban juntos o separados?", "", "Pregunta exploratoria del método. Puedes no responder; no mide ni etiqueta.")}${field("metabrainbox", "¿Usar esta herramienta ayudó o añadió carga?", "", "Qué simplificarías, quitarías o necesitarías. Se conserva aquí; no se envía al equipo.")}</details><div class="field"><label for="decision">Decisión a partir del retorno</label><select id="decision" name="decision"><option>Mantener</option><option>Ajustar</option><option selected>Indagar</option><option>Pausar</option><option>Sustituir</option><option>Dejar</option></select></div>${field("next", "¿Qué harás ahora o qué pausa has decidido?")}<button class="btn">Guardar retorno</button></form>`,
+    `<p class="muted small">${esc(a?.title || "Una situación que quieras revisar")}. Las cuatro preguntas se consideran por separado. Un retorno no tiene que ser favorable para ayudar a decidir.</p>${a ? `<details><summary>Recordar el retorno que preparaste</summary><p>${esc(f.bb_rev_que || f.review || "No consta un criterio previo; puedes reconocer esa limitación al revisar.")}</p><p class="small">Quién: ${esc(f.bb_rev_quien || "sin concretar")} · Cuándo: ${esc(f.bb_rev_cuando || f.reviewDate || "sin concretar")}</p><p class="small">Criterio: ${esc(f.bb_rev_criterio || "sin concretar")}</p><p class="small">Procedimiento: ${esc(f.bb_rev_como || "sin concretar")}</p></details>` : ""}<form id="review-form" data-draft-context="${esc(actionId || "new")}"><div class="field"><label for="done">1. ¿Se hizo?</label><select name="done" id="done"><option value="no-sabemos">Todavía no lo sé</option><option value="si">Sí, según la información disponible</option><option value="no-ocurrio">No ocurrió / no se hizo</option><option value="no-observado">No lo vimos</option><option value="no-compartido">La persona prefirió no contarlo</option></select></div>${field("note", "2. ¿Qué pasó, cuándo y quién lo vio?", "", "Describe lo ocurrido y su procedencia. Lo no observado no equivale a lo no ocurrido.", "textarea", true)}${field("worth", "3. ¿Mereció la pena y para quién?", "", "Beneficios, costes, carga y conflictos. Puede que todavía no lo sepas.")}${field("attribution", "4. ¿Qué se puede atribuir a lo hecho?", "", "Que ocurra después no demuestra que lo haya causado. ¿Qué otras condiciones influyeron?")}<div class="field"><label for="result">Cómo describes el resultado, sin puntuarlo</label><select id="result" name="result">${Store.REVIEW_RESULTS.map((x) => `<option ${x === "Todavía no lo sé" ? "selected" : ""}>${esc(x)}</option>`).join("")}</select></div><details><summary>Procedencia y contraste del retorno</summary><div class="field"><label for="origin">Procedencia que declaras</label><select id="origin" name="origin"><option value="declarado">Declarado: lo cuento yo o me lo han contado</option><option value="simulado">Simulado: es un ejemplo o ensayo ficticio</option><option value="verificado">Verificación independiente descrita por mí</option></select></div>${field("verification", "Quién lo comprobó, cómo y cuándo", "", "Para describirlo como verificado: persona o rol independiente, procedimiento y ocasión. No escribas datos identificativos.")}<p class="small muted">CareLab conserva tu declaración; no comprueba ni certifica por sí mismo una verificación externa. Un ejemplo simulado no prueba un resultado real.</p></details><details><summary>Ser y hacer, y el uso de CareLab (opcional)</summary>${field("integration", "Mientras lo hacías, ¿lo que sentías y hacías iban juntos o separados?", "", "Pregunta exploratoria del método. Puedes no responder; no mide ni etiqueta.")}${field("metabrainbox", "¿Usar esta herramienta ayudó o añadió carga?", "", "Qué simplificarías, quitarías o necesitarías. Se conserva aquí; no se envía al equipo.")}</details><div class="field"><label for="decision">Decisión a partir del retorno</label><select id="decision" name="decision"><option>Mantener</option><option>Ajustar</option><option selected>Indagar</option><option>Pausar</option><option>Sustituir</option><option>Dejar</option></select></div>${field("next", "¿Qué harás ahora o qué pausa has decidido?")}<button class="btn">Guardar retorno</button></form>`,
     (d) => {
       const form = $("#review-form", d);
       $("#origin", d).onchange = (e) => {
@@ -697,10 +802,14 @@ function reviewModal(actionId = "") {
           next,
           fields,
         });
+        clearFormDraft(form);
         sync();
         d.close();
         render();
-        toast("Retorno registrado. Revisar también permite pausar o cambiar.");
+        toast(
+          Store.getStorageStatus().error ||
+            "Retorno registrado. Revisar también permite pausar o cambiar.",
+        );
       };
     },
   );
@@ -738,6 +847,7 @@ function networkPage() {
           "Se eliminará el registro local, no un acuerdo ni una relación.",
           () => {
             s.people = s.people.filter((p) => p.id !== b.dataset.personDelete);
+            clearFormDraft("person/" + b.dataset.personDelete);
             sync();
             render();
           },
@@ -755,7 +865,7 @@ function personModal(id) {
   const p = Store.get().people.find((x) => x.id === id) || {};
   modal(
     p.id ? "Editar apoyo" : "Añadir un apoyo",
-    `<form id="person-form">${field("name", "Rol o iniciales", p.name || "", "Por ejemplo, hermana o compañero de turno.", "text", true)}${field("help", "¿En qué podría ayudar?", p.help || "")}${field("availability", "¿Cuándo y con qué condiciones?", p.availability || "")}<label class="row small"><input type="checkbox" name="accepted" ${p.accepted ? "checked" : ""}> Lo he hablado y ha confirmado que puede hacerlo.</label><button class="btn section">Guardar apoyo</button></form>`,
+    `<form id="person-form" data-draft-context="${esc(p.id || "new")}">${field("name", "Rol o iniciales", p.name || "", "Por ejemplo, hermana o compañero de turno.", "text", true)}${field("help", "¿En qué podría ayudar?", p.help || "")}${field("availability", "¿Cuándo y con qué condiciones?", p.availability || "")}<label class="row small"><input type="checkbox" name="accepted" ${p.accepted ? "checked" : ""}> Lo he hablado y ha confirmado que puede hacerlo.</label><button class="btn section">Guardar apoyo</button></form>`,
     (d) => {
       $("#person-form", d).onsubmit = (e) => {
         e.preventDefault();
@@ -770,6 +880,7 @@ function personModal(id) {
             x.id === p.id ? next : x,
           );
         else Store.get().people.push(next);
+        clearFormDraft(e.target);
         sync();
         d.close();
         render();
@@ -822,38 +933,21 @@ function programmePage(moduleId) {
       )}</section><div class="boundary section">Programa educativo y de organización del cuidado. No es un máster acreditado ni una intervención clínica. ${boundary}</div>`;
 }
 function unitPage(id) {
-  const u = program?.units.find((x) => x.id === id);
-  if (!u) {
+  const unit = program?.units.find((x) => x.id === id);
+  if (!unit) {
     notFound();
     return;
   }
-  const s = Store.get(),
-    done = s.completed.includes(id);
-  view.innerHTML = `<div class="reading">${header("APRENDER HACIENDO", esc(u.title), esc(u.summary), `<div class="row section">${link("programa/" + u.moduleId, "Volver al módulo", "text-link", "back")}<button class="btn secondary small" id="read-unit">${icon("volume", 17)} Escuchar</button></div>`)}<p class="small muted">${esc(u.duration)} · Puedes parar y volver cuando quieras.</p><section class="card soft"><p class="mini-heading">POR QUÉ IMPORTA</p><p>${esc(u.why)}</p></section><h2>Prueba en tu situación</h2><ol class="step-list">${u.steps.map((x) => `<li>${esc(x)}</li>`).join("")}</ol><div class="card peach"><p class="mini-heading">UNA ESCENA PARA RECONOCERLO</p><p>${esc(u.example)}</p></div><h2>Hazlo tuyo</h2>${field("unit-reflection", esc(u.reflection), s.reflections[id] || "", "Escribir es opcional. Puedes usar roles o iniciales.")}<button class="btn secondary small" id="save-reflection">Guardar mi reflexión</button><div class="card dark section"><p class="mini-heading" style="color:#d3dfc9">DE ESTA IDEA A TU VIDA</p><h2 style="font-size:1.9rem">${esc(tools[u.tool].output)}</h2><p class="small muted">Abre el instrumento, concreta tu situación y llévalo a tu plan.</p>${link("tool/" + u.tool, "Preparar con la herramienta", "btn light")}</div><div class="boundary">${esc(u.boundary)}</div><div class="row between"><button class="btn ${done ? "secondary" : ""}" id="complete-unit">${icon(done ? "check" : "leaf", 18)} ${done ? "Práctica marcada como explorada" : "La he explorado en mi situación"}</button>${link("programa", "Elegir otra práctica", "text-link", "")}</div><p class="small muted section">El avance lo registras tú. No mide aprendizaje, capacidad ni resultados de salud.</p><details><summary>Fuentes y relación con el proyecto</summary><p class="small">Adaptación práctica de los capítulos siguientes. Las guías completas se consultan dentro de la biblioteca.</p><ul class="source-list">${u.sourceRefs.map((r) => `<li><a href="#/ficha/gu-${r.toLowerCase()}">${esc(r)} · ${esc(program.sources.find((x) => x.id === r)?.title || "Capítulo de guía")}</a></li>`).join("")}</ul></details></div>`;
-  $("#save-reflection").onclick = () => {
-    s.reflections[id] = $("#unit-reflection").value;
-    sync();
-    toast(
-      "Reflexión conservada " +
-        (Store.isPersistent() ? "en este dispositivo." : "en esta pestaña."),
-    );
-  };
-  $("#complete-unit").onclick = () => {
-    s.reflections[id] = $("#unit-reflection").value;
-    s.completed = done
-      ? s.completed.filter((x) => x !== id)
-      : [...s.completed, id];
-    sync();
-    unitPage(id);
-    toast(
-      done
-        ? "Puedes volver a explorar esta práctica."
-        : "Práctica reconocida. Tú decides el siguiente paso.",
-    );
-  };
-  $("#read-unit").onclick = () =>
-    readText(u.title, [u.summary, u.why, ...u.steps, u.example, u.boundary]);
+  mountGuidedPractice(view, {
+    unit,
+    program,
+    Store,
+    tools,
+    notify: toast,
+    readText,
+  });
 }
+
 async function getLibrary() {
   if (library) return library;
   if (!libraryPromise)
@@ -1104,12 +1198,12 @@ function settingsPage() {
       "Que se adapte a ti.",
       "Elige qué conservar, cómo verlo y qué experiencia prefieres.",
     ) +
-    `<div class="grid two"><section class="card"><h2 style="font-size:1.8rem">Tus datos, a tu elección</h2><p class="small muted">${Store.isPersistent() ? "Guardado activado en este navegador y dispositivo." : "Ahora usas una sesión temporal: al cerrar o recargar se pierde lo que no hayas exportado."}</p><p class="small">El guardado no está cifrado. Quien use este mismo perfil del navegador puede acceder a él. No hay cuenta, servidor de notas ni sincronización entre dispositivos.</p><button class="btn" id="toggle-save">${Store.isPersistent() ? "Dejar de guardar en este dispositivo" : "Activar guardado en este dispositivo"}</button><div class="hr"></div><div class="row"><button class="btn secondary" id="export-backup">Exportar copia</button><button class="btn secondary" id="import-backup">Restaurar copia</button></div><input type="file" id="backup-file" accept="application/json,.json" hidden><p class="small muted section">Una copia permite trasladar tu espacio a otro navegador. No se restaura automáticamente.</p><button class="text-link" id="erase-data">Borrar mi espacio de CareLab 2.0</button></section><section class="card"><h2 style="font-size:1.8rem">Tu experiencia</h2><label class="field">Modo de visualización<select data-theme-choice><option value="light">Claro</option><option value="system">Sistema</option><option value="dark">Oscuro</option></select></label><p class="small muted">Sistema sigue la preferencia del dispositivo. Puedes cambiarlo desde la barra superior en cualquier página. Las preferencias se conservan al activar el guardado.</p><div class="switch-row"><label for="gamification">Logros y avances visibles<small>Reconocimiento personal, sin puntuación de salud.</small></label><input id="gamification" type="checkbox" ${s.settings.gamification ? "checked" : ""}></div><div class="switch-row"><label for="motion">Movimiento suave<small>Siempre se respeta también la preferencia de movimiento reducido del dispositivo.</small></label><input id="motion" type="checkbox" ${s.settings.motion ? "checked" : ""}></div><div class="switch-row"><label for="largeText">Texto más grande<small>También puedes usar el zoom de tu navegador.</small></label><input id="largeText" type="checkbox" ${s.settings.largeText ? "checked" : ""}></div><div class="hr"></div><h3>Tu contexto de cuidado</h3><p class="small muted">${{ familia: "En mi entorno", profesional: "Por trabajo", multiple: "En varios ámbitos", acompanar: "Acompaño a cuidadores", "sin-elegir": "Sin elegir" }[s.profile]}</p><button class="btn secondary" id="change-profile">Cambiar contexto</button></section><section class="card"><h3>Consultar sin conexión</h3><p class="small muted">Prepara la aplicación, el programa y la biblioteca para este navegador. Los enlaces externos necesitan conexión. La música se descarga aparte; la lectura en voz depende de las voces locales del dispositivo.</p><button class="btn secondary" id="prepare-offline">Preparar acceso sin conexión</button><p class="small muted" id="offline-status" role="status"></p><button class="text-link small" id="prepare-music">Descargar las 2 piezas de música (12 MB)</button><p class="small muted" id="music-status" role="status"></p></section><section class="card"><h3>Privacidad y límites</h3><p class="small muted">CareLab no incluye analítica ni publicidad y no envía tus notas. El alojamiento recibe las solicitudes de páginas y archivos, con datos técnicos como la dirección IP. Las webs externas tienen sus propias condiciones.</p><p class="small muted">No guardes contraseñas, datos bancarios, documentos clínicos ni información identificativa innecesaria. Eliminar aquí no borra archivos exportados, copias compartidas ni datos de versiones anteriores.</p>${link("acerca", "Conocer el proyecto", "text-link")}<p>${link("feedback", "Ayúdanos a mejorar", "text-link")}</p></section></div>`;
+    `<div class="grid two"><section class="card"><h2 style="font-size:1.8rem">Tus datos, a tu elección</h2><p class="small muted">${esc(storageCopy())}</p><p class="small">El guardado no está cifrado. Quien use este mismo perfil del navegador puede acceder a él. No hay cuenta, servidor de notas ni sincronización entre dispositivos.</p><button class="btn" id="toggle-save">${Store.isPersistent() ? "Dejar de guardar en este dispositivo" : "Activar guardado en este dispositivo"}</button><div class="hr"></div><div class="row"><button class="btn secondary" id="export-backup">Exportar copia</button><button class="btn secondary" id="import-backup">Restaurar copia</button></div><input type="file" id="backup-file" accept="application/json,.json" hidden><p class="small muted section">Una copia permite trasladar tu espacio a otro navegador. No se restaura automáticamente.</p><button class="text-link" id="erase-data">Borrar mi espacio de CareLab</button></section><section class="card"><h2 style="font-size:1.8rem">Tu experiencia</h2><label class="field">Modo de visualización<select data-theme-choice><option value="light">Claro</option><option value="system">Sistema</option><option value="dark">Oscuro</option></select></label><p class="small muted">Sistema sigue la preferencia del dispositivo. Puedes cambiarlo desde la barra superior en cualquier página. Las preferencias siguen tu elección de guardado. Si el navegador no puede conservar un cambio, te avisaremos.</p><div class="switch-row"><label for="gamification">Logros y avances visibles<small>Reconocimiento personal, sin puntuación de salud.</small></label><input id="gamification" type="checkbox" ${s.settings.gamification ? "checked" : ""}></div><div class="switch-row"><label for="motion">Movimiento suave<small>Siempre se respeta también la preferencia de movimiento reducido del dispositivo.</small></label><input id="motion" type="checkbox" ${s.settings.motion ? "checked" : ""}></div><div class="switch-row"><label for="largeText">Texto más grande<small>También puedes usar el zoom de tu navegador.</small></label><input id="largeText" type="checkbox" ${s.settings.largeText ? "checked" : ""}></div><div class="hr"></div><h3>Tu contexto de cuidado</h3><p class="small muted">${{ familia: "En mi entorno", profesional: "Por trabajo", multiple: "En varios ámbitos", acompanar: "Acompaño a cuidadores", "sin-elegir": "Sin elegir" }[s.profile]}</p><button class="btn secondary" id="change-profile">Cambiar contexto</button></section><section class="card"><h3>Consultar sin conexión</h3><p class="small muted">Prepara la aplicación, el programa y la biblioteca para este navegador. Los enlaces externos necesitan conexión. La música se descarga aparte; la lectura en voz depende de las voces locales del dispositivo.</p><button class="btn secondary" id="prepare-offline">Preparar acceso sin conexión</button><p class="small muted" id="offline-status" role="status"></p><button class="text-link small" id="prepare-music">Descargar las 2 piezas de música (12 MB)</button><p class="small muted" id="music-status" role="status"></p></section><section class="card"><h3>Privacidad y límites</h3><p class="small muted">CareLab no incluye analítica ni publicidad y no envía tus notas. El alojamiento recibe las solicitudes de páginas y archivos, con datos técnicos como la dirección IP. Las webs externas tienen sus propias condiciones.</p><p class="small muted">No guardes contraseñas, datos bancarios, documentos clínicos ni información identificativa innecesaria. Eliminar aquí no borra archivos exportados, copias compartidas ni datos de versiones anteriores.</p>${link("acerca", "Conocer el proyecto", "text-link")}<p>${link("feedback", "Ayúdanos a mejorar", "text-link")}</p></section></div>`;
   $("#toggle-save").onclick = () => {
     if (Store.isPersistent())
       confirmAction(
         "Dejar de guardar",
-        "Se borrará la copia de este navegador. Tu trabajo seguirá en esta pestaña hasta que la cierres o recargues.",
+        "Se borrará la copia de este navegador. Tu trabajo seguirá disponible al recargar esta pestaña. El navegador podría restaurar una sesión cerrada: usa Borrar mi espacio para retirar la copia.",
         () => {
           if (Store.disable()) {
             applySettings();
@@ -1117,7 +1211,7 @@ function settingsPage() {
             toast("Guardado desactivado. La sesión sigue abierta.");
           } else toast(Store.takeError());
         },
-        "Borrar copia y usar sesión temporal",
+        "Borrar copia y usar esta pestaña",
       );
     else
       confirmAction(
@@ -1150,9 +1244,13 @@ function settingsPage() {
         "Restaurar esta copia",
         `Contiene ${candidate.actions.length} acciones, ${candidate.people.length} apoyos y ${candidate.completed.length} prácticas. Sustituirá el espacio actual y sus borradores de acciones. Guarda esos borradores y exporta antes si quieres conservarlos.`,
         () => {
-          Store.restore(candidate);
-          Object.keys(drafts).forEach((key) => delete drafts[key]);
-          clearBrainBoxDrafts();
+          try {
+            Store.restore(candidate);
+          } catch (error) {
+            toast(error.message);
+            return;
+          }
+          drafts = Store.get().drafts.tools;
           applySettings();
           render();
           toast(Store.takeError() || "Copia restaurada.");
@@ -1166,16 +1264,16 @@ function settingsPage() {
   $("#erase-data").onclick = () =>
     confirmAction(
       "¿Borrar tu espacio?",
-      "Se eliminarán las acciones, notas, red, mapas y avances de CareLab 2.0 en este navegador. Las copias exportadas y las versiones anteriores no se borran.",
+      "Se eliminarán las acciones, notas, red, mapas y avances de esta pestaña y de la copia guardada en el dispositivo. Cierra o borra también otras pestañas abiertas de CareLab. Las copias exportadas y las versiones anteriores no se borran.",
       () => {
         stopMedia();
         if (Store.reset()) {
-          Object.keys(drafts).forEach((k) => delete drafts[k]);
+          drafts = Store.get().drafts.tools;
           clearBrainBoxDrafts();
           clearFeedbackDraft();
           applySettings();
           render();
-          toast("Espacio borrado. Estás en una sesión temporal nueva.");
+          toast("Espacio borrado. Puedes empezar de nuevo.");
         } else toast(Store.takeError());
       },
       "Borrar mi espacio",
@@ -1256,7 +1354,7 @@ async function prepareOffline(music = false) {
   }
 }
 function aboutPage() {
-  view.innerHTML = `<div class="reading">${header("CARELAB · CUIDAR SIN DESAPARECER", "Del cuidado que te desborda<br>a un plan que puedes mover.", "Un espacio práctico para hacer visible, organizar y compartir la carga total del cuidado.")}<section class="card soft"><h2 style="font-size:1.8rem">El camino que proponemos</h2><div class="row"><button class="pill active" data-story="0">1. Ver</button><button class="pill" data-story="1">2. Elegir</button><button class="pill" data-story="2">3. Preparar</button><button class="pill" data-story="3">4. Revisar</button></div><p id="story-text" style="margin-top:20px">De una sensación de carga difusa a un mapa de las partes que la componen, incluyendo lo invisible.</p><p class="small muted">Es el recorrido de la aplicación, no una sustitución de los pasos del Método BrainBox.</p></section><h2>Lo que puedes resolver aquí</h2><ul><li>Hacer visible el trabajo práctico, mental, emocional y de organización.</li><li>Preparar acciones, peticiones, límites, relevos y preguntas para consultas.</li><li>Registrar acuerdos confirmados y revisar lo ocurrido.</li><li>Practicar con 36 unidades y consultar 1.087 fichas sin salir a documentos.</li><li>Conservar tu espacio por elección, exportarlo y usar contenido descargado.</li></ul><h2>Lo que necesita al mundo real</h2><p>La disponibilidad de una persona, un servicio, dinero, atención profesional o un derecho no se crea al registrarlo. CareLab ayuda a preparar, organizar y revisar esos pasos. Los acuerdos se confirman hablando con las partes.</p><h2>De dónde viene</h2><p>CareLab aplica el proyecto MEPRE del cuidado y el Método BrainBox 1.2 a la organización cotidiana. Integra investigación, Cuidopedia, Cuidoteca, CareTools, las tres guías transversales y Cuidosfera. El Método MEPRE 1.0 conserva su carácter preliminar.</p><div class="boundary">${boundary}</div><h2>Calidad y evidencia</h2><p>Esta versión es una prueba de concepto funcional para pilotaje. La aprobación editorial, la trazabilidad de fuentes y las pruebas de software no demuestran eficacia clínica ni reducción de sobrecarga. La utilidad debe contrastarse con personas cuidadoras y sus contextos.</p><p>Las dimensiones del mapa y los logros son registros personales, no escalas diagnósticas. Las actividades no sustituyen terapia, valoración clínica, asesoramiento legal ni servicios públicos.</p><h2>Audio y accesibilidad</h2><p>Las narraciones editoriales tienen texto completo y se leen en tu dispositivo. Puedes elegir únicamente voces que el navegador identifica como locales; su disponibilidad depende del dispositivo. Nunca se leen notas personales automáticamente.</p><p>Controles por teclado, tamaño de texto, movimiento reducido y contenidos alternativos forman parte del diseño. Las pruebas técnicas no equivalen a una certificación universal de accesibilidad.</p><h2>Autoría y condiciones</h2><p>Proyecto de Osman Salazar. Contenidos originales del repositorio: CC BY 4.0. Código: MIT. Tipografías Inter y Fraunces: SIL OFL. Obras, cuestionarios, marcas y materiales externos conservan sus derechos y condiciones. Consultar una ficha profesional no habilita para aplicar su instrumento.</p><p class="small muted">Corte del corpus y versión del producto: 15 de octubre de 2026. Conservamos la procedencia de cada ficha. Enlaces externos y disponibilidad de recursos deben comprobarse al utilizarlos.</p><div class="row section">${link("hoy", "Volver a mi espacio")}${link("ajustes", "Privacidad y guardado", "btn secondary")}</div></div>`;
+  view.innerHTML = `<div class="reading">${header("CARELAB · CUIDAR SIN DESAPARECER", "Del cuidado que te desborda<br>a un plan que puedes mover.", "Un espacio práctico para hacer visible, organizar y compartir la carga total del cuidado.")}<section class="card soft"><h2 style="font-size:1.8rem">El camino que proponemos</h2><div class="row"><button class="pill active" data-story="0">1. Ver</button><button class="pill" data-story="1">2. Elegir</button><button class="pill" data-story="2">3. Preparar</button><button class="pill" data-story="3">4. Revisar</button></div><p id="story-text" style="margin-top:20px">De una sensación de carga difusa a un mapa de las partes que la componen, incluyendo lo invisible.</p><p class="small muted">Es el recorrido de la aplicación, no una sustitución de los pasos del Método BrainBox.</p></section><h2>Lo que puedes resolver aquí</h2><ul><li>Hacer visible el trabajo práctico, mental, emocional y de organización.</li><li>Preparar acciones, peticiones, límites, relevos y preguntas para consultas.</li><li>Registrar acuerdos confirmados y revisar lo ocurrido.</li><li>Practicar con 36 unidades y consultar 1.087 fichas sin salir a documentos.</li><li>Conservar tu espacio por elección, exportarlo y usar contenido descargado.</li></ul><h2>Lo que necesita al mundo real</h2><p>La disponibilidad de una persona, un servicio, dinero, atención profesional o un derecho no se crea al registrarlo. CareLab ayuda a preparar, organizar y revisar esos pasos. Los acuerdos se confirman hablando con las partes.</p><h2>De dónde viene</h2><p>CareLab aplica el proyecto MEPRE del cuidado y el Método BrainBox 1.2 a la organización cotidiana. Integra investigación, Cuidopedia, Cuidoteca, CareTools, las tres guías transversales y Cuidosfera. El Método MEPRE 1.0 conserva su carácter preliminar.</p><div class="boundary">${boundary}</div><h2>Calidad y evidencia</h2><p>Esta versión es una prueba de concepto funcional para pilotaje. Los recorridos guiados son adaptaciones educativas del Método BrainBox 1.2; no son una evaluación clínica ni una IA que interpreta emociones. Las escenas de ejemplo son ficticias y las decisiones personales las toma quien usa la herramienta. La aprobación editorial, la trazabilidad de fuentes y las pruebas de software no demuestran eficacia clínica ni reducción de sobrecarga. La utilidad debe contrastarse con personas cuidadoras y sus contextos.</p><p>Las dimensiones del mapa y los logros son registros personales, no escalas diagnósticas. Las actividades no sustituyen terapia, valoración clínica, asesoramiento legal ni servicios públicos.</p><h2>Audio y accesibilidad</h2><p>Las narraciones editoriales tienen texto completo y se leen en tu dispositivo. Puedes elegir únicamente voces que el navegador identifica como locales; su disponibilidad depende del dispositivo. Nunca se leen notas personales automáticamente.</p><p>Controles por teclado, tamaño de texto, movimiento reducido y contenidos alternativos forman parte del diseño. Las pruebas técnicas no equivalen a una certificación universal de accesibilidad.</p><h2>Imagen y ambiente</h2><p>La ventana de naturaleza es una imagen original generada para CareLab, no una fotografía de un lugar identificado. El movimiento y el sonido son opcionales. Las piezas de piano conservan sus créditos y licencia en el reproductor.</p><h2>Autoría y condiciones</h2><p>Proyecto de Osman Salazar. Contenidos originales del repositorio: CC BY 4.0. Código: MIT. Tipografías Inter y Fraunces: SIL OFL. Obras, cuestionarios, marcas y materiales externos conservan sus derechos y condiciones. Consultar una ficha profesional no habilita para aplicar su instrumento.</p><p class="small muted">Corte del corpus: 15 de octubre de 2026. Experiencia CareLab 3.0, reconstruida a partir del primer feedback de uso. Conservamos la procedencia de cada ficha. Enlaces externos y disponibilidad de recursos deben comprobarse al utilizarlos.</p><div class="row section">${link("hoy", "Volver a mi espacio")}${link("ajustes", "Privacidad y guardado", "btn secondary")}</div></div>`;
   $$("[data-story]").forEach(
     (b) =>
       (b.onclick = () => {
@@ -1303,9 +1401,20 @@ function render() {
       view.replaceChildren();
       addCleanup(mountFeedback(view));
     },
-    hoy: home,
-    brainbox: () => brainboxPage(id),
-    recursos: resourcesPage,
+    hoy: () =>
+      addCleanup(
+        mountNow(view, { Store, notify: toast, summary: getLivingSummary }),
+      ),
+    bienvenida: () => addCleanup(mountWelcome(view, { Store, notify: toast })),
+    explorar: () => mountExplore(view),
+    micamino: () => mountPath(view, { Store, summary: getLivingSummary }),
+    pausa: () =>
+      addCleanup(mountPause(view, { Store, startTrack, stopMedia, readText })),
+    vivir: () => livingPage(id),
+    volver: () => livingPage(id, true),
+    brainbox: () => (id ? brainboxPage(id) : livingPage()),
+    profundizar: () => brainboxPage(id),
+    recursos: () => resourcesPage(id),
     mapa: mapPage,
     plan: planPage,
     herramientas: () => toolsPage(id),
@@ -1333,7 +1442,19 @@ function render() {
     },
   };
   (Object.hasOwn(handlers, page) ? handlers[page] : notFound)();
-  augmentPage(page, id);
+  if (
+    ![
+      "hoy",
+      "bienvenida",
+      "vivir",
+      "volver",
+      "brainbox",
+      "micamino",
+      "explorar",
+      "pausa",
+    ].includes(page)
+  )
+    augmentPage(page, id);
   window.scrollTo({ top: 0, behavior: "instant" });
   view.focus({ preventScroll: true });
 }
@@ -1362,19 +1483,7 @@ $("#font-toggle").onclick = () => {
 };
 window.addEventListener("hashchange", render);
 window.addEventListener("beforeunload", (e) => {
-  if (
-    hasBrainBoxDraft() ||
-    hasFeedbackDraft() ||
-    Object.keys(drafts).length ||
-    (!Store.isPersistent() &&
-      (Store.get().actions.length ||
-        Store.get().people.length ||
-        Store.get().reviews.length ||
-        Store.get().completed.length ||
-        Store.get().practice.length ||
-        Store.get().mapHistory.length ||
-        Object.keys(Store.get().reflections).length))
-  ) {
+  if (hasFeedbackDraft() || Store.getStorageStatus().hasUnstoredChanges) {
     e.preventDefault();
     e.returnValue = "";
   }
@@ -1386,6 +1495,8 @@ $(".skip")?.addEventListener("click", (e) => {
 });
 applySettings();
 mountPlayer();
+installSafetySignpost({ stopMedia });
+installFormDrafts();
 await loadProgram();
 const initialError = Store.takeError();
 if (initialError) toast(initialError);
@@ -1397,7 +1508,34 @@ function addCleanup(fn) {
     fn?.();
   };
 }
-function resourcesPage() {
+function livingPage(id, returning = false) {
+  view.replaceChildren();
+  const options = {
+    id,
+    Store,
+    notify: toast,
+    readText,
+    onAction(action) {
+      const state = Store.get();
+      const existing = state.actions.findIndex((item) => item.id === action.id);
+      if (existing < 0 && state.actions.length >= Store.LIMITS.actions)
+        throw new Error(
+          "Tu espacio ha llegado al límite de acciones. Revisa tus planes antes de añadir otro.",
+        );
+      if (existing >= 0) state.actions[existing] = action;
+      else state.actions.push(action);
+      sync();
+      return action;
+    },
+    onReview() {
+      sync();
+    },
+  };
+  addCleanup(
+    (returning ? mountLivingReturn : mountLivingJourney)(view, options),
+  );
+}
+function resourcesPage(need) {
   view.innerHTML = header(
     "CUIDOTECA EN EL MOMENTO OPORTUNO",
     "Algo que te sirva.<br>Sin añadir ruido.",
@@ -1405,7 +1543,15 @@ function resourcesPage() {
   );
   const slot = document.createElement("div");
   view.append(slot);
-  addCleanup(mountRecommendations(slot));
+  addCleanup(
+    mountRecommendations(slot, {
+      need,
+      source: need
+        ? "la situación que elegiste trabajar; puedes cambiarla"
+        : "tu elección",
+      compact: Boolean(need),
+    }),
+  );
 }
 function contextualResources(need, source) {
   const details = document.createElement("details");
@@ -1565,7 +1711,7 @@ function brainboxPage(id) {
           clearBrainBoxDrafts(action.id);
           sync();
           location.hash = "#/plan";
-          toast("Episodio eliminado.");
+          toast(Store.getStorageStatus().error || "Episodio eliminado.");
         },
         "Eliminar episodio",
       );

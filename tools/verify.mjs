@@ -42,25 +42,57 @@ for (const [i, item] of manifest.music.entries()) {
 }
 for (const item of manifest.narrations)
   assert.equal(item.playback, "local-tts");
-for (const file of await fs.readdir(path.join(root, "assets/v2"))) {
-  if (!file.endsWith(".js")) continue;
+const scriptFiles = [];
+for (const directory of ["assets/v2", "assets/v3"]) {
+  for (const file of await fs.readdir(path.join(root, directory))) {
+    if (file.endsWith(".js")) scriptFiles.push(path.join(directory, file));
+  }
+}
+for (const file of scriptFiles) {
   const syntax = spawnSync(
     process.execPath,
-    ["--check", path.join(root, "assets/v2", file)],
+    ["--check", path.join(root, file)],
     { encoding: "utf8" },
   );
   assert.equal(syntax.status, 0, syntax.stderr);
-  const source = await read("assets/v2/" + file);
-  for (const [, relative] of source.matchAll(/from\s+['"](\.\/[^'"]+)['"]/g))
-    await fs.access(path.resolve(root, "assets/v2", relative));
+  const source = await read(file);
+  for (const [, relative] of source.matchAll(
+    /(?:from\s*|import\s*\(\s*|import\s*)['"](\.{1,2}\/[^'"]+)['"]/g,
+  )) {
+    const target = path.resolve(root, path.dirname(file), relative);
+    assert.ok(
+      target.startsWith(root + path.sep),
+      `${file}: import outside app`,
+    );
+    await fs.access(target);
+  }
 }
 const html = await read("index.html");
+const serviceWorker = await read("sw.js");
+const coreSection = serviceWorker.match(
+  /const CORE_FILES\s*=\s*\[([\s\S]*?)\];/,
+);
+assert.ok(coreSection, "service worker core list");
+const coreFiles = [...coreSection[1].matchAll(/['"]([^'"]*)['"]/g)].map(
+  (x) => x[1],
+);
+assert.equal(
+  new Set(coreFiles).size,
+  coreFiles.length,
+  "offline assets must be unique",
+);
+for (const file of coreFiles)
+  await fs.access(path.join(root, file || "index.html"));
+for (const file of scriptFiles)
+  assert.ok(coreFiles.includes(file), `module omitted offline: ${file}`);
 for (const [, asset] of html.matchAll(
   /(?:src|href)="((?:assets\/|manifest\.)[^"]+)"/g,
-))
+)) {
   await fs.access(path.join(root, asset));
+  assert.ok(coreFiles.includes(asset), `entry asset omitted offline: ${asset}`);
+}
 assert.ok(!html.includes("mailto:"));
 assert.ok(html.includes("Content-Security-Policy"));
 console.log(
-  "Verified: 1,087 entries, 36 units, 26 resources, music checksums, module syntax and local asset references.",
+  `Verified: 1,087 entries, 36 units, 26 resources, music checksums, ${scriptFiles.length} v2/v3 modules, ${coreFiles.length} offline assets and local references.`,
 );

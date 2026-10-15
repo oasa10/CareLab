@@ -1,4 +1,4 @@
-# CareLab 2.0 · Cuidar sin desaparecer
+# CareLab 3.0 · Cuidar sin desaparecer
 
 Un espacio para hacer visible, organizar y compartir la carga total de cuidar, con el Método BrainBox 1.2 y el proyecto MEPRE.
 
@@ -6,21 +6,23 @@ Un espacio para hacer visible, organizar y compartir la carga total de cuidar, c
 
 ## Qué permite hacer
 
-- Preparar un episodio BrainBox mediante siete momentos accesibles, cuatro ejes y cinco pasos del método: situar, comprender/elegir, preparar, hacer/observar, revisar/decidir. Acción mínima viable y retorno preparados antes de actuar.
+- Entrar por una escena cotidiana: pedir relevo, compartir carga mental, hacer sitio para uno mismo o poner un límite. Separar emoción, reacción y pensamiento; contrastar ejemplos con respuesta explicada; subir o bajar por la escalera del saber; ensayar una petición y adaptar una acción viable.
+- Preparar el retorno antes de actuar y volver con lo sucedido, incluido «no pude», «no lo vimos» o «prefiero no contarlo». Revisar costes, atribución, ciclos y relato sin inventar resultados ni clasificar personas. El episodio BrainBox abierto y todos sus instrumentos siguen disponibles en «Profundizar».
+- Llegar mediante tres pantallas de bienvenida; elegir un camino breve o detenerse en una ventana de naturaleza con sonido opcional. Tres entradas principales: Ahora, Mi camino y Explorar. Las prestaciones aparecen por contexto.
 - Trabajar con un mapa personal de ocho dimensiones, nueve herramientas, acciones, propuestas de reparto, apoyos y revisiones. Un registro no acredita aceptación por otras personas.
 - Aprender haciendo con 12 módulos y 36 unidades, sin bloqueos, rachas ni obligación de completarlas en orden.
 - Consultar 1.087 fichas integradas: Cuidopedia (550), CareTools (276), Cuidoteca (190), Cuidosfera (17) y guías transversales (54).
 - Elegir una necesidad y recibir una propuesta práctica y hasta dos recursos. Catálogo multimedia de 26 referencias; meditación y contextos específicos requieren selección expresa.
 - Escuchar tres narraciones mediante voces locales, dos piezas instrumentales con licencia CC BY 4.0, ver un tutorial original con subtítulos y abrir archivos audiovisuales del propio dispositivo.
 - Cambiar entre claro, sistema y oscuro en cualquier pantalla; ampliar texto y reducir movimiento.
-- Usar una sesión temporal o activar guardado local, exportar/restaurar una copia validada y preparar el acceso sin conexión. La música se descarga aparte (12 MB).
+- Conservar cada interacción y los borradores en la pestaña, también tras recargar; activar guardado en el dispositivo para volver después. Recuperar copias v2, exportar/restaurar y preparar acceso sin conexión. Los fallos de almacenamiento se informan: no se garantiza recuperación si el navegador impide guardar. La música se descarga aparte (12 MB).
 - Enviar una sugerencia breve a un buzón privado sin adjuntar el espacio personal. No pide registro ni correo. El navegador sólo conoce la dirección pública de recepción, nunca credenciales ni una dirección de correo del equipo. La lectura de sugerencias queda restringida al propietario mediante las herramientas de Sites; no hay lectura pública.
 
 ## Límites y privacidad
 
 Es una prueba de concepto funcional para pilotaje. La trazabilidad documental y las pruebas de software no demuestran eficacia clínica ni reducción de carga. BrainBox se detiene ante riesgo o ante una situación médica, psicológica o legal, para solicitar ayuda competente. Esto no implica interrumpir cuidados ordinarios o indicaciones profesionales.
 
-No hay cuentas de cuidadores, sincronización, diagnóstico, IA conversacional ni invitaciones automáticas a otras personas. Las notas permanecen en el dispositivo. El guardado local y los archivos exportados no están cifrados. El alojamiento recibe solicitudes técnicas; los sitios externos tienen sus propias condiciones. El envío voluntario de una sugerencia es un flujo separado: sólo categoría y texto, sin adjuntar planes o notas. El buzón añade fecha, referencia e información de integridad y protege la escritura mediante contadores temporales de abuso. No envía correos. Los comentarios se conservan hasta que el propietario los elimina; su referencia permite solicitarlo.
+No hay cuentas de cuidadores, sincronización, diagnóstico, IA conversacional ni invitaciones automáticas a otras personas. Algunas expresiones explícitas de peligro abren una comprobación local de seguridad: se puede descartar si no describe una urgencia actual. No es vigilancia ni detección fiable de todas las crisis; no avisa a terceros ni infiere ubicación. «Ayuda» está siempre disponible. Las notas permanecen en el dispositivo. El guardado local y los archivos exportados no están cifrados. El alojamiento recibe solicitudes técnicas; los sitios externos tienen sus propias condiciones. El envío voluntario de una sugerencia es un flujo separado: sólo categoría y texto, sin adjuntar planes o notas. El buzón añade fecha, referencia e información de integridad y protege la escritura mediante contadores temporales de abuso. No envía correos. Los comentarios se conservan hasta que el propietario los elimina; su referencia permite solicitarlo.
 
 La biblioteca conserva fuentes y límites de acceso. No redistribuye íntegramente obras ajenas ni instrumentos profesionales restringidos. Los enlaces heredados del corpus no equivalen a una revisión de disponibilidad de cada destino el día de uso.
 
@@ -34,11 +36,11 @@ node tools/verify.mjs
 node --test tests/*.test.mjs
 ```
 
-Los módulos activos están en `assets/v2/`, el corpus en `data/biblioteca.json` y el programa en `data/programa.json`. `sw.js` sólo conserva archivos públicos; nunca guarda el espacio personal. Instala una versión completa antes de sustituir el núcleo anterior.
+Los módulos activos están en `assets/v2/` y `assets/v3/`, el corpus en `data/biblioteca.json` y el programa en `data/programa.json`. `sw.js` sólo conserva archivos públicos; nunca guarda el espacio personal. Instala una versión completa antes de sustituir el núcleo anterior.
 
 `tools/build_biblioteca.py` y `tools/build_programa.py` materializan las fuentes locales autorizadas. Necesitan el corpus original del proyecto, que no se duplica íntegramente en este repositorio. La comprobación continua de GitHub valida sintaxis, integridad del catálogo, referencias y pruebas de restauración.
 
-Los archivos anteriores de `assets/js/` y datos 1.x se conservan para trazabilidad y no se cargan desde el nuevo `index.html`. `tools/build_html.py` pertenece a 1.x: su archivo único no representa CareLab 2.0. Las copias de 1.x no se importan como si fueran del nuevo esquema.
+Los archivos anteriores de `assets/js/` y datos 1.x se conservan para trazabilidad y no se cargan desde el nuevo `index.html`. `tools/build_html.py` pertenece a 1.x: su archivo único no representa CareLab 3.0. Las copias de 1.x no se importan como si fueran del nuevo esquema.
 
 ## Licencias y atribución
 
@@ -46,4 +48,6 @@ Código: [MIT](LICENSE). Contenido original del proyecto: [CC BY 4.0](data/LICEN
 
 Música incorporada: **Meditation Impromptu 02** y **Luminous Rain**, de Kevin MacLeod (Incompetech), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), archivos originales sin modificar. Créditos, procedencia, tamaño y huellas de integridad en `assets/audio/manifest.json` y en el reproductor. No se distribuyen grabaciones de voces del sistema.
 
-Salazar, Osman (2026). *CareLab. Cuidar sin desaparecer*. Versión 2.0, prueba de concepto. Con el Método BrainBox 1.2. https://oasa10.github.io/CareLab/
+La ventana de naturaleza es una imagen original generada para CareLab. No es una fotografía de un lugar identificado. Procedencia, prompt y huella en `assets/v3/images/manifest.json`. Las referencias estéticas Portal, WindowSwap y A Soft Murmur se usaron como orientación de amplitud, naturaleza y control voluntario; no se copiaron sus imágenes, grabaciones ni código.
+
+Salazar, Osman (2026). _CareLab. Cuidar sin desaparecer_. Versión 3.0, prueba de concepto. Con el Método BrainBox 1.2. https://oasa10.github.io/CareLab/

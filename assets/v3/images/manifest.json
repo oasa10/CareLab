@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "ventana-lago",
+      "file": "ventana-lago.png",
+      "purpose": "Paisaje decorativo original de CareLab 3.0; no representa un lugar real identificado.",
+      "created": "2026-10-15",
+      "source": "Generado para este proyecto con la herramienta imagegen de OpenAI",
+      "license": "Contenido original del proyecto: CC BY 4.0",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2171986,
+      "sha256": "30edda0ace9dd870d1a89b8e72155dddd64ea15657a135f39cbe7d6c9a8ade5b",
+      "modifications": "Archivo generado sin edición posterior. La interfaz lo recorta visualmente y puede animar su escala mediante CSS; movimiento desactivable.",
+      "prompt": "Use case: photorealistic-natural. Asset type: serene immersive nature window for CareLab, a practical caregiver support web application. Create a premium natural editorial landscape photograph, no interface. A tranquil wide lake with fine soft ripples, gentle layered hills of muted sage woodland receding into warm morning mist, a few delicate leafy branches near one lower corner, natural diffuse warm sunlight, restrained linen-ivory, sage and warm stone colors. Luminous, alive, spacious and human; neither melancholic nor dramatic. Authentic fine photographic texture, refined cinematic composition, believable natural scene, natural color grading. Landscape 1536x1024. The central area must also crop beautifully to a tall portrait window, horizon around middle, abundant light atmosphere above, reflective water below. No people, no buildings, no roads, no boats, no letters, no text, no logos, no frame, no watermark. This is original decorative scenery, not a recognizable existing photograph or a specific geographic location."
+    }
+  ]
+}

@@ -2,6 +2,8 @@
  * Original interface: progressive questions, no assessment, no automated interpretation.
  * Source locators are exported for review. No private source documents are embedded.
  */
+import * as Store from "./store.js";
+
 const esc = (v) =>
   String(v ?? "").replace(
     /[&<>"']/g,
@@ -12,13 +14,13 @@ const esc = (v) =>
   );
 let mountNumber = 0;
 const mounted = new WeakMap();
-const sessionDrafts = new Map();
+const sessionDrafts = () => Store.get().drafts.brainbox;
 let draftGeneration = 0;
-export const hasBrainBoxDraft = () => sessionDrafts.size > 0;
+export const hasBrainBoxDraft = () => Object.keys(sessionDrafts()).length > 0;
 export const clearBrainBoxDrafts = (id) => {
   draftGeneration++;
-  if (id) sessionDrafts.delete(id);
-  else sessionDrafts.clear();
+  if (id) delete sessionDrafts()[id];
+  else Store.get().drafts.brainbox = {};
 };
 export const brainboxFieldLabels = {
   situation: "Situación delimitada",
@@ -40,6 +42,7 @@ export const brainboxFieldLabels = {
   bb_instrumento: "Instrumento elegido",
   bb_nota_instrumento: "Trabajo con el instrumento",
   bb_relato: "Relato voluntario, no resultado",
+  bb_lentes: "Miradas provisionales elegidas",
   bb_entorno: "Entorno, recursos y barreras",
   bb_etica: "Personas afectadas, consentimiento y costes",
   bb_rev_que: "Qué observar en el retorno",
@@ -278,13 +281,10 @@ export function mountBrainBox(
     { signal } = controller;
   const id = `bb-${++mountNumber}`;
   const generation = draftGeneration;
+  const workspace = Store.get();
   let cacheKey = action?.id || "new";
-  const cached = sessionDrafts.get(cacheKey);
-  let saved = cached?.saved
-    ? structuredClone(cached.saved)
-    : action
-      ? structuredClone(action)
-      : null;
+  const cached = sessionDrafts()[cacheKey];
+  let saved = action ? structuredClone(action) : null;
   let draft = {
     title: action?.title || "",
     owner: action?.owner || "Yo",
@@ -303,14 +303,27 @@ export function mountBrainBox(
     entered = cached?.entered ?? !!action?.fields?.bb_scope,
     busy = false,
     dirty = !!cached;
+  const recoveryText = () => {
+    const status = Store.getStorageStatus();
+    if (status.error) return status.error;
+    return (
+      (status.mode === "device"
+        ? "El borrador se conserva en este dispositivo. "
+        : status.mode === "session"
+          ? "El borrador se recupera al recargar esta pestaña. Para conservarlo entre visitas, activa el guardado o exporta una copia. "
+          : "Todavía no hay cambios conservados. ") +
+      "Sólo se incorpora al plan al guardar la acción. No se envía a otras personas."
+    );
+  };
   const cache = () => {
-    if (dirty && generation === draftGeneration)
-      sessionDrafts.set(cacheKey, {
-        draft: { ...draft },
-        saved: saved ? structuredClone(saved) : null,
-        stage,
-        entered,
-      });
+    // A restored/reset workspace has a new identity: an old form must never write
+    // its draft back over a newly imported or erased snapshot during cleanup.
+    if (dirty && generation === draftGeneration && workspace === Store.get()) {
+      sessionDrafts()[cacheKey] = { draft: { ...draft }, stage, entered };
+      Store.save();
+      const label = container.querySelector(".bb-local");
+      if (label) label.textContent = recoveryText();
+    }
   };
   const cleanup = () => {
     cache();
@@ -448,12 +461,14 @@ export function mountBrainBox(
     return `<div class="bb-output"><p class="bb-kicker">${saved ? "EPISODIO GUARDADO EN TU PLAN" : "TODAVÍA SIN GUARDAR"}</p><h3>${esc(draft.title || "Tu acción o pausa")}</h3><p>${esc(draft.status === "pausado" ? draft.bb_pausa : draft.action) || "Vuelve a Misión para concretar un paso o una pausa."}</p><dl><dt>Responsable</dt><dd>${esc(draft.owner || "Por concretar")}</dd><dt>Ocasión</dt><dd>${esc(draft.due || "Por concretar")}</dd><dt>Retorno</dt><dd>${esc(draft.bb_rev_cuando || "Por concretar")}</dd><dt>Criterio</dt><dd>${esc(draft.bb_rev_criterio || "Por concretar")}</dd></dl></div><p><strong>Hacer y observar:</strong> lleva el paso a tu contexto cuando haya condiciones. Este recorrido no confirma aceptación de terceros, no envía solicitudes y no sustituye lo que corresponde a un servicio o profesional.</p><div class="bb-four"><article><b>1. ¿Se hizo?</b><p>No ocurrió, no se observó y la persona prefirió no contarlo son situaciones distintas.</p></article><article><b>2. ¿Qué pasó?</b><p>Qué cambió, cuándo y quién lo vio; incluye efectos no esperados.</p></article><article><b>3. ¿Mereció la pena?</b><p>Para quién, con qué beneficio, coste, carga o conflicto.</p></article><article><b>4. ¿Qué se puede atribuir?</b><p>Qué relación puede justificarse y qué otras condiciones influyeron.</p></article></div><p>No se suman estas cuatro respuestas. Simulado, declarado y comprobado independientemente son procedencias distintas. CareLab guarda lo que declaras; no certifica por sí mismo una verificación.</p>${saved ? `<button type="button" class="bb-button" data-review ${dirty ? "disabled" : ""}>Registrar un retorno real o una ausencia de información</button>${dirty ? '<p class="bb-small">Guarda primero los cambios de preparación para que el retorno quede conectado a esa versión.</p>' : ""}` : note("Guarda primero el episodio preparado; después podrás volver y registrar lo ocurrido.")}<a class="bb-link" href="#/plan">Ir a mi plan</a>${details("MetaBrainBox: revisar también el método", `<p>¿Este recorrido te ayudó o añadió carga? En la revisión puedes dejar una nota y proponer simplificar, retirar o cambiar una pieza.</p><ol><li>Sitúa la dificultad concreta de uso.</li><li>Comprende y elige una sola pieza a cambiar.</li><li>Prepara el cambio, su motivo y el retorno.</li><li>Pruébalo dentro de los límites de uso.</li><li>Revisa antes de conservarlo.</li></ol><p>Una propuesta local no modifica automáticamente BrainBox ni demuestra su eficacia. Los cambios del producto necesitan revisión y versión; la aplicación no aprende de tus datos ni los envía al equipo.</p>${source("§17.1 · MetaBrainBox")}`)}${source("§5.2; §14.3")}`;
   }
   function render(focus = false) {
+    draft.bb_stage = String(stage);
+    cache();
     if (!entered) {
       container.innerHTML = `<section class="bb-shell"><header class="bb-brand"><span class="bb-mark" aria-hidden="true">B<span>×</span></span><div><p class="bb-kicker">CARELAB · MÉTODO BRAINBOX 1.2</p><h1>De lo que te pasa<br>a un paso con retorno.</h1><p>Un espacio para una situación cotidiana, con la profundidad que necesites. Sin test, puntuaciones ni itinerario obligatorio.</p></div></header><div class="bb-gate"><h2>Primero, el ámbito y los límites.</h2><p>Si hay riesgo para alguien o se trata de una situación médica, psicológica o legal, <strong>no se aplica BrainBox</strong>: se busca ayuda competente. Organizar una consulta es distinto de resolver esa decisión.</p><div class="bb-gate-grid"><button class="bb-gate-choice" type="button" data-enter="cotidiano"><strong>Es una organización cotidiana, segura y reversible</strong><span>Puedo preparar una acción con sus apoyos y revisión.</span></button><a class="bb-gate-choice" href="#/tool/consulta"><strong>Necesito una decisión o apoyo profesional</strong><span>Preparar lo que quiero consultar y la información pertinente.</span></a><a class="bb-gate-choice bb-gate-stop" href="#/ayuda"><strong>Hay riesgo o necesito ayuda ahora</strong><span>Salir del método y encontrar apoyo.</span></a></div>${details("Dosificar la profundidad: el semáforo del método", `<ul><li><strong>Verde:</strong> cotidiano, seguro y reversible; recorrido normal.</li><li><strong>Ámbar:</strong> carga emocional alta, prisa o vueltas repetidas; reducir a un paso y dosificar.</li><li><strong>Rojo:</strong> sensibilidad o impacto altos; sólo con límites, revisión y apoyo profesional. Este espacio autónomo te orienta a preparar ese apoyo.</li><li><strong>STOP:</strong> riesgo o situación médica, psicológica o legal; no aplicar el método y pedir ayuda competente.</li></ul><p>No calculamos un color a partir de tus respuestas. Puedes detenerte cuando quieras, sin tener que justificar una exploración personal.</p>`)}${foundation()}</div></section>`;
       return;
     }
     draft.bb_stage = String(stage);
-    container.innerHTML = `<section class="bb-shell"><header class="bb-brand bb-brand-compact"><span class="bb-mark" aria-hidden="true">B<span>×</span></span><div><p class="bb-kicker">CARELAB · MÉTODO BRAINBOX 1.2</p><h1>Un episodio, a tu medida.</h1><p>Ser · Saber · Hacer · Creer / crear</p></div><button class="bb-link" type="button" data-gate>Revisar ámbito / parar</button></header><nav class="bb-stages" aria-label="Momentos abiertos del episodio">${stages.map(([title], i) => `<button type="button" data-stage="${i}" ${stage === i ? 'aria-current="step"' : ""}><span aria-hidden="true">${i + 1}</span>${title}</button>`).join("")}</nav><div class="bb-layout"><section class="bb-main" aria-label="Trabajo del episodio"><form novalidate><p class="bb-kicker">${stages[stage][1]}</p><h2 tabindex="-1" class="bb-stage-title">${stages[stage][2]}</h2><p class="bb-intro">${stages[stage][3]}</p>${content()}<p class="bb-message" role="status" tabindex="-1"></p><div class="bb-navigation">${stage > 0 ? '<button class="bb-button bb-secondary" type="button" data-prev>Anterior</button>' : ""}${stage < 6 ? `<button class="bb-button" type="button" data-next>${stage === 4 ? "Continuar · historia opcional" : "Continuar"}</button>` : ""}${stage >= 4 ? `<button class="bb-button ${stage < 6 ? "bb-secondary" : ""}" type="submit" ${busy ? "disabled" : ""}>${saved ? "Guardar cambios del episodio" : "Guardar acción o pausa en mi plan"}</button>` : ""}</div><p class="bb-small bb-local">El borrador se conserva en memoria mientras navegas por CareLab en esta pestaña. Se pierde al cerrar o recargar si no lo guardas. Se incorpora a tu plan sólo al guardar, según la opción de conservación de datos que elegiste. No se envía a otras personas.</p></form></section><aside class="bb-aside"><p class="bb-kicker">LO QUE TE LLEVAS</p><h3>Una decisión. <br>Una acción o pausa. <br>Un retorno.</h3><p>Tu necesidad y tu contexto guían cuánto abrir. No hace falta responderlo todo ni hacerlo hoy.</p>${draft.bb_route ? `<p class="bb-route-summary"><strong>Ruta de ${esc(draft.bb_route === "gestion" ? "gestión" : draft.bb_route)}</strong><br>${esc(routes.find((r) => r[0] === draft.bb_route)?.[3] || "")}</p>` : ""}<p class="bb-small">Si aparece riesgo o una situación médica, psicológica o legal, no apliques el método. La logística cotidiana puede preparar la ayuda competente.</p><a class="bb-link" href="#/tool/consulta">Preparar una consulta</a><a class="bb-link" href="#/ayuda">Encontrar apoyo</a><button class="bb-link" type="button" data-stage="4">Ir a acción o pausa</button></aside></div>${foundation()}</section>`;
+    container.innerHTML = `<section class="bb-shell"><header class="bb-brand bb-brand-compact"><span class="bb-mark" aria-hidden="true">B<span>×</span></span><div><p class="bb-kicker">CARELAB · MÉTODO BRAINBOX 1.2</p><h1>Un episodio, a tu medida.</h1><p>Ser · Saber · Hacer · Creer / crear</p></div><button class="bb-link" type="button" data-gate>Revisar ámbito / parar</button></header><nav class="bb-stages" aria-label="Momentos abiertos del episodio">${stages.map(([title], i) => `<button type="button" data-stage="${i}" ${stage === i ? 'aria-current="step"' : ""}><span aria-hidden="true">${i + 1}</span>${title}</button>`).join("")}</nav><div class="bb-layout"><section class="bb-main" aria-label="Trabajo del episodio"><form novalidate><p class="bb-kicker">${stages[stage][1]}</p><h2 tabindex="-1" class="bb-stage-title">${stages[stage][2]}</h2><p class="bb-intro">${stages[stage][3]}</p>${content()}<p class="bb-message" role="status" tabindex="-1"></p><div class="bb-navigation">${stage > 0 ? '<button class="bb-button bb-secondary" type="button" data-prev>Anterior</button>' : ""}${stage < 6 ? `<button class="bb-button" type="button" data-next>${stage === 4 ? "Continuar · historia opcional" : "Continuar"}</button>` : ""}${stage >= 4 ? `<button class="bb-button ${stage < 6 ? "bb-secondary" : ""}" type="submit" ${busy ? "disabled" : ""}>${saved ? "Guardar cambios del episodio" : "Guardar acción o pausa en mi plan"}</button>` : ""}</div><p class="bb-small bb-local">${esc(recoveryText())}</p></form></section><aside class="bb-aside"><p class="bb-kicker">LO QUE TE LLEVAS</p><h3>Una decisión. <br>Una acción o pausa. <br>Un retorno.</h3><p>Tu necesidad y tu contexto guían cuánto abrir. No hace falta responderlo todo ni hacerlo hoy.</p>${draft.bb_route ? `<p class="bb-route-summary"><strong>Ruta de ${esc(draft.bb_route === "gestion" ? "gestión" : draft.bb_route)}</strong><br>${esc(routes.find((r) => r[0] === draft.bb_route)?.[3] || "")}</p>` : ""}<p class="bb-small">Si aparece riesgo o una situación médica, psicológica o legal, no apliques el método. La logística cotidiana puede preparar la ayuda competente.</p><a class="bb-link" href="#/tool/consulta">Preparar una consulta</a><a class="bb-link" href="#/ayuda">Encontrar apoyo</a><button class="bb-link" type="button" data-stage="4">Ir a acción o pausa</button></aside></div>${foundation()}</section>`;
     if (focus) {
       const heading = container.querySelector(".bb-stage-title");
       heading?.focus({ preventScroll: true });
@@ -488,19 +503,24 @@ export function mountBrainBox(
       const button = e.target.closest("button");
       if (!button || !container.contains(button) || busy) return;
       if (button.hasAttribute("data-enter")) {
+        if (!saved) dirty = true;
         entered = true;
         draft.bb_scope = "organizacion-cotidiana";
         render(true);
       } else if (button.hasAttribute("data-gate")) {
+        if (!saved) dirty = true;
         entered = false;
         render();
       } else if (button.hasAttribute("data-stage")) {
+        if (!saved) dirty = true;
         stage = Number(button.dataset.stage);
         render(true);
       } else if (button.hasAttribute("data-next")) {
+        if (!saved) dirty = true;
         stage = Math.min(6, stage + 1);
         render(true);
       } else if (button.hasAttribute("data-prev")) {
+        if (!saved) dirty = true;
         stage = Math.max(0, stage - 1);
         render(true);
       } else if (button.hasAttribute("data-instrument")) {
@@ -622,7 +642,8 @@ export function mountBrainBox(
           throw new Error("No se recibió la confirmación del guardado.");
         saved = structuredClone(result);
         dirty = false;
-        sessionDrafts.delete(cacheKey);
+        delete sessionDrafts()[cacheKey];
+        Store.save();
         cacheKey = saved.id;
         stage = 6;
         render(true);
