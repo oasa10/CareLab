@@ -211,7 +211,13 @@ class Library:
             for field, suffix in (("url", ""), ("verification_url", " · verificación"), ("supplementary_access_url", " · acceso complementario")):
                 url = web_url(ref.get(field))
                 if url and url not in known:
-                    item["links"].append({"title": label + suffix, "url": url})
+                    # A current access alternative may differ from the cited work.
+                    # Preserve the historical title in the body and label the link
+                    # for the resource actually opened, retaining the reference ID.
+                    link_label = label
+                    if field == "url" and ref.get("link_title"):
+                        link_label = (f"[{rid}] " if rid else "") + ref["link_title"]
+                    item["links"].append({"title": link_label + suffix, "url": url})
                     known.add(url)
 
     def add(self, identity, collection, title, summary, category, path, source_id, *, level="consulta", usage="", dims=None, aliases=None):
@@ -373,12 +379,12 @@ class Library:
             assert all(isinstance(block["text"], str) and isinstance(block["label"], str) for block in item["body"])
         counts["total"] = len(self.items)
         return {
-            "version": "2.0", "cutoff": "2026-10-15", "items": self.items, "counts": counts,
+            "version": "2.0", "cutoff": "2026-10-16", "items": self.items, "counts": counts,
             "sources": [self.sources[path] for path in sorted(self.sources)],
             "scope": {
                 "coverage": "Incluye todas las fichas de los cinco conjuntos indicados, con 54 capítulos transversales y las 17 guías de Cuidosfera. No pretende inventariar todos los recursos existentes fuera del corpus.",
                 "classification": "Las dimensiones son etiquetas editoriales de navegación, no una escala ni una recomendación clínica automática.",
-                "references": "Enlaces conservados de las fuentes del proyecto y restringidos a HTTP(S). Su consulta previa y sus límites se indican en cada ficha; esta transformación no revalida su disponibilidad actual.",
+                "references": "Enlaces de las fuentes del proyecto restringidos a HTTP(S). El mantenimiento del 16-10-2026 revisó 169 direcciones inicialmente pendientes: conservó 153, recuperó 6 ubicaciones del mismo recurso, ofreció 9 alternativas oficiales explícitas y retiró 1 enlace no corroborado. Las referencias históricas y los límites de acceso se conservan en cada ficha. Una fuente restringida no se considera reparada; el acceso puede cambiar y esta revisión no valida la eficacia de los recursos.",
                 "copyright": "Se incorporan fichas, explicaciones y guías originales del proyecto, no obras culturales, cuestionarios licenciados ni manuales de terceros completos.",
                 "formats": "La aplicación incluye contenido textual estructurado; no publica los archivos DOCX/PDF del corpus ni crea enlaces privados rotos.",
                 "safety": "Ante riesgo o situación médica, psicológica o legal: STOP, no aplicar BrainBox y pedir ayuda o derivar. La biblioteca sirve para consultar y preparar apoyo, no para resolver crisis ni diagnosticar.",

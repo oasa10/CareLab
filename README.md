@@ -1,4 +1,4 @@
-# CareLab 3.0.1 · Cuidar sin desaparecer
+# CareLab 3.0.2 · Cuidar sin desaparecer
 
 Un espacio para hacer visible, organizar y compartir la carga total de cuidar, con el Método BrainBox 1.2 y el proyecto MEPRE.
 
@@ -65,3 +65,9 @@ Salazar, Osman (2026). _CareLab. Cuidar sin desaparecer_. Versión 3.0, prueba d
 ## Actualización de compatibilidad 3.0.1
 
 Conecta los generadores con el registro de ubicaciones de la Metaestructura Maestra y actualiza las fichas CareLab de Cuidopedia (D099) y CareTools (D049) a su edición publicada 3.0. Conserva los 1.087 identificadores de la biblioteca, las 36 unidades, los recorridos y los datos personales. La caché recibe una nueva edición para incorporar la biblioteca completa de forma atómica. Esta revisión documental y técnica no añade evidencia de eficacia.
+
+## Mantenimiento de fuentes 3.0.2
+
+Revisa las 169 direcciones pendientes del control anterior: conserva 153 fuentes identificadas, cambia 6 ubicaciones del mismo recurso, ofrece 9 alternativas oficiales con su alcance explícito y retira 1 enlace que no pudo corroborarse. Las referencias bibliográficas y sus identificadores permanecen; los rótulos distinguen las alternativas de las obras históricas. El dossier de Prison Terminal queda sin enlace, con la web oficial ya presente en la misma ficha. Las fuentes auténticas con acceso restringido se mantienen con esa limitación.
+
+La biblioteca se reconstruye desde el corpus con los mismos 1.087 identificadores. El programa conserva sus 12 módulos y 36 unidades. IDDSI mantiene la referencia histórica 2.0 y distingue el catálogo actual; la ayuda de Medisafe no se presenta como un estudio. La caché pública pasa a `20261016-1`; el formato de almacenamiento personal no cambia. Esta revisión de identidad y acceso no acredita eficacia ni actualiza instrucciones clínicas.
