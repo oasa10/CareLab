@@ -1,0 +1,41 @@
+.recommendations {
+  margin-top: 32px;
+}
+.recommendations .card > h2 {
+  margin-top: 0;
+}
+.need-choices {
+  gap: 8px;
+}
+.need-choices .pill {
+  font-size: 0.75rem;
+}
+.resource-action,
+.resource-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 20px;
+}
+.resource-action h3,
+.resource-card h3 {
+  margin-top: 14px;
+}
+.resource-card {
+  min-width: 0;
+}
+.resource-card .row {
+  align-items: flex-start;
+}
+.resource-card details {
+  margin-top: 20px;
+}
+.resource-card a {
+  overflow-wrap: anywhere;
+}
+.recommendations label {
+  font-size: 0.8rem;
+}
+.recommendations .field {
+  margin-top: 15px;
+}

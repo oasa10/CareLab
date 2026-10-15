@@ -1,0 +1,952 @@
+{
+  "version": "2.0",
+  "checkedAt": "2026-10-15",
+  "scope": "Selección editorial de recursos complementarios, no revisión de eficacia clínica ni catálogo universal.",
+  "recommendationPolicy": {
+    "maxExternal": 2,
+    "maxLocalActions": 1,
+    "basis": "Necesidad, formato y tiempo declarados por la persona; sin leer notas privadas ni inferir diagnósticos.",
+    "manualExternalLinks": true,
+    "unknownDurationIsShort": false,
+    "honorOptInOnly": true,
+    "honorRequiresContext": true
+  },
+  "resources": [
+    {
+      "id": "mm-piano-meditation",
+      "title": "Meditation Impromptu 02",
+      "description": "Pieza de piano sin palabras, disponible dentro de CareLab con controles de escucha.",
+      "needs": [
+        "pausa",
+        "descanso"
+      ],
+      "format": "musica",
+      "durationMinutes": 4.15,
+      "language": "instrumental",
+      "url": "https://incompetech.com/music/royalty-free/index.html?Search=Search&isrc=USUAN1100162",
+      "provider": "Kevin MacLeod · Incompetech",
+      "access": "Escucha integrada gratuita, sin cuenta.",
+      "license": {
+        "name": "Creative Commons Atribución 4.0 Internacional",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "decision": "local",
+        "reason": "La ficha oficial identifica esta pieza y muestra CC BY 4.0. Se mantiene el MP3 original y se muestran autor, fuente, licencia y ausencia de cambios.",
+        "evidenceUrls": [
+          "https://incompetech.com/music/royalty-free/index.html?Search=Search&isrc=USUAN1100162",
+          "https://incompetech.com/music/royalty-free/pieces.json",
+          "https://incompetech.com/music/royalty-free/faq.html"
+        ]
+      },
+      "cuidotecaIds": [],
+      "why": "Has elegido una pausa o descanso y una opción de escucha; puedes detenerla cuando quieras.",
+      "checkedAt": "2026-10-15",
+      "accessibleText": false,
+      "integratedTrackId": "piano-meditation",
+      "attribution": "Meditation Impromptu 02 — Kevin MacLeod (incompetech.com). CC BY 4.0. Archivo original sin modificar.",
+      "sha256": "4e7ead76cfdda0979ff7d771fbbc3dbb312ca80ce25b78f3cdcaef07fcc7c2da",
+      "verification": {
+        "status": 200,
+        "finalUrl": "https://incompetech.com/music/royalty-free/index.html?Search=Search&isrc=USUAN1100162",
+        "checkedAt": "2026-10-15",
+        "scope": "Ficha oficial y contenido editorial consultados; no se ha completado la inscripción ni toda la reproducción externa."
+      },
+      "cuidotecaRelation": "recurso externo adicional"
+    },
+    {
+      "id": "mm-piano-luminous",
+      "title": "Luminous Rain",
+      "description": "Piano instrumental breve, disponible dentro de CareLab y sin reproducción automática.",
+      "needs": [
+        "pausa",
+        "descanso"
+      ],
+      "format": "musica",
+      "durationMinutes": 1.9,
+      "language": "instrumental",
+      "url": "https://incompetech.com/music/royalty-free/index.html?Search=Search&isrc=USUAN1100169",
+      "provider": "Kevin MacLeod · Incompetech",
+      "access": "Escucha integrada gratuita, sin cuenta.",
+      "license": {
+        "name": "Creative Commons Atribución 4.0 Internacional",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "decision": "local",
+        "reason": "La ficha oficial identifica esta pieza y muestra CC BY 4.0. Se mantiene el MP3 original y se muestran autor, fuente, licencia y ausencia de cambios.",
+        "evidenceUrls": [
+          "https://incompetech.com/music/royalty-free/index.html?Search=Search&isrc=USUAN1100169",
+          "https://incompetech.com/music/royalty-free/pieces.json",
+          "https://incompetech.com/music/royalty-free/faq.html"
+        ]
+      },
+      "cuidotecaIds": [],
+      "why": "Has elegido una pausa o descanso y una opción de escucha; puedes detenerla cuando quieras.",
+      "checkedAt": "2026-10-15",
+      "accessibleText": false,
+      "integratedTrackId": "piano-luminous",
+      "attribution": "Luminous Rain — Kevin MacLeod (incompetech.com). CC BY 4.0. Archivo original sin modificar.",
+      "sha256": "73825cc2c4aba34e200e99a6a737ab792f683bbd875f643ca5b00016349a0a24",
+      "verification": {
+        "status": 200,
+        "finalUrl": "https://incompetech.com/music/royalty-free/index.html?Search=Search&isrc=USUAN1100169",
+        "checkedAt": "2026-10-15",
+        "scope": "Ficha oficial y contenido editorial consultados; no se ha completado la inscripción ni toda la reproducción externa."
+      },
+      "cuidotecaRelation": "recurso externo adicional"
+    },
+    {
+      "id": "mm-naturaleza",
+      "title": "El sonido de la naturaleza",
+      "description": "Grabaciones y relatos sonoros publicados por su autor, Carlos de Hita, con escenas de aves y paisajes.",
+      "needs": [
+        "pausa",
+        "descanso"
+      ],
+      "format": "audio",
+      "durationMinutes": null,
+      "language": "es",
+      "url": "https://carlosdehita.es/",
+      "provider": "Carlos de Hita",
+      "access": "Consulta pública. Algunos contenidos se reproducen en YouTube.",
+      "license": {
+        "name": "Incorporación de contenidos no autorizada en esta revisión",
+        "url": "https://carlosdehita.es/",
+        "decision": "link-only",
+        "reason": "Se ofrece únicamente un enlace manual a la fuente. El acceso público no acredita permiso para copiar, emitir, adaptar o redistribuir sus contenidos."
+      },
+      "cuidotecaIds": [],
+      "why": "Has pedido una pausa con sonidos de naturaleza; elige la escena que te resulte agradable.",
+      "checkedAt": "2026-10-15",
+      "accessibleText": false,
+      "contentNote": "Los sonidos naturales incluyen intensidades y timbres diversos; no todas las escenas son tranquilas. No se atribuyen efectos terapéuticos.",
+      "verification": {
+        "status": 200,
+        "finalUrl": "https://carlosdehita.es/",
+        "checkedAt": "2026-10-15",
+        "scope": "Ficha oficial y contenido editorial consultados; no se ha completado la inscripción ni toda la reproducción externa."
+      },
+      "cuidotecaRelation": "recurso externo adicional"
+    },
+    {
+      "id": "mm-avefy",
+      "title": "Avefy: ¿qué ave está cantando?",
+      "description": "Propuesta de escucha y juego para reconocer aves a partir de sus cantos.",
+      "needs": [
+        "pausa"
+      ],
+      "format": "audio",
+      "durationMinutes": null,
+      "language": "es",
+      "url": "https://recursoseducativos.seo.org/recursos/avefy-que-ave-esta-cantando/",
+      "provider": "SEO/BirdLife",
+      "access": "Ficha pública; la actividad enlaza a su aplicación y puede requerir instalación.",
+      "license": {
+        "name": "Incorporación de contenidos no autorizada en esta revisión",
+        "url": "https://recursoseducativos.seo.org/recursos/avefy-que-ave-esta-cantando/",
+        "decision": "link-only",
+        "reason": "Se ofrece únicamente un enlace manual a la fuente. El acceso público no acredita permiso para copiar, emitir, adaptar o redistribuir sus contenidos."
+      },
+      "cuidotecaIds": [],
+      "why": "Has elegido una pausa y puede apetecerte una escucha activa distinta del cuidado.",
+      "checkedAt": "2026-10-15",
+      "accessibleText": false,
+      "contentNote": "Actividad educativa, no ejercicio clínico. La ficha web no equivale al juego ejecutándose dentro de CareLab.",
+      "verification": {
+        "status": 200,
+        "finalUrl": "https://recursoseducativos.seo.org/recursos/avefy-que-ave-esta-cantando/",
+        "checkedAt": "2026-10-15",
+        "scope": "Ficha oficial y contenido editorial consultados; no se ha completado la inscripción ni toda la reproducción externa."
+      },
+      "cuidotecaRelation": "recurso externo adicional"
+    },
+    {
+      "id": "mm-ucla-es",
+      "title": "Meditaciones guiadas en español",
+      "description": "Colección de UCLA Mindful con prácticas guiadas de distinta duración, incluida una exploración corporal corta de tres minutos.",
+      "needs": [
+        "pausa",
+        "descanso"
+      ],
+      "format": "audio",
+      "durationMinutes": null,
+      "language": "es",
+      "url": "https://www.uclahealth.org/programs/uclamindful/free-guided-meditations/ucla-mindful-en-espanol",
+      "provider": "UCLA Mindful",
+      "access": "Escucha gratuita en su sitio. Duración según la práctica elegida.",
+      "license": {
+        "name": "CC BY-NC-ND 4.0",
+        "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "decision": "link-only",
+        "reason": "La fuente limita la reutilización a usos no comerciales y sin adaptaciones. No se incorporan sus audios a CareLab.",
+        "evidenceUrls": [
+          "https://www.uclahealth.org/programs/uclamindful/free-guided-meditations/ucla-mindful-en-espanol"
+        ]
+      },
+      "cuidotecaIds": [],
+      "why": "Has pedido una opción de meditación; puedes elegir, detenerla o preferir música o silencio.",
+      "checkedAt": "2026-10-15",
+      "accessibleText": false,
+      "optInOnly": true,
+      "preference": "meditacion",
+      "contentNote": "Práctica voluntaria. No se prescribe por síntomas ni se presenta como tratamiento.",
+      "verification": {
+        "status": 200,
+        "finalUrl": "https://www.uclahealth.org/programs/uclamindful/free-guided-meditations/ucla-mindful-en-espanol",
+        "checkedAt": "2026-10-15",
+        "scope": "Ficha oficial y contenido editorial consultados; no se ha completado la inscripción ni toda la reproducción externa."
+      },
+      "cuidotecaRelation": "recurso externo adicional"
+    },
+    {
+      "id": "mm-palouse-es",
+      "title": "Prácticas guiadas de Palouse Mindfulness",
+      "description": "Catálogo en español de prácticas de atención plena con audio y acceso a materiales del curso.",
+      "needs": [
+        "pausa",
+        "descanso"
+      ],
+      "format": "audio",
+      "durationMinutes": null,
+      "language": "es",
+      "url": "https://palousemindfulness.com/es/guidedmeditations.html",
+      "provider": "Palouse Mindfulness",
+      "access": "Audios gratuitos en la web del proveedor. Duraciones variables.",
+      "license": {
+        "name": "Incorporación de contenidos no autorizada en esta revisión",
+        "url": "https://palousemindfulness.com/es/guidedmeditations.html",
+        "decision": "link-only",
+        "reason": "Se ofrece únicamente un enlace manual a la fuente. El acceso público no acredita permiso para copiar, emitir, adaptar o redistribuir sus contenidos."
+      },
+      "cuidotecaIds": [],
+      "why": "Has elegido explorar meditación y deseas poder escoger una práctica.",
+      "checkedAt": "2026-10-15",
+      "accessibleText": false,
+      "optInOnly": true,
+      "preference": "meditacion",
+      "contentNote": "El catálogo incluye prácticas corporales y yoga; no se recomiendan automáticamente ni se trasladan sus instrucciones a CareLab.",
+      "verification": {
+        "status": 200,
+        "finalUrl": "https://palousemindfulness.com/es/guidedmeditations.html",
+        "checkedAt": "2026-10-15",
+        "scope": "Ficha oficial y contenido editorial consultados; no se ha completado la inscripción ni toda la reproducción externa."
+      },
+      "cuidotecaRelation": "recurso externo adicional"
+    },
+    {
+      "id": "mm-plum-es",
+      "title": "Plum Village en español",
+      "description": "Meditaciones y charlas de la tradición budista zen de Thich Nhat Hanh, disponibles en una edición web en español.",
+      "needs": [
+        "pausa",
+        "descanso"
+      ],
+      "format": "audio",
+      "durationMinutes": null,
+      "language": "es",
+      "url": "https://web.plumvillage.app/es",
+      "provider": "Plum Village",
+      "access": "Edición web pública; aplicación móvil opcional.",
+      "license": {
+        "name": "Incorporación de contenidos no autorizada en esta revisión",
+        "url": "https://web.plumvillage.app/es",
+        "decision": "link-only",
+        "reason": "Se ofrece únicamente un enlace manual a la fuente. El acceso público no acredita permiso para copiar, emitir, adaptar o redistribuir sus contenidos."
+      },
+      "cuidotecaIds": [],
+      "why": "Has elegido expresamente una práctica contemplativa y te interesa esta tradición.",
+      "checkedAt": "2026-10-15",
+      "accessibleText": false,
+      "optInOnly": true,
+      "preference": "contemplativa-budista",
+      "contentNote": "Contenido espiritual de una tradición identificada; no se ofrece como opción neutral ni como tratamiento.",
+      "verification": {
+        "status": 200,
+        "finalUrl": "https://web.plumvillage.app/es",
+        "checkedAt": "2026-10-15",
+        "scope": "Ficha oficial y contenido editorial consultados; no se ha completado la inscripción ni toda la reproducción externa."
+      },
+      "cuidotecaRelation": "recurso externo adicional"
+    },
+    {
+      "id": "mm-rtve-musicas",
+      "title": "Músicas con alma",
+      "description": "Selecciones musicales y presentación en castellano de Radio Clásica, disponibles por episodios.",
+      "needs": [
+        "pausa",
+        "descanso"
+      ],
+      "format": "musica",
+      "durationMinutes": null,
+      "language": "es",
+      "url": "https://www.rtve.es/play/audios/musicas-con-alma/",
+      "provider": "RTVE · Radio Clásica",
+      "access": "Escucha en RTVE Audio; condiciones y disponibilidad del proveedor.",
+      "license": {
+        "name": "Incorporación de contenidos no autorizada en esta revisión",
+        "url": "https://www.rtve.es/play/audios/musicas-con-alma/",
+        "decision": "link-only",
+        "reason": "Se ofrece únicamente un enlace manual a la fuente. El acceso público no acredita permiso para copiar, emitir, adaptar o redistribuir sus contenidos."
+      },
+      "cuidotecaIds": [],
+      "why": "Has elegido música para un momento sin tareas y puedes dedicarle el tiempo que quieras.",
+      "checkedAt": "2026-10-15",
+      "accessibleText": false,
+      "contentNote": "Catálogo de programas de duración variable, habitualmente cercana a una hora. No se promete una pieza de cinco minutos.",
+      "verification": {
+        "status": 200,
+        "finalUrl": "https://www.rtve.es/play/audios/musicas-con-alma/",
+        "checkedAt": "2026-10-15",
+        "scope": "Ficha oficial y contenido editorial consultados; no se ha completado la inscripción ni toda la reproducción externa."
+      },
+      "cuidotecaRelation": "recurso externo adicional"
+    },
+    {
+      "id": "mm-radiocuidados",
+      "title": "RADIOCUIDADOS",
+      "description": "Programas con experiencias de personas cuidadoras y conversaciones sobre el cuidado cotidiano.",
+      "needs": [
+        "soledad",
+        "comprender"
+      ],
+      "format": "video",
+      "durationMinutes": null,
+      "language": "es",
+      "url": "https://www.elrincondelcuidador.es/radiocuidados",
+      "provider": "El Rincón del Cuidador · Laboratorios HARTMANN",
+      "access": "Último programa visible; el archivo completo requiere registro en la comunidad.",
+      "license": {
+        "name": "Incorporación de contenidos no autorizada en esta revisión",
+        "url": "https://www.elrincondelcuidador.es/radiocuidados",
+        "decision": "link-only",
+        "reason": "Se ofrece únicamente un enlace manual a la fuente. El acceso público no acredita permiso para copiar, emitir, adaptar o redistribuir sus contenidos."
+      },
+      "cuidotecaIds": [
+        "cu-c036"
+      ],
+      "why": "Has pedido escuchar otras experiencias de cuidado, sin que sustituyan una conversación o apoyo real.",
+      "checkedAt": "2026-10-15",
+      "accessibleText": false,
+      "contentNote": "Proveedor comercial identificado. Puede contener contenidos sanitarios; no se trasladan pautas clínicas a CareLab.",
+      "verification": {
+        "status": 200,
+        "finalUrl": "https://www.elrincondelcuidador.es/radiocuidados",
+        "checkedAt": "2026-10-15",
+        "scope": "Ficha oficial y contenido editorial consultados; no se ha completado la inscripción ni toda la reproducción externa."
+      },
+      "cuidotecaRelation": "mismo proveedor o programa; recurso específico complementario"
+    },
+    {
+      "id": "mm-rtve-cuidadores",
+      "title": "Cuidar a los cuidadores",
+      "description": "Conversación de La aventura del Saber con Laura Rojas-Marcos sobre quienes cuidan y sus propias necesidades.",
+      "needs": [
+        "comprender",
+        "limites"
+      ],
+      "format": "video",
+      "durationMinutes": 15.716666666666667,
+      "language": "es",
+      "url": "https://www.rtve.es/play/videos/la-aventura-del-saber/laura-rojas-marcos-cuidar-cuidadores/16132121/",
+      "provider": "RTVE · La aventura del Saber",
+      "access": "Vídeo en RTVE Play; la ficha indica subtitulado.",
+      "license": {
+        "name": "Incorporación de contenidos no autorizada en esta revisión",
+        "url": "https://www.rtve.es/play/videos/la-aventura-del-saber/laura-rojas-marcos-cuidar-cuidadores/16132121/",
+        "decision": "link-only",
+        "reason": "Se ofrece únicamente un enlace manual a la fuente. El acceso público no acredita permiso para copiar, emitir, adaptar o redistribuir sus contenidos."
+      },
+      "cuidotecaIds": [
+        "cu-c017"
+      ],
+      "why": "Has elegido comprender mejor el papel de cuidador y sus límites.",
+      "checkedAt": "2026-10-15",
+      "accessibleText": false,
+      "subtitles": true,
+      "contentNote": "Emisión del 4 de junio de 2024; divulgación general, no valoración individual.",
+      "verification": {
+        "status": 200,
+        "finalUrl": "https://www.rtve.es/play/videos/la-aventura-del-saber/laura-rojas-marcos-cuidar-cuidadores/16132121/",
+        "checkedAt": "2026-10-15",
+        "scope": "Ficha oficial y contenido editorial consultados; no se ha completado la inscripción ni toda la reproducción externa."
+      },
+      "cuidotecaRelation": "misma ficha o recurso"
+    },
+    {
+      "id": "mm-borrarse",
+      "title": "Borrarse de a pocos",
+      "description": "Testimonio de Claudia Palacios sobre su madre, el Alzheimer y el acompañamiento familiar.",
+      "needs": [
+        "soledad",
+        "comprender"
+      ],
+      "format": "video",
+      "durationMinutes": null,
+      "language": "es",
+      "url": "https://fundacionsantodomingo.org/podcast/que-locura/borrarse-de-a-pocos/",
+      "provider": "Fundación Santo Domingo · ¡Qué Locura!",
+      "access": "Episodio publicado en la web oficial y reproducido mediante YouTube.",
+      "license": {
+        "name": "Incorporación de contenidos no autorizada en esta revisión",
+        "url": "https://fundacionsantodomingo.org/podcast/que-locura/borrarse-de-a-pocos/",
+        "decision": "link-only",
+        "reason": "Se ofrece únicamente un enlace manual a la fuente. El acceso público no acredita permiso para copiar, emitir, adaptar o redistribuir sus contenidos."
+      },
+      "cuidotecaIds": [
+        "cu-c018"
+      ],
+      "why": "Has pedido conocer una experiencia personal de cuidado que pueda abrir una conversación.",
+      "checkedAt": "2026-10-15",
+      "accessibleText": false,
+      "contentNote": "Relato colombiano, con referencias a Alzheimer y desgaste emocional. Una experiencia no representa a todas las familias; puedes dejarlo si no te apetece.",
+      "verification": {
+        "status": 200,
+        "finalUrl": "https://fundacionsantodomingo.org/podcast/que-locura/borrarse-de-a-pocos/",
+        "checkedAt": "2026-10-15",
+        "scope": "Ficha oficial y contenido editorial consultados; no se ha completado la inscripción ni toda la reproducción externa."
+      },
+      "cuidotecaRelation": "misma ficha o recurso"
+    },
+    {
+      "id": "mm-cr-guia",
+      "title": "Convertirse en persona CuidadorA",
+      "description": "Guía interactiva de Cruz Roja para situarse ante las responsabilidades y necesidades de cuidar.",
+      "needs": [
+        "comprender",
+        "reparto",
+        "limites"
+      ],
+      "format": "lectura",
+      "durationMinutes": null,
+      "language": "es",
+      "url": "https://www.cruzroja.es/cre_web/formacion/materiales/pf/convertirse_en_persona_cuidadora/index.html",
+      "provider": "Cruz Roja Española · SerCuidadorA",
+      "access": "Guía pública; requiere JavaScript.",
+      "license": {
+        "name": "Incorporación de contenidos no autorizada en esta revisión",
+        "url": "https://www.cruzroja.es/cre_web/formacion/materiales/pf/convertirse_en_persona_cuidadora/index.html",
+        "decision": "link-only",
+        "reason": "Se ofrece únicamente un enlace manual a la fuente. El acceso público no acredita permiso para copiar, emitir, adaptar o redistribuir sus contenidos."
+      },
+      "cuidotecaIds": [
+        "cu-c001"
+      ],
+      "why": "Has pedido ordenar el papel de cuidador antes de elegir un cambio concreto.",
+      "checkedAt": "2026-10-15",
+      "accessibleText": true,
+      "contentNote": "Recurso introductorio; no asigna obligaciones legales ni sustituye la formación para tareas especializadas.",
+      "verification": {
+        "status": 200,
+        "finalUrl": "https://www.cruzroja.es/cre_web/formacion/materiales/pf/convertirse_en_persona_cuidadora/index.html",
+        "checkedAt": "2026-10-15",
+        "scope": "Ficha oficial y contenido editorial consultados; no se ha completado la inscripción ni toda la reproducción externa."
+      },
+      "cuidotecaRelation": "mismo proveedor o programa; recurso específico complementario"
+    },
+    {
+      "id": "mm-cr-soledad",
+      "title": "Salud emocional y soledad en las personas cuidadoras",
+      "description": "Curso de autoaprendizaje de Cruz Roja sobre la experiencia de cuidar, emociones y redes sociales.",
+      "needs": [
+        "soledad",
+        "comprender"
+      ],
+      "format": "curso",
+      "durationMinutes": 480,
+      "language": "es",
+      "url": "https://www2.cruzroja.es/detalle-cursos/-/curso/771458",
+      "provider": "Cruz Roja Española",
+      "access": "Gratuito con matrícula y admisión; edición 2026, hasta el 31 de diciembre según ficha.",
+      "license": {
+        "name": "Incorporación de contenidos no autorizada en esta revisión",
+        "url": "https://www2.cruzroja.es/detalle-cursos/-/curso/771458",
+        "decision": "link-only",
+        "reason": "Se ofrece únicamente un enlace manual a la fuente. El acceso público no acredita permiso para copiar, emitir, adaptar o redistribuir sus contenidos."
+      },
+      "cuidotecaIds": [
+        "cu-c001"
+      ],
+      "why": "Has elegido profundizar en soledad y redes de apoyo, con tiempo para formación.",
+      "checkedAt": "2026-10-15",
+      "accessibleText": false,
+      "expiresAt": "2026-12-31",
+      "contentNote": "Ocho horas de curso completo; no es una intervención inmediata. Acceso sujeto a requisitos y disponibilidad de Cruz Roja.",
+      "verification": {
+        "status": 200,
+        "finalUrl": "https://www2.cruzroja.es/detalle-cursos/-/curso/771458",
+        "checkedAt": "2026-10-15",
+        "scope": "Ficha oficial y contenido editorial consultados; no se ha completado la inscripción ni toda la reproducción externa."
+      },
+      "cuidotecaRelation": "mismo proveedor o programa; recurso específico complementario"
+    },
+    {
+      "id": "mm-escuela-pacientes",
+      "title": "Personas cuidadoras: guías, vídeos y talleres",
+      "description": "Entrada al aula de personas cuidadoras de la Escuela de Pacientes, con materiales en varios formatos.",
+      "needs": [
+        "comprender",
+        "reparto"
+      ],
+      "format": "curso",
+      "durationMinutes": null,
+      "language": "es",
+      "url": "https://www.escueladepacientes.es/personas-cuidadoras",
+      "provider": "Escuela Andaluza de Salud Pública · Junta de Andalucía",
+      "access": "Consulta pública de recursos; talleres y aula sujetos a sus condiciones.",
+      "license": {
+        "name": "Incorporación de contenidos no autorizada en esta revisión",
+        "url": "https://www.escueladepacientes.es/personas-cuidadoras",
+        "decision": "link-only",
+        "reason": "Se ofrece únicamente un enlace manual a la fuente. El acceso público no acredita permiso para copiar, emitir, adaptar o redistribuir sus contenidos."
+      },
+      "cuidotecaIds": [
+        "cu-c003"
+      ],
+      "why": "Has pedido aprender sobre cuidado cotidiano y elegir el formato que te encaje.",
+      "checkedAt": "2026-10-15",
+      "accessibleText": true,
+      "contentNote": "Portal mixto. Las técnicas asistenciales requieren adaptar la formación a la persona y al acompañamiento profesional.",
+      "verification": {
+        "status": 200,
+        "finalUrl": "https://www.escueladepacientes.es/personas-cuidadoras",
+        "checkedAt": "2026-10-15",
+        "scope": "Ficha oficial y contenido editorial consultados; no se ha completado la inscripción ni toda la reproducción externa."
+      },
+      "cuidotecaRelation": "misma ficha o recurso"
+    },
+    {
+      "id": "mm-cuidopia",
+      "title": "Escuela de Cuidados de Cuidopía",
+      "description": "Vídeos sobre comunicación, autocuidado y diferentes situaciones familiares, incluida la adolescencia y la enfermedad crónica.",
+      "needs": [
+        "multiple",
+        "limites",
+        "comprender",
+        "reparto"
+      ],
+      "format": "video",
+      "durationMinutes": null,
+      "language": "es",
+      "url": "https://www.cuidopia.es/escuela-de-cuidados",
+      "provider": "Cuidopía · Janssen Cilag",
+      "access": "Vídeos públicos en el portal y plataformas vinculadas.",
+      "license": {
+        "name": "Incorporación de contenidos no autorizada en esta revisión",
+        "url": "https://www.cuidopia.es/escuela-de-cuidados",
+        "decision": "link-only",
+        "reason": "Se ofrece únicamente un enlace manual a la fuente. El acceso público no acredita permiso para copiar, emitir, adaptar o redistribuir sus contenidos."
+      },
+      "cuidotecaIds": [
+        "cu-c005"
+      ],
+      "why": "Has indicado que cuidas en más de un escenario o necesitas mejorar una conversación.",
+      "checkedAt": "2026-10-15",
+      "accessibleText": false,
+      "contentNote": "Iniciativa de una empresa farmacéutica. Se usa como material de conversación; no como diagnóstico, prescripción o respaldo de toda afirmación del proveedor.",
+      "verification": {
+        "status": 200,
+        "finalUrl": "https://www.cuidopia.es/escuela-de-cuidados",
+        "checkedAt": "2026-10-15",
+        "scope": "Ficha oficial y contenido editorial consultados; no se ha completado la inscripción ni toda la reproducción externa."
+      },
+      "cuidotecaRelation": "mismo proveedor o programa; recurso específico complementario"
+    },
+    {
+      "id": "mm-fpm-online",
+      "title": "Aprende a Cuidar y a Cuidarte",
+      "description": "Programa grupal en línea para familiares que cuidan a personas con Alzheimer en fases iniciales o moderadas.",
+      "needs": [
+        "soledad",
+        "comprender"
+      ],
+      "format": "curso",
+      "durationMinutes": 480,
+      "language": "es",
+      "url": "https://areaalzheimer.fpmaragall.org/programa/programa-online-aprende-a-cuidar-y-a-cuidarte/",
+      "provider": "Fundació Pasqual Maragall",
+      "access": "Sin coste; inscripción, requisitos y disponibilidad de grupos.",
+      "license": {
+        "name": "Incorporación de contenidos no autorizada en esta revisión",
+        "url": "https://areaalzheimer.fpmaragall.org/programa/programa-online-aprende-a-cuidar-y-a-cuidarte/",
+        "decision": "link-only",
+        "reason": "Se ofrece únicamente un enlace manual a la fuente. El acceso público no acredita permiso para copiar, emitir, adaptar o redistribuir sus contenidos."
+      },
+      "cuidotecaIds": [
+        "cu-c007"
+      ],
+      "why": "Has elegido buscar formación y apoyo compartido para cuidado familiar en Alzheimer.",
+      "checkedAt": "2026-10-15",
+      "accessibleText": false,
+      "requiresContext": "alzheimer-familiar",
+      "contentNote": "Ocho sesiones semanales de 60 minutos guiadas por profesionales. No es autoayuda inmediata ni se presupone que puedas acceder.",
+      "verification": {
+        "status": 200,
+        "finalUrl": "https://areaalzheimer.fpmaragall.org/programa/programa-online-aprende-a-cuidar-y-a-cuidarte/",
+        "checkedAt": "2026-10-15",
+        "scope": "Ficha oficial y contenido editorial consultados; no se ha completado la inscripción ni toda la reproducción externa."
+      },
+      "cuidotecaRelation": "mismo proveedor o programa; recurso específico complementario"
+    },
+    {
+      "id": "mm-cuidadanas",
+      "title": "Cuidadanas: apoyo y proyecto de vida",
+      "description": "Programa de Fundación Mujeres que ofrece información, materiales y actividades para cuidadoras no profesionales.",
+      "needs": [
+        "limites",
+        "reparto",
+        "soledad",
+        "multiple"
+      ],
+      "format": "lectura",
+      "durationMinutes": null,
+      "language": "es",
+      "url": "https://cuidadanas.es/que-es-cuidadanas/",
+      "provider": "Fundación Mujeres",
+      "access": "Información pública. Servicios sujetos a territorio y condiciones del programa.",
+      "license": {
+        "name": "Incorporación de contenidos no autorizada en esta revisión",
+        "url": "https://cuidadanas.es/que-es-cuidadanas/",
+        "decision": "link-only",
+        "reason": "Se ofrece únicamente un enlace manual a la fuente. El acceso público no acredita permiso para copiar, emitir, adaptar o redistribuir sus contenidos."
+      },
+      "cuidotecaIds": [
+        "cu-c035"
+      ],
+      "why": "Has pedido revisar límites, reparto o cómo conservar espacios propios durante el cuidado.",
+      "checkedAt": "2026-10-15",
+      "accessibleText": true,
+      "requiresContext": "mujer-cuidadora",
+      "contentNote": "Dirigido a mujeres que cuidan o han cuidado sin remuneración a personas dependientes. No se infiere género ni elegibilidad a partir de las notas del usuario.",
+      "verification": {
+        "status": 200,
+        "finalUrl": "https://cuidadanas.es/que-es-cuidadanas/",
+        "checkedAt": "2026-10-15",
+        "scope": "Ficha oficial y contenido editorial consultados; no se ha completado la inscripción ni toda la reproducción externa."
+      },
+      "cuidotecaRelation": "misma ficha o recurso"
+    },
+    {
+      "id": "mm-isupport",
+      "title": "iSupport para la demencia",
+      "description": "Manual de la OMS para familiares y otras personas que cuidan a alguien con demencia, organizado por módulos y ejercicios.",
+      "needs": [
+        "comprender",
+        "limites",
+        "reparto"
+      ],
+      "format": "lectura",
+      "durationMinutes": null,
+      "language": "es",
+      "url": "https://www.who.int/es/publications/i/item/9789241515863",
+      "provider": "Organización Mundial de la Salud",
+      "access": "Página oficial y descarga del manual; uso según las condiciones de la OMS.",
+      "license": {
+        "name": "Reutilización comercial sujeta a permiso de la OMS",
+        "url": "https://www.who.int/es/publications/i/item/9789241515863",
+        "decision": "link-only",
+        "reason": "Se enlaza la edición oficial. No se acredita permiso para incorporar su contenido a un producto comercial.",
+        "evidenceUrls": [
+          "https://www.who.int/publications/b/47270",
+          "https://www.who.int/es/publications/i/item/9789241515863"
+        ]
+      },
+      "cuidotecaIds": [
+        "cu-c047"
+      ],
+      "why": "Has elegido comprender el cuidado en demencia y consultar un manual estructurado.",
+      "checkedAt": "2026-10-15",
+      "accessibleText": true,
+      "requiresContext": "demencia",
+      "contentNote": "No se reproducen ejercicios ni se atribuye eficacia clínica a CareLab por enlazarlo. Se debe verificar la edición e idioma del archivo descargado.",
+      "verification": {
+        "status": 200,
+        "finalUrl": "https://www.who.int/es/publications/i/item/9789241515863",
+        "checkedAt": "2026-10-15",
+        "scope": "Ficha oficial y contenido editorial consultados; no se ha completado la inscripción ni toda la reproducción externa."
+      },
+      "cuidotecaRelation": "misma ficha o recurso"
+    },
+    {
+      "id": "mm-madrid-escuela",
+      "title": "Escuela Madrileña de Salud",
+      "description": "Agenda y recursos de educación en salud con actividades, vídeos y materiales de consulta.",
+      "needs": [
+        "comprender",
+        "soledad"
+      ],
+      "format": "curso",
+      "durationMinutes": null,
+      "language": "es",
+      "url": "https://www.comunidad.madrid/salud/escuela-madrilena-salud",
+      "provider": "Comunidad de Madrid",
+      "access": "Portal público; inscripción, ubicación y requisitos según cada actividad.",
+      "license": {
+        "name": "Incorporación de contenidos no autorizada en esta revisión",
+        "url": "https://www.comunidad.madrid/salud/escuela-madrilena-salud",
+        "decision": "link-only",
+        "reason": "Se ofrece únicamente un enlace manual a la fuente. El acceso público no acredita permiso para copiar, emitir, adaptar o redistribuir sus contenidos."
+      },
+      "cuidotecaIds": [
+        "cu-c012"
+      ],
+      "why": "Has pedido explorar una actividad formativa o de participación con otras personas.",
+      "checkedAt": "2026-10-15",
+      "accessibleText": true,
+      "contentNote": "Catálogo general, no curso individual ni garantía de plaza. Seleccionar una actividad relacionada con el cuidado.",
+      "verification": {
+        "status": 200,
+        "finalUrl": "https://www.comunidad.madrid/salud/escuela-madrilena-salud",
+        "checkedAt": "2026-10-15",
+        "scope": "Ficha oficial y contenido editorial consultados; no se ha completado la inscripción ni toda la reproducción externa."
+      },
+      "cuidotecaRelation": "misma ficha o recurso"
+    },
+    {
+      "id": "mm-imserso-tramites",
+      "title": "Dependencia: orientación sobre la tramitación",
+      "description": "Página oficial de preguntas frecuentes y acceso a los órganos gestores de las comunidades autónomas.",
+      "needs": [
+        "tramites"
+      ],
+      "format": "lectura",
+      "durationMinutes": null,
+      "language": "es",
+      "url": "https://sede.imserso.gob.es/es/web/imserso/autonomia-personal-dependencia/sistema-autonomia-atencion-dependencia-saad/preguntas-frecuentes/tramitacion-reconocimiento-situacion-dependencia-derecho-prestaciones-sistema",
+      "provider": "Imserso",
+      "access": "Consulta pública. La tramitación depende del organismo competente.",
+      "license": {
+        "name": "Incorporación de contenidos no autorizada en esta revisión",
+        "url": "https://sede.imserso.gob.es/es/web/imserso/autonomia-personal-dependencia/sistema-autonomia-atencion-dependencia-saad/preguntas-frecuentes/tramitacion-reconocimiento-situacion-dependencia-derecho-prestaciones-sistema",
+        "decision": "link-only",
+        "reason": "Se ofrece únicamente un enlace manual a la fuente. El acceso público no acredita permiso para copiar, emitir, adaptar o redistribuir sus contenidos."
+      },
+      "cuidotecaIds": [],
+      "why": "Has pedido localizar a quién dirigirte para una gestión relacionada con dependencia.",
+      "checkedAt": "2026-10-15",
+      "accessibleText": true,
+      "contentNote": "La página muestra fecha de 2023. CareLab no reproduce plazos, requisitos o prestaciones: contrastarlos con la sede y normativa vigentes de tu territorio.",
+      "verification": {
+        "status": 200,
+        "finalUrl": "https://sede.imserso.gob.es/es/web/imserso/autonomia-personal-dependencia/sistema-autonomia-atencion-dependencia-saad/preguntas-frecuentes/tramitacion-reconocimiento-situacion-dependencia-derecho-prestaciones-sistema",
+        "checkedAt": "2026-10-15",
+        "scope": "Ficha oficial y contenido editorial consultados; no se ha completado la inscripción ni toda la reproducción externa."
+      },
+      "cuidotecaRelation": "recurso externo adicional"
+    },
+    {
+      "id": "mm-segg-curso",
+      "title": "Curso para cuidadores de personas mayores dependientes",
+      "description": "Programa de la Sociedad Española de Geriatría y Gerontología con módulos sobre rol, comunicación, autonomía y recursos.",
+      "needs": [
+        "comprender",
+        "reparto"
+      ],
+      "format": "curso",
+      "durationMinutes": null,
+      "language": "es",
+      "url": "https://formacion.segg.es/curso-cuidadores-personas-mayores-dependientes2026/index.asp",
+      "provider": "SEGG",
+      "access": "Curso gratuito con inscripción; revisar condiciones de la edición 2026.",
+      "license": {
+        "name": "Incorporación de contenidos no autorizada en esta revisión",
+        "url": "https://formacion.segg.es/curso-cuidadores-personas-mayores-dependientes2026/index.asp",
+        "decision": "link-only",
+        "reason": "Se ofrece únicamente un enlace manual a la fuente. El acceso público no acredita permiso para copiar, emitir, adaptar o redistribuir sus contenidos."
+      },
+      "cuidotecaIds": [
+        "cu-c002"
+      ],
+      "why": "Has elegido aprender con más profundidad sobre el cuidado de personas mayores.",
+      "checkedAt": "2026-10-15",
+      "accessibleText": false,
+      "expiresAt": "2026-12-31",
+      "contentNote": "Incluye contenidos clínicos y de movilización que no deben aplicarse sin formación y adaptación profesional. No sustituye instrucciones del equipo asistencial.",
+      "verification": {
+        "status": 200,
+        "finalUrl": "https://formacion.segg.es/curso-cuidadores-personas-mayores-dependientes2026/index.asp",
+        "checkedAt": "2026-10-15",
+        "scope": "Ficha oficial y contenido editorial consultados; no se ha completado la inscripción ni toda la reproducción externa."
+      },
+      "requiresContext": "persona-mayor",
+      "cuidotecaRelation": "misma ficha o recurso"
+    },
+    {
+      "id": "mm-ceapat",
+      "title": "Catálogo de productos de apoyo",
+      "description": "Servicio público con descripciones de productos de apoyo y datos de distribución en España.",
+      "needs": [
+        "comprender",
+        "reparto",
+        "multiple"
+      ],
+      "format": "lectura",
+      "durationMinutes": null,
+      "language": "es",
+      "url": "https://ceapat.imserso.es/catalogo-productos-apoyo",
+      "provider": "CEAPAT · Imserso",
+      "access": "Catálogo informativo público; consultar condiciones y adecuación antes de adquirir un producto.",
+      "license": {
+        "name": "Incorporación de contenidos no autorizada en esta revisión",
+        "url": "https://ceapat.imserso.es/catalogo-productos-apoyo",
+        "decision": "link-only",
+        "reason": "Se ofrece únicamente un enlace manual a la fuente. El acceso público no acredita permiso para copiar, emitir, adaptar o redistribuir sus contenidos."
+      },
+      "cuidotecaIds": [
+        "cu-c011"
+      ],
+      "why": "Has pedido opciones para una tarea difícil y puede ser útil conocer apoyos técnicos.",
+      "checkedAt": "2026-10-15",
+      "accessibleText": true,
+      "contentNote": "No se recomienda comprar ni se decide qué producto necesita alguien. La elección puede requerir valoración profesional.",
+      "verification": {
+        "status": 200,
+        "finalUrl": "https://ceapat.imserso.es/catalogo-productos-apoyo",
+        "checkedAt": "2026-10-15",
+        "scope": "Ficha oficial y contenido editorial consultados; no se ha completado la inscripción ni toda la reproducción externa."
+      },
+      "cuidotecaRelation": "misma ficha o recurso"
+    },
+    {
+      "id": "mm-fca-autocuidado",
+      "title": "Cuidando de usted",
+      "description": "Lectura en español sobre autocuidado, pedir ayuda y organizar responsabilidades familiares.",
+      "needs": [
+        "limites",
+        "reparto",
+        "multiple",
+        "descanso"
+      ],
+      "format": "lectura",
+      "durationMinutes": null,
+      "language": "es",
+      "url": "https://www.caregiver.org/es/resource/cuidando-de-usted-cuidados-personales-para-cuidadores-familiares-taking-care-of-you/",
+      "provider": "Family Caregiver Alliance",
+      "access": "Lectura pública en español.",
+      "license": {
+        "name": "Incorporación de contenidos no autorizada en esta revisión",
+        "url": "https://www.caregiver.org/es/resource/cuidando-de-usted-cuidados-personales-para-cuidadores-familiares-taking-care-of-you/",
+        "decision": "link-only",
+        "reason": "Se ofrece únicamente un enlace manual a la fuente. El acceso público no acredita permiso para copiar, emitir, adaptar o redistribuir sus contenidos."
+      },
+      "cuidotecaIds": [
+        "cu-c025"
+      ],
+      "why": "Has pedido revisar el reparto o tus propios espacios cuando coinciden varias responsabilidades.",
+      "checkedAt": "2026-10-15",
+      "accessibleText": true,
+      "contentNote": "Procede de Estados Unidos: sus servicios, cifras y referencias legales no se trasladan al contexto español. Se enlaza para reflexión cotidiana.",
+      "verification": {
+        "status": 200,
+        "finalUrl": "https://www.caregiver.org/es/resource/cuidando-de-usted-cuidados-personales-para-cuidadores-familiares-taking-care-of-you/",
+        "checkedAt": "2026-10-15",
+        "scope": "Ficha oficial y contenido editorial consultados; no se ha completado la inscripción ni toda la reproducción externa."
+      },
+      "cuidotecaRelation": "mismo proveedor o programa; recurso específico complementario"
+    },
+    {
+      "id": "mm-moma-arte",
+      "title": "Meet Me: módulos de arte en español",
+      "description": "Propuestas de conversación sobre obras de arte para personas con demencia y quienes las acompañan.",
+      "needs": [
+        "pausa",
+        "soledad"
+      ],
+      "format": "lectura",
+      "durationMinutes": null,
+      "language": "es",
+      "url": "https://www.moma.org/visit/accessibility/meetme/modules_sp/",
+      "provider": "Museum of Modern Art · MoMA",
+      "access": "Consulta recuperada mediante herramienta web; el verificador HTTP directo recibió 403. Puede estar restringida según el acceso.",
+      "license": {
+        "name": "Incorporación de contenidos no autorizada en esta revisión",
+        "url": "https://www.moma.org/visit/accessibility/meetme/modules_sp/",
+        "decision": "link-only",
+        "reason": "Se ofrece únicamente un enlace manual a la fuente. El acceso público no acredita permiso para copiar, emitir, adaptar o redistribuir sus contenidos."
+      },
+      "cuidotecaIds": [
+        "cu-d032"
+      ],
+      "why": "Has elegido compartir un momento distinto del cuidado instrumental y te interesa el arte.",
+      "checkedAt": "2026-10-15",
+      "accessibleText": true,
+      "contentNote": "Recurso cultural, no tratamiento. Se respetan interés, consentimiento y posibilidad de detenerse de todas las personas participantes.",
+      "verification": {
+        "status": 403,
+        "checkedAt": "2026-10-15",
+        "scope": "Diferencia entre acceso HTTP automatizado y recuperación web; no se garantiza acceso desde todos los dispositivos.",
+        "webRetrieval": "Página completa recuperada y leída el 15 de octubre de 2026"
+      },
+      "requiresContext": "demencia",
+      "recommendationEnabled": false,
+      "cuidotecaRelation": "mismo proveedor o programa; recurso específico complementario"
+    },
+    {
+      "id": "mm-mapa-cuidados",
+      "title": "Mapa de Cuidados",
+      "description": "Buscador del Instituto de las Mujeres sobre recursos, servicios y gestiones para menores, mayores y personas dependientes.",
+      "needs": [
+        "tramites",
+        "multiple",
+        "reparto"
+      ],
+      "format": "lectura",
+      "durationMinutes": null,
+      "language": "es",
+      "url": "https://mapadecuidados.es/es/acerca-del-mapa-de-cuidados/",
+      "provider": "Instituto de las Mujeres · Ministerio de Igualdad",
+      "access": "Consulta pública; cada servicio enlazado mantiene sus requisitos.",
+      "license": {
+        "name": "Incorporación de contenidos no autorizada en esta revisión",
+        "url": "https://mapadecuidados.es/es/acerca-del-mapa-de-cuidados/",
+        "decision": "link-only",
+        "reason": "Se ofrece únicamente un enlace manual a la fuente. El acceso público no acredita permiso para copiar, emitir, adaptar o redistribuir sus contenidos."
+      },
+      "cuidotecaIds": [],
+      "why": "Has indicado varias responsabilidades o necesitas localizar un recurso y su organismo responsable.",
+      "checkedAt": "2026-10-15",
+      "accessibleText": true,
+      "contentNote": "Directorio de orientación. Confirmar vigencia, territorio, disponibilidad y requisitos con el prestador antes de planificar un apoyo.",
+      "verification": {
+        "status": 200,
+        "finalUrl": "https://mapadecuidados.es/es/acerca-del-mapa-de-cuidados/",
+        "checkedAt": "2026-10-15",
+        "scope": "Ficha oficial y contenido editorial consultados; no se ha completado la inscripción ni toda la reproducción externa."
+      },
+      "cuidotecaRelation": "recurso externo adicional"
+    },
+    {
+      "id": "mm-credine",
+      "title": "Formación para familiares y cuidadores",
+      "description": "Formación sobre límites, consentimiento, comunicación y participación en el cuidado de personas con discapacidad neurológica.",
+      "needs": [
+        "comprender",
+        "limites",
+        "reparto"
+      ],
+      "format": "curso",
+      "durationMinutes": null,
+      "language": "es",
+      "url": "https://credine.imserso.es/servicios-atencion-directa/formacion-para-familiares-cuidadores-y-acompanantes",
+      "provider": "CREDINE · Imserso",
+      "access": "Información pública y formación abierta a la comunidad; consultar modalidad, calendario y acceso.",
+      "license": {
+        "name": "Incorporación de contenidos no autorizada en esta revisión",
+        "url": "https://credine.imserso.es/servicios-atencion-directa/formacion-para-familiares-cuidadores-y-acompanantes",
+        "decision": "link-only",
+        "reason": "Se ofrece únicamente un enlace manual a la fuente. El acceso público no acredita permiso para copiar, emitir, adaptar o redistribuir sus contenidos."
+      },
+      "cuidotecaIds": [
+        "cu-c038"
+      ],
+      "why": "Has pedido explorar formación específica cuando la situación de cuidado requiere conocimientos adaptados.",
+      "checkedAt": "2026-10-15",
+      "accessibleText": true,
+      "requiresContext": "discapacidad-neurologica",
+      "contentNote": "Programa de un centro especializado. La ficha publica algunas fechas de 2026 y deja otros cursos pendientes; no se garantiza disponibilidad inmediata.",
+      "verification": {
+        "status": 200,
+        "finalUrl": "https://credine.imserso.es/servicios-atencion-directa/formacion-para-familiares-cuidadores-y-acompanantes",
+        "checkedAt": "2026-10-15",
+        "scope": "Ficha oficial y contenido editorial consultados; no se ha completado la inscripción ni toda la reproducción externa."
+      },
+      "cuidotecaRelation": "misma ficha o recurso"
+    }
+  ]
+}

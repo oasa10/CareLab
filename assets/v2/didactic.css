@@ -1,0 +1,861 @@
+/* Original CareLab teaching figures, sharing the application's design tokens. */
+.cl-didactic {
+  --cl-figure-warm: #f6e2d3;
+  --cl-figure-line: #9bb19d;
+  color: var(--ink, #203d36);
+  margin: 24px 0 32px;
+  border: 1px solid var(--line, #dce2d8);
+  border-radius: var(--radius, 24px);
+  background: var(--paper, #fffefa);
+  overflow: hidden;
+}
+.cl-didactic-heading {
+  padding: 30px 30px 20px;
+  max-width: 760px;
+}
+.cl-didactic-heading .eyebrow {
+  margin-bottom: 12px;
+}
+.cl-didactic-heading h2 {
+  font:
+    500 clamp(1.9rem, 3.1vw, 2.7rem)/1.13 Fraunces,
+    Georgia,
+    serif;
+  letter-spacing: -0.025em;
+  margin: 0 0 14px;
+}
+.cl-didactic-intro {
+  color: var(--muted, #64736a);
+  font-size: 0.92rem;
+  line-height: 1.65;
+  max-width: 620px;
+  margin: 0;
+}
+.cl-didactic-kicker {
+  display: block;
+  font-size: 0.68rem;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  font-weight: 650;
+  color: var(--muted, #64736a);
+  margin: 0 0 10px;
+}
+.cl-didactic button:focus-visible,
+.cl-didactic a:focus-visible,
+.cl-didactic summary:focus-visible {
+  outline: 3px solid var(--orange, #ac522e);
+  outline-offset: 4px;
+}
+.cl-didactic button {
+  touch-action: manipulation;
+}
+.cl-didactic-limit {
+  border-top: 1px solid var(--line, #dce2d8);
+  font-size: 0.76rem;
+  line-height: 1.6;
+  color: var(--muted, #64736a);
+  margin: 0;
+  padding: 17px 30px;
+}
+.cl-didactic-footnote {
+  margin: 0 30px;
+  padding: 16px 0 22px;
+  font-size: 0.79rem;
+  color: var(--muted, #64736a);
+}
+.cl-didactic-footnote summary {
+  font-size: 0.79rem;
+  min-height: 30px;
+}
+.cl-didactic-footnote ol {
+  padding-left: 20px;
+  line-height: 1.65;
+}
+.cl-didactic-footnote li {
+  margin-bottom: 9px;
+}
+.cl-didactic-footnote p {
+  font-size: 0.79rem;
+}
+.cl-journey-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 9px;
+  padding: 0 30px;
+}
+.cl-journey-button {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 13px 12px;
+  min-height: 76px;
+  background: var(--bg, #f8f7f3);
+  border: 1px solid var(--line, #dce2d8);
+  border-radius: 15px;
+  text-align: left;
+  transition: box-shadow 0.18s;
+}
+.cl-journey-button:hover {
+  background: var(--light, #e6eee6);
+}
+.cl-journey-button > span:nth-child(2) {
+  font-weight: 650;
+  font-size: 0.88rem;
+  line-height: 1.3;
+  flex: 1;
+}
+.cl-journey-button small {
+  display: block;
+  font-weight: 400;
+  font-size: 0.67rem;
+  line-height: 1.4;
+  color: var(--muted, #64736a);
+  margin-top: 5px;
+}
+.cl-journey-button > svg {
+  width: 19px;
+  height: 19px;
+  opacity: 0.7;
+}
+.cl-step-number {
+  width: 29px;
+  height: 29px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--paper, #fffefa);
+  border: 1px solid var(--line, #dce2d8);
+  font-size: 0.75rem;
+}
+.cl-journey-button[aria-pressed="true"] {
+  background: var(--green, #214f46);
+  color: #fff;
+  border-color: var(--green, #214f46);
+}
+.cl-journey-button[aria-pressed="true"] small {
+  color: #e0eadc;
+}
+.cl-journey-button[aria-pressed="true"] .cl-step-number {
+  background: #ffffff20;
+  border-color: #ffffff50;
+}
+.cl-journey-button[aria-pressed="true"] > svg {
+  opacity: 1;
+}
+.cl-journey-figure {
+  margin: 20px 30px 0;
+  padding: 18px 20px 16px;
+  border-radius: 20px;
+  background: linear-gradient(130deg, #edf1e7, #f3f3e9);
+  border: 1px solid #e0e7d8;
+}
+.cl-journey-drawing {
+  max-width: 740px;
+  margin: auto;
+}
+.cl-journey-drawing svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  overflow: visible;
+}
+.cl-journey-drawing text {
+  font-family: Inter, system-ui, sans-serif;
+}
+.cl-j-halo {
+  fill: #dfe8d4;
+}
+.cl-j-orbit {
+  fill: none;
+  stroke: #b4c7a7;
+  stroke-dasharray: 3 9;
+}
+.cl-j-path {
+  stroke: #79947b;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.cl-j-pill rect {
+  fill: var(--paper, #fffefa);
+  stroke: #c5d3bd;
+  stroke-width: 1;
+}
+.cl-j-pill text {
+  fill: var(--ink, #203d36);
+  font-size: 13px;
+  font-weight: 550;
+}
+.cl-j-pill.strong rect {
+  fill: var(--green, #214f46);
+  stroke: var(--green, #214f46);
+}
+.cl-j-pill.strong text {
+  fill: #fff;
+}
+.cl-j-pill.warm rect {
+  fill: #f6e2d3;
+  stroke: #d9b59a;
+}
+.cl-j-core {
+  fill: var(--green, #214f46);
+}
+.cl-j-core-label {
+  fill: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+.cl-j-dot {
+  fill: #c79a68;
+}
+.cl-j-label {
+  fill: #496447;
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-weight: 650;
+}
+.cl-j-caption {
+  fill: #526751;
+  font-size: 12px;
+}
+.cl-j-bracket {
+  stroke: #91a78c;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.cl-j-person {
+  fill: var(--green, #214f46);
+  stroke: var(--green, #214f46);
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+.cl-j-pending {
+  stroke: #9c7961;
+  stroke-width: 2;
+  stroke-dasharray: 6 7;
+}
+.cl-drawing-caption {
+  max-width: 650px;
+  color: #5c6e5b;
+  font-size: 0.74rem;
+  line-height: 1.6;
+  text-align: center;
+  margin: 8px auto 0;
+}
+.cl-journey-detail {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(240px, 1fr);
+  gap: 30px;
+  padding: 26px 30px 28px;
+  min-height: 270px;
+}
+.cl-journey-detail h3 {
+  font:
+    500 1.65rem/1.2 Fraunces,
+    Georgia,
+    serif;
+  margin: 0 0 12px;
+}
+.cl-journey-detail p {
+  font-size: 0.87rem;
+  line-height: 1.75;
+}
+.cl-journey-detail blockquote {
+  margin: 18px 0 0;
+  padding: 2px 0 2px 17px;
+  border-left: 2px solid #b7c6a5;
+  font:
+    italic 1.08rem/1.5 Fraunces,
+    Georgia,
+    serif;
+  color: #55704d;
+}
+.cl-journey-output {
+  padding: 20px;
+  border-radius: 17px;
+  background: var(--bg, #f8f7f3);
+  align-self: start;
+}
+.cl-journey-output p {
+  font-weight: 550;
+  font-size: 0.87rem;
+  margin-bottom: 17px;
+}
+.cl-journey-output .btn {
+  font-size: 0.8rem;
+  padding: 11px 14px;
+  width: 100%;
+  justify-content: space-between;
+}
+.cl-journey-output small {
+  display: block;
+  color: var(--muted, #64736a);
+  font-size: 0.65rem;
+  line-height: 1.6;
+  margin-top: 12px;
+}
+.cl-map-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(260px, 1fr);
+  gap: 15px;
+  padding: 0 30px 26px;
+  align-items: start;
+}
+.cl-map-visual {
+  min-width: 0;
+}
+.cl-map-graphic {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 800/540;
+  margin: 20px 0 0;
+}
+.cl-map-graphic > svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+.cl-map-orbit {
+  stroke: #c9d7bf;
+  stroke-width: 1.5;
+  stroke-dasharray: 3 10;
+}
+.cl-map-edge {
+  stroke: #b7c9b2;
+  stroke-width: 1;
+  opacity: 0.38;
+  transition:
+    stroke 0.2s,
+    stroke-width 0.2s,
+    opacity 0.2s;
+}
+.cl-map-edge.is-connected {
+  stroke: #7c996d;
+  stroke-width: 3;
+  opacity: 1;
+}
+.cl-map-halo {
+  fill: #edf0e4;
+  stroke: #d7e0ce;
+  stroke-width: 1;
+}
+.cl-map-center {
+  fill: var(--green, #214f46);
+}
+.cl-map-coretext {
+  font:
+    500 26px Fraunces,
+    Georgia,
+    serif;
+  fill: #fff;
+}
+.cl-map-coresub {
+  font:
+    12px Inter,
+    system-ui,
+    sans-serif;
+  fill: #dce8d2;
+}
+.cl-map-node {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  min-width: 78px;
+  width: 20%;
+  max-width: 120px;
+  min-height: 70px;
+  border: 1px solid #c7d5be;
+  border-radius: 17px;
+  background: var(--paper, #fffefa);
+  padding: 10px 7px;
+  color: var(--ink, #203d36);
+  box-shadow: 0 3px 12px #24463508;
+  display: flex;
+  gap: 6px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.3;
+  text-align: center;
+  transition: box-shadow 0.18s;
+}
+.cl-map-node > span {
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+.cl-map-node > svg {
+  width: 20px;
+  height: 20px;
+}
+.cl-map-node:hover {
+  background: #eef2e6;
+  box-shadow: 0 4px 15px #24463516;
+}
+.cl-map-node[aria-pressed="true"] {
+  background: var(--green, #214f46);
+  border-color: var(--green, #214f46);
+  color: white;
+  box-shadow: 0 0 0 5px #dbe6ca;
+}
+.cl-map-entry-dot {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #b77b47;
+}
+.cl-map-node[aria-pressed="true"] .cl-map-entry-dot {
+  background: #e1c08f;
+}
+.cl-map-help {
+  font-size: 0.72rem;
+  line-height: 1.65;
+  color: var(--muted, #64736a);
+  padding: 10px 8px 0;
+  margin: 16px 0;
+}
+.cl-map-alternative {
+  border-top: 1px solid var(--line, #dce2d8);
+  padding: 12px 0;
+  margin: 0 8px;
+}
+.cl-map-alternative summary {
+  font-size: 0.76rem;
+  min-height: 36px;
+}
+.cl-map-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  padding: 10px 0;
+}
+.cl-map-list button {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  text-align: left;
+  border: 1px solid var(--line, #dce2d8);
+  border-radius: 12px;
+  min-height: 48px;
+  font-size: 0.77rem;
+  padding: 11px;
+  background: var(--paper, #fffefa);
+}
+.cl-map-list button > svg {
+  flex-shrink: 0;
+}
+.cl-map-list button[aria-pressed="true"] {
+  background: var(--green, #214f46);
+  color: white;
+  border-color: var(--green, #214f46);
+}
+.cl-map-entry-label {
+  font-size: 0.58rem;
+  margin-left: auto;
+  color: var(--muted, #64736a);
+}
+.cl-map-list button[aria-pressed="true"] .cl-map-entry-label {
+  color: #dce8d2;
+}
+.cl-map-detail {
+  background: var(--bg, #f8f7f3);
+  border: 1px solid var(--line, #dce2d8);
+  border-radius: 20px;
+  padding: 23px 21px;
+  min-height: 480px;
+}
+.cl-map-detail-title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 0 0 13px;
+}
+.cl-map-detail-title > svg {
+  flex-shrink: 0;
+}
+.cl-map-detail h3 {
+  font:
+    500 1.65rem/1.2 Fraunces,
+    Georgia,
+    serif;
+  margin: 0;
+}
+.cl-map-detail > p:not(.cl-didactic-kicker):not(.cl-map-provenance) {
+  font-size: 0.83rem;
+  line-height: 1.7;
+  color: #536c5c;
+}
+.cl-map-connections {
+  padding: 0;
+  margin: 20px 0;
+  list-style: none;
+}
+.cl-map-connections li + li {
+  margin-top: 10px;
+}
+.cl-map-connections button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  border: 1px solid #dce3d5;
+  border-radius: 12px;
+  background: var(--paper, #fffefa);
+  padding: 12px 13px;
+  transition: border-color 0.18s;
+}
+.cl-map-connections button:hover {
+  border-color: #8ea782;
+}
+.cl-map-connections strong {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.77rem;
+  font-weight: 650;
+  margin-bottom: 5px;
+}
+.cl-map-connections span {
+  display: block;
+  font-size: 0.74rem;
+  line-height: 1.55;
+  color: var(--muted, #64736a);
+}
+.cl-map-detail > .btn {
+  width: 100%;
+  font-size: 0.76rem;
+  white-space: normal;
+  padding: 11px 12px;
+  justify-content: space-between;
+  line-height: 1.5;
+}
+.cl-map-detail > .btn svg {
+  flex-shrink: 0;
+}
+.cl-map-provenance {
+  font-size: 0.65rem !important;
+  color: var(--muted, #64736a);
+  line-height: 1.5;
+  margin: 12px 0 0;
+}
+@media (max-width: 1120px) {
+  .cl-journey-buttons {
+    gap: 7px;
+  }
+  .cl-journey-button {
+    padding: 12px 9px;
+    gap: 8px;
+  }
+  .cl-journey-button > svg {
+    display: none;
+  }
+  .cl-journey-button small {
+    font-size: 0.64rem;
+  }
+  .cl-map-layout {
+    grid-template-columns: minmax(0, 1.25fr) minmax(235px, 1fr);
+    padding-left: 23px;
+    padding-right: 23px;
+    gap: 16px;
+  }
+  .cl-map-node {
+    min-width: 66px;
+    min-height: 64px;
+    padding: 7px 4px;
+    border-radius: 13px;
+  }
+  .cl-map-node > span {
+    font-size: 0.64rem;
+  }
+  .cl-map-node > svg {
+    width: 18px;
+    height: 18px;
+  }
+  .cl-map-detail {
+    padding: 20px 17px;
+  }
+  .cl-map-detail h3 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 970px) {
+  .cl-map-layout {
+    grid-template-columns: 1fr;
+  }
+  .cl-map-visual {
+    max-width: 680px;
+    width: 100%;
+    margin: auto;
+  }
+  .cl-map-node {
+    min-height: 74px;
+  }
+  .cl-map-node > span {
+    font-size: 0.76rem;
+  }
+  .cl-map-node > svg {
+    width: 23px;
+    height: 23px;
+  }
+  .cl-map-detail {
+    min-height: 0;
+  }
+  .cl-map-connections {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .cl-map-connections li + li {
+    margin-top: 0;
+  }
+  .cl-map-connections button {
+    height: 100%;
+  }
+  .cl-map-detail > .btn {
+    width: auto;
+    gap: 15px;
+  }
+  .cl-journey-detail {
+    gap: 20px;
+    grid-template-columns: minmax(0, 1.25fr) minmax(200px, 1fr);
+  }
+}
+@media (max-width: 620px) {
+  .cl-didactic {
+    border-radius: 20px;
+    margin: 22px 0;
+  }
+  .cl-didactic-heading {
+    padding: 24px 20px 19px;
+  }
+  .cl-didactic-heading h2 {
+    font-size: 2rem;
+  }
+  .cl-didactic-intro {
+    font-size: 0.85rem;
+  }
+  .cl-journey-buttons {
+    padding: 0 20px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+  .cl-journey-button {
+    min-height: 74px;
+    padding: 11px;
+    gap: 9px;
+  }
+  .cl-journey-button small {
+    font-size: 0.63rem;
+  }
+  .cl-step-number {
+    width: 26px;
+    height: 26px;
+  }
+  .cl-journey-figure {
+    margin: 16px 12px 0;
+    padding: 14px 6px 12px;
+    border-radius: 15px;
+  }
+  .cl-journey-drawing svg {
+    max-height: none;
+  }
+  .cl-drawing-caption {
+    font-size: 0.69rem;
+    padding: 0 8px;
+    margin-top: 10px;
+  }
+  .cl-journey-detail {
+    grid-template-columns: 1fr;
+    padding: 23px 20px;
+    gap: 21px;
+    min-height: 0;
+  }
+  .cl-journey-detail h3 {
+    font-size: 1.5rem;
+  }
+  .cl-journey-detail p {
+    font-size: 0.83rem;
+  }
+  .cl-journey-output {
+    padding: 17px;
+  }
+  .cl-journey-output .btn {
+    width: auto;
+    gap: 12px;
+  }
+  .cl-didactic-footnote {
+    margin: 0 20px;
+  }
+  .cl-map-layout {
+    padding: 0 18px 22px;
+    gap: 10px;
+  }
+  .cl-map-graphic {
+    display: none;
+  }
+  .cl-map-help {
+    padding: 0;
+    margin: 0 0 12px;
+    font-size: 0.73rem;
+  }
+  .cl-map-alternative {
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
+  .cl-map-alternative summary {
+    font-size: 0.81rem;
+  }
+  .cl-map-list {
+    padding: 6px 0 12px;
+  }
+  .cl-map-list button {
+    font-size: 0.76rem;
+    padding: 11px 9px;
+    min-height: 54px;
+  }
+  .cl-map-entry-label {
+    display: none;
+  }
+  .cl-map-connections {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+  .cl-map-detail {
+    padding: 20px 17px;
+  }
+  .cl-map-detail-title {
+    margin-bottom: 12px;
+  }
+  .cl-map-detail h3 {
+    font-size: 1.65rem;
+  }
+  .cl-map-detail > .btn {
+    width: 100%;
+  }
+  .cl-didactic-limit {
+    font-size: 0.72rem;
+    padding: 16px 20px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cl-didactic * {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+.no-motion .cl-didactic * {
+  transition: none !important;
+  animation: none !important;
+}
+html[data-theme="dark"] .cl-journey-figure {
+  background: linear-gradient(130deg, #233a30, #293b2e);
+  border-color: #405943;
+}
+html[data-theme="dark"] .cl-j-halo {
+  fill: #36503b;
+}
+html[data-theme="dark"] .cl-j-orbit {
+  stroke: #6c855e;
+}
+html[data-theme="dark"] .cl-j-path,
+html[data-theme="dark"] .cl-j-bracket {
+  stroke: #a4b993;
+}
+html[data-theme="dark"] .cl-j-pill rect {
+  stroke: #698064;
+}
+html[data-theme="dark"] .cl-j-pill.warm rect {
+  fill: #4b392f;
+  stroke: #ac805d;
+}
+html[data-theme="dark"] .cl-j-label,
+html[data-theme="dark"] .cl-j-caption {
+  fill: #d2dfc7;
+}
+html[data-theme="dark"] .cl-drawing-caption,
+html[data-theme="dark"] .cl-journey-detail blockquote {
+  color: #c5d6b9;
+}
+html[data-theme="dark"] .cl-map-halo {
+  fill: #2a4234;
+  stroke: #4b6549;
+}
+html[data-theme="dark"] .cl-map-orbit {
+  stroke: #617c54;
+}
+html[data-theme="dark"] .cl-map-edge {
+  stroke: #789565;
+  opacity: 0.3;
+}
+html[data-theme="dark"] .cl-map-edge.is-connected {
+  stroke: #b6cd94;
+  opacity: 1;
+}
+html[data-theme="dark"] .cl-map-node {
+  border-color: #60745a;
+}
+html[data-theme="dark"] .cl-map-node:hover {
+  background: #304735;
+}
+html[data-theme="dark"] .cl-map-node[aria-pressed="true"] {
+  background: var(--green, #214f46);
+  box-shadow: 0 0 0 5px #4c6347;
+}
+html[data-theme="dark"]
+  .cl-map-detail
+  > p:not(.cl-didactic-kicker):not(.cl-map-provenance) {
+  color: #c5d6c7;
+}
+html[data-theme="dark"] .cl-map-connections button {
+  border-color: #52634c;
+}
+@media print {
+  .cl-didactic {
+    break-inside: auto;
+    box-shadow: none;
+    background: white;
+  }
+  .cl-journey-buttons,
+  .cl-map-list,
+  .cl-map-connections button svg,
+  .cl-map-detail > .btn {
+    display: none !important;
+  }
+  .cl-journey-detail,
+  .cl-map-layout {
+    display: block;
+  }
+  .cl-journey-output {
+    margin-top: 15px;
+  }
+  .cl-map-graphic {
+    display: block;
+  }
+  .cl-map-node {
+    display: flex !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .cl-map-detail {
+    min-height: 0;
+    margin-top: 20px;
+  }
+  .cl-journey-drawing,
+  .cl-map-graphic {
+    break-inside: avoid;
+  }
+  .cl-map-connections button {
+    display: block !important;
+    border: 0;
+    padding: 5px;
+  }
+  .cl-didactic details > * {
+    display: block !important;
+  }
+}

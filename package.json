@@ -1,0 +1,15 @@
+{
+  "name": "carelab",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Herramientas prácticas para organizar y compartir la carga de cuidar, con BrainBox 1.2.",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "verify": "node tools/verify.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

@@ -1,0 +1,93 @@
+.feedback-card {
+  max-width: 760px;
+}
+.feedback-options {
+  border: 0;
+  padding: 0;
+  margin: 0 0 24px;
+  min-width: 0;
+}
+.feedback-options legend {
+  font-weight: 650;
+  margin-bottom: 12px;
+}
+.feedback-choices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.feedback-choices label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.feedback-choices label:has(input:checked) {
+  background: var(--light);
+  border-color: var(--green);
+}
+.feedback-choices input {
+  accent-color: var(--green);
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+}
+.feedback-count {
+  display: block;
+  text-align: right;
+  margin-top: 6px;
+}
+.feedback-availability {
+  padding: 18px;
+  border-radius: 14px;
+  background: var(--light);
+  margin: 20px 0;
+}
+.feedback-availability p {
+  margin-bottom: 0;
+}
+.feedback-actions {
+  gap: 14px;
+  margin-top: 24px;
+}
+.feedback-status:empty {
+  display: none;
+}
+.feedback-status {
+  padding-top: 12px;
+  line-height: 1.7;
+}
+.feedback-session {
+  margin-top: 24px;
+}
+.feedback-receipt code {
+  display: block;
+  overflow-wrap: anywhere;
+  margin-top: 12px;
+}
+.feedback-privacy-details p {
+  margin: 12px 0;
+}
+.feedback-receipt {
+  margin-top: 18px;
+}
+.feedback-copy-fallback label {
+  display: block;
+  margin: 16px 0 8px;
+}
+.feedback-copy-fallback textarea {
+  width: 100%;
+}
+@media (max-width: 480px) {
+  .feedback-choices {
+    grid-template-columns: 1fr;
+  }
+  .feedback-actions .btn {
+    width: 100%;
+  }
+}

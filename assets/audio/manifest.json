@@ -1,0 +1,64 @@
+{
+  "version": "2.0",
+  "checkedAt": "2026-10-15",
+  "narrations": [
+    {
+      "id": "pausa",
+      "title": "Un poco de espacio",
+      "playback": "local-tts",
+      "src": null
+    },
+    {
+      "id": "paso",
+      "title": "Un paso que quepa hoy",
+      "playback": "local-tts",
+      "src": null
+    },
+    {
+      "id": "ayuda",
+      "title": "Pedir una ayuda concreta",
+      "playback": "local-tts",
+      "src": null
+    }
+  ],
+  "music": [
+    {
+      "title": "Meditation Impromptu 02",
+      "author": "Kevin MacLeod",
+      "provider": "Incompetech",
+      "isrc": "USUAN1100162",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceUrl": "https://incompetech.com/music/royalty-free/index.html?Search=Search&isrc=USUAN1100162",
+      "downloadUrl": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Meditation%20Impromptu%2002.mp3",
+      "metadataUrl": "https://incompetech.com/music/royalty-free/pieces.json",
+      "changes": "Ninguno: archivo original sin modificar.",
+      "checkedAt": "2026-10-15",
+      "sha256": "4e7ead76cfdda0979ff7d771fbbc3dbb312ca80ce25b78f3cdcaef07fcc7c2da",
+      "bytes": 8261798,
+      "catalogDuration": "00:04:09"
+    },
+    {
+      "title": "Luminous Rain",
+      "author": "Kevin MacLeod",
+      "provider": "Incompetech",
+      "isrc": "USUAN1100169",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceUrl": "https://incompetech.com/music/royalty-free/index.html?Search=Search&isrc=USUAN1100169",
+      "downloadUrl": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Luminous%20Rain.mp3",
+      "metadataUrl": "https://incompetech.com/music/royalty-free/pieces.json",
+      "changes": "Ninguno: archivo original sin modificar.",
+      "checkedAt": "2026-10-15",
+      "sha256": "73825cc2c4aba34e200e99a6a737ab792f683bbd875f643ca5b00016349a0a24",
+      "bytes": 3744555,
+      "catalogDuration": "00:01:54"
+    }
+  ],
+  "rightsDecision": {
+    "appleSystemVoiceRecordings": "No se distribuyen grabaciones sintetizadas con voces del sistema. Los tres M4A preliminares se han retirado de este árbol de distribución. Se mantiene el texto editorial y la lectura local en vivo.",
+    "source": "https://www.apple.com/legal/sla/docs/macOSTahoe.pdf",
+    "section": "2F",
+    "externalMedia": "Ningún reproductor ni petición de medios de terceros se carga automáticamente. Los enlaces externos son manuales."
+  }
+}
