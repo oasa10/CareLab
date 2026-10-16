@@ -1640,3 +1640,10 @@ button, input, select, textarea, .btn, .lv-primary, .lv-secondary { max-width: 1
 .quiet-header #font-toggle { min-width: 2.5rem; width: auto; min-height: 2.5rem; white-space: nowrap; }
 .skip { top: 0; transform: translateY(-200%); }
 .skip:focus { transform: translateY(0); }
+
+/* Brief privacy disclosure preserves the full-bleed arrival and its contrast. */
+.quiet-storage-details { color: #fff; max-width: 40rem; background: rgba(8, 28, 23, .8); padding: .6rem 1rem; border-radius: 1rem; }
+.quiet-storage-details p { font-size: 1rem; line-height: 1.65; }
+.quiet-help-door { text-decoration: underline; text-underline-offset: .3em; max-width: 35rem; }
+.library-safety { border-inline-start: .25rem solid var(--accent, #657d48); padding: 1rem 1.2rem; margin: 1rem 0 2rem; background: var(--surface); border-radius: .6rem; }
+.library-safety p { margin: 0 0 .8rem; font-size: 1rem; }

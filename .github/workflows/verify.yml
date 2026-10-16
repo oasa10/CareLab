@@ -13,3 +13,5 @@ jobs:
       - run: node tools/verify.mjs
       - run: node --test tests/*.test.mjs
       - run: python3 tests/corpus_locations_test.py
+      - run: python3 tests/biblioteca_references_test.py
+      - run: python3 tests/presentation_edits_test.py

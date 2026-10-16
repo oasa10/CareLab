@@ -1,3 +1,6 @@
+import { mountHelp, mountSupportDirectory, mountProcedures } from "../v3/support.js";
+import { mountGroup, mountEvaluation, mountMethodUse } from "../v3/accompaniment.js";
+import { librarySafetyNotice, isSensitiveResource, SAFETY_COPY } from "../v3/library-safety.js";
 import { mountGuidedPractice } from "../v3/practice.js";
 import {
   mountWelcome,
@@ -14,7 +17,6 @@ import {
 import { installSafetySignpost } from "../v3/safety.js";
 import { installFormDrafts, clearFormDraft } from "../v3/form-drafts.js";
 import {
-  mountFeedback,
   hasFeedbackDraft,
   clearFeedbackDraft,
 } from "./feedback.js";
@@ -180,7 +182,7 @@ function titleFor(path) {
       explorar: "Lo que necesitas, cuando lo necesitas",
       micamino: "Lo que vas haciendo tuyo",
       pausa: "Un momento sin exigencias",
-      profundizar: "BrainBox en profundidad",
+      profundizar: "Usar BrainBox en tu día",
       feedback: "Tu experiencia nos ayuda a mejorar",
       brainbox: "Del comprender al hacer, con retorno",
       hoy: "Un espacio para quien cuida",
@@ -194,6 +196,9 @@ function titleFor(path) {
       ajustes: "Tú decides cómo usarlo",
       ayuda: "Encontrar apoyo",
       red: "Compartir la responsabilidad",
+      apoyos: "Apoyos cerca de ti",
+      tramites: "Preparar una gestión",
+      grupo: "Preparar un encuentro acompañado",
       logros: "Tu camino, a tu ritmo",
     }[path] || "Tu espacio de cuidado"
   );
@@ -915,7 +920,7 @@ function programmePage(moduleId) {
       `<div class="stack">${module.unitIds
         .map((id, i) => {
           const u = program.units.find((u) => u.id === id);
-          return `<a class="card clickable" href="#/unidad/${id}"><div class="row between"><span class="tag">PRÁCTICA ${i + 1}${s.completed.includes(id) ? " · EXPLORADA" : ""}</span><span class="small muted">${esc(u.duration)}</span></div><h2 style="font-size:1.8rem;margin-top:20px">${esc(u.title)}</h2><p class="muted">${esc(u.summary)}</p><span class="text-link">Preparar ${esc(tools[u.tool]?.output.toLowerCase() || "un paso")} ${icon("arrow", 17)}</span></a>`;
+          return `<a class="card clickable" href="#/unidad/${id}"><div class="row between"><span class="tag">PRÁCTICA ${i + 1}${s.settings.gamification && s.completed.includes(id) ? " · EXPLORADA" : ""}</span><span class="small muted">${esc(u.duration)}</span></div><h2 style="font-size:1.8rem;margin-top:20px">${esc(u.title)}</h2><p class="muted">${esc(u.summary)}</p><span class="text-link">Preparar ${esc(tools[u.tool]?.output.toLowerCase() || "un paso")} ${icon("arrow", 17)}</span></a>`;
         })
         .join("")}</div>`;
     return;
@@ -926,7 +931,7 @@ function programmePage(moduleId) {
       "Aprender a cuidar.<br>Sin desaparecer en el intento.",
       "Doce módulos para trabajar la carga total del cuidado. Todos están abiertos: elige lo que te sirva ahora, sin examen ni plazo.",
     ) +
-    `<div class="card soft row between"><div><strong>Tu vida marca el ritmo.</strong><p class="small muted" style="margin:4px 0 0">Cada práctica termina en un instrumento para preparar una acción real.</p></div>${link("logros", "Ver mi recorrido", "text-link", "arrow")}</div>${s.profile === "multiple" ? '<p class="note section">Por tu contexto, puede interesarte el módulo 09: varios cuidados y continuidad.</p>' : s.profile === "acompanar" ? '<p class="note section">Por tu contexto, puede interesarte el módulo 10: cuidar a quien cuida.</p>' : ""}<section class="section grid three">${program.modules
+    `<div class="card soft row between"><div><strong>Tu vida marca el ritmo.</strong><p class="small muted" style="margin:4px 0 0">Cada práctica termina en un instrumento para preparar una acción real.</p></div>${s.settings.gamification ? link("logros", "Ver mi recorrido", "text-link", "arrow") : ""}</div>${s.profile === "multiple" ? '<p class="note section">Por tu contexto, puede interesarte el módulo 09: varios cuidados y continuidad.</p>' : s.profile === "acompanar" ? '<p class="note section">Por tu contexto, puede interesarte el módulo 10: cuidar a quien cuida.</p>' : ""}<section class="section grid three">${program.modules
       .map((m, i) => {
         const n = m.unitIds.filter((id) => s.completed.includes(id)).length;
         return `<a href="#/programa/${m.id}" class="card clickable module-card"><div class="row between"><span class="module-number">${String(i + 1).padStart(2, "0")}</span>${s.settings.gamification ? `<span class="tag neutral">${n}/3 exploradas</span>` : ""}</div><h3>${esc(m.title)}</h3><p>${esc(m.summary)}</p>${s.settings.gamification ? `<div class="progress" aria-label="${n} de 3 prácticas exploradas"><span style="width:${(n / 3) * 100}%"></span></div>` : ""}<div class="row between"><small>3 prácticas · a tu ritmo</small>${icon("arrow", 18)}</div></a>`;
@@ -979,7 +984,7 @@ async function libraryPage() {
   const requested = route;
   view.innerHTML = header(
     "BIBLIOTECA",
-    "Todo el conocimiento.<br>Solo lo que necesitas ahora.",
+    "Consulta lo que necesitas.<br>A tu ritmo.",
     "Cargando las fichas del proyecto…",
   );
   try {
@@ -988,7 +993,7 @@ async function libraryPage() {
     view.innerHTML =
       header(
         "BIBLIOTECA",
-        "Todo el conocimiento.<br>Solo lo que necesitas ahora.",
+        "Consulta lo que necesitas.<br>A tu ritmo.",
         "Palabras, herramientas, cultura y guías. Busca una necesidad o abre una colección; no hace falta leerlo todo.",
       ) +
       `<div class="library-toolbar"><div class="filter-bar"><div class="searchbox"><label class="visually-hidden" for="library-search">Buscar en la biblioteca</label><input id="library-search" type="search" placeholder="¿Qué necesitas entender o resolver?" value="${esc(filter.q)}"></div><label class="visually-hidden" for="collection">Colección</label><select id="collection" style="width:auto"><option value="">Todas las colecciones</option>${Object.entries(
@@ -1091,7 +1096,7 @@ async function detailPage(id) {
       notFound();
       return;
     }
-    view.innerHTML = `<div class="reading">${header(esc(x.collection), esc(x.title), esc(x.summary), `<div class="row section">${link("biblioteca", "Volver a la biblioteca", "text-link", "back")}<button class="btn secondary small" id="read-detail">${icon("volume", 17)} Escuchar resumen</button></div>`)}<div class="note">${esc(x.usage || "Consulta informativa. Respeta las condiciones y límites de cada recurso.")}${x.level === "profesional" ? "<br><strong>Su aplicación requiere competencia o supervisión profesional. Esta ficha no habilita para aplicarlo.</strong>" : ""}</div>${x.body.map((b, i) => `<details ${i < 2 ? "open" : ""}><summary>${esc(b.label)}</summary><div class="detail-text">${esc(b.text)}</div></details>`).join("")}<section class="section card soft"><h3>De comprender a preparar</h3><p class="small muted">Elige una herramienta de organización cotidiana; esta ficha no se convierte automáticamente en una intervención.</p>${link("herramientas", "Ver instrumentos prácticos", "btn secondary")}</section><details class="section"><summary>Fuentes y procedencia</summary><p class="small muted">${esc(x.source?.path || "Corpus MEPRE")} · ${esc(x.source?.id || x.id)}</p><ul class="source-list">${x.links
+    view.innerHTML = `<div class="reading">${header(esc(x.collection), esc(x.title), esc(x.summary), `<div class="row section">${link("biblioteca", "Volver a la biblioteca", "text-link", "back")}<button class="btn secondary small" id="read-detail">${icon("volume", 17)} Escuchar resumen</button></div>`)}${librarySafetyNotice(x.id)}<div class="note">${esc(x.usage || "Consulta informativa. Respeta las condiciones y límites de cada recurso.")}${x.level === "profesional" ? "<br><strong>Su aplicación requiere competencia o supervisión profesional. Esta ficha no habilita para aplicarlo.</strong>" : ""}</div>${x.body.map((b, i) => `<details ${i < 2 ? "open" : ""}><summary>${esc(b.label)}</summary><div class="detail-text">${esc(b.text)}</div></details>`).join("")}<section class="section card soft"><h3>De comprender a preparar</h3><p class="small muted">Elige una herramienta de organización cotidiana; esta ficha no se convierte automáticamente en una intervención.</p>${isSensitiveResource(x.id) ? link("ayuda", "Encontrar apoyo", "btn secondary") : link("herramientas", "Ver instrumentos prácticos", "btn secondary")}</section><details class="section"><summary>Fuentes y procedencia</summary><p class="small muted">${esc(x.source?.path || "Corpus MEPRE")} · ${esc(x.source?.id || x.id)}</p><ul class="source-list">${x.links
       .filter((l) => safeURL(l.url))
       .map(
         (l) =>
@@ -1102,6 +1107,7 @@ async function detailPage(id) {
       )}</ul><p class="small muted">Los enlaces abren páginas externas. Sus condiciones de acceso y privacidad son propias.</p></details></div>`;
     $("#read-detail").onclick = () =>
       readText(x.title, [
+        ...(isSensitiveResource(x.id) ? [SAFETY_COPY] : []),
         x.summary,
         x.usage || "",
         ...x.body.slice(0, 2).map((b) => `${b.label}. ${b.text}`),
@@ -1125,14 +1131,14 @@ function achievements() {
     ) +
     `${
       !s.settings.gamification
-        ? '<p class="note">Has desactivado los logros visuales. Todas las prácticas siguen abiertas.</p>'
+        ? '<p class="note">Los marcadores están apagados. Puedes activarlos en Ajustes. Todas las prácticas siguen abiertas.</p>'
         : `<div class="badges">${badges()
             .map(
               ([id, t, d, earned, i]) =>
                 `<article class="badge ${earned ? "earned" : ""}">${icon(i, 30)}<strong>${t}</strong><span>${earned ? d : "Cuando tenga sentido para ti."}</span><div style="margin-top:8px">${earned ? "Reconocido" : "A tu ritmo"}</div></article>`,
             )
             .join("")}</div>`
-    }<section class="section"><div class="section-head"><h2>Ensayar otra mirada</h2><span class="small muted">Situaciones ficticias · sin puntuación</span></div><div class="grid three">${scenarios.map((s) => `<a class="card clickable" href="#/practica/${s.id}"><span class="tag">${Store.get().practice.includes(s.id) ? "Explorada" : "Situación interactiva"}</span><h3 style="margin-top:16px">${s.title}</h3><p class="small muted">${short(s.scene, 110)}</p><span class="text-link">Probar ${icon("arrow", 16)}</span></a>`).join("")}</div></section><p class="small muted section">Puedes desactivar los logros en <a class="text-link" href="#/ajustes">Tu espacio</a>. El progreso solo refleja tus registros.</p>`;
+    }<section class="section"><div class="section-head"><h2>Ensayar otra mirada</h2><span class="small muted">Situaciones ficticias · sin puntuación</span></div><div class="grid three">${scenarios.map((s) => `<a class="card clickable" href="#/practica/${s.id}"><span class="tag">${Store.get().settings.gamification && Store.get().practice.includes(s.id) ? "Explorada" : "Situación interactiva"}</span><h3 style="margin-top:16px">${s.title}</h3><p class="small muted">${short(s.scene, 110)}</p><span class="text-link">Probar ${icon("arrow", 16)}</span></a>`).join("")}</div></section><p class="small muted section">Puedes desactivar los logros en <a class="text-link" href="#/ajustes">Tu espacio</a>. El progreso solo refleja tus registros.</p>`;
 }
 function practicePage(id) {
   const s = scenarios.find((x) => x.id === id);
@@ -1154,16 +1160,6 @@ function practicePage(id) {
         );
       }),
   );
-}
-function helpPage() {
-  stopMedia();
-  view.innerHTML =
-    header(
-      "ENCONTRAR APOYO",
-      "Si hoy no puedes<br>sostenerlo a solas.",
-      "No necesitas completar ejercicios para pedir ayuda. Elige lo que se parezca a tu situación.",
-    ) +
-    `<div class="grid two"><section class="card peach"><span class="tag orange">PELIGRO O EMERGENCIA</span><h2 style="font-size:1.9rem;margin-top:18px">Necesito ayuda inmediata</h2><p>En España, llama al 112 ante una emergencia. Si puedes hacerlo con seguridad, busca también a alguien cercano que pueda acompañarte.</p><a class="btn danger" href="tel:112">Llamar al 112</a><p class="small muted section">CareLab no recibe avisos ni puede enviar ayuda.</p></section><section class="card"><span class="tag">APOYO ANTE CONDUCTA SUICIDA</span><h2 style="font-size:1.9rem;margin-top:18px">Estoy pensando en hacerme daño</h2><p>En España, la Línea 024 ofrece apoyo a personas con conducta suicida y a sus familiares y allegados. Es gratuita y funciona las 24 horas.</p><div class="row"><a class="btn" href="tel:024?oai_link_source=model_response_hotline">Llamar al 024</a><a class="text-link" href="https://www2.cruzroja.es/web/cruzroja/chat-linea024?oai_link_source=model_response_hotline" target="_blank" rel="noopener noreferrer">Abrir chat ↗</a></div></section><section class="card"><h3>Mi salud, mi estado emocional o una decisión legal necesitan atención</h3><p class="small muted">Contacta con tu centro de salud, el profesional correspondiente o los servicios competentes. No uses BrainBox para resolver esa situación.</p>${link("tool/consulta", "Preparar lo que quiero preguntar", "btn secondary")}</section><section class="card"><h3>Necesito ayuda práctica y servicios</h3><p class="small muted">Puedes pedir orientación a los servicios sociales de tu municipio. El acceso a dependencia y otros apoyos debe comprobarse según tu comunidad autónoma y situación.</p><div class="row">${link("tool/consulta", "Preparar una petición", "btn secondary")}<a class="text-link" href="https://www.imserso.es/autonomia-personal-dependencia/sistema-autonomia-atencion-dependencia-saad/preguntas-frecuentes" target="_blank" rel="noopener noreferrer">Información del Imserso ↗</a></div></section></div><div class="boundary section">${boundary}</div><p class="small muted section">Recursos de España consultados el 15 de octubre de 2026. Fuera de España, utiliza los servicios de emergencia y apoyo de tu país. <a class="text-link" href="https://www.sanidad.gob.es/linea024/home.htm?oai_link_source=model_response_hotline" target="_blank" rel="noopener noreferrer">Información de la Línea 024</a>.</p>`;
 }
 function exportBackup() {
   modal(
@@ -1201,7 +1197,7 @@ function settingsPage() {
       "Que se adapte a ti.",
       "Elige qué conservar, cómo verlo y qué experiencia prefieres.",
     ) +
-    `<div class="grid two"><section class="card"><h2 style="font-size:1.8rem">Tus datos, a tu elección</h2><p class="small muted">${esc(storageCopy())}</p><p class="small">El guardado no está cifrado. Quien use este mismo perfil del navegador puede acceder a él. No hay cuenta, servidor de notas ni sincronización entre dispositivos.</p><button class="btn" id="toggle-save">${Store.isPersistent() ? "Dejar de guardar en este dispositivo" : "Activar guardado en este dispositivo"}</button><div class="hr"></div><div class="row"><button class="btn secondary" id="export-backup">Exportar copia</button><button class="btn secondary" id="import-backup">Restaurar copia</button></div><input type="file" id="backup-file" accept="application/json,.json" hidden><p class="small muted section">Una copia permite trasladar tu espacio a otro navegador. No se restaura automáticamente.</p><button class="text-link" id="erase-data">Borrar mi espacio de CareLab</button></section><section class="card"><h2 style="font-size:1.8rem">Tu experiencia</h2><label class="field">Modo de visualización<select data-theme-choice><option value="light">Claro</option><option value="system">Sistema</option><option value="dark">Oscuro</option></select></label><p class="small muted">Sistema sigue la preferencia del dispositivo. Puedes cambiarlo desde la barra superior en cualquier página. Las preferencias siguen tu elección de guardado. Si el navegador no puede conservar un cambio, te avisaremos.</p><div class="switch-row"><label for="gamification">Logros y avances visibles<small>Reconocimiento personal, sin puntuación de salud.</small></label><input id="gamification" type="checkbox" ${s.settings.gamification ? "checked" : ""}></div><div class="switch-row"><label for="motion">Movimiento suave<small>Siempre se respeta también la preferencia de movimiento reducido del dispositivo.</small></label><input id="motion" type="checkbox" ${s.settings.motion ? "checked" : ""}></div><div class="switch-row"><label for="largeText">Texto más grande<small>También puedes usar el zoom de tu navegador.</small></label><input id="largeText" type="checkbox" ${s.settings.largeText ? "checked" : ""}></div><div class="hr"></div><h3>Tu contexto de cuidado</h3><p class="small muted">${{ familia: "En mi entorno", profesional: "Por trabajo", multiple: "En varios ámbitos", acompanar: "Acompaño a cuidadores", "sin-elegir": "Sin elegir" }[s.profile]}</p><button class="btn secondary" id="change-profile">Cambiar contexto</button></section><section class="card"><h3>Consultar sin conexión</h3><p class="small muted">Prepara la aplicación, el programa y la biblioteca para este navegador. Los enlaces externos necesitan conexión. La música se descarga aparte; la lectura en voz depende de las voces locales del dispositivo.</p><button class="btn secondary" id="prepare-offline">Preparar acceso sin conexión</button><p class="small muted" id="offline-status" role="status"></p><button class="text-link small" id="prepare-music">Descargar las 2 piezas de música (12 MB)</button><p class="small muted" id="music-status" role="status"></p></section><section class="card"><h3>Privacidad y límites</h3><p class="small muted">CareLab no incluye analítica ni publicidad y no envía tus notas. El alojamiento recibe las solicitudes de páginas y archivos, con datos técnicos como la dirección IP. Las webs externas tienen sus propias condiciones.</p><p class="small muted">No guardes contraseñas, datos bancarios, documentos clínicos ni información identificativa innecesaria. Eliminar aquí no borra archivos exportados, copias compartidas ni datos de versiones anteriores.</p>${link("acerca", "Conocer el proyecto", "text-link")}<p>${link("feedback", "Ayúdanos a mejorar", "text-link")}</p></section></div>`;
+    `<div class="grid two"><section class="card"><h2 style="font-size:1.8rem">Tus datos, a tu elección</h2><p class="small muted">${esc(storageCopy())}</p><p class="small">El guardado no está cifrado. Quien use este mismo perfil del navegador puede acceder a él. No hay cuenta, servidor de notas ni sincronización entre dispositivos.</p><button class="btn" id="toggle-save">${Store.isPersistent() ? "Dejar de guardar en este dispositivo" : "Activar guardado en este dispositivo"}</button><div class="hr"></div><div class="row"><button class="btn secondary" id="export-backup">Exportar copia</button><button class="btn secondary" id="import-backup">Restaurar copia</button></div><input type="file" id="backup-file" accept="application/json,.json" hidden><p class="small muted section">Una copia permite trasladar tu espacio a otro navegador. No se restaura automáticamente.</p><button class="text-link" id="erase-data">Borrar mi espacio de CareLab</button></section><section class="card"><h2 style="font-size:1.8rem">Tu experiencia</h2><label class="field">Modo de visualización<select data-theme-choice><option value="light">Claro</option><option value="system">Sistema</option><option value="dark">Oscuro</option></select></label><p class="small muted">Sistema sigue la preferencia del dispositivo. Puedes cambiarlo desde la barra superior en cualquier página. Las preferencias siguen tu elección de guardado. Si el navegador no puede conservar un cambio, te avisaremos.</p><div class="switch-row"><label for="gamification">Logros y avances visibles<small>Opcionales y apagados al empezar. No son una puntuación de salud. Desde esta actualización requieren una elección nueva; tus registros se conservan.</small></label><input id="gamification" type="checkbox" ${s.settings.gamification ? "checked" : ""}></div><div class="switch-row"><label for="motion">Movimiento suave<small>Siempre se respeta también la preferencia de movimiento reducido del dispositivo.</small></label><input id="motion" type="checkbox" ${s.settings.motion ? "checked" : ""}></div><div class="switch-row"><label for="largeText">Texto más grande<small>También puedes usar el zoom de tu navegador.</small></label><input id="largeText" type="checkbox" ${s.settings.largeText ? "checked" : ""}></div><div class="hr"></div><h3>Tu contexto de cuidado</h3><p class="small muted">${{ familia: "En mi entorno", profesional: "Por trabajo", multiple: "En varios ámbitos", acompanar: "Acompaño a otras personas cuidadoras", "sin-elegir": "Sin elegir" }[s.profile]}</p><button class="btn secondary" id="change-profile">Cambiar contexto</button></section><section class="card"><h3>Consultar sin conexión</h3><p class="small muted">Prepara la aplicación, el programa y la biblioteca para este navegador. Los enlaces externos necesitan conexión. La música se descarga aparte; la lectura en voz depende de las voces locales del dispositivo.</p><button class="btn secondary" id="prepare-offline">Preparar acceso sin conexión</button><p class="small muted" id="offline-status" role="status"></p><button class="text-link small" id="prepare-music">Descargar las 2 piezas de música (12 MB)</button><p class="small muted" id="music-status" role="status"></p></section><section class="card"><h3>Privacidad y límites</h3><p class="small muted">CareLab no incluye analítica ni publicidad y no envía tus notas. El alojamiento recibe las solicitudes de páginas y archivos, con datos técnicos como la dirección IP. Las webs externas tienen sus propias condiciones.</p><p class="small muted">No guardes contraseñas, datos bancarios, documentos clínicos ni información identificativa innecesaria. Eliminar aquí no borra archivos exportados, copias compartidas ni datos de versiones anteriores.</p>${link("acerca", "Conocer el proyecto", "text-link")}<p>${link("feedback", "Ayúdanos a mejorar", "text-link")}</p></section></div>`;
   $("#toggle-save").onclick = () => {
     if (Store.isPersistent())
       confirmAction(
@@ -1285,6 +1281,7 @@ function settingsPage() {
     (k) =>
       ($("#" + k).onchange = (e) => {
         s.settings[k] = e.target.checked;
+        if (k === "gamification") s.settings.gamificationChoice = true;
         sync();
       }),
   );
@@ -1357,7 +1354,7 @@ async function prepareOffline(music = false) {
   }
 }
 function aboutPage() {
-  view.innerHTML = `<div class="reading">${header("CARELAB · CUIDAR SIN DESAPARECER", "Del cuidado que te desborda<br>a un plan que puedes mover.", "Un espacio práctico para hacer visible, organizar y compartir la carga total del cuidado.")}<section class="card soft"><h2 style="font-size:1.8rem">El camino que proponemos</h2><div class="row"><button class="pill active" data-story="0">1. Ver</button><button class="pill" data-story="1">2. Elegir</button><button class="pill" data-story="2">3. Preparar</button><button class="pill" data-story="3">4. Revisar</button></div><p id="story-text" style="margin-top:20px">De una sensación de carga difusa a un mapa de las partes que la componen, incluyendo lo invisible.</p><p class="small muted">Es el recorrido de la aplicación, no una sustitución de los pasos del Método BrainBox.</p></section><h2>Lo que puedes resolver aquí</h2><ul><li>Hacer visible el trabajo práctico, mental, emocional y de organización.</li><li>Preparar acciones, peticiones, límites, relevos y preguntas para consultas.</li><li>Registrar acuerdos confirmados y revisar lo ocurrido.</li><li>Practicar con 36 unidades y consultar 1.087 fichas sin salir a documentos.</li><li>Conservar tu espacio por elección, exportarlo y usar contenido descargado.</li></ul><h2>Lo que necesita al mundo real</h2><p>La disponibilidad de una persona, un servicio, dinero, atención profesional o un derecho no se crea al registrarlo. CareLab ayuda a preparar, organizar y revisar esos pasos. Los acuerdos se confirman hablando con las partes.</p><h2>De dónde viene</h2><p>CareLab aplica el proyecto MEPRE del cuidado y el Método BrainBox 1.2 a la organización cotidiana. Integra investigación, Cuidopedia, Cuidoteca, CareTools, las tres guías transversales y Cuidosfera. El Método MEPRE 1.0 conserva su carácter preliminar.</p><div class="boundary">${boundary}</div><h2>Calidad y evidencia</h2><p>Esta versión es una prueba de concepto funcional para pilotaje. Los recorridos guiados son adaptaciones educativas del Método BrainBox 1.2; no son una evaluación clínica ni una IA que interpreta emociones. Las escenas de ejemplo son ficticias y las decisiones personales las toma quien usa la herramienta. La aprobación editorial, la trazabilidad de fuentes y las pruebas de software no demuestran eficacia clínica ni reducción de sobrecarga. La utilidad debe contrastarse con personas cuidadoras y sus contextos.</p><p>Las dimensiones del mapa y los logros son registros personales, no escalas diagnósticas. Las actividades no sustituyen terapia, valoración clínica, asesoramiento legal ni servicios públicos.</p><h2>Audio y accesibilidad</h2><p>Las narraciones editoriales tienen texto completo y se leen en tu dispositivo. Puedes elegir únicamente voces que el navegador identifica como locales; su disponibilidad depende del dispositivo. Nunca se leen notas personales automáticamente.</p><p>Controles por teclado, tamaño de texto, movimiento reducido y contenidos alternativos forman parte del diseño. Las pruebas técnicas no equivalen a una certificación universal de accesibilidad.</p><h2>Imagen y ambiente</h2><p>La ventana de naturaleza es una imagen original generada para CareLab, no una fotografía de un lugar identificado. El movimiento y el sonido son opcionales. Las piezas de piano conservan sus créditos y licencia en el reproductor.</p><h2>Autoría y condiciones</h2><p>Proyecto de Osman Salazar. Contenidos originales del repositorio: CC BY 4.0. Código: MIT. Tipografías Inter y Fraunces: SIL OFL. Obras, cuestionarios, marcas y materiales externos conservan sus derechos y condiciones. Consultar una ficha profesional no habilita para aplicar su instrumento.</p><p class="small muted">Corte del corpus: 15 de octubre de 2026. Experiencia CareLab 3.0, reconstruida a partir del primer feedback de uso. Conservamos la procedencia de cada ficha. Enlaces externos y disponibilidad de recursos deben comprobarse al utilizarlos.</p><div class="row section">${link("hoy", "Volver a mi espacio")}${link("ajustes", "Privacidad y guardado", "btn secondary")}</div></div>`;
+  view.innerHTML = `<div class="reading">${header("CARELAB · CUIDAR SIN DESAPARECER", "Del cuidado que te desborda<br>a un plan que puedes mover.", "Un espacio práctico para hacer visible, organizar y compartir la carga total del cuidado.")}<section class="card soft"><h2 style="font-size:1.8rem">El camino que proponemos</h2><div class="row"><button class="pill active" data-story="0">1. Ver</button><button class="pill" data-story="1">2. Elegir</button><button class="pill" data-story="2">3. Preparar</button><button class="pill" data-story="3">4. Revisar</button></div><p id="story-text" style="margin-top:20px">De una sensación de carga difusa a un mapa de las partes que la componen, incluyendo lo invisible.</p><p class="small muted">Es el recorrido de la aplicación, no una sustitución de los pasos del Método BrainBox.</p></section><h2>Lo que puedes resolver aquí</h2><ul><li>Hacer visible el trabajo práctico, mental, emocional y de organización.</li><li>Preparar acciones, peticiones, límites, relevos y preguntas para consultas.</li><li>Registrar acuerdos confirmados y revisar lo ocurrido.</li><li>Practicar con 36 unidades y consultar 1.087 fichas sin salir a documentos.</li><li>Conservar tu espacio por elección, exportarlo y usar contenido descargado.</li></ul><h2>Lo que necesita al mundo real</h2><p>La disponibilidad de una persona, un servicio, dinero, atención profesional o un derecho no se crea al registrarlo. CareLab ayuda a preparar, organizar y revisar esos pasos. Los acuerdos se confirman hablando con las partes.</p><h2>De dónde viene</h2><p>CareLab aplica el proyecto MEPRE del cuidado y el Método BrainBox 1.2 a la organización cotidiana. Integra investigación, Cuidopedia, Cuidoteca, CareTools, las tres guías transversales y Cuidosfera. El Método MEPRE 1.0 conserva su carácter preliminar.</p><div class="boundary">${boundary}</div><h2>Calidad y evidencia</h2><p>Esta versión es una prueba de concepto funcional. La revisión clínica externa está pendiente; el modo grupo se ofrece como preparación y demostración, no como una intervención aprobada. Los recorridos guiados son adaptaciones educativas del Método BrainBox 1.2; no son una evaluación clínica ni una IA que interpreta emociones. Las escenas de ejemplo son ficticias y las decisiones personales las toma quien usa la herramienta. La aprobación editorial, la trazabilidad de fuentes y las pruebas de software no demuestran eficacia clínica ni reducción de sobrecarga. La utilidad debe contrastarse con personas cuidadoras y sus contextos.</p><p>Las dimensiones del mapa y los logros son registros personales, no escalas diagnósticas. Las actividades no sustituyen terapia, valoración clínica, asesoramiento legal ni servicios públicos.</p><h2>Audio y accesibilidad</h2><p>Las narraciones editoriales tienen texto completo y se leen en tu dispositivo. Puedes elegir únicamente voces que el navegador identifica como locales; su disponibilidad depende del dispositivo. Nunca se leen notas personales automáticamente.</p><p>Controles por teclado, tamaño de texto, movimiento reducido y contenidos alternativos forman parte del diseño. Las pruebas técnicas no equivalen a una certificación universal de accesibilidad.</p><h2>Imagen y ambiente</h2><p>La ventana de naturaleza es una imagen creada con IA (imagegen de OpenAI) para CareLab, no una fotografía de un lugar identificado. El movimiento y el sonido son opcionales. Las piezas de piano conservan sus créditos y licencia en el reproductor.</p><h2>Cómo se ha elaborado y revisado</h2><p>Osman Salazar es el autor del proyecto y de sus decisiones metodológicas. ChatGPT y Codex (OpenAI) han asistido en la redacción, programación y comprobaciones técnicas. CareLab muestra contenidos fijos: no hay una IA interpretando tus respuestas. Los textos de ayuda y los materiales de consulta no tienen todavía una revisión clínica externa acreditada.</p><p>Cuatro personas aportaron comentarios de uso que motivaron mejoras. Ese retorno no equivale a un ensayo ni demuestra eficacia. Los teléfonos y directorios de esta actualización se cotejaron con fuentes oficiales el 16 de octubre de 2026; los originales del corpus conservan su procedencia.</p><h2>Autoría y condiciones</h2><p>Proyecto de Osman Salazar. Contenidos originales del repositorio: CC BY 4.0. Código: MIT. Tipografías Inter y Fraunces: SIL OFL. Obras, cuestionarios, marcas y materiales externos conservan sus derechos y condiciones. Consultar una ficha profesional no habilita para aplicar su instrumento.</p><p class="small muted">Corte del corpus: 15 de octubre de 2026. Experiencia CareLab 3.0.4, actualizada con la MEPRE del cuidado 2.0 (borrador) y reconstruida a partir del primer feedback de uso. Conservamos la procedencia de cada ficha. Enlaces externos y disponibilidad de recursos deben comprobarse al utilizarlos.</p><div class="row section">${link("hoy", "Volver a mi espacio")}${link("ajustes", "Privacidad y guardado", "btn secondary")}</div></div>`;
   $$("[data-story]").forEach(
     (b) =>
       (b.onclick = () => {
@@ -1403,7 +1400,7 @@ function render() {
   const handlers = {
     feedback: () => {
       view.replaceChildren();
-      addCleanup(mountFeedback(view));
+      addCleanup(mountEvaluation(view));
     },
     hoy: () =>
       addCleanup(
@@ -1417,7 +1414,10 @@ function render() {
     vivir: () => livingPage(id),
     volver: () => livingPage(id, true),
     brainbox: () => (id ? brainboxPage(id) : livingPage()),
-    profundizar: () => brainboxPage(id),
+    profundizar: () => addCleanup(mountMethodUse(view)),
+    grupo: () => addCleanup(mountGroup(view)),
+    apoyos: () => addCleanup(mountSupportDirectory(view, id)),
+    tramites: () => addCleanup(mountProcedures(view)),
     recursos: () => resourcesPage(id),
     mapa: mapPage,
     plan: planPage,
@@ -1431,7 +1431,7 @@ function render() {
     red: networkPage,
     logros: achievements,
     practica: () => practicePage(id),
-    ayuda: helpPage,
+    ayuda: () => { stopMedia(); addCleanup(mountHelp(view, id)); },
     ajustes: settingsPage,
     acerca: aboutPage,
     media: () => {
@@ -1587,7 +1587,7 @@ function augmentPage(page, id) {
     const band = document.createElement("section");
     band.className = "brainbox-band section";
     band.innerHTML =
-      '<div><p class="mini-heading">NUESTRO MÉTODO · BRAINBOX 1.2</p><h2>Entender. Hacer. Integrar. Crear.</h2><p class="small muted">Cuatro ejes para mirar una situación, elegir una acción y volver con lo que pasó. Tu contexto decide cuánto profundizar.</p><div class="bb-signature"><span>I · Ser</span><span>II · Saber</span><span>III · Hacer</span><span>IV · Creer / crear</span></div></div><a class="btn" href="#/brainbox">Abrir mi BrainBox</a>';
+      '<div><p class="mini-heading">NUESTRO MÉTODO · BRAINBOX 1.2</p><h2>Entender. Hacer. Integrar. Crear.</h2><p class="small muted">Partir de lo que te ocurre, contrastar lo que supones y preparar algo que puedas probar. Después, volver con lo ocurrido.</p></div><a class="btn" href="#/brainbox">Abrir mi BrainBox</a>';
     const anchor =
       page === "hoy"
         ? view.querySelector(".hero")
@@ -1614,12 +1614,8 @@ function augmentPage(page, id) {
     view.append(slot);
     addCleanup(mountCareMap(slot, Store.get().dimensions));
   }
-  if (page === "acerca") {
-    const slot = view.querySelector("section.card.soft");
-    if (slot) {
-      slot.replaceChildren();
-      addCleanup(mountJourney(slot));
-    }
+  if (page === "tool" && id === "contingencia") {
+    view.querySelector(".page-head")?.insertAdjacentHTML("afterend", librarySafetyNotice("p12"));
   }
   if (page === "tool" && Object.hasOwn(tools, id))
     contextualResources(

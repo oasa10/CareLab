@@ -19,7 +19,7 @@ export const needs = {
     "Reservar un descanso posible",
   ],
   soledad: [
-    "Sentirme acompañado",
+    "Sentirme acompañada",
     "reparto",
     "Preparar una petición de compañía",
   ],

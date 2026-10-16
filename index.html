@@ -10,7 +10,7 @@
     />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; media-src 'self' blob:; connect-src 'self' https://carelab-sugerencias.oasa10.chatgpt.site; object-src 'none'; base-uri 'self'; form-action 'none'"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; media-src 'self' blob:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"
     />
     <title>CareLab · Un paso posible, también para ti</title>
     <link rel="icon" href="assets/img/icono.svg" type="image/svg+xml" />
@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="assets/v2/recommendations.css" />
     <link rel="stylesheet" href="assets/v2/feedback.css" />
     <link rel="stylesheet" href="assets/v3/style.css" />
+    <link rel="stylesheet" href="assets/v3/support.css" />
+    <link rel="stylesheet" href="assets/v3/accompaniment.css" />
     <script type="module" src="assets/v2/app.js"></script>
   </head>
   <body>
@@ -37,17 +39,24 @@
         <nav id="navigation" aria-label="Navegación principal"></nav>
         <span id="breadcrumb"></span>
         <div class="top-actions">
-          <div class="theme-picker">
-            <label for="theme-always">Aspecto</label
-            ><select
-              id="theme-always"
-              aria-label="Modo de visualización"
-              data-theme-choice
+          <div class="theme-picker theme-control">
+            <button
+              id="theme-toggle"
+              class="theme-toggle"
+              type="button"
+              aria-label="Cambiar aspecto. Actual: Sistema"
+              aria-haspopup="menu"
+              aria-controls="theme-menu"
+              aria-expanded="false"
+              title="Aspecto: Sistema"
             >
-              <option value="light">Claro</option>
-              <option value="system" selected>Sistema</option>
-              <option value="dark">Oscuro</option>
-            </select>
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
+            </button>
+            <div id="theme-menu" class="theme-menu" role="menu" aria-label="Aspecto" hidden>
+              <button type="button" role="menuitemradio" aria-checked="true" data-theme-mode="system" tabindex="-1"><span>Sistema</span><span class="theme-check" aria-hidden="true">✓</span></button>
+              <button type="button" role="menuitemradio" aria-checked="false" data-theme-mode="light" tabindex="-1"><span>Claro</span><span class="theme-check" aria-hidden="true">✓</span></button>
+              <button type="button" role="menuitemradio" aria-checked="false" data-theme-mode="dark" tabindex="-1"><span>Oscuro</span><span class="theme-check" aria-hidden="true">✓</span></button>
+            </div>
           </div>
           <button
             id="font-toggle"
@@ -66,7 +75,7 @@
         <p class="loading">Preparando tu espacio…</p>
       </main>
       <footer class="footer">
-        <span>CareLab 3.0 · Método BrainBox 1.2</span
+        <span>CareLab 3.0.4 · Método BrainBox 1.2</span
         ><a href="#/feedback">Ayúdanos a mejorar</a
         ><a href="#/acerca">Cómo funciona y fuentes</a>
       </footer>

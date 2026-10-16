@@ -44,9 +44,9 @@ export function mountWelcome(container, { Store, notify }) {
   }
   function render() {
     const content = [
-      `<p class="quiet-eyebrow">UN ESPACIO PARA QUIEN CUIDA</p><h1>No tienes que<br>poder <em>con todo.</em></h1><p class="quiet-intro">Empecemos por una cosa que te pesa. La miramos juntos, preparamos un paso y volvemos para ver si te sirvió.</p><button class="lv-primary" data-next>Encontrar mi primer paso ${icon("arrow", 18)}</button><a class="lv-quiet" href="#/pausa">Ahora solo necesito una pausa</a><p class="quiet-caption">Sin cuenta. Sin un examen. A tu ritmo.</p>`,
-      `<p class="quiet-eyebrow">UNA COSA CADA VEZ · BRAINBOX 1.2</p><h1>De «no puedo más»<br>a <em>algo posible.</em></h1><p class="quiet-intro">Partimos de una escena de tu día. Separaremos lo que sientes de lo que supones y ensayaremos una acción que puedas usar fuera de aquí.</p><p class="quiet-caption">Cada pantalla se puede recorrer en un momento. Puedes parar en cualquiera.</p><button class="lv-primary" data-next>Así sí puedo empezar ${icon("arrow", 18)}</button>`,
-      `<p class="quiet-eyebrow">SI LA VIDA TE INTERRUMPE</p><h1>Que tu paso<br><em>no se pierda.</em></h1><p class="quiet-intro">El guardado de sesión conserva lo que tocas o escribes al recargar esta pestaña. Si el navegador no puede guardar, te avisamos. Para volver después de cerrarla, elige guardar en este dispositivo.</p><div class="quiet-save-options"><button class="lv-primary" data-device>Guardar en mi dispositivo</button><button class="lv-secondary" data-session>Usar solo esta pestaña</button></div><p class="quiet-caption">Solo en tu navegador, sin enviar tus respuestas. No está cifrado. En un dispositivo compartido, elige esta pestaña. El navegador puede restaurar sesiones cerradas; puedes borrar tu espacio en Ajustes.</p>`,
+      `<p class="quiet-eyebrow">CUIDAR SIN DESAPARECER</p><h1>No tienes que<br>poder <em>con todo.</em></h1><p class="quiet-intro">Cuidas de alguien. CareLab te ayuda a que cuidar no te borre.</p><button class="lv-primary" data-next>Encontrar mi primer paso ${icon("arrow", 18)}</button><a class="lv-quiet" href="#/pausa">Solo necesito una pausa</a><a class="lv-quiet quiet-help-door" href="#/ayuda">Hoy no puedo más. Necesito ayuda, no un ejercicio.</a>`,
+      `<p class="quiet-eyebrow">UNA COSA CADA VEZ · BRAINBOX 1.2</p><h1>Una situación.<br><em>Un paso posible.</em></h1><p class="quiet-intro">Miramos lo que ocurre, contrastamos una idea y preparamos un paso. Después volvemos para comprobar qué pasó.</p><p class="quiet-caption">Puedes parar y retomar.</p><button class="lv-primary" data-next>Así sí puedo empezar ${icon("arrow", 18)}</button>`,
+      `<p class="quiet-eyebrow">SI LA VIDA TE INTERRUMPE</p><h1>Que tu paso<br><em>no se pierda.</em></h1><p class="quiet-intro">Tus respuestas quedan en este navegador, sin cifrar. Elige cuánto conservarlas.</p><div class="quiet-save-options"><button class="lv-primary" data-device>Guardar en mi dispositivo</button><button class="lv-secondary" data-session>Usar solo esta pestaña</button></div><p class="quiet-caption">No se envían tus respuestas.</p><details class="quiet-storage-details"><summary>Cómo funciona el guardado</summary><p>Esta pestaña conserva lo escrito al recargar. El navegador puede restaurar sesiones cerradas. Guardar en el dispositivo permite volver después; quien use ese perfil puede verlo. Puedes borrar en Ajustes. Si no se puede guardar, te avisamos.</p></details>`,
     ][stage];
     container.innerHTML = `<section class="quiet-arrival"><div class="quiet-copy">${content}<div class="quiet-onboarding-foot"><span aria-label="Pantalla ${stage + 1} de 3">${[0, 1, 2].map((i) => `<i class="${i === stage ? "current" : ""}"></i>`).join("")}</span><a href="#/explorar">Prefiero explorar</a>${stage ? '<button class="lv-quiet" data-back>Atrás</button>' : ""}</div></div>${landscape()}</section>`;
     container.querySelector("[data-next]")?.addEventListener("click", () => {
@@ -87,7 +87,7 @@ export function mountNow(container, { Store, summary, notify }) {
     : waiting
       ? "volver/" + waiting.id
       : "vivir";
-  container.innerHTML = `<section class="quiet-arrival"><div class="quiet-copy"><p class="quiet-eyebrow">TU MOMENTO · CON BRAINBOX 1.2</p><h1>${resume ? "Podemos seguir<br><em>desde aquí.</em>" : waiting ? "Lo que pasó<br><em>también cuenta.</em>" : "Un poco de espacio.<br><em>Un paso posible.</em>"}</h1><p class="quiet-intro">${resume ? "No hace falta empezar otra vez. Retoma la situación que estabas trabajando, con lo que ya has elegido." : waiting ? "Preparaste un paso. Si ya hubo ocasión, veamos qué ocurrió. Si no pudiste hacerlo, eso también tiene un lugar aquí." : "No tienes que ordenar toda tu vida ahora. Elige una situación y salgamos de aquí con algo que te sirva."}</p>${link(route, resume ? "Retomar mi paso" : waiting ? "Volver con lo que ocurrió" : "Trabajar lo que me pesa")}<a class="lv-quiet" href="#/pausa">Solo quiero parar un momento</a><p class="quiet-caption">${esc(status(Store))}</p></div>${landscape()}</section><div class="quiet-understory"><span>Sentir sin juzgarte. Contrastar. Probar. Volver.</span>${link("micamino", "Ver mi camino", "lv-quiet")}</div>`;
+  container.innerHTML = `<section class="quiet-arrival"><div class="quiet-copy"><p class="quiet-eyebrow">TU MOMENTO · CON BRAINBOX 1.2</p><h1>${resume ? "Podemos seguir<br><em>desde aquí.</em>" : waiting ? "Lo que pasó<br><em>también cuenta.</em>" : "Un poco de espacio.<br><em>Un paso posible.</em>"}</h1><p class="quiet-intro">${resume ? "Retoma la situación con lo que ya has elegido." : waiting ? "Veamos qué ocurrió. No haber podido hacerlo también tiene un lugar aquí." : "Elige una situación. Prepara solo el paso que te sirva ahora."}</p>${link(route, resume ? "Retomar mi paso" : waiting ? "Volver con lo que ocurrió" : "Trabajar lo que me pesa")}<a class="lv-quiet" href="#/pausa">Solo quiero parar un momento</a><a class="lv-quiet quiet-help-door" href="#/ayuda">Hoy no puedo más. Necesito ayuda, no un ejercicio.</a><p class="quiet-caption">${esc(status(Store))}</p></div>${landscape()}</section><div class="quiet-understory"><span>Sentir sin juzgarte. Contrastar. Probar. Volver.</span>${link("micamino", "Ver mi camino", "lv-quiet")}</div>`;
 }
 const groups = [
   [
@@ -116,6 +116,8 @@ const groups = [
   [
     "Para organizar la vida",
     [
+      ["apoyos", "Apoyos cerca de mí", "Servicios y asociaciones de Euskadi y del resto de España.", "people"],
+      ["tramites", "Preparar una gestión", "Dependencia, respiro, prestaciones y condiciones de trabajo.", "plan"],
       ["mapa", "Mi carga", "Lo visible y lo que nadie ve.", "map"],
       [
         "plan",
@@ -158,10 +160,11 @@ const groups = [
         "Audio, vídeos, transcripciones y controles completos.",
         "audio",
       ],
+      ["grupo", "Preparar un encuentro", "Casos ficticios y guía de sesión. Pendiente de revisión clínica.", "people"],
       [
         "profundizar",
-        "BrainBox en profundidad",
-        "Episodio abierto, instrumentos y todos los fundamentos del método.",
+        "Usar BrainBox en mi día",
+        "Mirar lo que ocurre, preparar un paso y volver con lo vivido.",
         "flower",
       ],
     ],
@@ -181,7 +184,7 @@ const groups = [
         "Guardado, letra, movimiento y acceso sin conexión.",
         "settings",
       ],
-      ["feedback", "Ayúdanos a mejorar", "Con una frase basta.", "spark"],
+      ["feedback", "Compartir mi experiencia", "Preparar un comentario sin enviarlo desde CareLab.", "spark"],
       [
         "acerca",
         "El proyecto y sus fuentes",
@@ -220,7 +223,7 @@ export function mountPath(container, { Store, summary }) {
       "Registrar lo que ocurrió, aunque no ayudara.",
     ],
   ];
-  container.innerHTML = `<header class="quiet-page-head"><p class="quiet-eyebrow">TU CAMINO · SIN COMPARACIONES</p><h1>Lo que vas<br><em>haciendo tuyo.</em></h1><p>No es una puntuación sobre ti. Son las huellas de lo que has trabajado aquí.</p></header>${state.settings.gamification ? `<ol class="quiet-milestones">${stages.map(([title, done, desc], i) => `<li class="${done ? "reached" : ""}"><span aria-hidden="true">${done ? "✦" : String(i + 1).padStart(2, "0")}</span><h2>${title}</h2><p>${desc}</p><small>${done ? "Hay un registro en tu espacio" : "Todavía sin registro"}</small></li>`).join("")}</ol>` : ""}<section class="quiet-journal"><div class="row between"><h2>Mis situaciones</h2>${link("vivir", "Abrir una situación", "lv-secondary")}</div>${sessions.length ? sessions.map((x) => `<article class="quiet-entry"><div><p class="quiet-eyebrow">${esc({ draft: "EN CURSO", planned: "PASO PREPARADO", reviewed: "CON RETORNO", paused: "EN PAUSA" }[x.status] || "EN CURSO")}</p><h3>${esc(x.title || x.fields?.situation || { relevo: "Pedir un relevo", mente: "Compartir la carga mental", pausa: "Hacer sitio para mí", limites: "Poner un límite" }[x.scenario] || "Mi situación")}</h3><p>${x.status === "reviewed" ? "Tu revisión conserva qué ocurrió y qué decides ahora." : x.status === "planned" ? "Prepararlo no significa haberlo hecho. Vuelve cuando tengas algo que observar." : "Puedes retomarla sin volver a empezar."}</p></div><div>${link((x.status === "reviewed" || x.status === "planned" ? "volver/" : "vivir/") + x.id, x.status === "reviewed" ? "Ver mi retorno" : x.status === "planned" ? "Revisar lo ocurrido" : "Retomar", "lv-secondary")}</div></article>`).join("") : `<p class="quiet-empty">Tu camino puede empezar con una petición, una pausa o una pregunta que importe. No tienes que completar nada para merecer apoyo.</p>`}<div class="quiet-journal-links">${link("plan", "Todos mis planes", "lv-quiet")}${link("logros", "Otros avances", "lv-quiet")}${link("revision", "Revisar otra acción", "lv-quiet")}</div></section>`;
+  container.innerHTML = `<header class="quiet-page-head"><p class="quiet-eyebrow">TU CAMINO · SIN COMPARACIONES</p><h1>Lo que vas<br><em>haciendo tuyo.</em></h1><p>No es una puntuación sobre ti. Son las huellas de lo que has trabajado aquí.</p></header>${state.settings.gamification ? `<ol class="quiet-milestones">${stages.map(([title, done, desc], i) => `<li class="${done ? "reached" : ""}"><span aria-hidden="true">${done ? "✦" : String(i + 1).padStart(2, "0")}</span><h2>${title}</h2><p>${desc}</p><small>${done ? "Hay un registro en tu espacio" : "Todavía sin registro"}</small></li>`).join("")}</ol>` : ""}<section class="quiet-journal"><div class="row between"><h2>Mis situaciones</h2>${link("vivir", "Abrir una situación", "lv-secondary")}</div>${sessions.length ? sessions.map((x) => `<article class="quiet-entry"><div><p class="quiet-eyebrow">${esc({ draft: "EN CURSO", planned: "PASO PREPARADO", reviewed: "CON RETORNO", paused: "EN PAUSA" }[x.status] || "EN CURSO")}</p><h3>${esc(x.title || x.fields?.situation || { relevo: "Pedir un relevo", mente: "Compartir la carga mental", pausa: "Hacer sitio para mí", limites: "Poner un límite" }[x.scenario] || "Mi situación")}</h3><p>${x.status === "reviewed" ? "Tu revisión conserva qué ocurrió y qué decides ahora." : x.status === "planned" ? "Prepararlo no significa haberlo hecho. Vuelve cuando tengas algo que observar." : "Puedes retomarla sin volver a empezar."}</p></div><div>${link((x.status === "reviewed" || x.status === "planned" ? "volver/" : "vivir/") + x.id, x.status === "reviewed" ? "Ver mi retorno" : x.status === "planned" ? "Revisar lo ocurrido" : "Retomar", "lv-secondary")}</div></article>`).join("") : `<p class="quiet-empty">Tu camino puede empezar con una petición, una pausa o una pregunta que importe. No tienes que completar nada para merecer apoyo.</p>`}<div class="quiet-journal-links">${link("plan", "Todos mis planes", "lv-quiet")}${state.settings.gamification ? link("logros", "Otros avances", "lv-quiet") : ""}${link("revision", "Revisar otra acción", "lv-quiet")}</div></section>`;
 }
 export function mountPause(
   container,

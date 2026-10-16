@@ -4,7 +4,8 @@
 Usage: python3 tools/build_biblioteca.py [CORPUS_ROOT] [--output FILE]
        python3 tools/build_biblioteca.py --locations REGISTRY [--output FILE]
 No network calls, absolute source paths, clinical scoring or copied third-party
-works are added. Source wording and its evidence/access limits are preserved.
+works are added. Exact, reviewed presentation edits are applied after extraction;
+source identities, citations, evidence/access limits and source files are preserved.
 The web renderer must escape every string and retain newlines in body text.
 """
 
@@ -13,6 +14,7 @@ from __future__ import annotations
 import argparse
 from collections import Counter
 from corpus_locations import CorpusLocations
+from presentation_edits import apply_presentation
 import hashlib
 import json
 from pathlib import Path
@@ -378,7 +380,7 @@ class Library:
             assert all(web_url(link["url"]) for link in item["links"])
             assert all(isinstance(block["text"], str) and isinstance(block["label"], str) for block in item["body"])
         counts["total"] = len(self.items)
-        return {
+        output = {
             "version": "2.0", "cutoff": "2026-10-16", "items": self.items, "counts": counts,
             "sources": [self.sources[path] for path in sorted(self.sources)],
             "scope": {
@@ -391,6 +393,7 @@ class Library:
                 "effectiveness": "La aprobación editorial de los materiales no demuestra eficacia de CareLab. La utilidad del producto requiere evaluación con uso real.",
             },
         }
+        return apply_presentation(output, "data/biblioteca.json")
 
 
 def main():

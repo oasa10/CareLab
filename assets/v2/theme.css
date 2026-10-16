@@ -260,3 +260,97 @@
     display: none;
   }
 }
+
+/* One quiet header icon; explicit, keyboard-operable choices on demand. */
+.quiet-header .top-actions {
+  position: relative;
+}
+.quiet-header .theme-control {
+  position: static;
+  flex: 0 0 auto;
+}
+.quiet-header .theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+}
+.quiet-header .theme-toggle svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  min-width: 24px;
+  min-height: 24px;
+}
+.quiet-header .theme-toggle:hover,
+.quiet-header .theme-toggle[aria-expanded="true"] {
+  background: var(--light);
+  border-color: var(--line);
+}
+.quiet-header .theme-menu {
+  position: absolute;
+  inset: calc(100% + 8px) 0 auto auto;
+  display: grid;
+  gap: 4px;
+  width: 11rem;
+  max-width: calc(100vw - 36px);
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: 0 8px 30px #0003;
+  z-index: 100;
+}
+.quiet-header .theme-menu[hidden] {
+  display: none;
+}
+.quiet-header .theme-menu button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  min-height: 48px;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: transparent;
+  color: var(--ink);
+  font-size: .9rem;
+  line-height: 1.5;
+  text-align: left;
+  cursor: pointer;
+}
+.quiet-header .theme-menu button:hover,
+.quiet-header .theme-menu button[aria-checked="true"] {
+  background: var(--light);
+  color: var(--ink);
+}
+.quiet-header .theme-check {
+  visibility: hidden;
+}
+.quiet-header [aria-checked="true"] > .theme-check {
+  visibility: visible;
+}
+body.is-arrival .quiet-header .theme-toggle {
+  color: #fff;
+}
+body.is-arrival .quiet-header .theme-toggle:hover,
+body.is-arrival .quiet-header .theme-toggle[aria-expanded="true"] {
+  background: #18382e;
+  border-color: #b6cbbb;
+}
+/* The photographic header has its own focus colour; the menu is a solid panel. */
+body.is-arrival .quiet-header .theme-menu button:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: -3px;
+}

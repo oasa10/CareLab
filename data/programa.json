@@ -158,7 +158,7 @@
       "title": "Separar tarea, condiciones y experiencia",
       "summary": "Localiza el problema donde se puede cambiar y evita asignártelo entero.",
       "duration": "Unos 4 minutos de lectura. La práctica no tiene plazo: puedes pausar o terminar aquí.",
-      "why": "Una misma escena tiene trabajo que realizar, condiciones que lo hacen posible y una experiencia personal. Sentirte desbordado no demuestra que te organices mal. Tener un calendario tampoco crea una segunda persona disponible.",
+      "why": "Una misma escena tiene trabajo que realizar, condiciones que lo hacen posible y una experiencia personal. Sentirte desbordada no demuestra que te organices mal. Tener un calendario tampoco crea una segunda persona disponible.",
       "steps": [
         "En Mapa describe una tarea con un verbo: acompañar, comprar, coordinar o esperar una respuesta. Incluye el tiempo de estar pendiente, si eso es lo que pesa.",
         "Anota la condición que falta: cobertura, información comprensible, permiso, material, transporte o una decisión del servicio. Conserva lo que no sabes como pendiente.",
@@ -273,7 +273,7 @@
       "title": "Reducir ruido, avisos y búsquedas",
       "summary": "Prepara un acuerdo de comunicación que reduzca interrupciones sin perder información necesaria.",
       "duration": "Unos 5 minutos de lectura. La práctica no tiene plazo: puedes pausar o terminar aquí.",
-      "why": "Un grupo de mensajes o una aplicación pueden crear trabajo de mantener datos, contestar y verificar. La información ayuda cuando cambia una decisión. Acumular enlaces, alarmas o búsquedas no garantiza estar mejor acompañado.",
+      "why": "Un grupo de mensajes o una aplicación pueden crear trabajo de mantener datos, contestar y verificar. La información ayuda cuando cambia una decisión. Acumular enlaces, alarmas o búsquedas no garantiza estar mejor acompañada.",
       "steps": [
         "Elige un canal que te interrumpa. En Límites escribe qué función debe cumplir y qué mensajes se repiten sin aportar una decisión.",
         "Propón quién recopilará los asuntos no urgentes y cómo se comunicarán, con aceptación de esa persona. Mantén el canal necesario para incidencias del plan asistencial vigente.",
@@ -416,7 +416,7 @@
       "title": "Elegir el apoyo que necesitas hoy",
       "summary": "Prepara una petición de escucha, compañía o ayuda práctica sin tener que contar toda tu vida.",
       "duration": "Unos 4 minutos de lectura. La práctica no tiene plazo: puedes pausar o terminar aquí.",
-      "why": "Se puede querer a alguien y estar enfadado con las condiciones de cuidado. No hay una emoción correcta que alcanzar. Una conversación puede servir si respeta lo que deseas y no intenta interpretar desde fuera lo que sientes.",
+      "why": "Se puede querer a alguien y estar enfadada con las condiciones de cuidado. No hay una emoción correcta que alcanzar. Una conversación puede servir si respeta lo que deseas y no intenta interpretar desde fuera lo que sientes.",
       "steps": [
         "Elige, si quieres, una frase sencilla sobre lo que necesitas ahora: «quiero hablar sin consejos», «necesito compañía» o «prefiero ayuda con esta gestión». Puedes saltarte cualquier relato emocional.",
         "En Límites prepara a quién podrías pedirlo, qué sí quieres compartir y qué prefieres mantener privado. La otra persona puede decir honestamente qué puede ofrecer.",
@@ -1167,7 +1167,7 @@
         "En Revisión identifica una función de CareLab que hayas usado o intentado usar. Distingue qué facilitó una decisión y qué añadió lectura, registro o confusión.",
         "Conserva sólo los planes que siguen siendo útiles. Corrige, archiva o elimina lo que no quieras mantener mediante los controles disponibles; revisa antes cualquier copia que hayas compartido.",
         "Si necesitas otra pieza, entra por su función: Cuidopedia para aclarar, Cuidoteca para elegir cultura o formación, CareTools para preparar recursos y las guías para ampliar una decisión. No hace falta consultar todo.",
-        "Puedes elegir otra unidad, regresar más adelante o parar. El programa debe adaptarse a tu papel personal, profesional, de apoyo o de cuidado múltiple; no te asigna un tipo de cuidador.",
+        "Puedes elegir otra unidad, regresar más adelante o parar. El programa debe adaptarse a tu papel personal, profesional, de apoyo o de cuidado múltiple; no te asigna un tipo de cuidadora.",
         "Si quieres comunicar una mejora del producto, describe la dificultad y la función deseada sin incluir datos íntimos de terceros. Una sugerencia permite revisar el diseño; no equivale a un resultado de investigación."
       ],
       "example": "Ejemplo ficticio. Una persona descubre que el reparto le sirve, pero no desea registrar reflexiones. Mantiene ese instrumento y deja el resto. Otra usa sólo Preparar consulta. Ninguna tiene que completar módulos para merecer apoyo o para considerar válida su experiencia.",
@@ -1458,5 +1458,12 @@
       "title": "Guía del meta cuidado · Revisar el propio marco y conservar el canon BrainBox",
       "locator": "guias_transversales/partes/MC_meta_cuidado.json#/chapters/17 (MC18)"
     }
-  ]
+  ],
+  "presentationRevision": {
+    "id": "MEPRE2-D22-20261016",
+    "date": "2026-10-16",
+    "decision": "D22 · MEPRE Síndrome del Cuidador v2.0 (borrador)",
+    "scope": "Adaptación editorial de textos de presentación al femenino genérico. Se conservan las denominaciones, citas y títulos originales de las fuentes.",
+    "sourceIdentityPreserved": true
+  }
 }

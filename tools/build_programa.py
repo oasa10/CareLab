@@ -10,6 +10,7 @@ from __future__ import annotations
 import argparse
 import json
 from corpus_locations import CorpusLocations
+from presentation_edits import apply_presentation
 from pathlib import Path
 
 APP = Path(__file__).resolve().parents[1]
@@ -530,7 +531,10 @@ def build(locations=None, destination=None):
         for mid, title, summary in MODULES
     ]
     assert all(len(m["unitIds"]) == 3 for m in modules)
-    output = {"version": "2.0", "modules": modules, "units": UNITS, "sources": sources}
+    output = apply_presentation(
+        {"version": "2.0", "modules": modules, "units": UNITS, "sources": sources},
+        "data/programa.json",
+    )
     destination = destination or APP / "data" / "programa.json"
     destination.parent.mkdir(parents=True, exist_ok=True)
     destination.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

@@ -1,0 +1,445 @@
+{
+  "schema": 1,
+  "decision": "MEPRE2-D22-20261016",
+  "source": {
+    "document": "MEPRE - Síndrome del Cuidador v2.0 (borrador)",
+    "sections": [
+      "D22",
+      "13",
+      "17"
+    ],
+    "approval": "Cambios de presentación aprobados expresamente por el autor para CareLab."
+  },
+  "scope": "Adaptaciones editoriales exactas de presentación. No se modifican IDs, fuentes, hashes de origen, enlaces, citas ni documentos del corpus. Los textos iniciales y finales ya forman parte del contenido público de CareLab.",
+  "datasets": [
+    {
+      "file": "data/biblioteca.json",
+      "collection": "items",
+      "revision": {
+        "id": "MEPRE2-D22-20261016",
+        "date": "2026-10-16",
+        "decision": "D22 · MEPRE Síndrome del Cuidador v2.0 (borrador)",
+        "scope": "Adaptación editorial de textos de presentación al femenino genérico. Se conservan las denominaciones, citas y títulos originales de las fuentes.",
+        "sourceIdentityPreserved": true
+      },
+      "changes": [
+        {
+          "id": "cp-a033",
+          "field": "body.2.text",
+          "before": "Sentirse culpable no demuestra responsabilidad real. La culpa suele centrarse en una acción; la vergüenza tiende a comprometer la valoración global de uno mismo.",
+          "after": "Sentirse culpable no demuestra responsabilidad real. La culpa suele centrarse en una acción; la vergüenza tiende a comprometer la valoración global de una misma."
+        },
+        {
+          "id": "cp-a048",
+          "field": "body.2.text",
+          "before": "Sentirse capaz no garantiza competencia efectiva ni recursos suficientes. A la inversa, dudar de uno mismo no demuestra incapacidad objetiva para una tarea.",
+          "after": "Sentirse capaz no garantiza competencia efectiva ni recursos suficientes. A la inversa, dudar de una misma no demuestra incapacidad objetiva para una tarea."
+        },
+        {
+          "id": "cp-a049",
+          "field": "summary",
+          "before": "Forma de relacionarse con el propio sufrimiento o las propias limitaciones con comprensión y amabilidad, reconociendo que la vulnerabilidad forma parte de la experiencia humana. En la formulación de Neff integra trato amable, humanidad compartida y atención equilibrada a lo que se siente. Puede aplicarse a errores y a dificultades que no dependen de uno mismo.",
+          "after": "Forma de relacionarse con el propio sufrimiento o las propias limitaciones con comprensión y amabilidad, reconociendo que la vulnerabilidad forma parte de la experiencia humana. En la formulación de Neff integra trato amable, humanidad compartida y atención equilibrada a lo que se siente. Puede aplicarse a errores y a dificultades que no dependen de una misma."
+        },
+        {
+          "id": "cp-a049",
+          "field": "body.1.text",
+          "before": "Forma de relacionarse con el propio sufrimiento o las propias limitaciones con comprensión y amabilidad, reconociendo que la vulnerabilidad forma parte de la experiencia humana. En la formulación de Neff integra trato amable, humanidad compartida y atención equilibrada a lo que se siente. Puede aplicarse a errores y a dificultades que no dependen de uno mismo.",
+          "after": "Forma de relacionarse con el propio sufrimiento o las propias limitaciones con comprensión y amabilidad, reconociendo que la vulnerabilidad forma parte de la experiencia humana. En la formulación de Neff integra trato amable, humanidad compartida y atención equilibrada a lo que se siente. Puede aplicarse a errores y a dificultades que no dependen de una misma."
+        },
+        {
+          "id": "cp-a051",
+          "field": "summary",
+          "before": "Capacidad de comprender o resonar con experiencias de otras personas manteniendo la distinción entre uno mismo y la otra persona. El término agrupa componentes afectivos y de comprensión de perspectivas, cuyo énfasis varía según el marco utilizado. En el cuidado ayuda a interpretar lo que otra persona vive, aunque esa interpretación sigue siendo falible y requiere contraste.",
+          "after": "Capacidad de comprender o resonar con experiencias de otras personas manteniendo la distinción entre una misma y la otra persona. El término agrupa componentes afectivos y de comprensión de perspectivas, cuyo énfasis varía según el marco utilizado. En el cuidado ayuda a interpretar lo que otra persona vive, aunque esa interpretación sigue siendo falible y requiere contraste."
+        },
+        {
+          "id": "cp-a051",
+          "field": "body.1.text",
+          "before": "Capacidad de comprender o resonar con experiencias de otras personas manteniendo la distinción entre uno mismo y la otra persona. El término agrupa componentes afectivos y de comprensión de perspectivas, cuyo énfasis varía según el marco utilizado. En el cuidado ayuda a interpretar lo que otra persona vive, aunque esa interpretación sigue siendo falible y requiere contraste.",
+          "after": "Capacidad de comprender o resonar con experiencias de otras personas manteniendo la distinción entre una misma y la otra persona. El término agrupa componentes afectivos y de comprensión de perspectivas, cuyo énfasis varía según el marco utilizado. En el cuidado ayuda a interpretar lo que otra persona vive, aunque esa interpretación sigue siendo falible y requiere contraste."
+        },
+        {
+          "id": "cp-a152",
+          "field": "summary",
+          "before": "Emoción que puede surgir ante frustración, daño o injusticia percibida y acompañarse de tensión y disposición a actuar. En el cuidado puede dirigirse a una situación, a otras personas o a uno mismo y coexistir con afecto, culpa o compromiso. Reconocerla permite describir la experiencia sin identificar automáticamente emoción y conducta.",
+          "after": "Emoción que puede surgir ante frustración, daño o injusticia percibida y acompañarse de tensión y disposición a actuar. En el cuidado puede dirigirse a una situación, a otras personas o a una misma y coexistir con afecto, culpa o compromiso. Reconocerla permite describir la experiencia sin identificar automáticamente emoción y conducta."
+        },
+        {
+          "id": "cp-a152",
+          "field": "body.1.text",
+          "before": "Emoción que puede surgir ante frustración, daño o injusticia percibida y acompañarse de tensión y disposición a actuar. En el cuidado puede dirigirse a una situación, a otras personas o a uno mismo y coexistir con afecto, culpa o compromiso. Reconocerla permite describir la experiencia sin identificar automáticamente emoción y conducta.",
+          "after": "Emoción que puede surgir ante frustración, daño o injusticia percibida y acompañarse de tensión y disposición a actuar. En el cuidado puede dirigirse a una situación, a otras personas o a una misma y coexistir con afecto, culpa o compromiso. Reconocerla permite describir la experiencia sin identificar automáticamente emoción y conducta."
+        },
+        {
+          "id": "cp-b075",
+          "field": "summary",
+          "before": "Conjunto de estereotipos, prejuicios y prácticas discriminatorias basados en la edad, dirigidos a otras personas o a uno mismo. Puede operar en relaciones, instituciones y políticas. En el cuidado aparece, por ejemplo, al presumir incapacidad para decidir por ser mayor o al considerar que determinadas necesidades no merecen atención, sin examinar la situación individual ni sus preferencias.",
+          "after": "Conjunto de estereotipos, prejuicios y prácticas discriminatorias basados en la edad, dirigidos a otras personas o a una misma. Puede operar en relaciones, instituciones y políticas. En el cuidado aparece, por ejemplo, al presumir incapacidad para decidir por ser mayor o al considerar que determinadas necesidades no merecen atención, sin examinar la situación individual ni sus preferencias."
+        },
+        {
+          "id": "cp-b075",
+          "field": "body.1.text",
+          "before": "Conjunto de estereotipos, prejuicios y prácticas discriminatorias basados en la edad, dirigidos a otras personas o a uno mismo. Puede operar en relaciones, instituciones y políticas. En el cuidado aparece, por ejemplo, al presumir incapacidad para decidir por ser mayor o al considerar que determinadas necesidades no merecen atención, sin examinar la situación individual ni sus preferencias.",
+          "after": "Conjunto de estereotipos, prejuicios y prácticas discriminatorias basados en la edad, dirigidos a otras personas o a una misma. Puede operar en relaciones, instituciones y políticas. En el cuidado aparece, por ejemplo, al presumir incapacidad para decidir por ser mayor o al considerar que determinadas necesidades no merecen atención, sin examinar la situación individual ni sus preferencias."
+        },
+        {
+          "id": "ct-a026",
+          "field": "summary",
+          "before": "Reducir el trato interno hostil y explorar una respuesta más cuidadosa hacia uno mismo ante errores, límites o sufrimiento.",
+          "after": "Reducir el trato interno hostil y explorar una respuesta más cuidadosa hacia una misma ante errores, límites o sufrimiento."
+        },
+        {
+          "id": "ct-a026",
+          "field": "body.0.text",
+          "before": "Reducir el trato interno hostil y explorar una respuesta más cuidadosa hacia uno mismo ante errores, límites o sufrimiento.",
+          "after": "Reducir el trato interno hostil y explorar una respuesta más cuidadosa hacia una misma ante errores, límites o sufrimiento."
+        },
+        {
+          "id": "cp-a064",
+          "field": "summary",
+          "before": "Proceso de reconocer una muerte posible o próxima y afrontar sus dimensiones prácticas, emocionales y relacionales. Puede incluir comprender lo que sucede, considerar apoyos, organizar asuntos y expresar lo importante. Se desarrolla de forma desigual y depende de información, tiempo, vínculos y condiciones del cuidado; sentirse preparado no tiene un significado idéntico para todas las personas.",
+          "after": "Proceso de reconocer una muerte posible o próxima y afrontar sus dimensiones prácticas, emocionales y relacionales. Puede incluir comprender lo que sucede, considerar apoyos, organizar asuntos y expresar lo importante. Se desarrolla de forma desigual y depende de información, tiempo, vínculos y condiciones del cuidado; sentirse preparada no tiene un significado idéntico para todas las personas."
+        },
+        {
+          "id": "cp-a064",
+          "field": "body.1.text",
+          "before": "Proceso de reconocer una muerte posible o próxima y afrontar sus dimensiones prácticas, emocionales y relacionales. Puede incluir comprender lo que sucede, considerar apoyos, organizar asuntos y expresar lo importante. Se desarrolla de forma desigual y depende de información, tiempo, vínculos y condiciones del cuidado; sentirse preparado no tiene un significado idéntico para todas las personas.",
+          "after": "Proceso de reconocer una muerte posible o próxima y afrontar sus dimensiones prácticas, emocionales y relacionales. Puede incluir comprender lo que sucede, considerar apoyos, organizar asuntos y expresar lo importante. Se desarrolla de forma desigual y depende de información, tiempo, vínculos y condiciones del cuidado; sentirse preparada no tiene un significado idéntico para todas las personas."
+        },
+        {
+          "id": "cp-a064",
+          "field": "body.2.text",
+          "before": "Estar preparado no equivale a desear la muerte ni garantiza un duelo sin sufrimiento. La preparación práctica y la emocional pueden avanzar a ritmos diferentes.",
+          "after": "Estar preparada no equivale a desear la muerte ni garantiza un duelo sin sufrimiento. La preparación práctica y la emocional pueden avanzar a ritmos diferentes."
+        },
+        {
+          "id": "ct-b008",
+          "field": "body.4.text",
+          "before": "Sentirse preparado no demuestra competencia técnica ni disponibilidad real; una puntuación favorable no autoriza trasladar procedimientos sanitarios a la familia.",
+          "after": "Sentirse preparada no demuestra competencia técnica ni disponibilidad real; una puntuación favorable no autoriza trasladar procedimientos sanitarios a la familia."
+        },
+        {
+          "id": "cp-c125",
+          "field": "body.2.text",
+          "before": "No equivale a sentirse solo ni a vivir solo. Una persona puede tener pocos contactos sin sentir soledad, o sentirse sola pese a una red extensa.",
+          "after": "No equivale a sentirse sola ni a vivir sola. Una persona puede tener pocos contactos sin sentir soledad, o sentirse sola pese a una red extensa."
+        },
+        {
+          "id": "cp-d038",
+          "field": "body.2.text",
+          "before": "Soledad subjetiva y aislamiento social no son intercambiables. Vivir acompañado, incluso prestando cuidados, no excluye sentirse solo.",
+          "after": "Soledad subjetiva y aislamiento social no son intercambiables. Vivir acompañada, incluso prestando cuidados, no excluye sentirse sola."
+        },
+        {
+          "id": "cu-d016",
+          "field": "summary",
+          "before": "Canción de amistad y disponibilidad afectiva cuya autoría y copyright figuran en la web oficial de Carole King. Puede servir como entrada a la experiencia de estar acompañado. La Cuidoteca propone escucharla sin confundir la promesa poética con una obligación de respuesta permanente por parte de familiares o amistades.",
+          "after": "Canción de amistad y disponibilidad afectiva cuya autoría y copyright figuran en la web oficial de Carole King. Puede servir como entrada a la experiencia de estar acompañada. La Cuidoteca propone escucharla sin confundir la promesa poética con una obligación de respuesta permanente por parte de familiares o amistades."
+        },
+        {
+          "id": "cu-d016",
+          "field": "body.3.text",
+          "before": "Canción de amistad y disponibilidad afectiva cuya autoría y copyright figuran en la web oficial de Carole King. Puede servir como entrada a la experiencia de estar acompañado. La Cuidoteca propone escucharla sin confundir la promesa poética con una obligación de respuesta permanente por parte de familiares o amistades.",
+          "after": "Canción de amistad y disponibilidad afectiva cuya autoría y copyright figuran en la web oficial de Carole King. Puede servir como entrada a la experiencia de estar acompañada. La Cuidoteca propone escucharla sin confundir la promesa poética con una obligación de respuesta permanente por parte de familiares o amistades."
+        },
+        {
+          "id": "cp-d094",
+          "field": "body.2.text",
+          "before": "No son niveles clínicos de gravedad ni tipos de persona. Estar agotado por exceso de cuidados no sitúa automáticamente a alguien en la ruta C.",
+          "after": "No son niveles clínicos de gravedad ni tipos de persona. Estar agotada por exceso de cuidados no sitúa automáticamente a alguien en la ruta C."
+        },
+        {
+          "id": "cp-d104",
+          "field": "summary",
+          "before": "Proceso por el que el papel de cuidador ocupa una posición tan dominante que desplaza otros roles, actividades y formas de reconocerse. Describe el alcance del rol en la identidad y la vida social, más allá del número de tareas. Puede ayudar a comprender experiencias de pérdida de espacio propio.",
+          "after": "Proceso por el que el papel de cuidadora ocupa una posición tan dominante que desplaza otros roles, actividades y formas de reconocerse. Describe el alcance del rol en la identidad y la vida social, más allá del número de tareas. Puede ayudar a comprender experiencias de pérdida de espacio propio."
+        },
+        {
+          "id": "cp-d104",
+          "field": "body.1.text",
+          "before": "Proceso por el que el papel de cuidador ocupa una posición tan dominante que desplaza otros roles, actividades y formas de reconocerse. Describe el alcance del rol en la identidad y la vida social, más allá del número de tareas. Puede ayudar a comprender experiencias de pérdida de espacio propio.",
+          "after": "Proceso por el que el papel de cuidadora ocupa una posición tan dominante que desplaza otros roles, actividades y formas de reconocerse. Describe el alcance del rol en la identidad y la vida social, más allá del número de tareas. Puede ayudar a comprender experiencias de pérdida de espacio propio."
+        },
+        {
+          "id": "gu-ac06",
+          "field": "title",
+          "before": "Dar lugar a las emociones sin quedar solo con ellas",
+          "after": "Dar lugar a las emociones sin quedar sola con ellas"
+        },
+        {
+          "id": "gu-ac06",
+          "field": "body.0.label",
+          "before": "AC06 · Dar lugar a las emociones sin quedar solo con ellas",
+          "after": "AC06 · Dar lugar a las emociones sin quedar sola con ellas"
+        },
+        {
+          "id": "gu-ac06",
+          "field": "summary",
+          "before": "Se puede querer a alguien y desear que termine una tarea, sentir alivio y tristeza, o estar orgulloso del vínculo y enfadado con la distribución del trabajo. Estas experiencias no necesitan resolverse en una emoción correcta. Tampoco permiten deducir por sí solas un diagnóstico. La investigación del proyecto diferencia demandas, emociones y aspectos valiosos del cuidado, sin restar gratitud a sufrimiento para obtener un supuesto balance moral. [AC-L04]",
+          "after": "Se puede querer a alguien y desear que termine una tarea, sentir alivio y tristeza, o estar orgullosa del vínculo y enfadada con la distribución del trabajo. Estas experiencias no necesitan resolverse en una emoción correcta. Tampoco permiten deducir por sí solas un diagnóstico. La investigación del proyecto diferencia demandas, emociones y aspectos valiosos del cuidado, sin restar gratitud a sufrimiento para obtener un supuesto balance moral. [AC-L04]"
+        },
+        {
+          "id": "gu-ac06",
+          "field": "body.0.text",
+          "before": "Se puede querer a alguien y desear que termine una tarea, sentir alivio y tristeza, o estar orgulloso del vínculo y enfadado con la distribución del trabajo. Estas experiencias no necesitan resolverse en una emoción correcta. Tampoco permiten deducir por sí solas un diagnóstico. La investigación del proyecto diferencia demandas, emociones y aspectos valiosos del cuidado, sin restar gratitud a sufrimiento para obtener un supuesto balance moral. [AC-L04]\n\nUna primera opción es reconocer lo que notas con palabras propias: “Estoy enfadada por lo que acaba de ocurrir”, “Me asusta no tener alternativa” o “Necesito hablar sin recibir consejos”. Puede ayudarte hacerlo con una persona elegida, en privado o mediante escritura que no debas mostrar. Si poner palabras no ayuda ahora, puedes dejarlo. Nadie tiene que narrar su intimidad para merecer un apoyo práctico.\n\nLa OMS ofrece Hacer lo que importa en tiempos de estrés, con material ilustrado y enlaces a audio en español. Es un recurso para aprender habilidades generales frente al estrés. La página consultada verifica su propósito y formatos; esta guía no reproduce sus ejercicios ni afirma que usarlo sustituya atención psicológica o resuelva carencias materiales. [AC-E06]\n\nPuedes elegir algo que habitualmente te ayude a recuperar margen: interrumpir una discusión cuando sea seguro, salir del intercambio de mensajes, hablar con alguien o realizar una actividad tranquila. No hay obligación de meditar, cerrar los ojos, respirar de una manera determinada o encontrar beneficios. Si un ejercicio te incomoda o aumenta el malestar, no tienes que continuarlo para demostrar compromiso. Las intervenciones estructuradas tienen condiciones y profesionales propios. [AC-L05]\n\nCuando el malestar persiste, afecta al sueño, las relaciones o la vida cotidiana, o cuando deseas apoyo aunque no sepas nombrar lo que ocurre, puedes solicitar valoración sanitaria o psicológica. Si aparecen pensamientos de hacerte daño, de dañar a otra persona o una situación que no puedes mantener segura, busca ayuda urgente; no lo conviertas en una prueba privada de autocontrol. El servicio de emergencia local es la vía ante peligro inmediato.\n\nEn el trabajo remunerado, algunas dificultades nacen de no poder ofrecer la atención que consideras necesaria con los medios disponibles. Puedes necesitar supervisión reflexiva o apoyo entre profesionales, además de cambios organizativos. CareTools A064 diferencia ese espacio de la evaluación de desempeño y la disciplina. Antes de compartir experiencias, aclara quién escucha, qué queda registrado y los límites de confidencialidad. El apoyo emocional no sustituye medidas sobre plantilla, tiempos o condiciones laborales. [AC-L05]\n\nPara elegir apoyo, pregunta qué ofrece, quién lo presta, con qué formación, qué tiempo exige y qué alternativa existe si no encaja. CareTools A020–A030 diferencia psicoeducación, psicoterapias y otras prácticas; A040–A042 recoge formatos entre iguales y apoyo a distancia. Una ficha permite preparar una consulta, no escoger un tratamiento por su nombre. La señal práctica para revisar es si el apoyo responde a tu necesidad y puede utilizarse sin añadir una presión desproporcionada. [AC-L05]",
+          "after": "Se puede querer a alguien y desear que termine una tarea, sentir alivio y tristeza, o estar orgullosa del vínculo y enfadada con la distribución del trabajo. Estas experiencias no necesitan resolverse en una emoción correcta. Tampoco permiten deducir por sí solas un diagnóstico. La investigación del proyecto diferencia demandas, emociones y aspectos valiosos del cuidado, sin restar gratitud a sufrimiento para obtener un supuesto balance moral. [AC-L04]\n\nUna primera opción es reconocer lo que notas con palabras propias: “Estoy enfadada por lo que acaba de ocurrir”, “Me asusta no tener alternativa” o “Necesito hablar sin recibir consejos”. Puede ayudarte hacerlo con una persona elegida, en privado o mediante escritura que no debas mostrar. Si poner palabras no ayuda ahora, puedes dejarlo. Nadie tiene que narrar su intimidad para merecer un apoyo práctico.\n\nLa OMS ofrece Hacer lo que importa en tiempos de estrés, con material ilustrado y enlaces a audio en español. Es un recurso para aprender habilidades generales frente al estrés. La página consultada verifica su propósito y formatos; esta guía no reproduce sus ejercicios ni afirma que usarlo sustituya atención psicológica o resuelva carencias materiales. [AC-E06]\n\nPuedes elegir algo que habitualmente te ayude a recuperar margen: interrumpir una discusión cuando sea seguro, salir del intercambio de mensajes, hablar con alguien o realizar una actividad tranquila. No hay obligación de meditar, cerrar los ojos, respirar de una manera determinada o encontrar beneficios. Si un ejercicio te incomoda o aumenta el malestar, no tienes que continuarlo para demostrar compromiso. Las intervenciones estructuradas tienen condiciones y profesionales propios. [AC-L05]\n\nCuando el malestar persiste, afecta al sueño, las relaciones o la vida cotidiana, o cuando deseas apoyo aunque no sepas nombrar lo que ocurre, puedes solicitar valoración sanitaria o psicológica. Si aparecen pensamientos de hacerte daño, de dañar a otra persona o una situación que no puedes mantener segura, busca ayuda urgente; no lo conviertas en una prueba privada de autocontrol. El servicio de emergencia local es la vía ante peligro inmediato.\n\nEn el trabajo remunerado, algunas dificultades nacen de no poder ofrecer la atención que consideras necesaria con los medios disponibles. Puedes necesitar supervisión reflexiva o apoyo entre profesionales, además de cambios organizativos. CareTools A064 diferencia ese espacio de la evaluación de desempeño y la disciplina. Antes de compartir experiencias, aclara quién escucha, qué queda registrado y los límites de confidencialidad. El apoyo emocional no sustituye medidas sobre plantilla, tiempos o condiciones laborales. [AC-L05]\n\nPara elegir apoyo, pregunta qué ofrece, quién lo presta, con qué formación, qué tiempo exige y qué alternativa existe si no encaja. CareTools A020–A030 diferencia psicoeducación, psicoterapias y otras prácticas; A040–A042 recoge formatos entre iguales y apoyo a distancia. Una ficha permite preparar una consulta, no escoger un tratamiento por su nombre. La señal práctica para revisar es si el apoyo responde a tu necesidad y puede utilizarse sin añadir una presión desproporcionada. [AC-L05]"
+        },
+        {
+          "id": "gu-ac08",
+          "field": "summary",
+          "before": "Puede que te reconozcas como madre, pareja, amigo o profesional y no como cuidador. Puede que esa palabra te ayude a pedir apoyo. Ambas posiciones caben. Lo importante es que las necesidades se vean sin reducir tu vida a un papel. El proyecto distingue identidad, exceso de responsabilidades y sensación de quedar atrapado: no son lo mismo ni se resuelven necesariamente con la misma propuesta. [AC-L04]",
+          "after": "Puede que te reconozcas como madre, pareja, amiga o profesional y no como cuidadora. Puede que esa palabra te ayude a pedir apoyo. Ambas posiciones caben. Lo importante es que las necesidades se vean sin reducir tu vida a un papel. El proyecto distingue identidad, exceso de responsabilidades y sensación de quedar atrapada: no son lo mismo ni se resuelven necesariamente con la misma propuesta. [AC-L04]"
+        },
+        {
+          "id": "gu-ac08",
+          "field": "body.0.text",
+          "before": "Puede que te reconozcas como madre, pareja, amigo o profesional y no como cuidador. Puede que esa palabra te ayude a pedir apoyo. Ambas posiciones caben. Lo importante es que las necesidades se vean sin reducir tu vida a un papel. El proyecto distingue identidad, exceso de responsabilidades y sensación de quedar atrapado: no son lo mismo ni se resuelven necesariamente con la misma propuesta. [AC-L04]\n\nPregúntate qué parte de tu vida quieres conservar ahora, sin exigir recuperar inmediatamente todo lo anterior. Puede ser una amistad, una forma de vestir, un idioma, una práctica religiosa, una afición o la posibilidad de estar a solas. No tiene que ser una actividad admirable o útil. Si siempre se pospone, examina qué condiciones la desplazan y quién puede contribuir a protegerla.\n\nUna opción es mantener un vínculo pequeño con algo elegido: seguir una conversación sobre un tema propio, cuidar una planta o participar cuando sea posible en una actividad comunitaria. Otra es abandonar una afición que ya no interesa sin interpretarlo como pérdida definitiva de identidad. La decisión se revisa desde tus preferencias actuales, no desde una fotografía idealizada de cómo eras antes de cuidar.\n\nEl sentido puede venir del afecto, la justicia, la reciprocidad, la fe o la pertenencia; también puede faltar. No hace falta agradecer una experiencia dura ni construir una historia de crecimiento. La espiritualidad, cuando se desea, puede incluir una comunidad, un acompañante, un ritual o silencio. Debe respetar creencias y no creencias, sin presión para perdonar, sacrificarse o aceptar decisiones ajenas. Si una comunidad impone esas condiciones, conviene buscar otro apoyo.\n\nLa cultura ofrece compañía, reconocimiento y ocio, pero no es una tarea terapéutica obligatoria. Puedes elegir una novela, música o una película que no tenga nada que ver con el cuidado. Cuidoteca permite buscar materiales si los deseas. Por ejemplo, La casa de Paco Roca, CT B002, puede interesar a quien quiera explorar memoria familiar y objetos; su ficha advierte sobre duelo y conflictos. La elección de este recurso es cultural y voluntaria. [AC-L11]\n\nPara revisar, basta preguntar si has tenido un espacio que sentías propio y si deseas conservarlo. No midas el valor de la experiencia por cuánto te relaja o te prepara para volver a cuidar. También puedes decidir que lo que necesitas ahora es compañía sin conversación, o dejar de dar explicaciones sobre por qué una actividad te importa.",
+          "after": "Puede que te reconozcas como madre, pareja, amiga o profesional y no como cuidadora. Puede que esa palabra te ayude a pedir apoyo. Ambas posiciones caben. Lo importante es que las necesidades se vean sin reducir tu vida a un papel. El proyecto distingue identidad, exceso de responsabilidades y sensación de quedar atrapada: no son lo mismo ni se resuelven necesariamente con la misma propuesta. [AC-L04]\n\nPregúntate qué parte de tu vida quieres conservar ahora, sin exigir recuperar inmediatamente todo lo anterior. Puede ser una amistad, una forma de vestir, un idioma, una práctica religiosa, una afición o la posibilidad de estar a solas. No tiene que ser una actividad admirable o útil. Si siempre se pospone, examina qué condiciones la desplazan y quién puede contribuir a protegerla.\n\nUna opción es mantener un vínculo pequeño con algo elegido: seguir una conversación sobre un tema propio, cuidar una planta o participar cuando sea posible en una actividad comunitaria. Otra es abandonar una afición que ya no interesa sin interpretarlo como pérdida definitiva de identidad. La decisión se revisa desde tus preferencias actuales, no desde una fotografía idealizada de cómo eras antes de cuidar.\n\nEl sentido puede venir del afecto, la justicia, la reciprocidad, la fe o la pertenencia; también puede faltar. No hace falta agradecer una experiencia dura ni construir una historia de crecimiento. La espiritualidad, cuando se desea, puede incluir una comunidad, un acompañante, un ritual o silencio. Debe respetar creencias y no creencias, sin presión para perdonar, sacrificarse o aceptar decisiones ajenas. Si una comunidad impone esas condiciones, conviene buscar otro apoyo.\n\nLa cultura ofrece compañía, reconocimiento y ocio, pero no es una tarea terapéutica obligatoria. Puedes elegir una novela, música o una película que no tenga nada que ver con el cuidado. Cuidoteca permite buscar materiales si los deseas. Por ejemplo, La casa de Paco Roca, CT B002, puede interesar a quien quiera explorar memoria familiar y objetos; su ficha advierte sobre duelo y conflictos. La elección de este recurso es cultural y voluntaria. [AC-L11]\n\nPara revisar, basta preguntar si has tenido un espacio que sentías propio y si deseas conservarlo. No midas el valor de la experiencia por cuánto te relaja o te prepara para volver a cuidar. También puedes decidir que lo que necesitas ahora es compañía sin conversación, o dejar de dar explicaciones sobre por qué una actividad te importa."
+        },
+        {
+          "id": "gu-ac13",
+          "field": "summary",
+          "before": "El dinero forma parte del autocuidado porque condiciona comida, vivienda, transporte y posibilidad de elegir apoyos. No necesitas convertirte en experto financiero. Puede bastar identificar gastos nuevos, ingresos que se han reducido y pagos que vienen próximos. Si el presupuesto no alcanza para necesidades básicas, ajustar una hoja no resuelve el problema; hace falta explorar recursos y asesoramiento.",
+          "after": "El dinero forma parte del autocuidado porque condiciona comida, vivienda, transporte y posibilidad de elegir apoyos. No necesitas convertirte en experta financiera. Puede bastar identificar gastos nuevos, ingresos que se han reducido y pagos que vienen próximos. Si el presupuesto no alcanza para necesidades básicas, ajustar una hoja no resuelve el problema; hace falta explorar recursos y asesoramiento."
+        },
+        {
+          "id": "gu-ac13",
+          "field": "body.0.text",
+          "before": "El dinero forma parte del autocuidado porque condiciona comida, vivienda, transporte y posibilidad de elegir apoyos. No necesitas convertirte en experto financiero. Puede bastar identificar gastos nuevos, ingresos que se han reducido y pagos que vienen próximos. Si el presupuesto no alcanza para necesidades básicas, ajustar una hoja no resuelve el problema; hace falta explorar recursos y asesoramiento.\n\nCareTools C031 y la plantilla P09 ayudan a distinguir desembolsos, tiempo y otros costes. Anota sólo lo que necesitas para una decisión: por ejemplo, cuánto costaría realmente un apoyo incluyendo transporte y coordinación. Evita tratar el trabajo gratuito como si no tuviera valor, pero tampoco confundas su estimación con dinero disponible para pagar. Si compartes cuentas, acuerda qué información necesita cada participante y protege datos que no sea necesario divulgar. [AC-L06] [AC-L07]\n\nAntes de reducir jornada, abandonar un empleo o contratar un apoyo, pide información sobre consecuencias en tu situación. Adaptación, reducción y excedencia son figuras distintas; sus condiciones dependen de normativa, convenio y circunstancias. CareTools C034–C039 sirve para preparar preguntas en España, no para confirmar por sí solo un derecho individual vigente. Consulta al interlocutor laboral o jurídico competente y conserva la respuesta relevante antes de una decisión de alcance. [AC-L09]\n\nSi cuidas profesionalmente, protege la separación entre disponibilidad laboral y disponibilidad personal. El afecto por quien atiendes no convierte cualquier demanda en una obligación fuera del acuerdo de trabajo. Las tareas, tiempos, descansos, sustituciones y cauces de incidencia necesitan claridad. En el empleo de hogar también importa quién asume responsabilidades preventivas y cómo pedir revisión sin quedar aislado. El corpus ofrece C041 y C063–C067 para orientar esas conversaciones, con sus límites territoriales. [AC-L09]\n\nCuando combinas trabajo de cuidado y cuidado familiar, cuenta ambos. La experiencia profesional puede ayudar, pero no te obliga a asumir toda la atención en casa ni elimina tu necesidad de aprender algo nuevo. Puedes pedir una explicación como familiar, una consulta como paciente o apoyo para una tarea que realizas habitualmente en el trabajo con otro equipo.\n\nPara decidir, compara opciones con sus costes y condiciones de retorno, no sólo con el alivio inmediato. Una medida que hoy libera tiempo puede reducir ingresos o cerrar oportunidades; otra puede exigir recursos que aún no existen. No hay una respuesta universal. La revisión práctica consiste en comprobar si el acuerdo se cumple, si el coste es sostenible y si siguen existiendo alternativas. La guía Metacuidado amplía la mirada sobre quién absorbe esos costes y quién puede corregirlos.",
+          "after": "El dinero forma parte del autocuidado porque condiciona comida, vivienda, transporte y posibilidad de elegir apoyos. No necesitas convertirte en experta financiera. Puede bastar identificar gastos nuevos, ingresos que se han reducido y pagos que vienen próximos. Si el presupuesto no alcanza para necesidades básicas, ajustar una hoja no resuelve el problema; hace falta explorar recursos y asesoramiento.\n\nCareTools C031 y la plantilla P09 ayudan a distinguir desembolsos, tiempo y otros costes. Anota sólo lo que necesitas para una decisión: por ejemplo, cuánto costaría realmente un apoyo incluyendo transporte y coordinación. Evita tratar el trabajo gratuito como si no tuviera valor, pero tampoco confundas su estimación con dinero disponible para pagar. Si compartes cuentas, acuerda qué información necesita cada participante y protege datos que no sea necesario divulgar. [AC-L06] [AC-L07]\n\nAntes de reducir jornada, abandonar un empleo o contratar un apoyo, pide información sobre consecuencias en tu situación. Adaptación, reducción y excedencia son figuras distintas; sus condiciones dependen de normativa, convenio y circunstancias. CareTools C034–C039 sirve para preparar preguntas en España, no para confirmar por sí solo un derecho individual vigente. Consulta al interlocutor laboral o jurídico competente y conserva la respuesta relevante antes de una decisión de alcance. [AC-L09]\n\nSi cuidas profesionalmente, protege la separación entre disponibilidad laboral y disponibilidad personal. El afecto por quien atiendes no convierte cualquier demanda en una obligación fuera del acuerdo de trabajo. Las tareas, tiempos, descansos, sustituciones y cauces de incidencia necesitan claridad. En el empleo de hogar también importa quién asume responsabilidades preventivas y cómo pedir revisión sin quedar aislado. El corpus ofrece C041 y C063–C067 para orientar esas conversaciones, con sus límites territoriales. [AC-L09]\n\nCuando combinas trabajo de cuidado y cuidado familiar, cuenta ambos. La experiencia profesional puede ayudar, pero no te obliga a asumir toda la atención en casa ni elimina tu necesidad de aprender algo nuevo. Puedes pedir una explicación como familiar, una consulta como paciente o apoyo para una tarea que realizas habitualmente en el trabajo con otro equipo.\n\nPara decidir, compara opciones con sus costes y condiciones de retorno, no sólo con el alivio inmediato. Una medida que hoy libera tiempo puede reducir ingresos o cerrar oportunidades; otra puede exigir recursos que aún no existen. No hay una respuesta universal. La revisión práctica consiste en comprobar si el acuerdo se cumple, si el coste es sostenible y si siguen existiendo alternativas. La guía Metacuidado amplía la mirada sobre quién absorbe esos costes y quién puede corregirlos."
+        },
+        {
+          "id": "gu-mc01",
+          "field": "body.0.text",
+          "before": "Para personas que cuidan y reciben apoyos, familias, redes comunitarias, profesionales, responsables de servicios y quienes diseñan políticas o tecnologías. Cada lector puede utilizar únicamente la parte que afecta a su decisión. La guía no exige formación en BrainBox ni convierte una relación cotidiana en un procedimiento de evaluación.\n\nEn esta guía, meta cuidado significa revisar lo que el cuidado hace al conjunto: a quien lo recibe, a quien lo presta, a sus relaciones y a las condiciones que permiten sostenerlo. Ayuda a preguntar quién decide, qué se protege, quién soporta los costes y qué conviene mantener, cambiar o detener. Es un marco editorial de este proyecto, no una entidad clínica ni un estándar validado. Su utilidad debe juzgarse por las decisiones que ayuda a aclarar y la carga que evita; no tiene eficacia demostrada como intervención.\n\nLa perspectiva integral no obliga a examinarlo todo. Si una ayuda funciona, es aceptada y no muestra un problema relevante, puede mantenerse sin abrir una revisión completa. Si aparece una dificultad, se elige una pregunta y se busca a quien puede responder o cambiar las condiciones. Cuidar con cuidado puede significar añadir apoyo, reducir una intervención excesiva, repartir una responsabilidad, corregir un servicio o reconocer que aún no existe una solución suficiente.\n\nLos seis dilemas identificados como ficticios son composiciones educativas originales. Sus decisiones son propuestas razonadas, no resultados observados, recomendaciones clínicas individualizadas ni modelos de conducta obligatorios. Las referencias institucionales sostienen principios concretos; el desarrollo práctico que las acompaña pertenece a esta guía. Las situaciones médicas, psicológicas o jurídicas requieren la competencia correspondiente. Si hay peligro inmediato, procede activar la atención urgente local, sin esperar a terminar una reflexión.\n\nEsta guía complementa las otras dos: Autocuidado del cuidador ayuda a reconocer necesidades y decisiones propias; Cuidador de cuidadores, a ofrecer apoyo acordado y responsable. Aquí se revisa si el conjunto está bien orientado. Meta cuidado tampoco equivale a MetaBrainBox: este último revisa el propio método BrainBox. La distinción y sus límites se desarrollan en MC18. [MC-L01]",
+          "after": "Para personas que cuidan y reciben apoyos, familias, redes comunitarias, profesionales, responsables de servicios y quienes diseñan políticas o tecnologías. Cada lectora puede utilizar únicamente la parte que afecta a su decisión. La guía no exige formación en BrainBox ni convierte una relación cotidiana en un procedimiento de evaluación.\n\nEn esta guía, meta cuidado significa revisar lo que el cuidado hace al conjunto: a quien lo recibe, a quien lo presta, a sus relaciones y a las condiciones que permiten sostenerlo. Ayuda a preguntar quién decide, qué se protege, quién soporta los costes y qué conviene mantener, cambiar o detener. Es un marco editorial de este proyecto, no una entidad clínica ni un estándar validado. Su utilidad debe juzgarse por las decisiones que ayuda a aclarar y la carga que evita; no tiene eficacia demostrada como intervención.\n\nLa perspectiva integral no obliga a examinarlo todo. Si una ayuda funciona, es aceptada y no muestra un problema relevante, puede mantenerse sin abrir una revisión completa. Si aparece una dificultad, se elige una pregunta y se busca a quien puede responder o cambiar las condiciones. Cuidar con cuidado puede significar añadir apoyo, reducir una intervención excesiva, repartir una responsabilidad, corregir un servicio o reconocer que aún no existe una solución suficiente.\n\nLos seis dilemas identificados como ficticios son composiciones educativas originales. Sus decisiones son propuestas razonadas, no resultados observados, recomendaciones clínicas individualizadas ni modelos de conducta obligatorios. Las referencias institucionales sostienen principios concretos; el desarrollo práctico que las acompaña pertenece a esta guía. Las situaciones médicas, psicológicas o jurídicas requieren la competencia correspondiente. Si hay peligro inmediato, procede activar la atención urgente local, sin esperar a terminar una reflexión.\n\nEsta guía complementa las otras dos: Autocuidado del cuidador ayuda a reconocer necesidades y decisiones propias; Cuidador de cuidadores, a ofrecer apoyo acordado y responsable. Aquí se revisa si el conjunto está bien orientado. Meta cuidado tampoco equivale a MetaBrainBox: este último revisa el propio método BrainBox. La distinción y sus límites se desarrollan en MC18. [MC-L01]"
+        },
+        {
+          "id": "cu-b012",
+          "field": "summary",
+          "before": "El libro parte del diario que Marie Curie escribió tras la muerte de su marido y lo entrelaza con reflexiones y experiencias de Rosa Montero. La ficha editorial presenta un recorrido por el dolor, la memoria, la creación y la continuidad de la vida. Se incluye como lectura que admite asociaciones personales y culturales, sin ofrecer etapas obligatorias del duelo ni un itinerario que cada lector deba reproducir.",
+          "after": "El libro parte del diario que Marie Curie escribió tras la muerte de su marido y lo entrelaza con reflexiones y experiencias de Rosa Montero. La ficha editorial presenta un recorrido por el dolor, la memoria, la creación y la continuidad de la vida. Se incluye como lectura que admite asociaciones personales y culturales, sin ofrecer etapas obligatorias del duelo ni un itinerario que cada lectora deba reproducir."
+        },
+        {
+          "id": "cu-b012",
+          "field": "body.3.text",
+          "before": "El libro parte del diario que Marie Curie escribió tras la muerte de su marido y lo entrelaza con reflexiones y experiencias de Rosa Montero. La ficha editorial presenta un recorrido por el dolor, la memoria, la creación y la continuidad de la vida. Se incluye como lectura que admite asociaciones personales y culturales, sin ofrecer etapas obligatorias del duelo ni un itinerario que cada lector deba reproducir.",
+          "after": "El libro parte del diario que Marie Curie escribió tras la muerte de su marido y lo entrelaza con reflexiones y experiencias de Rosa Montero. La ficha editorial presenta un recorrido por el dolor, la memoria, la creación y la continuidad de la vida. Se incluye como lectura que admite asociaciones personales y culturales, sin ofrecer etapas obligatorias del duelo ni un itinerario que cada lectora deba reproducir."
+        },
+        {
+          "id": "cs-int",
+          "field": "body.26.text",
+          "before": "La gratitud puede surgir libremente y enriquecer una relación. Se vuelve problemática cuando se utiliza para exigir obediencia, trabajo ilimitado o silencio. «Después de todo lo que hice por ti» puede expresar dolor, pero no determina por sí solo qué debe hacer la otra persona. La guía propone separar reconocimiento del pasado, necesidad actual y acuerdo presente, evitando que una historia compartida funcione como contrato indefinido.\n\nLas familias pueden tener expectativas culturales sobre cuidado entre generaciones. Algunas personas las viven como sentido y pertenencia; otras, como presión. No corresponde decidir de antemano cuál es la experiencia auténtica. Pregunte qué desea la persona, qué alternativas tiene y qué ocurriría si rechazara una tarea. La libertad de elección depende de condiciones materiales y relacionales, no sólo de una declaración verbal.\n\nLas obligaciones legales, cuando existan, necesitan información específica de la jurisdicción y asesoramiento competente. No se deducen de un principio general de reciprocidad ni de la biografía familiar. Tampoco la ausencia de vínculo afectivo resuelve por sí sola una cuestión jurídica. BrainBox puede ayudar a organizar preguntas y datos pertinentes, pero se detiene ante la decisión legal o psicológica que requiere otra competencia.\n\nConviene reconocer historias de daño sin exigir reconciliación como condición para cuidar o recibir cuidado. Una persona puede necesitar apoyo para establecer límites, encontrar alternativas o comprender sus opciones. La guía no indica qué relación debe mantener ni diagnostica a sus familiares. Si hay riesgo o violencia, se busca protección y apoyo especializado; una conversación de intercambio no sustituye ese proceso.\n\nUna revisión útil pregunta si el acuerdo actual se sostiene por voluntad, obligación conocida, falta de alternativa o una combinación. No se usa esa respuesta para juzgar el afecto. Sirve para identificar dónde hace falta apoyo material, negociación o asesoramiento. La guía de deontocuidado analiza coerción normativa y restricciones; intercuidado conserva la diferencia entre corresponder porque se elige y quedar atrapado en una deuda sin límites. Un vínculo puede ser valioso sin que todas sus demandas sean legítimas.",
+          "after": "La gratitud puede surgir libremente y enriquecer una relación. Se vuelve problemática cuando se utiliza para exigir obediencia, trabajo ilimitado o silencio. «Después de todo lo que hice por ti» puede expresar dolor, pero no determina por sí solo qué debe hacer la otra persona. La guía propone separar reconocimiento del pasado, necesidad actual y acuerdo presente, evitando que una historia compartida funcione como contrato indefinido.\n\nLas familias pueden tener expectativas culturales sobre cuidado entre generaciones. Algunas personas las viven como sentido y pertenencia; otras, como presión. No corresponde decidir de antemano cuál es la experiencia auténtica. Pregunte qué desea la persona, qué alternativas tiene y qué ocurriría si rechazara una tarea. La libertad de elección depende de condiciones materiales y relacionales, no sólo de una declaración verbal.\n\nLas obligaciones legales, cuando existan, necesitan información específica de la jurisdicción y asesoramiento competente. No se deducen de un principio general de reciprocidad ni de la biografía familiar. Tampoco la ausencia de vínculo afectivo resuelve por sí sola una cuestión jurídica. BrainBox puede ayudar a organizar preguntas y datos pertinentes, pero se detiene ante la decisión legal o psicológica que requiere otra competencia.\n\nConviene reconocer historias de daño sin exigir reconciliación como condición para cuidar o recibir cuidado. Una persona puede necesitar apoyo para establecer límites, encontrar alternativas o comprender sus opciones. La guía no indica qué relación debe mantener ni diagnostica a sus familiares. Si hay riesgo o violencia, se busca protección y apoyo especializado; una conversación de intercambio no sustituye ese proceso.\n\nUna revisión útil pregunta si el acuerdo actual se sostiene por voluntad, obligación conocida, falta de alternativa o una combinación. No se usa esa respuesta para juzgar el afecto. Sirve para identificar dónde hace falta apoyo material, negociación o asesoramiento. La guía de deontocuidado analiza coerción normativa y restricciones; intercuidado conserva la diferencia entre corresponder porque se elige y quedar atrapada en una deuda sin límites. Un vínculo puede ser valioso sin que todas sus demandas sean legítimas."
+        },
+        {
+          "id": "cs-int",
+          "field": "body.34.text",
+          "before": "Las capacidades de corresponder pueden cambiar por enfermedad, discapacidad, deterioro o muerte. Si la relación se sostuvo sobre intercambios, esa transformación puede generar pérdida, culpa o incertidumbre. La guía no prescribe cómo sentir ni un ritmo de adaptación. Propone separar el valor de la historia compartida de la expectativa de que toda contribución continúe igual. El cuidado no pierde legitimidad cuando la devolución deja de ser posible.\n\nUna persona puede seguir contribuyendo de formas menos visibles, pero no hay obligación de encontrar siempre una aportación compensatoria. A veces el reconocimiento consiste en aceptar la asimetría y buscar recursos para sostenerla. La dignidad no depende de producir bienestar para otros. Tampoco quien cuida debe quedar atrapado en una promesa ilimitada por temor a traicionar la relación; puede necesitar relevo y apoyo profesional.\n\nLas decisiones sobre final de vida, capacidad, representación o atención sanitaria requieren profesionales y procedimientos competentes, con participación de la persona según corresponda. BrainBox no decide esas cuestiones. En el plano cotidiano puede ayudar a elegir cómo mantener un contacto, organizar una visita acordada o preparar preguntas. La cercanía afectiva y el deseo de corresponder no sustituyen información ni consentimiento.\n\nDespués de una muerte, pueden quedar tareas, vínculos y necesidades de apoyo de quien antes recibía también cuidado de la persona fallecida. NICE contempla esa situación en su orientación sobre cuidadores adultos. [INT-E09]\n\nEsta referencia no establece un itinerario universal de duelo. La propuesta práctica es preguntar qué funciones desaparecieron, qué apoyos siguen siendo necesarios y quién puede acompañar sin imponer una manera de recordar o continuar.\n\nLa revisión de una transición puede reconocer acciones realizadas y necesidades abiertas sin evaluar el afecto. Una visita no demuestra cierre emocional; un trámite terminado no resuelve la pérdida. Si hay sufrimiento que requiere atención, se ofrece la vía competente. La reciprocidad puede quedar en la historia de la relación sin convertirse en deuda pendiente. Cuidosfera debe poder representar ese cambio temporal y conservar la diferencia entre un vínculo que transforma sus formas de apoyo y una obligación que se mantiene por inercia.",
+          "after": "Las capacidades de corresponder pueden cambiar por enfermedad, discapacidad, deterioro o muerte. Si la relación se sostuvo sobre intercambios, esa transformación puede generar pérdida, culpa o incertidumbre. La guía no prescribe cómo sentir ni un ritmo de adaptación. Propone separar el valor de la historia compartida de la expectativa de que toda contribución continúe igual. El cuidado no pierde legitimidad cuando la devolución deja de ser posible.\n\nUna persona puede seguir contribuyendo de formas menos visibles, pero no hay obligación de encontrar siempre una aportación compensatoria. A veces el reconocimiento consiste en aceptar la asimetría y buscar recursos para sostenerla. La dignidad no depende de producir bienestar para otros. Tampoco quien cuida debe quedar atrapada en una promesa ilimitada por temor a traicionar la relación; puede necesitar relevo y apoyo profesional.\n\nLas decisiones sobre final de vida, capacidad, representación o atención sanitaria requieren profesionales y procedimientos competentes, con participación de la persona según corresponda. BrainBox no decide esas cuestiones. En el plano cotidiano puede ayudar a elegir cómo mantener un contacto, organizar una visita acordada o preparar preguntas. La cercanía afectiva y el deseo de corresponder no sustituyen información ni consentimiento.\n\nDespués de una muerte, pueden quedar tareas, vínculos y necesidades de apoyo de quien antes recibía también cuidado de la persona fallecida. NICE contempla esa situación en su orientación sobre cuidadores adultos. [INT-E09]\n\nEsta referencia no establece un itinerario universal de duelo. La propuesta práctica es preguntar qué funciones desaparecieron, qué apoyos siguen siendo necesarios y quién puede acompañar sin imponer una manera de recordar o continuar.\n\nLa revisión de una transición puede reconocer acciones realizadas y necesidades abiertas sin evaluar el afecto. Una visita no demuestra cierre emocional; un trámite terminado no resuelve la pérdida. Si hay sufrimiento que requiere atención, se ofrece la vía competente. La reciprocidad puede quedar en la historia de la relación sin convertirse en deuda pendiente. Cuidosfera debe poder representar ese cambio temporal y conservar la diferencia entre un vínculo que transforma sus formas de apoyo y una obligación que se mantiene por inercia."
+        },
+        {
+          "id": "cs-int",
+          "field": "body.35.text",
+          "before": "Seleccione una cuestión cotidiana segura: por ejemplo, dos amistades desean acordar una forma de acompañarse que no genere obligación de disponibilidad permanente. No se utiliza el ejercicio para decidir tratamiento, evaluar capacidad, resolver violencia o determinar derechos. Ante riesgo o asuntos médicos, psicológicos o legales opera STOP y se recurre al apoyo competente. La atención necesaria y la relación ordinaria pueden continuar dentro de sus límites. [INT-L01]\n\nEn Ser, cada persona puede identificar lo que siente, hace espontáneamente y piensa ante la oferta. Quizá una responde enseguida por temor a decepcionar y otra interpreta la rapidez como preferencia. Esta observación no diagnostica ni obliga a compartir intimidad. Hacer consiste en elegir una respuesta deliberada. Saber recoge disponibilidad real y condiciones del acuerdo. Creer/crear es voluntario: puede abrir una forma diferente de compañía sin imponer un significado o creencia común.\n\nLa AMV debe ser mínima y suficiente para su propósito. Se acuerda una ocasión, responsable, apoyos necesarios, dependencias y condición de parada. Por ejemplo, una llamada breve en un momento elegido, con posibilidad de cambiarla sin penalización y una vía distinta para asuntos que requieren servicios profesionales. No se promete que la llamada resolverá soledad o malestar; se define como una oportunidad de contacto deseada por ambas partes.\n\nPrepare el REV antes: qué se revisará, quién participará, cuándo, mediante qué procedimiento, con qué criterio y de dónde procederá la información. En este caso puede ser una conversación posterior sobre si el contacto ocurrió, si fue elegido y si generó una expectativa incómoda de devolución. Cada persona conserva su evaluación. No se exige una puntuación conjunta ni que ambas obtengan el mismo valor.\n\nLa revisión separa realización, resultado, valor y coste, y atribución. Haber hablado no demuestra sentirse acompañado; sentirse mejor después no permite atribuirlo sólo al método. Puede haber valor para una persona y carga para otra, y eso exige revisar el acuerdo. Los formatos A/B/C no son categorías de relación ni gravedad; A–F son opcionales, G no está diseñado y 3–2 es una heurística. El entorno, la ética y la tecnología atraviesan el proceso; la IA es opcional. La aplicación debe cerrarse cuando ya no aporta claridad, sin convertir la reciprocidad en un programa permanente de evaluación mutua.",
+          "after": "Seleccione una cuestión cotidiana segura: por ejemplo, dos amistades desean acordar una forma de acompañarse que no genere obligación de disponibilidad permanente. No se utiliza el ejercicio para decidir tratamiento, evaluar capacidad, resolver violencia o determinar derechos. Ante riesgo o asuntos médicos, psicológicos o legales opera STOP y se recurre al apoyo competente. La atención necesaria y la relación ordinaria pueden continuar dentro de sus límites. [INT-L01]\n\nEn Ser, cada persona puede identificar lo que siente, hace espontáneamente y piensa ante la oferta. Quizá una responde enseguida por temor a decepcionar y otra interpreta la rapidez como preferencia. Esta observación no diagnostica ni obliga a compartir intimidad. Hacer consiste en elegir una respuesta deliberada. Saber recoge disponibilidad real y condiciones del acuerdo. Creer/crear es voluntario: puede abrir una forma diferente de compañía sin imponer un significado o creencia común.\n\nLa AMV debe ser mínima y suficiente para su propósito. Se acuerda una ocasión, responsable, apoyos necesarios, dependencias y condición de parada. Por ejemplo, una llamada breve en un momento elegido, con posibilidad de cambiarla sin penalización y una vía distinta para asuntos que requieren servicios profesionales. No se promete que la llamada resolverá soledad o malestar; se define como una oportunidad de contacto deseada por ambas partes.\n\nPrepare el REV antes: qué se revisará, quién participará, cuándo, mediante qué procedimiento, con qué criterio y de dónde procederá la información. En este caso puede ser una conversación posterior sobre si el contacto ocurrió, si fue elegido y si generó una expectativa incómoda de devolución. Cada persona conserva su evaluación. No se exige una puntuación conjunta ni que ambas obtengan el mismo valor.\n\nLa revisión separa realización, resultado, valor y coste, y atribución. Haber hablado no demuestra sentirse acompañada; sentirse mejor después no permite atribuirlo sólo al método. Puede haber valor para una persona y carga para otra, y eso exige revisar el acuerdo. Los formatos A/B/C no son categorías de relación ni gravedad; A–F son opcionales, G no está diseñado y 3–2 es una heurística. El entorno, la ética y la tecnología atraviesan el proceso; la IA es opcional. La aplicación debe cerrarse cuando ya no aporta claridad, sin convertir la reciprocidad en un programa permanente de evaluación mutua."
+        },
+        {
+          "id": "cs-hip",
+          "field": "body.35.text",
+          "before": "Caso educativo ficticio 3. Una familia propone un sistema de llamadas para acompañar a Marta, que vive sola y desea menos interrupciones. La necesidad cotidiana es acordar una comunicación útil, no evaluar riesgo clínico. Marta prefiere un mensaje en un momento acordado y conservar llamadas espontáneas para conversar. La familia comprueba disponibilidad y define cómo pedir ayuda fuera de ese acuerdo, con los apoyos competentes que correspondan. No se reduce una vigilancia indicada profesionalmente sin revisión. El retorno pregunta si el acuerdo facilitó la comunicación y respetó preferencias, y si añadió trabajo o incertidumbre que deba abordarse.\n\nCaso educativo ficticio 4. Un cuidador pide que alguien asuma una gestión semanal, pero después revisa cada mensaje y corrige todas las decisiones. La otra persona se siente desautorizada. Antes de llamarlo incapaz de delegar, se aclara si recibió información suficiente, si los límites estaban acordados y si existe algún motivo concreto de preocupación. El objeto cotidiano es definir qué decisiones puede asumir el apoyo y cuáles requieren consulta. Si hay cuestiones legales o sanitarias, se derivan. El retorno no mide cuánto dejó de controlar, sino si la responsabilidad quedó comprensible, aceptada y sostenida sin errores relevantes ni carga oculta.\n\nAl revisar cualquier cambio, escucha también la posibilidad de que la persona quiera volver a recibir más ayuda. Autonomía no es progresar siempre hacia hacer más por uno mismo. Puede consistir en decidir descansar, cambiar de apoyo o mantener una costumbre que otros consideran poco eficiente. La revisión debe permitir esa respuesta sin decepción moral. Si una propuesta no funciona, distingue falta de recursos, mala preparación, preferencia distinta y consecuencias inesperadas. No atribuyas automáticamente el resultado a resistencia, dependencia aprendida o falta de compromiso.\n\nPara cerrar, conserva sólo la información necesaria: qué se acordó, qué sigue pendiente, quién responde y cuándo merece la pena revisar de nuevo. No se necesita un expediente íntimo ni una cadena de tareas crecientes. Las guías de autocuidado, apoyo a cuidadores y meta cuidado amplían las dimensiones que esta unidad no desarrolla en profundidad; CareTools aporta recursos concretos y Cuidopedia el vocabulario. [HIP-L02] [HIP-L03] [HIP-L04] La aportación propia de hipercuidado es mantener abierta una pregunta: si la ayuda sostiene la vida elegida o está ocupando, sin suficiente justificación, el lugar de quien la vive.",
+          "after": "Caso educativo ficticio 3. Una familia propone un sistema de llamadas para acompañar a Marta, que vive sola y desea menos interrupciones. La necesidad cotidiana es acordar una comunicación útil, no evaluar riesgo clínico. Marta prefiere un mensaje en un momento acordado y conservar llamadas espontáneas para conversar. La familia comprueba disponibilidad y define cómo pedir ayuda fuera de ese acuerdo, con los apoyos competentes que correspondan. No se reduce una vigilancia indicada profesionalmente sin revisión. El retorno pregunta si el acuerdo facilitó la comunicación y respetó preferencias, y si añadió trabajo o incertidumbre que deba abordarse.\n\nCaso educativo ficticio 4. Un cuidador pide que alguien asuma una gestión semanal, pero después revisa cada mensaje y corrige todas las decisiones. La otra persona se siente desautorizada. Antes de llamarlo incapaz de delegar, se aclara si recibió información suficiente, si los límites estaban acordados y si existe algún motivo concreto de preocupación. El objeto cotidiano es definir qué decisiones puede asumir el apoyo y cuáles requieren consulta. Si hay cuestiones legales o sanitarias, se derivan. El retorno no mide cuánto dejó de controlar, sino si la responsabilidad quedó comprensible, aceptada y sostenida sin errores relevantes ni carga oculta.\n\nAl revisar cualquier cambio, escucha también la posibilidad de que la persona quiera volver a recibir más ayuda. Autonomía no es progresar siempre hacia hacer más por una misma. Puede consistir en decidir descansar, cambiar de apoyo o mantener una costumbre que otros consideran poco eficiente. La revisión debe permitir esa respuesta sin decepción moral. Si una propuesta no funciona, distingue falta de recursos, mala preparación, preferencia distinta y consecuencias inesperadas. No atribuyas automáticamente el resultado a resistencia, dependencia aprendida o falta de compromiso.\n\nPara cerrar, conserva sólo la información necesaria: qué se acordó, qué sigue pendiente, quién responde y cuándo merece la pena revisar de nuevo. No se necesita un expediente íntimo ni una cadena de tareas crecientes. Las guías de autocuidado, apoyo a cuidadores y meta cuidado amplían las dimensiones que esta unidad no desarrolla en profundidad; CareTools aporta recursos concretos y Cuidopedia el vocabulario. [HIP-L02] [HIP-L03] [HIP-L04] La aportación propia de hipercuidado es mantener abierta una pregunta: si la ayuda sostiene la vida elegida o está ocupando, sin suficiente justificación, el lugar de quien la vive."
+        },
+        {
+          "id": "cs-tec",
+          "field": "body.21.text",
+          "before": "Un dispositivo puede despertar alivio, curiosidad, vergüenza, miedo o sensación de vigilancia. Ninguna de esas respuestas demuestra por sí sola que sea adecuado o inadecuado. Escucha qué experiencia concreta hay detrás: sentirse observado durante la intimidad, temer equivocarse, agradecer una comunicación más fácil o preocuparse por perder contacto humano. El consentimiento cotidiano requiere más que una aceptación inicial cuando el uso cambia o aparecen consecuencias nuevas. La adaptación no debe confundirse con resignación silenciosa.\n\nLos robots sociales y agentes conversacionales pueden formar parte de experiencias de interacción, pero la evidencia depende del sistema, la población y el contexto. Un ensayo con PARO comparó condiciones específicas en residencias; un ensayo de un agente generativo especializado estudió un sistema particular. Ninguno permite atribuir eficacia universal a robots o chatbots ni prescribir acompañamiento del duelo a partir de esta guía. [TEC-E07; TEC-E08] Los resultados publicados no convierten un producto distinto en equivalente.\n\nSi se utiliza una interfaz de compañía, conviene explicar de forma accesible su naturaleza y sus límites. La calidez del lenguaje no prueba comprensión humana, confidencialidad absoluta ni capacidad profesional. No se exige a una persona revelar sentimientos a un sistema para demostrar colaboración. Tampoco se ridiculiza un vínculo que le resulta significativo. Se evalúa si la experiencia amplía posibilidades, produce confusión relevante o desplaza relaciones y apoyos que desea conservar. Ante problemas psicológicos o riesgos se mantiene STOP y apoyo competente.\n\nLa confianza necesita reparación cuando una herramienta falla. Ocultar un error para que la persona no pierda confianza puede impedir una decisión informada. Reconocerlo de forma proporcionada, explicar qué se sabe y ofrecer una alternativa ayuda a mantener agencia. Quien cuida tampoco debe quedar solo gestionando la frustración del usuario y la incertidumbre técnica. El proveedor y la organización tienen funciones de soporte. Un vínculo asistencial sólido incluye poder expresar que una tecnología no sirve, sin que esa objeción se interprete como falta de gratitud o resistencia al cuidado.",
+          "after": "Un dispositivo puede despertar alivio, curiosidad, vergüenza, miedo o sensación de vigilancia. Ninguna de esas respuestas demuestra por sí sola que sea adecuado o inadecuado. Escucha qué experiencia concreta hay detrás: sentirse observado durante la intimidad, temer equivocarse, agradecer una comunicación más fácil o preocuparse por perder contacto humano. El consentimiento cotidiano requiere más que una aceptación inicial cuando el uso cambia o aparecen consecuencias nuevas. La adaptación no debe confundirse con resignación silenciosa.\n\nLos robots sociales y agentes conversacionales pueden formar parte de experiencias de interacción, pero la evidencia depende del sistema, la población y el contexto. Un ensayo con PARO comparó condiciones específicas en residencias; un ensayo de un agente generativo especializado estudió un sistema particular. Ninguno permite atribuir eficacia universal a robots o chatbots ni prescribir acompañamiento del duelo a partir de esta guía. [TEC-E07; TEC-E08] Los resultados publicados no convierten un producto distinto en equivalente.\n\nSi se utiliza una interfaz de compañía, conviene explicar de forma accesible su naturaleza y sus límites. La calidez del lenguaje no prueba comprensión humana, confidencialidad absoluta ni capacidad profesional. No se exige a una persona revelar sentimientos a un sistema para demostrar colaboración. Tampoco se ridiculiza un vínculo que le resulta significativo. Se evalúa si la experiencia amplía posibilidades, produce confusión relevante o desplaza relaciones y apoyos que desea conservar. Ante problemas psicológicos o riesgos se mantiene STOP y apoyo competente.\n\nLa confianza necesita reparación cuando una herramienta falla. Ocultar un error para que la persona no pierda confianza puede impedir una decisión informada. Reconocerlo de forma proporcionada, explicar qué se sabe y ofrecer una alternativa ayuda a mantener agencia. Quien cuida tampoco debe quedar sola gestionando la frustración del usuario y la incertidumbre técnica. El proveedor y la organización tienen funciones de soporte. Un vínculo asistencial sólido incluye poder expresar que una tecnología no sirve, sin que esa objeción se interprete como falta de gratitud o resistencia al cuidado."
+        },
+        {
+          "id": "cs-pan",
+          "field": "body.21.text",
+          "before": "La preocupación, el amor, la culpa y el miedo pueden coexistir. No es necesario encontrar una motivación pura para cuidar bien. La pregunta es cómo influyen en decisiones y qué apoyos hacen falta. Una persona puede sentir culpa al delegar aunque sepa que la alternativa es adecuada; otra puede sentirse obligada por expectativas familiares. La emoción merece escucha, pero no determina por sí sola cuál es la acción correcta. Cuando el malestar requiere intervención psicológica, se mantiene STOP y apoyo competente.\n\nEstudios sobre perfeccionismo y agotamiento parental muestran asociaciones en poblaciones concretas, y trabajos cualitativos exploran experiencias de presión y autoexigencia. Sus diseños no permiten diagnosticar a cualquier cuidador ni afirmar que una aspiración elevada cause inevitablemente colapso. [PAN-E02; PAN-E03; PAN-E04] En esta guía sirven para contrastar la hipótesis editorial, no para crear una escala de pancuidado. La experiencia de padres y madres no se generaliza automáticamente a todos los contextos de cuidado.\n\nPuede ayudar distinguir responsabilidad de control del resultado. Una persona puede actuar de forma cuidadosa y no evitar una enfermedad, una recaída o un cambio vital. La ausencia de un resultado deseado no demuestra falta de amor ni esfuerzo insuficiente. Esta afirmación no elimina responsabilidades concretas por acciones u omisiones; evita convertir todo acontecimiento en culpa personal. Cuando hay dudas sobre lo ocurrido, se busca aclaración competente y se conserva la diferencia entre hechos y juicios globales sobre uno mismo.\n\nLa presión social puede presentar al buen cuidador como alguien que nunca se cansa, nunca se enfada y siempre sabe qué hacer. Ese ideal dificulta pedir apoyo. Una conversación segura puede reconocer emociones ambivalentes sin convertirlas en amenaza para la persona cuidada. No se exige una narrativa heroica ni una aceptación perfecta. La red puede apoyar con tareas y recursos, además de palabras. Si sólo ofrece elogios al sacrificio, puede reforzar una carga que necesita distribuirse.",
+          "after": "La preocupación, el amor, la culpa y el miedo pueden coexistir. No es necesario encontrar una motivación pura para cuidar bien. La pregunta es cómo influyen en decisiones y qué apoyos hacen falta. Una persona puede sentir culpa al delegar aunque sepa que la alternativa es adecuada; otra puede sentirse obligada por expectativas familiares. La emoción merece escucha, pero no determina por sí sola cuál es la acción correcta. Cuando el malestar requiere intervención psicológica, se mantiene STOP y apoyo competente.\n\nEstudios sobre perfeccionismo y agotamiento parental muestran asociaciones en poblaciones concretas, y trabajos cualitativos exploran experiencias de presión y autoexigencia. Sus diseños no permiten diagnosticar a cualquier cuidador ni afirmar que una aspiración elevada cause inevitablemente colapso. [PAN-E02; PAN-E03; PAN-E04] En esta guía sirven para contrastar la hipótesis editorial, no para crear una escala de pancuidado. La experiencia de padres y madres no se generaliza automáticamente a todos los contextos de cuidado.\n\nPuede ayudar distinguir responsabilidad de control del resultado. Una persona puede actuar de forma cuidadosa y no evitar una enfermedad, una recaída o un cambio vital. La ausencia de un resultado deseado no demuestra falta de amor ni esfuerzo insuficiente. Esta afirmación no elimina responsabilidades concretas por acciones u omisiones; evita convertir todo acontecimiento en culpa personal. Cuando hay dudas sobre lo ocurrido, se busca aclaración competente y se conserva la diferencia entre hechos y juicios globales sobre una misma.\n\nLa presión social puede presentar al buen cuidador como alguien que nunca se cansa, nunca se enfada y siempre sabe qué hacer. Ese ideal dificulta pedir apoyo. Una conversación segura puede reconocer emociones ambivalentes sin convertirlas en amenaza para la persona cuidada. No se exige una narrativa heroica ni una aceptación perfecta. La red puede apoyar con tareas y recursos, además de palabras. Si sólo ofrece elogios al sacrificio, puede reforzar una carga que necesita distribuirse."
+        },
+        {
+          "id": "ct-a001",
+          "field": "category",
+          "before": "Programas para cuidadores",
+          "after": "Programas para personas cuidadoras"
+        },
+        {
+          "id": "ct-a002",
+          "field": "category",
+          "before": "Programas para cuidadores",
+          "after": "Programas para personas cuidadoras"
+        },
+        {
+          "id": "ct-a003",
+          "field": "category",
+          "before": "Programas para cuidadores",
+          "after": "Programas para personas cuidadoras"
+        },
+        {
+          "id": "ct-a004",
+          "field": "category",
+          "before": "Programas para cuidadores",
+          "after": "Programas para personas cuidadoras"
+        },
+        {
+          "id": "ct-a005",
+          "field": "category",
+          "before": "Programas para cuidadores",
+          "after": "Programas para personas cuidadoras"
+        },
+        {
+          "id": "ct-a006",
+          "field": "category",
+          "before": "Programas para cuidadores",
+          "after": "Programas para personas cuidadoras"
+        },
+        {
+          "id": "ct-a007",
+          "field": "category",
+          "before": "Programas para cuidadores",
+          "after": "Programas para personas cuidadoras"
+        },
+        {
+          "id": "ct-a008",
+          "field": "category",
+          "before": "Programas para cuidadores",
+          "after": "Programas para personas cuidadoras"
+        },
+        {
+          "id": "ct-a009",
+          "field": "category",
+          "before": "Programas para cuidadores",
+          "after": "Programas para personas cuidadoras"
+        },
+        {
+          "id": "ct-a010",
+          "field": "category",
+          "before": "Programas para cuidadores",
+          "after": "Programas para personas cuidadoras"
+        },
+        {
+          "id": "ct-a011",
+          "field": "category",
+          "before": "Programas para cuidadores",
+          "after": "Programas para personas cuidadoras"
+        },
+        {
+          "id": "ct-a012",
+          "field": "category",
+          "before": "Programas para cuidadores",
+          "after": "Programas para personas cuidadoras"
+        },
+        {
+          "id": "ct-a013",
+          "field": "category",
+          "before": "Programas para cuidadores",
+          "after": "Programas para personas cuidadoras"
+        },
+        {
+          "id": "ct-a014",
+          "field": "category",
+          "before": "Programas para cuidadores",
+          "after": "Programas para personas cuidadoras"
+        },
+        {
+          "id": "ct-a015",
+          "field": "category",
+          "before": "Programas para cuidadores",
+          "after": "Programas para personas cuidadoras"
+        },
+        {
+          "id": "ct-a016",
+          "field": "category",
+          "before": "Programas para cuidadores",
+          "after": "Programas para personas cuidadoras"
+        },
+        {
+          "id": "ct-a017",
+          "field": "category",
+          "before": "Programas para cuidadores",
+          "after": "Programas para personas cuidadoras"
+        },
+        {
+          "id": "ct-a018",
+          "field": "category",
+          "before": "Programas para cuidadores",
+          "after": "Programas para personas cuidadoras"
+        },
+        {
+          "id": "ct-a019",
+          "field": "category",
+          "before": "Programas para cuidadores",
+          "after": "Programas para personas cuidadoras"
+        }
+      ]
+    },
+    {
+      "file": "data/programa.json",
+      "collection": "units",
+      "revision": {
+        "id": "MEPRE2-D22-20261016",
+        "date": "2026-10-16",
+        "decision": "D22 · MEPRE Síndrome del Cuidador v2.0 (borrador)",
+        "scope": "Adaptación editorial de textos de presentación al femenino genérico. Se conservan las denominaciones, citas y títulos originales de las fuentes.",
+        "sourceIdentityPreserved": true
+      },
+      "changes": [
+        {
+          "id": "u02",
+          "field": "why",
+          "before": "Una misma escena tiene trabajo que realizar, condiciones que lo hacen posible y una experiencia personal. Sentirte desbordado no demuestra que te organices mal. Tener un calendario tampoco crea una segunda persona disponible.",
+          "after": "Una misma escena tiene trabajo que realizar, condiciones que lo hacen posible y una experiencia personal. Sentirte desbordada no demuestra que te organices mal. Tener un calendario tampoco crea una segunda persona disponible."
+        },
+        {
+          "id": "u06",
+          "field": "why",
+          "before": "Un grupo de mensajes o una aplicación pueden crear trabajo de mantener datos, contestar y verificar. La información ayuda cuando cambia una decisión. Acumular enlaces, alarmas o búsquedas no garantiza estar mejor acompañado.",
+          "after": "Un grupo de mensajes o una aplicación pueden crear trabajo de mantener datos, contestar y verificar. La información ayuda cuando cambia una decisión. Acumular enlaces, alarmas o búsquedas no garantiza estar mejor acompañada."
+        },
+        {
+          "id": "u11",
+          "field": "why",
+          "before": "Se puede querer a alguien y estar enfadado con las condiciones de cuidado. No hay una emoción correcta que alcanzar. Una conversación puede servir si respeta lo que deseas y no intenta interpretar desde fuera lo que sientes.",
+          "after": "Se puede querer a alguien y estar enfadada con las condiciones de cuidado. No hay una emoción correcta que alcanzar. Una conversación puede servir si respeta lo que deseas y no intenta interpretar desde fuera lo que sientes."
+        },
+        {
+          "id": "u36",
+          "field": "steps.3",
+          "before": "Puedes elegir otra unidad, regresar más adelante o parar. El programa debe adaptarse a tu papel personal, profesional, de apoyo o de cuidado múltiple; no te asigna un tipo de cuidador.",
+          "after": "Puedes elegir otra unidad, regresar más adelante o parar. El programa debe adaptarse a tu papel personal, profesional, de apoyo o de cuidado múltiple; no te asigna un tipo de cuidadora."
+        }
+      ]
+    },
+    {
+      "file": "data/recursos-multimedia.json",
+      "collection": "resources",
+      "revision": {
+        "id": "MEPRE2-D22-20261016",
+        "date": "2026-10-16",
+        "decision": "D22 · MEPRE Síndrome del Cuidador v2.0 (borrador)",
+        "scope": "Adaptación editorial de textos de presentación al femenino genérico. Se conservan las denominaciones, citas y títulos originales de las fuentes.",
+        "sourceIdentityPreserved": true
+      },
+      "changes": [
+        {
+          "id": "mm-rtve-cuidadores",
+          "field": "why",
+          "before": "Has elegido comprender mejor el papel de cuidador y sus límites.",
+          "after": "Has elegido comprender mejor el papel de cuidadora y sus límites."
+        },
+        {
+          "id": "mm-cr-guia",
+          "field": "why",
+          "before": "Has pedido ordenar el papel de cuidador antes de elegir un cambio concreto.",
+          "after": "Has pedido ordenar el papel de cuidadora antes de elegir un cambio concreto."
+        }
+      ]
+    }
+  ]
+}

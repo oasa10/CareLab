@@ -37,7 +37,8 @@ export const fresh = () => ({
   reviews: [],
   practice: [],
   settings: {
-    gamification: true,
+    gamification: false,
+    gamificationChoice: false,
     motion: true,
     largeText: false,
     theme: "system",
@@ -421,7 +422,11 @@ export function validate(input) {
   });
   const settings = record(input.settings, "preferencias", true);
   s.settings = {
-    gamification: boolean(settings.gamification, true, "logros"),
+    // Before 3.0.4 true was also the implicit default. Require a new explicit
+    // choice; preserve every action and exploration record during migration.
+    gamification: boolean(settings.gamification, false, "logros") &&
+      boolean(settings.gamificationChoice, false, "elección de marcadores"),
+    gamificationChoice: boolean(settings.gamificationChoice, false, "elección de marcadores"),
     motion: boolean(settings.motion, true, "movimiento"),
     largeText: boolean(settings.largeText, false, "texto grande"),
     theme: choice(

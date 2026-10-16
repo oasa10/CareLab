@@ -29,6 +29,10 @@ async function run() {
   const base = `http://127.0.0.1:${server.address().port}/`;
   async function check(name, fn) { await fn(); checks.push(name); console.log('PASS ' + name); }
   async function route(name) { await page.goto(base+'#/'+name); await page.locator('main h1').waitFor(); await page.evaluate(() => document.fonts.ready); }
+  async function themeChoice(mode) {
+    await page.locator('#theme-toggle').click();
+    await page.locator(`[data-theme-mode="${mode}"]`).click();
+  }
   async function geometry() {
     await page.evaluate(() => new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r))));
     const data = await page.evaluate(() => ({ route:location.hash, width:innerWidth, scroll:document.documentElement.scrollWidth, overflowing:[...document.querySelectorAll("body *")].filter(e=>e.getBoundingClientRect().right>innerWidth+1).map(e=>({c:e.className,r:e.getBoundingClientRect().toJSON(),t:e.textContent.slice(0,80)})).slice(0,8),
@@ -43,7 +47,7 @@ async function run() {
     await page.setViewportSize({width,height:width<760?844:900});
     for (const theme of ['light','dark','system']) {
       await route('bienvenida');
-      await page.locator('#theme-always').selectOption(theme);
+      await themeChoice(theme);
       if(await page.locator('#font-toggle').getAttribute('aria-pressed')==='true') await page.locator('#font-toggle').click();
       await check(`${width}px ${theme}: home photograph, header and text enlargement`, async()=>{
         await geometry();
@@ -57,19 +61,19 @@ async function run() {
         assert(await page.locator('[data-device]').isVisible());
         await page.locator('#font-toggle').click();
       });
-      for(const name of ['micamino','explorar','vivir','ajustes','recursos','programa','herramientas','mapa','plan','red','biblioteca','media','pausa','feedback']) {
+      for(const name of ['micamino','explorar','vivir','ajustes','recursos','programa','herramientas','mapa','plan','red','biblioteca','media','pausa','feedback','ayuda','ayuda/suicidio','apoyos','tramites','grupo','profundizar']) {
         await route(name);
         await check(`${width}px ${theme}: ${name} reflows`,async()=>{
           assert.equal(await page.locator('body').evaluate(e=>e.classList.contains('is-arrival')),false);
           await geometry();
-          if(name==='micamino')assert(await page.locator('.quiet-milestones p').first().evaluate(e=>parseFloat(getComputedStyle(e).fontSize))>=18);
+          if(name==='micamino')assert(await page.locator('.quiet-journal p').first().evaluate(e=>parseFloat(getComputedStyle(e).fontSize))>=18);
           if(name==='explorar')assert(await page.locator('.quiet-index-link small').first().evaluate(e=>parseFloat(getComputedStyle(e).fontSize))>=18);
         });
       }
     }
   }
   await check('System appearance responds to OS changes',async()=>{
-    await page.locator('#theme-always').selectOption('system');
+    await themeChoice('system');
     await page.emulateMedia({colorScheme:'dark'});await page.waitForFunction(()=>document.documentElement.dataset.theme==='dark');assert.equal(await page.locator('html').getAttribute('data-theme'),'dark');
     await page.emulateMedia({colorScheme:'light'});await page.waitForFunction(()=>document.documentElement.dataset.theme==='light');assert.equal(await page.locator('html').getAttribute('data-theme'),'light');
   });
@@ -94,7 +98,7 @@ async function run() {
     for (const [width,height,label] of [[1440,1000,'ordenador'],[390,844,'movil']]) {
       await page.setViewportSize({width,height});
       for(const theme of ['light','dark'])for(const routeName of ['bienvenida','micamino','explorar']){
-        await route(routeName);await page.locator('#theme-always').selectOption(theme);
+        await route(routeName);await themeChoice(theme);
         await page.evaluate(() => new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))));
         await page.screenshot({path:path.join(output,`${label}_${routeName}_${theme}.png`),fullPage:false,animations:'disabled'});
       }

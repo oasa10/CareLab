@@ -1,4 +1,4 @@
-# CareLab 3.0.3 · Cuidar sin desaparecer
+# CareLab 3.0.4 · Cuidar sin desaparecer
 
 Un espacio para hacer visible, organizar y compartir la carga total de cuidar, con el Método BrainBox 1.2 y el proyecto MEPRE.
 
@@ -6,8 +6,8 @@ Un espacio para hacer visible, organizar y compartir la carga total de cuidar, c
 
 ## Qué permite hacer
 
-- Entrar por una escena cotidiana: pedir relevo, compartir carga mental, hacer sitio para uno mismo o poner un límite. Separar emoción, reacción y pensamiento; contrastar ejemplos con respuesta explicada; subir o bajar por la escalera del saber; ensayar una petición y adaptar una acción viable.
-- Preparar el retorno antes de actuar y volver con lo sucedido, incluido «no pude», «no lo vimos» o «prefiero no contarlo». Revisar costes, atribución, ciclos y relato sin inventar resultados ni clasificar personas. El episodio BrainBox abierto y todos sus instrumentos siguen disponibles en «Profundizar».
+- Entrar por una escena cotidiana: pedir relevo, compartir carga mental, hacer sitio para una misma o poner un límite. Separar emoción, reacción y pensamiento; contrastar ejemplos con respuesta explicada; subir o bajar por la escalera del saber; ensayar una petición y adaptar una acción viable.
+- Preparar el retorno antes de actuar y volver con lo sucedido, incluido «no pude», «no lo vimos» o «prefiero no contarlo». Revisar costes, atribución, ciclos y relato sin inventar resultados ni clasificar personas. «Usar BrainBox en mi día» explica cómo trabajar una situación, sin exponer la arquitectura documental interna. Los episodios antiguos guardados siguen siendo editables.
 - Llegar mediante tres pantallas de bienvenida; elegir un camino breve o detenerse en una ventana de naturaleza con sonido opcional. Tres entradas principales: Ahora, Mi camino y Explorar. Las prestaciones aparecen por contexto.
 - Trabajar con un mapa personal de ocho dimensiones, nueve herramientas, acciones, propuestas de reparto, apoyos y revisiones. Un registro no acredita aceptación por otras personas.
 - Aprender haciendo con 12 módulos y 36 unidades, sin bloqueos, rachas ni obligación de completarlas en orden.
@@ -16,13 +16,14 @@ Un espacio para hacer visible, organizar y compartir la carga total de cuidar, c
 - Escuchar tres narraciones mediante voces locales, dos piezas instrumentales con licencia CC BY 4.0, ver un tutorial original con subtítulos y abrir archivos audiovisuales del propio dispositivo.
 - Cambiar entre claro, sistema y oscuro en cualquier pantalla; ampliar texto y reducir movimiento.
 - Conservar cada interacción y los borradores en la pestaña, también tras recargar; activar guardado en el dispositivo para volver después. Recuperar copias v2, exportar/restaurar y preparar acceso sin conexión. Los fallos de almacenamiento se informan: no se garantiza recuperación si el navegador impide guardar. La música se descarga aparte (12 MB).
-- Enviar una sugerencia breve a un buzón privado sin adjuntar el espacio personal. No pide registro ni correo. El navegador sólo conoce la dirección pública de recepción, nunca credenciales ni una dirección de correo del equipo. La lectura de sugerencias queda restringida al propietario mediante las herramientas de Sites; no hay lectura pública.
+- Consultar ayuda directa, siete necesidades y un directorio verificado de España y Euskadi. Preparar trámites y un encuentro acompañado con casos ficticios; la revisión clínica y el uso del modo grupo con participantes siguen pendientes.
+- Preparar una evaluación breve en memoria y copiarla, descargarla o imprimirla por decisión propia. El buzón externo está desactivado; esta versión no transmite comentarios.
 
 ## Límites y privacidad
 
-Es una prueba de concepto funcional para pilotaje. La trazabilidad documental y las pruebas de software no demuestran eficacia clínica ni reducción de carga. BrainBox se detiene ante riesgo o ante una situación médica, psicológica o legal, para solicitar ayuda competente. Esto no implica interrumpir cuidados ordinarios o indicaciones profesionales.
+Es una prueba de concepto funcional con revisión clínica externa pendiente. El modo grupo es material de preparación y demostración, no una intervención aprobada. La trazabilidad documental y las pruebas de software no demuestran eficacia clínica ni reducción de carga. BrainBox se detiene ante riesgo o ante una situación médica, psicológica o legal, para solicitar ayuda competente. Esto no implica interrumpir cuidados ordinarios o indicaciones profesionales.
 
-No hay cuentas de cuidadores, sincronización, diagnóstico, IA conversacional ni invitaciones automáticas a otras personas. Algunas expresiones explícitas de peligro abren una comprobación local de seguridad: se puede descartar si no describe una urgencia actual. No es vigilancia ni detección fiable de todas las crisis; no avisa a terceros ni infiere ubicación. «Ayuda» está siempre disponible. Las notas permanecen en el dispositivo. El guardado local y los archivos exportados no están cifrados. El alojamiento recibe solicitudes técnicas; los sitios externos tienen sus propias condiciones. El envío voluntario de una sugerencia es un flujo separado: sólo categoría y texto, sin adjuntar planes o notas. El buzón añade fecha, referencia e información de integridad y protege la escritura mediante contadores temporales de abuso. No envía correos. Los comentarios se conservan hasta que el propietario los elimina; su referencia permite solicitarlo.
+No hay cuentas de personas cuidadoras, sincronización, diagnóstico, IA conversacional ni invitaciones automáticas a otras personas. Algunas expresiones explícitas de peligro abren una comprobación local de seguridad: se puede descartar si no describe una urgencia actual. No es vigilancia ni detección fiable de todas las crisis; no avisa a terceros ni infiere ubicación. «Ayuda» está siempre disponible. Las notas permanecen en el dispositivo. El guardado local y los archivos exportados no están cifrados. El alojamiento recibe solicitudes técnicas; los sitios externos tienen sus propias condiciones. No se envían evaluaciones desde esta versión; compartir una copia fuera es una decisión separada de la usuaria. El cierre de este canal no elimina comentarios recogidos anteriormente.
 
 La biblioteca conserva fuentes y límites de acceso. No redistribuye íntegramente obras ajenas ni instrumentos profesionales restringidos. Los enlaces heredados del corpus no equivalen a una revisión de disponibilidad de cada destino el día de uso.
 
@@ -58,9 +59,9 @@ Código: [MIT](LICENSE). Contenido original del proyecto: [CC BY 4.0](data/LICEN
 
 Música incorporada: **Meditation Impromptu 02** y **Luminous Rain**, de Kevin MacLeod (Incompetech), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), archivos originales sin modificar. Créditos, procedencia, tamaño y huellas de integridad en `assets/audio/manifest.json` y en el reproductor. No se distribuyen grabaciones de voces del sistema.
 
-La ventana de naturaleza es una imagen original generada para CareLab. No es una fotografía de un lugar identificado. Procedencia, prompt y huella en `assets/v3/images/manifest.json`. Las referencias estéticas Portal, WindowSwap y A Soft Murmur se usaron como orientación de amplitud, naturaleza y control voluntario; no se copiaron sus imágenes, grabaciones ni código.
+La ventana de naturaleza es una imagen creada con IA (imagegen de OpenAI) para CareLab. No es una fotografía de un lugar identificado. Procedencia, prompt y huella en `assets/v3/images/manifest.json`. Las referencias estéticas Portal, WindowSwap y A Soft Murmur se usaron como orientación de amplitud, naturaleza y control voluntario; no se copiaron sus imágenes, grabaciones ni código.
 
-Salazar, Osman (2026). _CareLab. Cuidar sin desaparecer_. Versión 3.0, prueba de concepto. Con el Método BrainBox 1.2. https://oasa10.github.io/CareLab/
+Salazar, Osman (2026). _CareLab. Cuidar sin desaparecer_. Versión 3.0.4, prueba de concepto. Con el Método BrainBox 1.2. https://oasa10.github.io/CareLab/
 
 ## Actualización de compatibilidad 3.0.1
 
@@ -80,3 +81,16 @@ El paisaje de inicio cubre la pantalla, con texto superpuesto y una capa de cont
 La tipografía principal pasa a 20 px con la configuración habitual del navegador y las descripciones de Mi camino y Explorar a 18 px. Los tamaños son relativos y respetan la preferencia del navegador. El botón Aa está disponible también en móvil y aumenta la escala de toda la interfaz. Se refuerza el texto secundario y se reorganizan las columnas al faltar espacio. La caché pública pasa a 20261016-2. No cambia el formato del espacio personal ni el contenido del programa o la biblioteca.
 
 `tests/readability-browser.cjs` comprueba la página real en contextos aislados: portada, bienvenida, retorno, tres apariencias, ampliación de texto, reflujo, persistencia de Aa y ausencia de imagen. Admite PLAYWRIGHT_MODULE, CHROME_PATH y QA_OUTPUT. Estas comprobaciones técnicas no sustituyen la valoración de las personas usuarias.
+
+
+## Integración MEPRE 2.0 · 3.0.4
+
+Conserva la portada y legibilidad de 3.0.3. Sustituye el selector de tema por un icono accesible (Sistema por defecto), restaura la promesa «Cuidas de alguien. CareLab te ayuda a que cuidar no te borre» y la puerta directa a Ayuda. El semáforo orienta una elección, sin asignar un color ni evaluar riesgo. Los contactos se contrastaron el 16 de octubre de 2026. La reforma de dependencia se describe con entrada en vigor el 23 de octubre, sin prometer disponibilidad o prestaciones automáticas.
+
+Los avisos uniformes cubren 11 fichas que corresponden a los ocho temas sensibles históricos, seis capítulos de guías y la preparación de continuidad (P12). La biblioteca mantiene 1.087 identidades y el programa 36 unidades; las adaptaciones de lenguaje editorial no alteran citas ni huellas de las fuentes originales. No se añaden escalas, chatbot ni nuevos módulos del programa.
+
+Los logros y marcadores quedan apagados por defecto. Antes, un valor guardado `true` podía proceder tanto del valor predeterminado como de una elección: no puede distinguirse. Esta revisión exige una elección nueva (`gamificationChoice`) y conserva acciones, exploraciones, reflexiones y retornos. La elección queda explicada en Ajustes.
+
+La evaluación local y el grupo no importan el espacio personal ni almacenan sus selecciones. El grupo emplea cuatro casos ficticios y una guía de 45 minutos, pendiente de revisión clínica y retorno humano. La política CSP permite conexiones únicamente al propio origen; el endpoint de feedback está vacío. No se modifica ni elimina el histórico del receptor externo. La imagen, redacción y desarrollo asistidos por IA se declaran en «El proyecto y sus fuentes».
+
+La caché pública pasa a `20261016-3`. Los tests adicionales cubren ayuda, cambio de tema, privacidad de evaluación, migración de preferencias, fichas sensibles y adaptación a distintos anchos. Las verificaciones técnicas no sustituyen revisión clínica, pruebas con participantes ni una auditoría humana de accesibilidad.

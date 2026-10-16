@@ -24,7 +24,7 @@ export function installSafetySignpost({ stopMedia }) {
     if (
       !field.matches('textarea,input[type="text"],input:not([type])') ||
       !field.closest("main") ||
-      field.closest("#feedback-form") ||
+      field.closest("#feedback-form,[data-evaluation]") ||
       !explicitRisk(field.value) ||
       seen.get(field) === field.value
     )
@@ -35,7 +35,7 @@ export function installSafetySignpost({ stopMedia }) {
     dialog.className = "quiet-safety-dialog";
     dialog.setAttribute("aria-labelledby", "safety-title");
     dialog.innerHTML =
-      '<p class="quiet-eyebrow">PRIMERO, TU SEGURIDAD</p><h2 id="safety-title">Hagamos una pausa.</h2><p>Lo escrito podría describir una situación de peligro. No puedo saberlo por una frase. ¿Está pasando ahora?</p><div class="lv-actions"><a class="lv-primary" href="#/ayuda" data-support>Necesito apoyo ahora</a><button class="lv-secondary" data-dismiss>No describe un peligro actual</button></div><p class="quiet-caption">Este aviso se produce solo en tu dispositivo. CareLab no vigila tu seguridad ni avisa a nadie.</p>';
+      '<p class="quiet-eyebrow">PRIMERO, TU SEGURIDAD</p><h2 id="safety-title">Hagamos una pausa.</h2><p>Lo escrito podría describir una situación de peligro. Una frase no permite saberlo. ¿Está pasando ahora?</p><div class="lv-actions"><a class="lv-primary" href="#/ayuda" data-support>Necesito apoyo ahora</a><button class="lv-secondary" data-dismiss>No describe un peligro actual</button></div><p class="quiet-caption">Este aviso se produce solo en tu dispositivo. Reconoce solo algunas expresiones; su ausencia no descarta peligro. CareLab no vigila tu seguridad ni avisa a nadie.</p>';
     document.body.append(dialog);
     dialog.addEventListener(
       "close",

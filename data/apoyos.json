@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-16",
+  "verificationScope": "Lectura de fuentes oficiales de las entidades y consulta previa del conector Hotline para Línea 024. Verifica el contenido publicado, no prueba llamadas ni disponibilidad inmediata.",
+  "clinicalReview": {
+    "status": "pendiente",
+    "note": "No consta revisión clínica externa de los textos de CareLab. Verificar teléfonos no constituye validación clínica ni prueba de disponibilidad."
+  },
+  "regions": {
+    "euskadi": {
+      "label": "Euskadi",
+      "ids": [
+        "zaintel",
+        "osakidetza",
+        "zaindoo",
+        "betirako"
+      ]
+    },
+    "araba": {
+      "label": "Álava",
+      "ids": [
+        "araba",
+        "zainduz_araba",
+        "afaraba"
+      ]
+    },
+    "bizkaia": {
+      "label": "Bizkaia",
+      "ids": [
+        "bizkaia",
+        "zainduz_bizkaia",
+        "afabizkaia"
+      ]
+    },
+    "gipuzkoa": {
+      "label": "Gipuzkoa",
+      "ids": [
+        "gipuzkoa",
+        "afagi"
+      ]
+    },
+    "espana": {
+      "label": "España",
+      "ids": [
+        "sercuidadora",
+        "cruzroja_escucha"
+      ]
+    },
+    "laboral": {
+      "label": "Cuidar por trabajo",
+      "ids": [
+        "osalan"
+      ]
+    }
+  },
+  "resources": [
+    {
+      "id": "emergency112",
+      "name": "Emergencias · 112",
+      "phone": "112",
+      "territory": "España",
+      "schedule": "24 horas, 365 días; gratuito",
+      "source": "https://www.euskadi.eus/gobierno-vasco/contenidos/informacion/como_llamar_112/es_recom_ca/index.shtml",
+      "suggestedText": "Si hay una urgencia o alguien corre peligro, llama al 112. CareLab no recibe avisos ni puede enviar ayuda."
+    },
+    {
+      "id": "line024",
+      "name": "Línea 024",
+      "phone": "024",
+      "territory": "España",
+      "schedule": "24 horas, 365 días; gratuita y confidencial",
+      "source": "https://www.sanidad.gob.es/linea024/home.htm",
+      "chat": "https://www2.cruzroja.es/web/cruzroja/chat-linea024",
+      "hotlineTool": true,
+      "suggestedText": "Si piensas en quitarte la vida o te preocupa alguien cercano, la Línea 024 ofrece apoyo gratuito y confidencial, las 24 horas. Si hay peligro inmediato, llama al 112."
+    },
+    {
+      "id": "violence016",
+      "name": "Servicio 016",
+      "phone": "016",
+      "whatsapp": "600000016",
+      "territory": "España",
+      "schedule": "Información y atención psicosocial: 24 horas. Asesoría jurídica: 8–22 horas.",
+      "source": "https://violenciagenero.igualdad.gob.es/informacion-3/recursos/telefono016/",
+      "privacySource": "https://violenciagenero.igualdad.gob.es/wp-content/uploads/GuiaPuntoVioletaValentia_web.pdf",
+      "suggestedText": "Si sufres violencia contra las mujeres o necesitas orientación para alguien cercano: 016, gratuito y confidencial. También WhatsApp: 600 000 016, solo mensajes.",
+      "privacyText": "La llamada no aparece en la factura, pero puede quedar en el historial del teléfono. WhatsApp y la navegación también dejan rastro en el dispositivo."
+    },
+    {
+      "id": "anar",
+      "name": "Fundación ANAR",
+      "phone": "900202010",
+      "territory": "España · menores de edad",
+      "schedule": "24 horas; gratuito y confidencial",
+      "source": "https://www.anar.org/que-hacemos/telefono-chat-anar/",
+      "scheduleSource": "https://v2.anar.org/que-hacemos/telefono-chat-de-violencia-de-genero-en-menores-de-edad",
+      "chat": "https://chat.anar.org/",
+      "suggestedText": "Si eres menor de edad y cuidas de alguien, puedes pedir apoyo a ANAR. No tienes que resolverlo todo por tu cuenta.",
+      "note": "El chat.anar.org redirige a chatanar.es. No presentar 116111 como nacional: cobertura autonómica parcial, no lista Euskadi."
+    },
+    {
+      "id": "osakidetza",
+      "name": "Consejo Sanitario de Osakidetza",
+      "phone": "900203050",
+      "territory": "Euskadi",
+      "schedule": "24 horas, 365 días",
+      "source": "https://www.osakidetza.euskadi.eus/informacion/atencion-telefonica-y-on-line/webosk00-sercon/es/",
+      "suggestedText": "Para dudas de salud que necesitan orientación: Consejo Sanitario, 900 20 30 50. Si no es urgente pero no puedes más con el cuidado, pide también cita en tu centro de salud.",
+      "correction": "El horario 24 h ya es verificable de manera explícita; sustituye 'probable' del borrador."
+    },
+    {
+      "id": "satevi",
+      "name": "SATEVI",
+      "phone": "900840111",
+      "territory": "Euskadi",
+      "schedule": "24 horas; gratuito",
+      "source": "https://www.euskadi.eus/web01-a2gizar/es/contenidos/informacion/satevi_lectura_facil/es_teleasis/index.shtml",
+      "suggestedText": "Atención especializada a mujeres que viven violencia y a sus familiares, personas allegadas y profesionales.",
+      "note": "900 840 111 NO es Betirako, Zaindoo ni Zaintel."
+    },
+    {
+      "id": "zaintel",
+      "name": "Zaintel · Fundación Bizitzen",
+      "phone": "900100356",
+      "whatsapp": "619419628",
+      "territory": "Euskadi",
+      "schedule": "Lunes a viernes, 10–16 horas",
+      "source": "https://www.bizitzen.org/",
+      "corroboratingSource": "https://www.euskadi.eus/gobierno-vasco/-/noticia/2022/el-gobierno-vasco-pone-marcha-dos-nuevos-servicios-atencion-y-apoyo-familias-cuidadoras/",
+      "suggestedText": "Orientación y apoyo emocional profesional para familiares que cuidan a personas dependientes o con discapacidad. Gratuito y confidencial.",
+      "correction": "No es solo un titular sin confirmar: la entidad gestora publica servicio, teléfono, WhatsApp y horario; el presupuesto oficial 2026 mantiene dotación."
+    },
+    {
+      "id": "zaindoo",
+      "name": "Zaindoo",
+      "phone": "900840126",
+      "territory": "Euskadi",
+      "schedule": null,
+      "source": "https://www.euskadi.eus/gobierno-vasco/-/proyecto/zaindoo-servicio-de-apoyo-a-personas-cuidadoras-en-el-hogar/",
+      "suggestedText": "Apoyo telemático gratuito con especialista, formación y comunidad para familiares que cuidan en casa.",
+      "eligibility": "Persona cuidada mayor de 60 años, dependencia reconocida y domicilio en Euskadi; familiar cuidadora residente en Euskadi, móvil o tableta con internet.",
+      "note": "Ficha oficial 'Proyecto en ejecución'. No afirmar acceso universal ni eficacia clínica a partir de lenguaje promocional. No horario publicado."
+    },
+    {
+      "id": "betirako",
+      "name": "Betirako · Agintzari",
+      "phone": "900908744",
+      "territory": "Euskadi",
+      "schedule": "Lunes a viernes, 9–20 horas",
+      "source": "https://www.betirako.org/",
+      "suggestedText": "Atención psicológica para procesos de duelo, presencial, telefónica o telemática. Consulta con el servicio las condiciones de acceso.",
+      "note": "La web confirma teléfono gratuito, no atribuir gratuidad universal a todas las intervenciones ni asistencia de urgencia."
+    },
+    {
+      "id": "araba",
+      "name": "Álava · Instituto Foral de Bienestar Social",
+      "phone": "945151015",
+      "territory": "Álava",
+      "schedule": null,
+      "source": "https://web.araba.eus/es/servicios-sociales/cita-previa",
+      "suggestedText": "Información social, valoración de dependencia y cita previa. Los servicios sociales de tu municipio son otra puerta de entrada.",
+      "note": "Número y trámites confirmados. No asumir horario 24 h ni conceder prestaciones desde CareLab."
+    },
+    {
+      "id": "bizkaia",
+      "name": "Bizkaia · Atención a personas cuidadoras",
+      "phone": "944066000",
+      "territory": "Bizkaia",
+      "schedule": "Lunes a viernes, 8:30–19 horas; julio y agosto, 8:30–14:30",
+      "source": "https://www.bizkaia.eus/es/personas-cuidadoras",
+      "suggestedText": "Orientación sobre descanso, formación, coordinación de caso y productos de apoyo. Consulta los requisitos de cada recurso."
+    },
+    {
+      "id": "gipuzkoa",
+      "name": "Gipuzkoa · Programa Sendian",
+      "phone": "943112111",
+      "territory": "Gipuzkoa",
+      "schedule": null,
+      "source": "https://egoitza.gipuzkoa.eus/es/listado-tramites/-/tramiteak/xehetasuna/6/1670",
+      "corroboratingSource": "https://egoitza.gipuzkoa.eus/es/listado-tramites/-/tramiteak/materia/15",
+      "suggestedText": "Apoyo para familias que cuidan a personas mayores dependientes. La solicitud se inicia en los servicios sociales municipales.",
+      "eligibility": "Ficha oficial requiere residencia mínima de dos años en Gipuzkoa de la persona mayor dependiente y convivencia acreditada. No prometer concesión."
+    },
+    {
+      "id": "zainduz_araba",
+      "name": "Álava · Programa Zainduz",
+      "territory": "Álava · medio rural",
+      "source": "https://web.araba.eus/es/servicios-sociales/servicios-discapacidad",
+      "suggestedText": "Formación, apoyo psicológico familiar y grupos de ayuda para la red familiar o social que cuida a personas en riesgo o situación de dependencia en el medio rural."
+    },
+    {
+      "id": "zainduz_bizkaia",
+      "name": "Bizkaia · Zainduz en el municipio",
+      "territory": "Bizkaia · servicios municipales",
+      "source": "https://www.busturialdeazainduz.eus/es/",
+      "suggestedText": "Consulta en los servicios sociales de tu municipio si puedes acceder al programa Zainduz. La oferta y la vía de acceso son locales.",
+      "note": "Verificada implementación local Busturialdea. No atribuir esta ficha ni su contacto a toda Bizkaia."
+    },
+    {
+      "id": "cruzroja_escucha",
+      "name": "Cruz Roja Te Escucha",
+      "phone": "900107917",
+      "territory": "España",
+      "schedule": "Lunes a viernes, 10–14 horas; lunes a jueves, 16–20 horas",
+      "source": "https://www2.cruzroja.es/te-escucha",
+      "suggestedText": "Escucha y acompañamiento psicosocial, gratuitos y confidenciales. No es una línea de emergencias.",
+      "correction": "Horario publicado vigente confirma la alternativa del borrador; no usar noticia 2020 de 9–14 ni afirmar 7 días."
+    },
+    {
+      "id": "afagi",
+      "name": "AFAGI",
+      "phone": "943297118",
+      "territory": "Gipuzkoa",
+      "schedule": null,
+      "source": "https://afagi.eus/contacto/",
+      "suggestedText": "Información y apoyo para personas con Alzheimer u otras demencias y sus familias. Solicita cita previa."
+    },
+    {
+      "id": "afabizkaia",
+      "name": "AFA Bizkaia",
+      "phone": "944167617",
+      "territory": "Bizkaia",
+      "schedule": null,
+      "source": "https://www.afa-bizkaia.com/",
+      "suggestedText": "Información, apoyo psicológico, formación y recursos para familias y personas con Alzheimer u otras demencias."
+    },
+    {
+      "id": "afaraba",
+      "name": "AFARABA",
+      "phone": "945246004",
+      "territory": "Álava",
+      "schedule": "Lunes a jueves, 9–17 horas; viernes, 9–14. Con cita previa.",
+      "source": "https://www.afaraba.org/contacto/",
+      "suggestedText": "Orientación social, escuela de cuidados y apoyo a familiares de personas con Alzheimer u otras demencias.",
+      "note": "Teléfono, horario y cita previa comprobados en la web de la propia asociación."
+    },
+    {
+      "id": "sercuidadora",
+      "name": "SerCuidadorA · Cruz Roja",
+      "phone": "900365100",
+      "territory": "España",
+      "schedule": null,
+      "source": "https://www2.cruzroja.es/aqui-te-ayudamos",
+      "suggestedText": "Información y orientación para personas cuidadoras no profesionales. Consulta con el servicio el horario de atención.",
+      "note": "El número figura en el directorio multicanal actual. No se reproduce el horario del boletín de 2014."
+    },
+    {
+      "id": "osalan",
+      "name": "Osalan · Cuidar por trabajo",
+      "territory": "Laboral",
+      "source": "https://www.osalan.euskadi.eus/trabajos-del-hogar/webosa00-contsec/es/",
+      "suggestedText": "Información sobre prevención de riesgos en trabajos del hogar, incluidos los cuidados. Las condiciones de trabajo también deben cambiar.",
+      "note": "Para una situación concreta, consulta al servicio de prevención, representación laboral o asesoramiento competente. CareLab no da asesoría laboral individual."
+    }
+  ],
+  "legalSources": [
+    {
+      "id": "dependencia",
+      "title": "Ley 39/2006, de autonomía personal y dependencia",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-21990"
+    },
+    {
+      "id": "reforma2026",
+      "title": "Ley 4/2026, de 1 de octubre",
+      "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-20528",
+      "publishedAt": "2026-10-03",
+      "effectiveFrom": "2026-10-23",
+      "note": "Su artículo segundo.49 prevé criterios comunes para servicios que podrán incluir apoyo psicológico. No equivale a prestación individual inmediata; corresponde el desarrollo a las administraciones competentes.",
+      "verification": {
+        "checkedAt": "2026-10-16",
+        "sourceType": "Publicación oficial del BOE, lectura directa",
+        "location": "Artículo segundo, apartado cuarenta y nueve; nueva disposición final cuarta bis de la Ley 39/2006. Disposición final vigesimoctava de la Ley 4/2026.",
+        "literalFragment": "b) Apoyo psicológico individual y grupal.",
+        "finding": "El BOE incluye expresamente el apoyo psicológico entre los servicios que podrán integrar los criterios comunes a acordar en un máximo de seis meses desde la entrada en vigor. El texto atribuye su regulación y desarrollo a las administraciones competentes. No crea por esta mención una disponibilidad universal e inmediata de terapia.",
+        "effectiveDateVerified": "2026-10-23",
+        "correctionToDraft": "La ausencia de confirmación documental del apoyo psicológico en §11 queda resuelta. No se mantiene la afirmación general de que desaparecen todas las incompatibilidades: la exposición de motivos declara que no se altera el régimen autonómico ya vigente."
+      }
+    }
+  ]
+}

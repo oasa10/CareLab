@@ -356,7 +356,7 @@
       "cuidotecaIds": [
         "cu-c017"
       ],
-      "why": "Has elegido comprender mejor el papel de cuidador y sus límites.",
+      "why": "Has elegido comprender mejor el papel de cuidadora y sus límites.",
       "checkedAt": "2026-10-15",
       "accessibleText": false,
       "subtitles": true,
@@ -428,7 +428,7 @@
       "cuidotecaIds": [
         "cu-c001"
       ],
-      "why": "Has pedido ordenar el papel de cuidador antes de elegir un cambio concreto.",
+      "why": "Has pedido ordenar el papel de cuidadora antes de elegir un cambio concreto.",
       "checkedAt": "2026-10-15",
       "accessibleText": true,
       "contentNote": "Recurso introductorio; no asigna obligaciones legales ni sustituye la formación para tareas especializadas.",
@@ -948,5 +948,12 @@
       },
       "cuidotecaRelation": "misma ficha o recurso"
     }
-  ]
+  ],
+  "presentationRevision": {
+    "id": "MEPRE2-D22-20261016",
+    "date": "2026-10-16",
+    "decision": "D22 · MEPRE Síndrome del Cuidador v2.0 (borrador)",
+    "scope": "Adaptación editorial de textos de presentación al femenino genérico. Se conservan las denominaciones, citas y títulos originales de las fuentes.",
+    "sourceIdentityPreserved": true
+  }
 }
