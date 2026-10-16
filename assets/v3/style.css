@@ -1,9 +1,13 @@
 /* CareLab 3 · a quiet, progressively disclosed workspace. */
 :root {
+  font-size: 125%;
+}
+:root,
+:root[data-theme="light"] {
   --bg: #f7f5ef;
   --paper: #fffdf8;
   --ink: #293e37;
-  --muted: #58675f;
+  --muted: #475b50;
   --green: #365d4e;
   --light: #e6ece1;
   --line: #c9d1c6;
@@ -12,7 +16,7 @@
 }
 body {
   background: var(--bg);
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 1.75;
 }
 body::before {
@@ -64,7 +68,8 @@ p {
   display: none;
 }
 .topbar.quiet-header {
-  height: 100px;
+  min-height: 100px;
+  height: auto;
   padding: 22px clamp(20px, 4.7vw, 88px);
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -82,7 +87,7 @@ p {
   color: var(--ink);
   width: max-content;
   text-decoration: none;
-  font-size: 27px;
+  font-size: 1.543rem;
   font-weight: 600;
   letter-spacing: -1px;
 }
@@ -92,8 +97,8 @@ p {
 }
 .quiet-brand small {
   display: block;
-  font-size: 8px;
-  letter-spacing: 1.7px;
+  font-size: 0.6rem;
+  letter-spacing: 1.2px;
   font-weight: 600;
   margin-top: -4px;
 }
@@ -106,7 +111,7 @@ p {
   display: block;
   padding: 9px 17px;
   margin: 0;
-  font-size: 14px;
+  font-size: 0.9rem;
   min-height: 44px;
   color: var(--muted);
   border-radius: 30px;
@@ -131,8 +136,9 @@ p {
   min-height: 44px;
   background: transparent;
   border-color: var(--line);
-  max-width: 108px;
-  font-size: 13px;
+  max-width: 8rem;
+  width: auto;
+  font-size: 0.9rem;
   border-radius: 24px;
 }
 .quiet-header #font-toggle {
@@ -146,7 +152,7 @@ p {
   align-items: center;
   min-height: 44px;
   color: var(--ink);
-  font-size: 13px;
+  font-size: 0.9rem;
   white-space: nowrap;
 }
 #storage-indicator {
@@ -184,7 +190,7 @@ main.enter {
 }
 .quiet-eyebrow,
 .lv-kicker {
-  font-size: 11px;
+  font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 2px;
   line-height: 1.5;
@@ -196,7 +202,7 @@ main.enter {
 .quiet-page-head h1,
 .quiet-pause h1 {
   font-family: Fraunces, Georgia, serif;
-  font-size: clamp(44px, 4.6vw, 70px);
+  font-size: clamp(2.75rem, 4.6vw, 4.375rem);
   font-weight: 400;
   line-height: 1.12;
   letter-spacing: -2.5px;
@@ -206,11 +212,11 @@ main.enter {
 .quiet-page-head em,
 .quiet-pause h1 em {
   font-weight: 400;
-  color: #627c65;
+  color: #49664d;
 }
 .quiet-intro {
   color: var(--muted);
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 1.8;
   margin: 0 0 32px;
   max-width: 440px;
@@ -222,7 +228,7 @@ main.enter {
 }
 .quiet-caption,
 .lv-note {
-  font-size: 13px;
+  font-size: 0.9rem;
   line-height: 1.8;
   color: var(--muted);
   margin-top: 24px;
@@ -272,7 +278,7 @@ main.enter {
   width: 100%;
   text-align: center;
   color: #253e33;
-  font-size: 10px;
+  font-size: 0.8rem;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -306,7 +312,7 @@ main.enter {
   border-radius: 30px;
   text-decoration: none;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
   transition:
@@ -369,7 +375,7 @@ main.enter {
   align-items: center;
   gap: 24px;
   margin-top: 48px;
-  font-size: 12px;
+  font-size: 0.9rem;
   color: var(--muted);
 }
 .quiet-onboarding-foot > span {
@@ -393,7 +399,7 @@ main.enter {
   align-items: center;
   margin-top: 36px;
   gap: 20px;
-  font-size: 13px;
+  font-size: 0.9rem;
   color: var(--muted);
 }
 .footer {
@@ -401,7 +407,7 @@ main.enter {
   padding: 20px 44px 34px;
   margin: auto;
   border: 0;
-  font-size: 11px;
+  font-size: 0.8rem;
   gap: 24px;
 }
 .mobile-nav {
@@ -412,11 +418,11 @@ main.enter {
   max-width: 720px;
 }
 .quiet-page-head h1 {
-  font-size: 56px;
+  font-size: 3.2rem;
 }
 .quiet-page-head > p:last-child {
   color: var(--muted);
-  font-size: 17px;
+  font-size: 1rem;
 }
 .quiet-index > section {
   display: grid;
@@ -426,7 +432,7 @@ main.enter {
 }
 .quiet-index h2 {
   font-family: Fraunces, Georgia, serif;
-  font-size: 26px;
+  font-size: 1.486rem;
   margin-top: 22px;
 }
 .quiet-index-link {
@@ -444,12 +450,12 @@ main.enter {
   display: block;
   font-weight: 500;
   color: var(--ink);
-  font-size: 19px;
+  font-size: 1.086rem;
 }
 .quiet-index-link small {
   display: block;
   color: var(--muted);
-  font-size: 14px;
+  font-size: 0.9rem;
   margin-top: 5px;
 }
 .quiet-index-link > span:last-child {
@@ -470,7 +476,7 @@ main.enter {
 .quiet-milestones {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
   gap: 30px;
   padding: 0;
   margin: 40px 0 75px;
@@ -483,27 +489,27 @@ main.enter {
   border-radius: 50%;
   background: #e9e8df;
   color: var(--muted);
-  font-size: 17px;
+  font-size: 1rem;
 }
 .quiet-milestones > li.reached > span {
   background: #dce8ce;
   color: #35523a;
 }
 .quiet-milestones h2 {
-  font-size: 25px;
+  font-size: 1.429rem;
   margin: 18px 0 9px;
 }
 .quiet-milestones p {
-  font-size: 14px;
+  font-size: 0.9rem;
   color: var(--muted);
   margin: 0 0 8px;
 }
 .quiet-milestones small {
-  font-size: 11px;
+  font-size: 0.8rem;
   color: var(--muted);
 }
 .quiet-journal > div > h2 {
-  font-size: 32px;
+  font-size: 1.829rem;
 }
 .quiet-entry {
   display: flex;
@@ -517,10 +523,10 @@ main.enter {
   margin-bottom: 12px;
 }
 .quiet-entry h3 {
-  font-size: 26px;
+  font-size: 1.486rem;
 }
 .quiet-entry p {
-  font-size: 15px;
+  font-size: 1rem;
   color: var(--muted);
   max-width: 600px;
 }
@@ -574,10 +580,10 @@ main.enter {
   padding: 55px;
 }
 .quiet-pause h1 {
-  font-size: 53px;
+  font-size: 3.029rem;
 }
 .quiet-pause-copy .quiet-intro {
-  font-size: 17px;
+  font-size: 1rem;
 }
 .quiet-sound-controls {
   display: flex;
@@ -587,10 +593,10 @@ main.enter {
   margin-top: 40px;
 }
 .quiet-sound-controls .lv-secondary {
-  font-size: 13px;
+  font-size: 0.9rem;
 }
 .quiet-sound-controls .lv-quiet {
-  font-size: 12px;
+  font-size: 0.9rem;
 }
 /* Living BrainBox: one interaction per scene, disclosure for the depth. */
 .lv-shell {
@@ -605,7 +611,7 @@ main.enter {
   margin-bottom: 8px;
 }
 .lv-top .lv-quiet {
-  font-size: 12px;
+  font-size: 0.9rem;
 }
 .practice-stages {
   display: flex;
@@ -620,7 +626,7 @@ main.enter {
   padding: 10px 18px;
   background: transparent;
   color: var(--muted);
-  font-size: 14px;
+  font-size: 0.9rem;
 }
 .practice-stages button.active {
   color: var(--ink);
@@ -633,14 +639,14 @@ main.enter {
   margin: 30px 0;
 }
 .lv-scenario-symbol {
-  font-size: 30px;
+  font-size: 1.714rem;
   margin-bottom: 12px;
 }
 .lv-scenarios .lv-option {
   padding: 26px;
 }
 .lv-scenarios .lv-option > span:last-child {
-  font-size: 14px;
+  font-size: 0.9rem;
   color: var(--muted);
   margin-top: 10px;
 }
@@ -656,7 +662,7 @@ main.enter {
   height: 28px;
   border-radius: 50%;
   background: var(--light);
-  font-size: 12px;
+  font-size: 0.9rem;
   margin-right: 15px;
 }
 .lv-footer {
@@ -667,18 +673,18 @@ main.enter {
   gap: 25px;
 }
 .lv-footer .lv-quiet {
-  font-size: 12px;
+  font-size: 0.9rem;
 }
 .lv-storage {
-  font-size: 12px;
+  font-size: 0.9rem;
   color: var(--muted);
   margin-top: 15px;
 }
 .lv-method {
-  font-size: 13px !important;
+  font-size: .9rem !important;
 }
 .lv-method p {
-  font-size: 13px;
+  font-size: 0.9rem;
 }
 .lv-progress {
   display: flex;
@@ -688,7 +694,7 @@ main.enter {
   margin: 0 0 45px;
   flex-wrap: wrap;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 0.9rem;
 }
 .lv-progress a,
 .lv-progress button {
@@ -698,27 +704,27 @@ main.enter {
   color: var(--muted);
   background: transparent;
   border: 0;
-  font-size: 13px;
+  font-size: 0.9rem;
 }
 .lv-focus {
   max-width: 690px;
   margin: 0 auto;
 }
 .lv-title {
-  font-size: clamp(34px, 4vw, 53px);
+  font-size: clamp(2.125rem, 4vw, 3.3125rem);
   line-height: 1.14;
   font-weight: 400;
   margin: 0 0 26px;
 }
 .lv-lead {
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 1.85;
   color: var(--muted);
   max-width: 58ch;
   margin-bottom: 30px;
 }
 .lv-axis {
-  font-size: 11px;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   color: var(--muted);
@@ -738,7 +744,7 @@ main.enter {
   min-height: 58px;
   line-height: 1.6;
   cursor: pointer;
-  font-size: 17px;
+  font-size: 1rem;
   transition:
     background 0.25s ease,
     border-color 0.25s ease;
@@ -749,7 +755,7 @@ main.enter {
   display: block;
 }
 .lv-option small {
-  font-size: 14px;
+  font-size: 0.9rem;
   color: var(--muted);
   margin-top: 5px;
 }
@@ -787,7 +793,7 @@ main.enter {
 }
 .lv-quote {
   font-family: Fraunces, Georgia, serif;
-  font-size: 27px;
+  font-size: 1.543rem;
   line-height: 1.5;
   padding: 24px 0;
   color: var(--ink);
@@ -797,7 +803,7 @@ main.enter {
 .lv-field {
   display: block;
   margin: 23px 0;
-  font-size: 15px;
+  font-size: 1rem;
   color: var(--ink);
 }
 .lv-field label,
@@ -811,7 +817,7 @@ main.enter {
   margin-top: 9px;
   padding: 15px 18px;
   border-radius: 15px;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.7;
   background: var(--paper);
   color: var(--ink);
@@ -836,7 +842,7 @@ textarea.lv-input {
   text-align: left;
   display: block;
   color: var(--ink);
-  font-size: 15px;
+  font-size: 1rem;
   min-height: 50px;
 }
 .lv-rung:nth-child(2) {
@@ -859,7 +865,7 @@ textarea.lv-input {
 .lv-rung small {
   display: block;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 0.9rem;
 }
 .lv-map {
   display: grid;
@@ -880,7 +886,7 @@ textarea.lv-input {
 }
 .lv-shell details {
   margin: 24px 0;
-  font-size: 15px;
+  font-size: 1rem;
 }
 .lv-shell summary {
   min-height: 44px;
@@ -922,7 +928,7 @@ textarea.lv-input {
   color: var(--ink);
 }
 .quiet-safety-dialog h2 {
-  font-size: 36px;
+  font-size: 2.057rem;
 }
 .quiet-safety-dialog::backdrop {
   background: #172b2366;
@@ -934,11 +940,11 @@ textarea.lv-input {
   margin-bottom: 45px;
 }
 .page-head h1 {
-  font-size: clamp(36px, 4vw, 56px);
+  font-size: clamp(2.25rem, 4vw, 3.5rem);
   font-weight: 400;
 }
 .page-head .intro {
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 1.8;
   max-width: 52ch;
 }
@@ -952,38 +958,38 @@ textarea.lv-input {
   padding: 28px;
 }
 .module-card h3 {
-  font-size: 27px;
+  font-size: 1.543rem;
 }
 .module-card p {
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 1.7;
 }
 .module-number {
   font-family: Fraunces, Georgia, serif;
-  font-size: 37px;
+  font-size: 2.114rem;
   color: #647f65;
 }
 .small {
-  font-size: 14px;
+  font-size: 0.9rem;
   line-height: 1.8;
 }
 .btn {
   border-radius: 26px;
   min-height: 48px;
-  font-size: 15px;
+  font-size: 1rem;
   padding: 13px 23px;
 }
 .pill {
   min-height: 44px;
 }
 .field label {
-  font-size: 16px;
+  font-size: 1rem;
 }
 .reading {
   max-width: 760px;
 }
 .reading > p {
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 1.85;
 }
 .reading > .step-list {
@@ -999,10 +1005,10 @@ textarea.lv-input {
   padding: 26px 12px;
 }
 .library-card h3 {
-  font-size: 24px;
+  font-size: 1.371rem;
 }
 .library-card p {
-  font-size: 15px;
+  font-size: 1rem;
 }
 .filter-bar {
   gap: 12px;
@@ -1012,7 +1018,7 @@ textarea.lv-input {
 }
 .boundary {
   border-left-width: 2px;
-  font-size: 14px;
+  font-size: 0.9rem;
 }
 .player-dock {
   border-radius: 24px 24px 0 0;
@@ -1033,11 +1039,11 @@ textarea.lv-input {
     scroll-behavior: auto !important;
   }
 }
-[data-theme="dark"] {
+:root[data-theme="dark"] {
   --bg: #182820;
   --paper: #21362d;
   --ink: #eff0e4;
-  --muted: #bac8b9;
+  --muted: #d2ddce;
   --green: #4b765e;
   --light: #304837;
   --line: #56705b;
@@ -1131,12 +1137,12 @@ textarea.lv-input {
     gap: 45px;
   }
   .quiet-pause h1 {
-    font-size: 44px;
+    font-size: 2.514rem;
   }
 }
 @media (max-width: 760px) {
   body {
-    font-size: 17px;
+    font-size: 1rem;
   }
   .topbar.quiet-header {
     display: flex;
@@ -1157,7 +1163,7 @@ textarea.lv-input {
     display: none;
   }
   .quiet-brand {
-    font-size: 23px;
+    font-size: 1.314rem;
     gap: 7px;
   }
   .quiet-brand img {
@@ -1165,17 +1171,17 @@ textarea.lv-input {
     height: 30px;
   }
   .quiet-brand small {
-    font-size: 6px;
+    font-size: 0.6rem;
     letter-spacing: 1px;
   }
   .quiet-header .theme-picker select {
     min-width: 77px;
     max-width: 87px;
-    font-size: 12px;
+    font-size: 0.9rem;
     padding: 8px;
   }
   .quiet-header .help-top {
-    font-size: 12px;
+    font-size: 0.9rem;
   }
   main#contenido {
     padding: 20px 24px 60px;
@@ -1192,17 +1198,17 @@ textarea.lv-input {
     padding: 30px 0 0;
   }
   .quiet-copy h1 {
-    font-size: clamp(41px, 8vw, 58px);
+    font-size: clamp(2.5625rem, 8vw, 3.625rem);
     letter-spacing: -1.5px;
     line-height: 1.14;
     margin-bottom: 24px;
   }
   .quiet-intro {
-    font-size: 17px;
+    font-size: 1rem;
     margin-bottom: 27px;
   }
   .quiet-eyebrow {
-    font-size: 10px;
+    font-size: 0.8rem;
     margin-bottom: 22px;
   }
   .quiet-window {
@@ -1215,13 +1221,13 @@ textarea.lv-input {
   }
   .quiet-window > span {
     bottom: 17px;
-    font-size: 8px;
+    font-size: 0.8rem;
   }
   .quiet-onboarding-foot {
     margin-top: 30px;
   }
   .quiet-caption {
-    font-size: 12px;
+    font-size: 0.9rem;
   }
   .quiet-understory {
     flex-direction: column;
@@ -1233,7 +1239,7 @@ textarea.lv-input {
     margin: 22px 0 40px;
   }
   .quiet-page-head h1 {
-    font-size: 42px;
+    font-size: 2.4rem;
     letter-spacing: -1.5px;
   }
   .quiet-index > section {
@@ -1241,28 +1247,28 @@ textarea.lv-input {
     margin: 40px 0;
   }
   .quiet-index h2 {
-    font-size: 24px;
+    font-size: 1.371rem;
   }
   .quiet-index-link {
     gap: 16px;
     padding: 20px 0;
   }
   .quiet-index-link strong {
-    font-size: 18px;
+    font-size: 1rem;
   }
   .quiet-index-link small {
-    font-size: 13px;
+    font-size: 0.9rem;
   }
   .quiet-milestones {
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+    gap: 30px;
     margin: 35px 0 55px;
   }
   .quiet-milestones h2 {
-    font-size: 23px;
+    font-size: 1.314rem;
   }
   .quiet-milestones p {
-    font-size: 13px;
+    font-size: 0.9rem;
   }
   .quiet-entry {
     flex-direction: column;
@@ -1270,7 +1276,7 @@ textarea.lv-input {
     gap: 8px;
   }
   .quiet-entry h3 {
-    font-size: 25px;
+    font-size: 1.429rem;
   }
   .quiet-journal > .row {
     align-items: flex-start;
@@ -1291,7 +1297,7 @@ textarea.lv-input {
     padding: 40px 24px;
   }
   .quiet-pause h1 {
-    font-size: 39px;
+    font-size: 2.229rem;
   }
   .quiet-sound-controls {
     margin-top: 25px;
@@ -1306,22 +1312,22 @@ textarea.lv-input {
   .lv-progress {
     margin-bottom: 25px;
     gap: 5px;
-    font-size: 11px;
+    font-size: 0.8rem;
   }
   .lv-title {
-    font-size: 35px;
+    font-size: 2rem;
     letter-spacing: -1px;
   }
   .lv-lead {
-    font-size: 17px;
+    font-size: 1rem;
     line-height: 1.8;
   }
   .lv-kicker {
-    font-size: 10px;
+    font-size: 0.8rem;
     margin-bottom: 20px;
   }
   .lv-option {
-    font-size: 16px;
+    font-size: 1rem;
     padding: 17px 20px;
   }
   .lv-feedback,
@@ -1330,7 +1336,7 @@ textarea.lv-input {
   .lv-receipt {
     padding: 21px;
     border-radius: 19px;
-    font-size: 16px;
+    font-size: 1rem;
   }
   .lv-scenarios {
     grid-template-columns: 1fr;
@@ -1358,7 +1364,7 @@ textarea.lv-input {
     margin-left: 0;
   }
   .lv-quote {
-    font-size: 24px;
+    font-size: 1.371rem;
   }
   .lv-shell {
     margin-top: 5px;
@@ -1366,7 +1372,7 @@ textarea.lv-input {
   .mobile-nav {
     display: flex;
     justify-content: center;
-    gap: clamp(20px, 9vw, 65px);
+    gap: 4px;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -1379,15 +1385,16 @@ textarea.lv-input {
   }
   .mobile-nav a {
     min-height: 51px;
-    min-width: 72px;
-    padding: 5px 12px;
+    min-width: 0;
+    flex: 1;
+    padding: 5px 6px;
     color: var(--muted);
     display: flex;
     align-items: center;
     gap: 4px;
     flex-direction: column;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 0.8rem;
   }
   .mobile-nav a.active {
     color: var(--ink);
@@ -1402,7 +1409,7 @@ textarea.lv-input {
     padding: 15px 24px 105px;
     flex-wrap: wrap;
     gap: 15px;
-    font-size: 10px;
+    font-size: 0.8rem;
   }
   .footer > span {
     width: 100%;
@@ -1416,7 +1423,7 @@ textarea.lv-input {
     color: var(--ink);
   }
   .player-dock {
-    bottom: 75px;
+    bottom: calc(90px + env(safe-area-inset-bottom));
     max-height: 55svh;
     overflow-y: auto;
   }
@@ -1435,7 +1442,7 @@ textarea.lv-input {
     display: none;
   }
   .quiet-copy h1 {
-    font-size: 38px;
+    font-size: 2.171rem;
   }
   .quiet-header .top-actions {
     gap: 5px;
@@ -1443,24 +1450,15 @@ textarea.lv-input {
   .lv-primary,
   .lv-secondary {
     padding: 13px 19px;
-    font-size: 14px;
+    font-size: 0.9rem;
   }
   .quiet-index-icon {
     width: 39px;
     height: 39px;
   }
 }
-.large-text {
-  font-size: 20px;
-}
-.large-text .quiet-intro,
-.large-text .lv-lead,
-.large-text .lv-option {
-  font-size: 21px;
-}
-.large-text .small,
-.large-text .quiet-caption {
-  font-size: 16px;
+html.large-text {
+  font-size: 150%;
 }
 @media print {
   body::before,
@@ -1502,7 +1500,7 @@ textarea.lv-input {
 }
 .lv-return-plan dt {
   margin-top: 18px;
-  font-size: 13px;
+  font-size: 0.9rem;
   color: var(--muted);
 }
 .lv-return-plan dd {
@@ -1512,3 +1510,133 @@ textarea.lv-input {
   padding-top: 14px;
   padding-bottom: 14px;
 }
+
+/* Readable arrival: the photograph covers the first screen, in every theme.
+   Content may grow beyond the viewport at large text sizes; never clip it. */
+.quiet-header .top-actions { flex-wrap: wrap; }
+.quiet-header #font-toggle { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.quiet-header #font-toggle[aria-pressed="true"] { background: var(--light); border-radius: 50%; }
+.quiet-onboarding-foot { flex-wrap: wrap; }
+.quiet-index-link > span:nth-child(2) { min-width: 0; }
+.quiet-index-link strong, .quiet-index-link small { overflow-wrap: anywhere; }
+.quiet-milestones p, .quiet-index-link small { line-height: 1.7; }
+.quiet-save-options { max-width: 28rem; }
+.quiet-journal > .row { flex-wrap: wrap; }
+body.is-arrival .topbar.quiet-header { position: absolute; inset: 0 0 auto; }
+body.is-arrival main#contenido { max-width: none; padding: 0; animation: none; }
+body.is-arrival .quiet-arrival {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  min-height: 100svh;
+  padding: calc(var(--header-height, 120px) + 35px) max(6vw, calc((100vw - 1240px) / 2)) 55px;
+  gap: 0;
+  background: #122c27;
+  color: #fff;
+}
+body.is-arrival .quiet-arrival > .quiet-window {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  border-radius: 0;
+  box-shadow: none;
+  z-index: -2;
+  filter: none;
+  background: #122c27;
+}
+body.is-arrival .quiet-window img {
+  filter: none;
+  object-position: 61% center;
+  animation: none;
+}
+body.is-arrival .quiet-window::after,
+body.is-arrival .quiet-window > span { display: none; }
+body.is-arrival .quiet-arrival::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, rgba(9, 28, 24, .86) 0%, rgba(9, 28, 24, .78) 52%, rgba(9, 28, 24, .22) 100%);
+}
+body.is-arrival .quiet-copy { width: 100%; max-width: 37rem; padding: 0; }
+body.is-arrival .quiet-copy h1 { font-size: clamp(2.6rem, 5.2vw, 4.5rem); line-height: 1.1; color: #fff; letter-spacing: -.035em; }
+body.is-arrival .quiet-copy h1 em { color: #e5f2c9; }
+body.is-arrival .quiet-intro { font-size: 1.2rem; line-height: 1.65; max-width: 30rem; color: #fff; }
+body.is-arrival .quiet-caption { color: #f1f4ed; font-size: .9rem; max-width: 31rem; }
+body.is-arrival .quiet-eyebrow { color: #f1f4ed; font-size: .8rem; letter-spacing: .12em; margin-bottom: 24px; }
+body.is-arrival .quiet-onboarding-foot { margin-top: 28px; font-size: .9rem; color: #fff; }
+body.is-arrival .quiet-onboarding-foot i { background: #91a79b; }
+body.is-arrival .quiet-onboarding-foot i.current { background: #e5f2c9; }
+body.is-arrival .quiet-copy .lv-quiet,
+body.is-arrival .quiet-copy .lv-secondary { color: #fff; }
+body.is-arrival .quiet-copy .lv-quiet { text-decoration: underline; text-underline-offset: .25em; }
+body.is-arrival .quiet-copy .lv-secondary { border-color: #d9e5dc; background: #142e28; }
+body.is-arrival .quiet-copy .lv-primary { color: #19372b; background: #e5f2c9; border-color: #e5f2c9; font-weight: 600; }
+body.is-arrival .quiet-copy .lv-primary:hover { background: #f5ffdf; }
+body.is-arrival .quiet-brand,
+body.is-arrival .quiet-header .nav-link,
+body.is-arrival .quiet-header .help-top,
+body.is-arrival .quiet-header #font-toggle,
+body.is-arrival .quiet-header .theme-picker select { color: #fff; }
+body.is-arrival .quiet-header .nav-link.active,
+body.is-arrival .quiet-header #font-toggle[aria-pressed="true"] { background: #24463b; }
+body.is-arrival .quiet-header .theme-picker select { background: #18382e; border-color: #b6cbbb; }
+body.is-arrival .quiet-header .theme-picker option { color: #fff; background: #18382e; }
+body.is-arrival .quiet-header { background: linear-gradient(#0b241ee6, #0b241e00); }
+body.is-arrival :is(button, a, select):focus-visible { outline-color: #ffe9a8; }
+body.is-arrival .quiet-understory { max-width: 1240px; margin: 0 auto; padding: 32px 6vw; }
+@media (max-width: 1200px) {
+  .topbar.quiet-header { grid-template-columns: 1fr auto; gap: 12px; }
+  .quiet-header #navigation { grid-row: 2; grid-column: 1 / -1; justify-content: center; }
+  .quiet-header .top-actions { grid-row: 1; grid-column: 2; }
+  body.is-arrival .quiet-arrival { padding-top: calc(var(--header-height, 160px) + 35px); }
+}
+@media (max-width: 760px) {
+  .topbar.quiet-header { height: auto; min-height: 140px; display: flex; flex-wrap: wrap; gap: 8px; padding: 16px 24px; }
+  .quiet-brand { font-size: 1.5rem; }
+  .quiet-brand small { font-size: .6rem; }
+  .quiet-brand img { display: block; width: 36px; height: 36px; }
+  .quiet-header .top-actions { width: 100%; justify-content: flex-end; gap: 18px; }
+  .quiet-header .theme-picker select { min-width: 6.5rem; max-width: none; font-size: .9rem; }
+  .quiet-header .help-top { font-size: .9rem; }
+  body.is-arrival .quiet-arrival { min-height: 100svh; padding: calc(var(--header-height, 140px) + 24px) 24px 115px; align-items: center; }
+  body.is-arrival .quiet-copy h1 { font-size: clamp(2.3rem, 9vw, 3.2rem); }
+  body.is-arrival .quiet-intro { font-size: 1.1rem; }
+  body.is-arrival .quiet-arrival::after { background: rgba(9, 28, 24, .76); }
+  body.is-arrival .quiet-window img { object-position: 59% center; }
+  .quiet-header #font-toggle { display: inline-flex; }
+  .mobile-nav a { font-size: .8rem; }
+  .quiet-onboarding-foot { gap: 18px; }
+  .quiet-page-head h1 { font-size: 2.4rem; }
+  .footer { padding-bottom: calc(120px + env(safe-area-inset-bottom)); }
+}
+@media (max-width: 360px) {
+  .topbar.quiet-header { padding-inline: 18px; }
+  body.is-arrival .quiet-arrival { padding-inline: 18px; }
+  .quiet-header .top-actions { gap: 12px; }
+}
+@media print {
+  body.is-arrival .quiet-arrival { min-height: 0; padding: 0; color: #000; background: #fff; }
+  body.is-arrival .quiet-arrival::after { display: none; }
+  body.is-arrival .quiet-copy :is(h1, p, em) { color: #000; }
+}
+
+/* Preserve content when users enlarge text independently of the viewport. */
+h1, h2, h3, p, button, .btn, .lv-primary, .lv-secondary, .quiet-brand { overflow-wrap: anywhere; }
+.grid > *, .stack > *, .row > *, .quiet-index > section > *, .quiet-milestones > * { min-width: 0; }
+button, input, select, textarea, .btn, .lv-primary, .lv-secondary { max-width: 100%; }
+.filter-bar > select { min-width: 0; width: min(100%, 18rem); }
+.quiet-brand { max-width: 100%; }
+.two, .three { grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); }
+
+.quiet-header #navigation { flex-wrap: wrap; }
+.quiet-header > *, .quiet-header .theme-picker { min-width: 0; max-width: 100%; }
+.quiet-header .theme-picker select { max-width: min(100%, 8rem); }
+.mobile-nav a > span { max-width: 100%; overflow-wrap: anywhere; }
+
+.quiet-header #font-toggle { min-width: 2.5rem; width: auto; min-height: 2.5rem; white-space: nowrap; }
+.skip { top: 0; transform: translateY(-200%); }
+.skip:focus { transform: translateY(0); }

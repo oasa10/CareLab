@@ -115,6 +115,9 @@ function applySettings() {
   document.documentElement.classList.toggle("large-text", s.largeText);
   document.documentElement.classList.toggle("no-motion", !s.motion);
   $("#font-toggle").setAttribute("aria-pressed", String(s.largeText));
+  const fontLabel = s.largeText ? "Volver al tamaño de texto habitual" : "Aumentar tamaño de texto";
+  $("#font-toggle").setAttribute("aria-label", fontLabel);
+  $("#font-toggle").title = fontLabel;
   const storage = Store.getStorageStatus();
   $("#storage-indicator").textContent =
     storage.mode === "device"
@@ -1383,6 +1386,7 @@ function render() {
   cleanup = null;
   route = location.hash.replace(/^#\/?/, "") || "hoy";
   const [page, id, editId] = route.split("/");
+  document.body.classList.toggle("is-arrival", ["hoy", "bienvenida"].includes(page));
   drawNav(
     ["unidad"].includes(page)
       ? "programa"
@@ -1493,6 +1497,11 @@ $(".skip")?.addEventListener("click", (e) => {
   view.focus({ preventScroll: true });
   view.scrollIntoView({ block: "start", behavior: "instant" });
 });
+// Keep the image behind the header without assuming a fixed height at large text sizes.
+const headerSize = new ResizeObserver(([entry]) => {
+  document.documentElement.style.setProperty("--header-height", `${entry.target.getBoundingClientRect().height}px`);
+});
+headerSize.observe($(".quiet-header"));
 applySettings();
 mountPlayer();
 installSafetySignpost({ stopMedia });

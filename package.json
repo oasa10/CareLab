@@ -1,6 +1,6 @@
 {
   "name": "carelab",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "private": true,
   "type": "module",
   "description": "Herramientas prácticas para organizar y compartir la carga de cuidar, con BrainBox 1.2.",

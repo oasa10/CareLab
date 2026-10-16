@@ -1,4 +1,4 @@
-# CareLab 3.0.2 · Cuidar sin desaparecer
+# CareLab 3.0.3 · Cuidar sin desaparecer
 
 Un espacio para hacer visible, organizar y compartir la carga total de cuidar, con el Método BrainBox 1.2 y el proyecto MEPRE.
 
@@ -71,3 +71,12 @@ Conecta los generadores con el registro de ubicaciones de la Metaestructura Maes
 Revisa las 169 direcciones pendientes del control anterior: conserva 153 fuentes identificadas, cambia 6 ubicaciones del mismo recurso, ofrece 9 alternativas oficiales con su alcance explícito y retira 1 enlace que no pudo corroborarse. Las referencias bibliográficas y sus identificadores permanecen; los rótulos distinguen las alternativas de las obras históricas. El dossier de Prison Terminal queda sin enlace, con la web oficial ya presente en la misma ficha. Las fuentes auténticas con acceso restringido se mantienen con esa limitación.
 
 La biblioteca se reconstruye desde el corpus con los mismos 1.087 identificadores. El programa conserva sus 12 módulos y 36 unidades. IDDSI mantiene la referencia histórica 2.0 y distingue el catálogo actual; la ayuda de Medisafe no se presenta como un estudio. La caché pública pasa a `20261016-1`; el formato de almacenamiento personal no cambia. Esta revisión de identidad y acceso no acredita eficacia ni actualiza instrucciones clínicas.
+
+
+## Legibilidad y portada 3.0.3
+
+El paisaje de inicio cubre la pantalla, con texto superpuesto y una capa de contraste propia en los tres modos. El contenido puede crecer y desplazarse al ampliar la letra; la cabecera reserva automáticamente el espacio que necesita. La imagen conserva su procedencia original.
+
+La tipografía principal pasa a 20 px con la configuración habitual del navegador y las descripciones de Mi camino y Explorar a 18 px. Los tamaños son relativos y respetan la preferencia del navegador. El botón Aa está disponible también en móvil y aumenta la escala de toda la interfaz. Se refuerza el texto secundario y se reorganizan las columnas al faltar espacio. La caché pública pasa a 20261016-2. No cambia el formato del espacio personal ni el contenido del programa o la biblioteca.
+
+`tests/readability-browser.cjs` comprueba la página real en contextos aislados: portada, bienvenida, retorno, tres apariencias, ampliación de texto, reflujo, persistencia de Aa y ausencia de imagen. Admite PLAYWRIGHT_MODULE, CHROME_PATH y QA_OUTPUT. Estas comprobaciones técnicas no sustituyen la valoración de las personas usuarias.

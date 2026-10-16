@@ -2,7 +2,7 @@
  * Bump RELEASE whenever the public core changes: each version is cached as one unit.
  * Registration is initiated by the user's offline-preparation button, not at startup.
  */
-const RELEASE = "20261016-1";
+const RELEASE = "20261016-2";
 const SCOPE = self.registration.scope;
 const PREFIX = `carelab-offline:${encodeURIComponent(new URL(SCOPE).pathname)}:`;
 const CORE_CACHE = `${PREFIX}core-${RELEASE}`;
